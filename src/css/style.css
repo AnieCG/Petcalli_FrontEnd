@@ -2,6 +2,7 @@
 * {
   background-color: var(--background_page);
   font-family: var(--font_text);
+  max-width: 1920px;
 }
 
 /*Se utiliza la pseudo-clase :root para añadir propiedades a utilizar en todo el css
