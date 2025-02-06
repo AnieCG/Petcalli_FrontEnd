@@ -13,5 +13,3 @@
 - **Samuel Aguirre Morales**
 - **Aurelia Robles Pérez**
 - **Andrea Eunice López Cárdenas**
-
-hola esto es para comprobar lo de que le comente andrea
