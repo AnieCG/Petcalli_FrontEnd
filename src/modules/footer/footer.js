@@ -5,48 +5,46 @@ const insertFooter = () => {
     footer.innerHTML = `
 
 
-    <footer class="bd-footer py-4 py-md-5 mt-5 ">
-    <section>
+        <section>
         <div class="row">
             <div class="col-1">
                 <!-- <p>Petcalli</p> -->
             </div>
             <div class="col">
-                <p>Petcalli</p>
-                <p style="font-size:.7vw;">"Porque en el corazón de nuestra tienda está el compromiso 
+                <img src="/public-images/Logo-shape.svg" alt="logo petcalli">
+                <p style="font-size:12px">"Porque en el corazón de nuestra tienda está el compromiso 
                     de cuidar a tu mascota tanto como tú lo haces”</p>
             </div>
-            <div class="col">
-                <p>Compañia</p>
-                <a href="">Sobre Nosotros</a>
-                <a href="">Reseñas</a>
-                <a href="">Categorias</a>
+            <div class="col d-none d-sm-block">
+                <p><strong>Compañia</strong></p>
+                <a href="#">Sobre Nosotros</a> <br>
+                <a href="#">Reseñas</a> <br>
+                <a href="#">Categorias</a> 
             </div>
-            <div class="col">
-                <p>Links</p>
-                <a href="#">Productos Premium</a>
-                <a href="#">Productos más vendidos</a>
+            <div class="col d-none d-sm-block">
+                <p><strong>Links</strong></p>
+                <a href="#">Productos Premium</a> <br>
+                <a href="#">Productos más vendidos</a> <br>
                 <a href="#">Servicios</a>
             </div>
-            <div class="col">
-                <p>Servicio al cliente</p>
-                <a href="">Contactanos</a>
-                <a href="">Compras</a>
-                <a href="">Devoluciones</a>
+            <div class="col d-none d-sm-block">
+                <p><strong>Servicio al cliente</strong></p>
+                <a href="#">Contactanos</a><br>
+                <a href="#">Compras</a> <br>
+                <a href="#">Devoluciones</a>
             </div>
-            <div class="col">
+            <div class="col d-none d-sm-block">
                 <p><strong>Tienda</strong></p>
                 <a href="#">Categoria por mascotas</a>
                 <br>
                 <a href="#">Más populares</a>
             </div>
             <div class="col-1">
-                <!-- <p>Petcalli</p> -->
+                
             </div>
         </div>
     </section>
     
-    </footer>
     `;
 }
 
