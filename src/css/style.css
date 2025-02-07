@@ -1,0 +1,47 @@
+/*Está cargada la fuente principal y el background general de la página*/
+* {
+  font-family: var(--font_text);
+  max-width: 1920px;
+}
+
+/*Se utiliza la pseudo-clase :root para añadir propiedades a utilizar en todo el css
+Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la propiedad en root); */
+/*Los estilos de las fuentes le pueden cambiar el font-weight de acuerdo a como está en figma*/
+:root {
+  --title: #81b29a;
+  --subtitle: #3d405b;
+  --block-images1: #e07a5f;
+  --block-images2: #f2cc8f;
+  --background_page: #f6f1dd;
+  --font_title: "Baloo Thambi 2", serif;
+  --font_subtitle: "Fira Sans Condensed", serif;
+  --font_text: "Hind Guntur", serif;
+}
+
+header {
+  background-color: var(--background_page);
+}
+
+header .navbar {
+  max-width: 1290px;
+  background-color: white;
+  border-radius: 40px;
+  margin: auto;
+  padding: 24px 40px;
+}
+
+header .navbar-nav .nav-item {
+  margin: 0 24px;
+  font-size: 20px;
+}
+
+header .form-control {
+  max-width: 580px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+
+header .input {
+  border: none;
+  background-color: #f8f9fa;
+}
