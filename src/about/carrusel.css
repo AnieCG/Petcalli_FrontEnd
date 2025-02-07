@@ -1,0 +1,48 @@
+.fira-sans-condensed-regular {
+    font-family: "Fira Sans Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.carousel-inner {
+    padding: 20px #E07A5F;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #F4F1DE, #F4F1DE);
+    color: white;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.last-slide {
+    justify-content: center !important;
+}
+.card-text {
+text-align: center black;
+font-size: 8px;
+}
+h1 {
+    text-align: center;
+    color: #3D405B;
+    font-family: "Fira Sans Condensed", serif;
+    align-items: center;
+
+}
+
+a {
+    width: 15px;
+    height: 15px;
+}
+
+#iconos {
+    width: 11px;
+    height: 11px;
+}
