@@ -1,0 +1,34 @@
+footer{
+    background-color:#E07A5F;
+}
+
+a{
+    color:rgb(0, 0, 0);
+}
+
+.col{
+    color: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 10px;
+}
+  
+
+.redes-sociales{
+    width: 20px;
+    cursor: pointer;
+  
+}
+
+.metodos-pago{
+    width: 30px;
+    padding-top: 60px;
+    margin-right:15px;
+    
+}
+
+.copyright{
+    padding-left: 150px;
+
+}
+    
+   

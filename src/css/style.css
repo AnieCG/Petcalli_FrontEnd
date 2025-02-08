@@ -18,32 +18,34 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
   --font_text: 'Hind Guntur', serif;
 }
 
+/* Header general con todos sus selectores */
 header {
+
   background-color: var(--background_page);
-}
 
-header .navbar {
-  max-width: 1290px;
-  background-color: white;
-  border-radius: 40px;
-  margin: auto;
-  padding: 24px 40px;
-}
+  .navbar {
+    max-width: 1290px;
+    background-color: white;
+    border-radius: 40px;
+    margin: auto;
+    padding: 10px 10px;
+  }
 
-header .navbar-nav .nav-item {
-  margin: 0 24px;
-  font-size: 20px;
-}
+  .navbar-nav .nav-item {
+    margin: 0 24px;
+    font-size: 20px;
+  }
 
-header .form-control {
-  max-width: 580px;
-  background-color: #f8f9fa;
-  border-radius: 20px;
-}
+  .form-control {
+    max-width: 580px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+  }
 
-header .input {
-  border: none;
-  background-color: #f8f9fa;
+  .input {
+    background-color: #f8f9fa;
+  }
+
 }
 header h1{
   color: var(--title);
