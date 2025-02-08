@@ -52,7 +52,7 @@ header h1 {
   font-size: 85px;
 }
 #botonCompra {
-  font-family: var(--font_text);
+  font-family: var(--title);
   font-size: 20px;
   color: white;
   background-color: var(--block-images1);
@@ -61,10 +61,3 @@ header h1 {
   height: 60px;
   width: 153px;
 }
-/* #ContenedorTitulo{
-width: 479px;
-} */
-/* #banner{
-  margin-left: 327px;
-  margin-right: 180px;
-} */
