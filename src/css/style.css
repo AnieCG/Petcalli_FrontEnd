@@ -30,11 +30,6 @@ header {
     padding: 10px 10px;
   }
 
-  .navbar-nav .nav-item {
-    margin: 0 24px;
-    font-size: 20px;
-  }
-
   .form-control {
     max-width: 580px;
     background-color: #f8f9fa;
