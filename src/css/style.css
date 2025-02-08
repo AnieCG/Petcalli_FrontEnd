@@ -13,9 +13,9 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
   --block-images1: #e07a5f;
   --block-images2: #f2cc8f;
   --background_page: #f6f1dd;
-  --font_title: "Baloo Thambi 2", serif;
+  --font_title:'Baloo Thambi', serif;
   --font_subtitle: "Fira Sans Condensed", serif;
-  --font_text: "Hind Guntur", serif;
+  --font_text: 'Hind Guntur', serif;
 }
 
 header {
@@ -45,3 +45,25 @@ header .input {
   border: none;
   background-color: #f8f9fa;
 }
+header h1{
+  color: var(--title);
+  font-family: var(--font_title);
+  font-size: 85px;
+}
+#botonCompra{
+  font-family: var(--font_text);
+  font-size: 20px;
+  color: white;
+  background-color: var(--block-images1);
+  border: var(--block-images1);
+  border-radius: 12px;
+  height: 60px;
+  width: 153px;
+}
+/* #ContenedorTitulo{
+width: 479px;
+} */
+/* #banner{
+  margin-left: 327px;
+  margin-right: 180px;
+} */
