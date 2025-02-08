@@ -31,4 +31,76 @@ a{
 
 }
     
-   
+   /* carrusel*/
+   .fira-sans-condensed-regular {
+    font-family: "Fira Sans Condensed", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.carousel-inner {
+    padding: 20px #E07A5F;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #F4F1DE, #F4F1DE);
+    color: white;
+    margin-bottom: 15px;
+
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    align-items: center;
+}
+
+.last-slide {
+    justify-content: center !important;
+}
+
+.card-text {
+text-align: center;
+color: black;
+font-size: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #3D405B;
+    font-family: "Fira Sans Condensed", serif;
+    align-items: center;
+    margin: 8px 8px 8px 8px;
+}
+
+a {
+    width: 15px;
+    height: 15px;
+}
+
+#iconos {
+    width: 11px;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    gap: 15px; 
+    justify-content: space-between;
+    margin-top: 5px; 
+}
+
+
+span {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    
+}
+
+
