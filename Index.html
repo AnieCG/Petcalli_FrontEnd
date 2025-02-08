@@ -7,11 +7,12 @@
   <title>Petcalli</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
-    <link rel="stylesheet" href="./src/css/style.css">
+    rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/style.css">
   <link rel="stylesheet" href="./src/about/about.css">
 </head>
 
@@ -19,59 +20,55 @@
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="./public/images/Logo-shape.svg"
-            alt="logo de tienda petcalli con una huella de mascota"></a>
-
+        <a class="navbar-brand" href="#">
+          <img src="./public/images/Logo-shape.svg" alt="logo de tienda petcalli con una huella de mascota">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0">
-            <li class="nav-item">
+          <ul class="navbar-nav me-auto mr-lg-5">
+            <li class="nav-item me-3">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Tienda</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#">Servicios</a>
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre nosotros</a>
+              <a class="nav-link" href="./src/about/Acerca_de_nosotros.html">Sobre nosotros</a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" href="#">Contacto</a>
             </li>
-
           </ul>
 
           <form class="d-flex" role="search">
-            <div class="form-control me-2">
-              <input class="input" type="search" placeholder="buscar productos" aria-label="buscar productos">
-              <button class="btn" type="submit"><img src="./public/images/share.svg" alt=""></button>
+            <div class="input-group">
+              <input class="form-control" type="search" placeholder="buscar productos" aria-label="buscar productos">
+              <button class="btn" type="submit">
+                <img src="./public/images/share.svg" alt="buscar">
+              </button>
             </div>
           </form>
 
-          <button class="btn" type="button" p-0 herf="#">
-            <img src="/public/images/like-products.svg" atl="icono de favoritos">
+          <button class="btn" type="button" href="#">
+            <img src="/public/images/like-products.svg" alt="icono de favoritos">
           </button>
 
-          <button class="btn" type="button" p-0 herf="#">
-            <img src="/public/images/shopping-cart.svg" atl="icono de carrito">
+          <button class="btn" type="button" href="#">
+            <img src="/public/images/shopping-cart.svg" alt="icono de carrito">
           </button>
 
-          <button class="btn" type="button" p-0 herf="#">
-            <img src="/public/images/user.svg" atl="icono de usuario">
+          <button class="btn" type="button" href="#">
+            <img src="/public/images/user.svg" alt="icono de usuario">
           </button>
         </div>
       </div>
     </nav>
-
     <section>
       <!-- Burbujas con animación -->
       <div class="booble-container">
