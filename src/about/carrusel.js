@@ -1,9 +1,8 @@
-
 const contenedor = document.getElementById("carousel");
 
 const insertCarousel = () => {
-    const carousel = document.getElementById("carousel");
-    carousel.innerHTML = `
+  const carousel = document.getElementById("carousel");
+  carousel.innerHTML = `
 
      <div class="container mt-5">
         <div id="multiCardCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" 
@@ -210,7 +209,7 @@ const insertCarousel = () => {
             </div>       
         </div>
     </div> 
-    `; 
-}
+    `;
+};
 
-insertCarousel(); 
+insertCarousel();
