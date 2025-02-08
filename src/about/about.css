@@ -1,5 +1,6 @@
-footer{
+#footer{
     background-color:#E07A5F;
+    padding-block: 30px;
 }
 
 a{
@@ -27,7 +28,7 @@ a{
 }
 
 .copyright{
-    padding-left: 150px;
+    padding-left: 100px;
 
 }
     
