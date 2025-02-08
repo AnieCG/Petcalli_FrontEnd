@@ -56,3 +56,35 @@ header h1 {
   height: 60px;
   width: 153px;
 }
+
+#terms {
+  color: var(--title);
+  font-family: var(--font_title);
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+}
+
+#terminos {
+  font-family: var(--font_text);
+  color: black;
+  font-size: 17px;
+  border: 22px;
+  margin:21px;
+}
+.container_terms {
+  border: 22px;
+margin:21px;
+}
+#conditions {
+  font-family: var(--font_subtitle);
+  font-size: 22px;
+}
+
+#dog {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
