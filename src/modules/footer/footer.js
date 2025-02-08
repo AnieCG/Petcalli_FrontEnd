@@ -1,8 +1,8 @@
 const header = document.getElementById("footer");
 
 const insertFooter = () => {
-  const footer = document.getElementById("footer");
-  footer.innerHTML = `
+    const footer = document.getElementById("footer");
+    footer.innerHTML = `
 
 
         <section>
@@ -23,7 +23,9 @@ const insertFooter = () => {
                 <p><strong>Compañía</strong></p>
                 <a href="#">Sobre Nosotros</a> <br>
                 <a href="#">Reseñas</a> <br>
-                <a href="#">Categorias</a> 
+                <a href="#">Categorias</a>  <br>
+                <a href="terminos.html"> Términos y Condiciones.</a>  <br>
+                <a href="aviso.html"> Aviso de privacidad.</a>
             </div>
             <div class="col d-none d-sm-block">
                 <p><strong>Links</strong></p>
