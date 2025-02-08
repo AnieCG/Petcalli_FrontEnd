@@ -24,14 +24,14 @@
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="z-1 navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"
-            ><img
+          <a class="navbar-brand" href="#">
+            <img
               src="/public/images/Logo-shape.svg"
               alt="logo de tienda petcalli con una huella de mascota"
-          /></a>
-
+            />
+          </a>
           <button
             class="navbar-toggler"
             type="button"
@@ -43,10 +43,9 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
+            <ul class="navbar-nav me-auto mr-lg-5">
+              <li class="nav-item me-3">
                 <a class="nav-link active" aria-current="page" href="#"
                   >Inicio</a
                 >
@@ -54,58 +53,57 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Tienda</a>
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">Servicios</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nosotros</a>
+                <a class="nav-link" href="./src/about/Acerca_de_nosotros.html"
+                  >Sobre nosotros</a
+                >
               </li>
-
               <li class="nav-item">
                 <a class="nav-link" href="#">Contacto</a>
               </li>
             </ul>
 
             <form class="d-flex" role="search">
-              <div class="form-control me-2">
+              <div class="input-group">
                 <input
-                  class="input"
+                  class="form-control"
                   type="search"
                   placeholder="buscar productos"
                   aria-label="buscar productos"
                 />
                 <button class="btn" type="submit">
-                  <img src="/public/images/share.svg" alt="" />
+                  <img src="/public/images/share.svg" alt="buscar" />
                 </button>
               </div>
             </form>
 
-            <button class="btn" type="button" p-0 herf="#">
+            <button class="btn" type="button" href="#">
               <img
                 src="/public/images/like-products.svg"
-                atl="icono de favoritos"
+                alt="icono de favoritos"
               />
             </button>
 
-            <button class="btn" type="button" p-0 herf="#">
+            <button class="btn" type="button" href="#">
               <img
                 src="/public/images/shopping-cart.svg"
-                atl="icono de carrito"
+                alt="icono de carrito"
               />
             </button>
 
-            <button class="btn" type="button" p-0 herf="#">
-              <img src="/public/images/user.svg" atl="icono de usuario" />
+            <button class="btn" type="button" href="#">
+              <img src="/public/images/user.svg" alt="icono de usuario" />
             </button>
           </div>
         </div>
       </nav>
 
-      <section>
+      <section class="z-1">
         <!-- Burbujas con animación -->
-        <div class="booble-container">
+        <div class="z-0 position-absolute top-0 start-0">
           <img
             src="/public/images/header-shapes.png"
             alt="Burbujas naranjas flotantes detras de imagen principal de perrito"
@@ -114,7 +112,10 @@
         </div>
         <div class="container">
           <div class="row">
-            <div id="ContenedorTitulo" class="col-12 col-lg-6 d-flex-column">
+            <div
+              id="ContenedorTitulo"
+              class="z-1 col-12 col-lg-6 d-flex-column"
+            >
               <h1>Petcalli</h1>
 
               <p class="fs-4 text col-9">
@@ -133,7 +134,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="z-1 col-12 col-lg-6">
               <img
                 class="container-fluid"
                 src="/public-images/Dog-Principal-Banner.png"
@@ -148,7 +149,7 @@
     <main>
       <div class="container">
         <div class="row acerca-nosotros">
-          <h1>Acerca de Nosotros</h1>
+          <h1 class="h1-acerca">Acerca de Nosotros</h1>
           <!-- Columna 1 -->
           <div class="col-md-6 texto-sobre-nosotros">
             <p>
@@ -175,9 +176,13 @@
       </div>
 
       <div id="carousel"></div>
+
       <section class="section-mision-vision">
-        <div>
-          <img src="" alt="Una familia con un perro" />
+        <div class="section-container">
+          <img
+            src="/public-images/image 42.png"
+            alt="Una familia con un perro"
+          />
           <h2 class="h2">Misión</h2>
           <p>
             En Petcalli, creemos que las mascotas son parte de la familia. Por
@@ -187,8 +192,11 @@
             feliz y saludable para tus consentidos.
           </p>
         </div>
-        <div>
-          <img src="" alt="Un perro blanco con cáfe y dos gatos" />
+        <div class="section-container">
+          <img
+            src="/public-images/image 43.png"
+            alt="Un perro blanco con cáfe y dos gatos"
+          />
           <h2 class="h2">Visión</h2>
           <p>
             Ser la tienda líder en productos para mascotas, mejorando la vida de
@@ -201,6 +209,7 @@
           </p>
         </div>
       </section>
+
       <div class="container py-5">
         <h1 class="title">Valores</h1>
         <div class="row g-4">
