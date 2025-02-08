@@ -1,115 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petcalli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/pages/about/about.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Petcalli</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/about/about.css">
-</head>
-
-<body>
-  <header>
-    <nav class="z-1 navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="./public/images/Logo-shape.svg" alt="logo de tienda petcalli con una huella de mascota">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mr-lg-5">
-            <li class="nav-item me-3">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Tienda</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./src/about/Acerca_de_nosotros.html">Sobre nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
-            </li>
-          </ul>
-
-          <form class="d-flex" role="search">
-            <div class="input-group">
-              <input class="form-control" type="search" placeholder="buscar productos" aria-label="buscar productos">
-              <button class="btn" type="submit">
-                <img src="./public/images/share.svg" alt="buscar">
-              </button>
-            </div>
-          </form>
-
-          <button class="btn" type="button" href="#">
-            <img src="/public/images/like-products.svg" alt="icono de favoritos">
+  <body>
+    <header>
+      <nav class="z-1 navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./public/images/Logo-shape.svg"
+              alt="logo de tienda petcalli con una huella de mascota"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mr-lg-5">
+              <li class="nav-item me-3">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./src/about/Acerca_de_nosotros.html"
+                  >Sobre nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
 
-          <button class="btn" type="button" href="#">
-            <img src="/public/images/shopping-cart.svg" alt="icono de carrito">
-          </button>
+            <form class="d-flex" role="search">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="buscar productos"
+                  aria-label="buscar productos"
+                />
+                <button class="btn" type="submit">
+                  <img src="./public/images/share.svg" alt="buscar" />
+                </button>
+              </div>
+            </form>
 
-          <button class="btn" type="button" href="#">
-            <img src="/public/images/user.svg" alt="icono de usuario">
-          </button>
+            <button class="btn" type="button" href="#">
+              <img
+                src="/public/images/like-products.svg"
+                alt="icono de favoritos"
+              />
+            </button>
+
+            <button class="btn" type="button" href="#">
+              <img
+                src="/public/images/shopping-cart.svg"
+                alt="icono de carrito"
+              />
+            </button>
+
+            <button class="btn" type="button" href="#">
+              <img src="/public/images/user.svg" alt="icono de usuario" />
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <section class="z-1">
-      <!-- Burbujas con animación -->
-      <div class="z-0 position-absolute top-0 start-0 ">
-        <img src="/public/images/header-shapes.png"
-          alt="Burbujas naranjas flotantes detras de imagen principal de perrito" class="img-fluid">
-      </div>
-      <div class=" container">
-        <div class="row">
-          <div id="ContenedorTitulo" class="z-1 col-12 col-lg-6 d-flex-column">
-            <h1>Petcalli</h1>
+      <section class="z-1">
+        <!-- Burbujas con animación -->
+        <div class="z-0 position-absolute top-0 start-0">
+          <img
+            src="/public/images/header-shapes.png"
+            alt="Burbujas naranjas flotantes detras de imagen principal de perrito"
+            class="img-fluid"
+          />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div
+              id="ContenedorTitulo"
+              class="z-1 col-12 col-lg-6 d-flex-column"
+            >
+              <h1>Petcalli</h1>
 
-            <p class="fs-4 text col-9">
-              "Porque en el corazón de nuestra tienda está el compromiso de
-              cuidar a tu mascota tanto como tú lo haces”
-            </p>
-            <div>
-              <a href="#">
-                <button type="button" id="botonCompra" class="btn btn-primary btn-lg fs-5 text">Comprar</button>
-              </a>
+              <p class="fs-4 text col-9">
+                "Porque en el corazón de nuestra tienda está el compromiso de
+                cuidar a tu mascota tanto como tú lo haces”
+              </p>
+              <div>
+                <a href="#">
+                  <button
+                    type="button"
+                    id="botonCompra"
+                    class="btn btn-primary btn-lg fs-5 text"
+                  >
+                    Comprar
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="z-1 col-12 col-lg-6">
+              <img
+                class="container-fluid"
+                src="./public-images/Dog-Principal-Banner.png"
+                alt="Perro crestado rodesiano asomando la cabeza"
+              />
             </div>
           </div>
-          <div class="z-1 col-12 col-lg-6">
-            <img class="container-fluid" src="./public-images/Dog-Principal-Banner.png"
-              alt="Perro crestado rodesiano asomando la cabeza" />
-          </div>
         </div>
-      </div>
-    </section>
-  </header>
-  <main>
+      </section>
+    </header>
+    <main></main>
 
-  </main>
-
-  <div id="footer">
-    <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="src/modules/footer/footer.js"></script>
-</body>
-
+    <div id="footer">
+      <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/modules/footer/footer.js"></script>
+  </body>
 </html>
