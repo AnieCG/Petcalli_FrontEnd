@@ -13,14 +13,13 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
   --block-images1: #e07a5f;
   --block-images2: #f2cc8f;
   --background_page: #f6f1dd;
-  --font_title:'Baloo Thambi', serif;
+  --font_title: "Baloo Thambi 2", serif;
   --font_subtitle: "Fira Sans Condensed", serif;
-  --font_text: 'Hind Guntur', serif;
+  --font_text: "Hind Guntur", serif;
 }
 
 /* Header general con todos sus selectores */
 header {
-
   background-color: var(--background_page);
 
   .navbar {
@@ -45,14 +44,14 @@ header {
   .input {
     background-color: #f8f9fa;
   }
-
 }
-header h1{
+header h1 {
   color: var(--title);
   font-family: var(--font_title);
+  font-weight: 700;
   font-size: 85px;
 }
-#botonCompra{
+#botonCompra {
   font-family: var(--font_text);
   font-size: 20px;
   color: white;
