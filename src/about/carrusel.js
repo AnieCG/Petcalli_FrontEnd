@@ -1,23 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel</title>
-    <link rel="stylesheet" href="carrusel.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+const contenedor = document.getElementById("carousel");
 
-</head>
+const insertCarousel = () => {
+    const carousel = document.getElementById("carousel");
+    carousel.innerHTML = `
 
-<body>
-    <div class="container mt-5">
+     <div class="container mt-5">
         <div id="multiCardCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" 
         data-bs-interval="3000">
             <div class="carousel-inner">
@@ -221,23 +209,8 @@
                 </div>
             </div>       
         </div>
-    </div>
+    </div> 
+    `; 
+}
 
-
-<!-- Controles del carrusel -->
-       <!--  <button  data-bs-target="#multiCardCarousel"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </button>
-
-    <button  type="button" data-bs-target="#multiCardCarousel"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </button> -->
-    
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+insertCarousel(); 
