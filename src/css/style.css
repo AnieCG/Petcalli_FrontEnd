@@ -18,34 +18,42 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
   --font_text: "Hind Guntur", serif;
 }
 
+.navegacion {
+  max-width: 1290px;
+  background-color: white;
+  border-radius: 40px;
+  margin: auto;
+  padding: 10px 10px;
+}
+
 /* Header general con todos sus selectores */
 header {
-  background-color: var(--background_page);
+  background-size: 1920px;
+  background-image: url(/public/images/header-shapes.png);
 
-  .navbar {
-    max-width: 1290px;
-    background-color: white;
-    border-radius: 40px;
-    margin: auto;
-    padding: 10px 10px;
+  .input {
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    border-color: transparent;
   }
 
-  .form-control {
-    max-width: 580px;
+  .boton-buscar {
     background-color: #f8f9fa;
     border-radius: 20px;
   }
 
-  .input {
-    background-color: #f8f9fa;
+  h1 {
+    color: var(--title);
+    font-family: var(--font_title);
+    font-weight: 700;
+    font-size: 85px;
+  }
+
+  .li-item {
+    min-width: 120px;
   }
 }
-header h1 {
-  color: var(--title);
-  font-family: var(--font_title);
-  font-weight: 700;
-  font-size: 85px;
-}
+
 #botonCompra {
   font-family: var(--title);
   font-size: 20px;
@@ -55,4 +63,36 @@ header h1 {
   border-radius: 12px;
   height: 60px;
   width: 153px;
+}
+
+#terms {
+  color: var(--title);
+  font-family: var(--font_title);
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+}
+
+#terminos {
+  font-family: var(--font_text);
+  color: black;
+  font-size: 17px;
+  border: 22px;
+  margin: 21px;
+}
+.container_terms {
+  border: 22px;
+  margin: 21px;
+}
+#conditions {
+  font-family: var(--font_subtitle);
+  font-size: 22px;
+}
+
+#dog {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
 }
