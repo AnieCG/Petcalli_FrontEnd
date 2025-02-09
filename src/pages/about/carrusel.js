@@ -1,15 +1,14 @@
-
 const contenedor = document.getElementById("carousel");
 
 const insertCarousel = () => {
-    const carousel = document.getElementById("carousel");
-    carousel.innerHTML = `
+  const carousel = document.getElementById("carousel");
+  carousel.innerHTML = `
 
      <div class="container mt-5">
         <div id="multiCardCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" 
         data-bs-interval="3000">
             <div class="carousel-inner">
-                <h1><em>COLABORADORES</em></h1>
+                <h1>Colaboradores</h1>
                 <!-- primeras imágenes -->
 
                 <div class="carousel-item active">
@@ -210,7 +209,7 @@ const insertCarousel = () => {
             </div>       
         </div>
     </div> 
-    `; 
-}
+    `;
+};
 
-insertCarousel(); 
+insertCarousel();

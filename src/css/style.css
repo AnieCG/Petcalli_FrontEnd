@@ -20,19 +20,15 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
 
 /* Header general con todos sus selectores */
 header {
+  max-height: 651px;
   background-color: var(--background_page);
 
   .navbar {
     max-width: 1290px;
     background-color: white;
     border-radius: 40px;
-    margin: auto;
+    margin: auto; 
     padding: 10px 10px;
-  }
-
-  .navbar-nav .nav-item {
-    margin: 0 24px;
-    font-size: 20px;
   }
 
   .form-control {
@@ -54,8 +50,14 @@ header h1 {
   font-weight: 700;
   font-size: 85px;
 }
+
+#contenedorHeader{
+  background-size: 1920px;
+  background-image: url(/public/images/header-shapes.png);
+}
+
 #botonCompra {
-  font-family: var(--font_text);
+  font-family: var(--title);
   font-size: 20px;
   color: white;
   background-color: var(--block-images1);
@@ -64,10 +66,35 @@ header h1 {
   height: 60px;
   width: 153px;
 }
-/* #ContenedorTitulo{
-width: 479px;
-} */
-/* #banner{
-  margin-left: 327px;
-  margin-right: 180px;
-} */
+
+#terms {
+  color: var(--title);
+  font-family: var(--font_title);
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+}
+
+#terminos {
+  font-family: var(--font_text);
+  color: black;
+  font-size: 17px;
+  border: 22px;
+  margin:21px;
+}
+.container_terms {
+  border: 22px;
+margin:21px;
+}
+#conditions {
+  font-family: var(--font_subtitle);
+  font-size: 22px;
+}
+
+#dog {
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin-left: 200px;
+  margin-right: 200px;
+}
