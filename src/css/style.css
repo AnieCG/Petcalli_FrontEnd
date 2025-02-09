@@ -18,18 +18,18 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
   --font_text: "Hind Guntur", serif;
 }
 
+.navegacion {
+  max-width: 1290px;
+  background-color: white;
+  border-radius: 40px;
+  margin: auto;
+  padding: 10px 10px;
+}
+
 /* Header general con todos sus selectores */
 header {
   background-size: 1920px;
   background-image: url(/public/images/header-shapes.png);
-
-  .navegacion {
-    max-width: 1290px;
-    background-color: white;
-    border-radius: 40px;
-    margin: auto;
-    padding: 10px 10px;
-  }
 
   .input {
     background-color: #f8f9fa;
