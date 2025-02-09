@@ -48,19 +48,6 @@ header {
     font-weight: 700;
     font-size: 85px;
   }
-<<<<<<< HEAD
-
-
-}
-
-header h1 {
-  color: var(--title);
-  font-family: var(--font_title);
-  font-weight: 700;
-  font-size: 85px;
-}
-=======
->>>>>>> 33e57e2b4ba07cd484cdb7faf25eaee6cf891709
 
   .li-item {
     min-width: 120px;
