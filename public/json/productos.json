@@ -1,0 +1,98 @@
+[
+    {
+      "nombre": "Nupec Croquetas para Perros Adulto Razas Pequeñas",
+      "precio": "$883.00",
+      "descripcion": "Alimento seco para perros adultos de razas pequeñas, formulado con ingredientes de alta calidad para una nutrición óptima.",
+      "imagen": "https://m.media-amazon.com/images/I/81f5Wc5G5-L._AC_SL1500_.jpg"
+    },
+    {
+      "nombre": "Eukanuba Adult Chicken & Beef Lata",
+      "precio": "$85.00",
+      "descripcion": "Alimento húmedo para perros adultos con sabor a pollo y res, proporcionando una dieta equilibrada y deliciosa.",
+      "imagen": "https://tienda.banfield.com.mx/wp-content/uploads/2023/01/Eukanuba-Adult-Chicken-Beef-Lata.jpg"
+    },
+    {
+      "nombre": "KONG Squeakair Balls 3 piezas",
+      "precio": "$135.00",
+      "descripcion": "Juego de 3 pelotas con sonido para perros, ideales para sesiones de juego y ejercicio.",
+      "imagen": "https://tienda.banfield.com.mx/wp-content/uploads/2023/01/KONG-Squeakair-Balls-3-piezas.jpg"
+    },
+    {
+        "nombre": "Royal Canin Alimento Seco para Perro Adulto - Razas Medianas, 7.72 Kg",
+        "precio": "$1,840.00",
+        "descripcion": "Alimento seco formulado para perros adultos de razas medianas, proporcionando una nutrición equilibrada para mantener su salud y vitalidad.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/royal-canin-alimento-seco-para-perro-adulto-razas-medianas-7.72-kg-36300012-1-36300012-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Cama chica para mascota",
+        "precio": "$2,490.00",
+        "descripcion": "Cama pequeña y cómoda para mascotas, diseñada para brindar un lugar acogedor donde descansar.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-cama-chica-para-mascota-36300013-1-36300013-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Carriola para mascota XL Taupe",
+        "precio": "$7,990.00",
+        "descripcion": "Carriola extra grande para mascotas, ideal para paseos cómodos y seguros.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-carriola-para-mascota-xl-taupe-36300014-1-36300014-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Cama para Mascota Maison",
+        "precio": "$2,990.00",
+        "descripcion": "Cama elegante para mascotas con diseño de casa, proporcionando un espacio privado y cómodo.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-cama-para-mascota-maison-36300015-1-36300015-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Filtro solar para perro, 75 ml",
+        "precio": "$290.00",
+        "descripcion": "Protector solar especialmente formulado para perros, ideal para proteger su piel de los rayos UV.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-filtro-solar-para-perro-75-ml-36300016-1-36300016-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Cama para mascota - Rosa",
+        "precio": "$4,590.00",
+        "descripcion": "Cama cómoda y estilizada en color rosa para mascotas, perfecta para un descanso placentero.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-cama-para-mascota-rosa-36300017-1-36300017-1.jpg"
+      },
+      {
+        "nombre": "Royal Canin Alimento Húmedo para Perro Adulto Todas las Razas, 385 g",
+        "precio": "$99.00",
+        "descripcion": "Alimento húmedo completo para perros adultos de todas las razas, ofreciendo una dieta equilibrada y sabrosa.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/royal-canin-alimento-humedo-para-perro-adulto-todas-las-razas-385-g-36300018-1-36300018-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Sudadera Augusto para Mascota",
+        "precio": "$990.00",
+        "descripcion": "Sudadera cómoda y moderna para mascotas, ideal para mantenerlas abrigadas en climas fríos.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-sudadera-augusto-para-mascota-36300019-1-36300019-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Tapete Refrescante para Perro - Extra Grande",
+        "precio": "$1,990.00",
+        "descripcion": "Tapete refrescante de tamaño extra grande para perros, ayuda a mantener a tu mascota fresca durante días calurosos.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-tapete-refrescante-para-perro-extra-grande-36300020-1-36300020-1.jpg"
+      },
+      {
+        "nombre": "Nexxt Dispensador inteligente de alimento para mascotas",
+        "precio": "$3,699.00",
+        "descripcion": "Dispensador automático de alimento para mascotas con conectividad inteligente, permite programar y monitorear las comidas de tu mascota.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/nexxt-dispensador-inteligente-de-alimento-para-mascotas-36300021-1-36300021-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Juguete para Mascota Verde",
+        "precio": "$190.00",
+        "descripcion": "Juguete interactivo en color verde para mascotas, ideal para mantenerlas entretenidas y activas.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-juguete-para-mascota-verde-36300022-1-36300022-1.jpg"
+      },
+      {
+        "nombre": "Aristopet Limpiador de ojos para perro, 100 ml",
+        "precio": "$390.00",
+        "descripcion": "Solución limpiadora para los ojos de los perros, ayuda a mantener la higiene ocular y prevenir infecciones.",
+        "imagen": "https://www.elpalaciodehierro.com/medias/aristopet-limpiador-de-ojos-para-perro-100-ml-36300023-1-36300023-1.jpg"
+      },
+      {
+        "nombre": "Cama Para Perro Gato Mascota Antiestrés Forma De Dona 80 Cm",
+        "precio": "$499.00",
+        "descripcion": "Cama en forma de dona diseñada para reducir el estrés en perros y gatos, proporcionando un lugar cómodo y seguro para descansar.",
+        "imagen": "https://http2.mlstatic.com/D_NQ_NP_2X_811015-MLM49591689712_042022-F.jpg"
+      }
+  ]
