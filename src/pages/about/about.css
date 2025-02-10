@@ -9,7 +9,7 @@ body {
   margin-top: 60px;
   margin-bottom: 30px;
   background-image: url("/public-images/Pattern\(paws\).png");
-  background-size: contain;
+  background-size: cover;
 }
 .section-mision-vision {
   display: flex;
@@ -20,11 +20,11 @@ body {
   height: 100%;
 }
 .img-mision-vision {
-  width: 500px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .section-container {
   display: flex;
@@ -32,31 +32,39 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  width: 500px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 90%;
   background-image: url("/public-images/Rectangle\ 21.png");
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 15px;
+  background-size: cover;
+  padding: 10px;
 }
 .section-container-right {
   background-image: url("/public-images/Rectangle\ 22.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  width: 90%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.piedra-1, .piedra-2, .piedra-3, .piedra-4, .piedra-5, .piedra-6 {
+  width: 80px;
 }
 .piedra-1 {
   z-index: -1;
   position: absolute;
-  bottom: 80px;
-  right: -80px;
+  bottom: 40px;
+  right: -40px;
   width: 150px;
 }
 .piedra-2 {
   z-index: 1;
   position: absolute;
-  bottom: -80px;
-  left: -60px;
+  bottom: -40px;
+  left: -110px;
   width: 120px;
   opacity: 95%;
 }
@@ -64,11 +72,12 @@ body {
   z-index: 1;
   position: absolute;
   top: 0px;
-  right: 130px;
+  right: 20%;
+  width: auto;
   opacity: 90%;
 }
 .piedra-4 {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   bottom: 0px;
   left: -90px;
@@ -89,24 +98,25 @@ body {
   width: 150px;
 }
 p {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
 }
 .h1-acerca {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .h2 {
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 10px;
-  margin-top: 20px;
+  margin-top: 10px;
   color: #3d405b;
 }
 .h1-valores {
-  font-size: 60px;
+  font-size: 40px;
   color: #f2cc8f;
 }
 .h2-valores {
+  font-size: 25px;;
   color: #3d405b;
 }
 
