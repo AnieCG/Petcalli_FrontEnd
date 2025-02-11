@@ -25,7 +25,7 @@ const insertHeader = () => {
               <a class="nav-link" href="/src/pages/about/Acerca_de_nosotros.html">Sobre nosotros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="/src/pages/contact-us/contact-us.html">Contacto</a>
             </li>
           </ul>
 
