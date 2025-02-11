@@ -12,7 +12,7 @@ const createCards = (producto) => {
         <div class="card-body">
         <h5 class="card-title" id="nombre-producto">${producto.nombre}</h5>
         <p id="precio">${producto.precio}</p>
-        <a href="#" class="btn btn-primary">me gusta</a>
+        <a href="#" class="btn btn-secondary">me gusta</a>
         </div>
     </div>
  </div>
