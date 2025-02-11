@@ -64,35 +64,5 @@
         "precio": "$990.00",
         "descripcion": "Sudadera cómoda y moderna para mascotas, ideal para mantenerlas abrigadas en climas fríos.",
         "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Tapete Refrescante para Perro - Extra Grande",
-        "precio": "$1,990.00",
-        "descripcion": "Tapete refrescante de tamaño extra grande para perros, ayuda a mantener a tu mascota fresca durante días calurosos.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Nexxt Dispensador inteligente de alimento para mascotas",
-        "precio": "$3,699.00",
-        "descripcion": "Dispensador automático de alimento para mascotas con conectividad inteligente, permite programar y monitorear las comidas de tu mascota.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Juguete para Mascota Verde",
-        "precio": "$190.00",
-        "descripcion": "Juguete interactivo en color verde para mascotas, ideal para mantenerlas entretenidas y activas.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Limpiador de ojos para perro, 100 ml",
-        "precio": "$390.00",
-        "descripcion": "Solución limpiadora para los ojos de los perros, ayuda a mantener la higiene ocular y prevenir infecciones.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Cama Para Perro Gato Mascota Antiestrés Forma De Dona 80 Cm",
-        "precio": "$499.00",
-        "descripcion": "Cama en forma de dona diseñada para reducir el estrés en perros y gatos, proporcionando un lugar cómodo y seguro para descansar.",
-        "imagen": "/public-images/estetica3.png"
     }
   ]
