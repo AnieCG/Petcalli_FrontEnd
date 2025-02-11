@@ -128,7 +128,21 @@ footer{
     width: 20px;
     cursor: pointer;
   }
-
 }
 
+<<<<<<< HEAD
 
+=======
+  .banner-servicios{
+    background-color: var(--block-images2);
+    font-family: var(--font_text);
+
+  }
+  
+  .card-title{
+    color: black;
+    text-align: center;
+    font-family: var(--font_text);
+
+  }
+>>>>>>> origin/servicios-ana
