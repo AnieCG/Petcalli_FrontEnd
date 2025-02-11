@@ -1,0 +1,19 @@
+:root {
+    --title: #81b29a;
+    --subtitle: #3d405b;
+    --block-images1: #e07a5f;
+    --block-images2: #f2cc8f;
+    --background_page: #f6f1dd;
+    --font_title: "Baloo Thambi 2", serif;
+    --font_subtitle: "Fira Sans Condensed", serif;
+    --font_text: "Hind Guntur", serif;
+  }
+
+  #dog {
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  
