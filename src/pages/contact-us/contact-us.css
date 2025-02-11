@@ -1,6 +1,12 @@
+.container-contact{
+  background-image: url(./images/background-contact-us.png);
+  background-repeat: no-repeat;
+  max-height: 1024px;
+}
 .contact-us {
   background-color: var(--background_page);
   font-family: var(--font_text);
+  
 
   h2 {
     color: var(--title);
