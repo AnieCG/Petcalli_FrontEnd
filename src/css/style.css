@@ -4,6 +4,10 @@
   max-width: 1920px;
 }
 
+body {
+  background-color: var(--background_page);
+}
+
 /*Se utiliza la pseudo-clase :root para añadir propiedades a utilizar en todo el css
 Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la propiedad en root); */
 /*Los estilos de las fuentes le pueden cambiar el font-weight de acuerdo a como está en figma*/
@@ -95,4 +99,26 @@ header {
   justify-content: center;
   margin-left: 200px;
   margin-right: 200px;
+}
+
+footer{
+  background-color: #e07a5f;
+  padding-block: 30px;
+
+  a {
+      text-decoration: none;
+      color: black;
+  }
+
+  .metodos-pago {
+    width: 30px;
+    padding-top: 60px;
+    margin-right: 15px;
+  }
+
+  .redes-sociales {
+    width: 20px;
+    cursor: pointer;
+  }
+
 }
