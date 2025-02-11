@@ -1,16 +1,16 @@
    /* Estilos para el efecto de volteo */
 .flip-card {
     perspective: 1000px;
-    width: 18rem; /* Ajusta el ancho según tus necesidades */
-    height: 300px; /* Ajusta la altura según tus necesidades */
-    margin: 10px; /* Espacio entre tarjetas */
-    cursor: url('path/to/paw-cursor.png'), auto; /* Cambia el cursor a una garrita de perrito */
+    width: 18rem;
+    height: 300px; 
+    margin: 20px; /* Espacio entre tarjetas */
+    cursor: url('/public-images/huella-cursor.png'), auto; /* Cambia el cursor a una garrita de perrito */
 }
 
 .flip-card-inner {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 80%;
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
@@ -23,9 +23,9 @@
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 115%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 5%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -35,7 +35,19 @@
 }
 
 .flip-card-back {
-    background-color: #007bff;
+
     color: white;
     transform: rotateY(180deg);
+    text-align: center;
+    
+}
+
+.card-text {
+    font-family: var(--font_text);
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.5;
+    color: #000000;
+    text-align: center;
+    align-content: center;
 }
