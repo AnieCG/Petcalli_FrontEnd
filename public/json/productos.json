@@ -29,6 +29,18 @@
         "descripcion": "Cama pequeña y cómoda para mascotas, diseñada para brindar un lugar acogedor donde descansar.",
         "imagen": "/public-images/estetica3.png"
     },
+    {
+      "nombre": "Royal Canin Alimento Húmedo para Perro Adulto Todas las Razas, 385 g",
+      "precio": "$99.00",
+      "descripcion": "Alimento húmedo completo para perros adultos de todas las razas, ofreciendo una dieta equilibrada y sabrosa.",
+      "imagen": "/public-images/estetica3.png"
+  },
+    {
+      "nombre": "Aristopet Sudadera Augusto para Mascota",
+      "precio": "$990.00",
+      "descripcion": "Sudadera cómoda y moderna para mascotas, ideal para mantenerlas abrigadas en climas fríos.",
+      "imagen": "/public-images/estetica3.png"
+  },
       {
         "nombre": "Aristopet Carriola para mascota XL Taupe",
         "precio": "$7,990.00",
@@ -51,18 +63,6 @@
         "nombre": "Aristopet Cama para mascota - Rosa",
         "precio": "$4,590.00",
         "descripcion": "Cama cómoda y estilizada en color rosa para mascotas, perfecta para un descanso placentero.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Royal Canin Alimento Húmedo para Perro Adulto Todas las Razas, 385 g",
-        "precio": "$99.00",
-        "descripcion": "Alimento húmedo completo para perros adultos de todas las razas, ofreciendo una dieta equilibrada y sabrosa.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Sudadera Augusto para Mascota",
-        "precio": "$990.00",
-        "descripcion": "Sudadera cómoda y moderna para mascotas, ideal para mantenerlas abrigadas en climas fríos.",
         "imagen": "/public-images/estetica3.png"
     }
   ]

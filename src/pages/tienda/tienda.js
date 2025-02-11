@@ -1,7 +1,7 @@
 const $seccionCards = document.getElementById("seccion-cards");
 const createCards = (producto) => {
   return `
-    <div class="card h-150 m-2" style="width: 14rem;background-color: #F2CC8F;">
+    <div class="card h-100 m-2" style="width: 14rem;background-color: #E07A5F;">
         <img
         src="${producto.imagen}"
         class="card-img-top"
@@ -9,7 +9,11 @@ const createCards = (producto) => {
         id="image"
         />
         <div class="card-body">
-        <h5 class="card-title" id="nombre-producto">${producto.nombre}</h5>
+        <h5 class="card-title" id="nombre-producto">${
+          producto.nombre.length > 30
+            ? producto.nombre.slice(0, 24) + "..."
+            : producto.nombre
+        }</h5>
         <p id="precio">${producto.precio}</p>
         </div>
     </div>

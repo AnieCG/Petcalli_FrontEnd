@@ -1,4 +1,8 @@
 .row-seccion-cards {
-  background-color: #e07a5f;
+  background-color: #f2cc8f;
   justify-content: center;
+}
+.resultados {
+  margin-left: 100px;
+  margin-top: 30px;
 }
