@@ -1,8 +1,7 @@
 const $seccionCards = document.getElementById("seccion-cards");
 const createCards = (producto) => {
   return `
- <div class="col mb-3">
-    <div class="card h-100 p-2" style="width: 14rem">
+    <div class="card h-100 p-2 m-2" style="width: 14rem">
         <img
         src="${producto.imagen}"
         class="card-img-top"
@@ -15,7 +14,6 @@ const createCards = (producto) => {
         <a href="#" class="btn btn-secondary">me gusta</a>
         </div>
     </div>
- </div>
 `;
 };
 
