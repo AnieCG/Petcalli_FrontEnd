@@ -1,0 +1,22 @@
+.contact-us {
+  background-color: var(--background_page);
+  font-family: var(--font_text);
+
+  h2 {
+    color: var(--title);
+    font-family: var(--font_title);
+  }
+
+  h3 {
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
+  }
+
+  .contact_form {
+    background-color: var(--block-images2);
+  }
+
+  .button {
+    background-color: var(--block-images1);
+  }
+}
