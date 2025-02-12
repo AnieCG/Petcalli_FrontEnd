@@ -22,7 +22,7 @@
   </header>
   <main>
     <section class="contact-us pb-5">
-      <!--<h2 class="display-2 fw-bold ps-2 ps-md-5 pt-5">Petcalli</h2> <!--Se le agrega ps -->
+      <!--<h2 class="display-2 fw-bold ps-2 ps-md-5 pt-5">Petcalli</h2> --><!--Se le agrega ps-->
       <h3 class="display-5 text-center fw-bold mb-5 pt-5">Contáctanos</h3> <!-- Se le agrega mb -->
 
       <form class="contact_form container p-4 border rounded-5" action="" method="POST" id="form"> <!-- se le agrega borde -->
@@ -56,6 +56,11 @@
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/modules/footer/footer.js"></script>
   <script type="module" src="/src/modules/contact-us/contact-us.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("nuestro Id de usuario?");
+   })();
+</script>
 </body>
 
 </html>
