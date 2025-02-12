@@ -12,3 +12,7 @@
 .card #precio {
   color: white;
 }
+
+a {
+  cursor: pointer;
+}
