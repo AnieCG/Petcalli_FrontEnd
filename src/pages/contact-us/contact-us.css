@@ -27,4 +27,11 @@
     max-width: 920px;
     margin: auto;
   }
+  .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    padding-top: 20px;
+
+  }
 }
