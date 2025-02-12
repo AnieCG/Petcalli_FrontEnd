@@ -131,4 +131,12 @@ footer{
 
 }
 
+<<<<<<< HEAD
 
+=======
+/* Tienda */
+#mostPopularContainer{
+  background-color: var(--block-images2);
+  border-radius: 20px;
+}
+>>>>>>> carruselMasPopulares
