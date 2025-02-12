@@ -1,0 +1,34 @@
+/* Tienda */
+#mostPopularContainer{
+    background-color: var(--block-images2);
+    border-radius: 20px;
+  }
+.card {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f4f1de, #f4f1de);
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+.card img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  } 
+#tituloCarrusel{
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
+    font-weight: 550;
+    font-size: 55px;
+}
+.envolventeBoton{
+    align-self: center;
+    background-color: var(--block-images1);
+    width: 80px;
+    height: 80px;
+}
