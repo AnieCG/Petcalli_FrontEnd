@@ -42,11 +42,6 @@
     
 }
 
-.banner-servicios{
-    font-family: var(--font_text);
-    background-color: #f2cc8f;
-}
-
 .card-text {
     font-family: var(--font_text);
     font-size: 16px;
@@ -62,7 +57,14 @@
     width: 260px;
     height: 300px;
 
+}
 
+.banner-servicios p{
+    
+    background-color: #f2cc8f;
+    font-size: x-large;
+    height: 120px;
+    padding-top: 25px;
 
 
 }
