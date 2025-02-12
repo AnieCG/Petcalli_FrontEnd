@@ -23,30 +23,49 @@
   <main>
     <section class="contact-us pb-5">
       <h3 class="display-5 text-center fw-bold mb-5 pt-5">Contáctanos</h3>
-
-      <form class="contact_form container p-4 border rounded-5 form" name="contact">
-        <div class="mb-3 container__input input-form">
-          <input type="text" class="form-control input" id="exampleInputName">
-          <span class="input-error name-error"></span>
-          <label for="exampleInputName" class="form-label">Nombre Completo</label>
-        </div>
-        <div class="mb-3  container__input">
-          <input type="email" class="form-control input-form" id="exampleInputEmail" aria-describedby="emailHelp">
-          <span class="input-error email-error"></span>
-          <label for="exampleInputEmail" class="form-label">Correo Electronico</label>
-        </div>
-        <div class="mb-3  container__input">
-          <input type="tel" class="form-control input-form" id="exampleInputTel">
-          <span class="popup__input-error telephone-error"></span>
-          <label for="exampleInputTel" class="form-label">Teléfono</label>
+      <form class="contact_form container p-4 border rounded-5 needs-validation" novalidate>
+        <div class="mb-3 container__input">
+          <label for="validationCustom01" class="form-label">Nombre Completo</label>
+          <input type="text" class="form-control" id="validationCustom01" minlength="3" maxlength="30" required>
+          <div class="invalid-feedback">
+            Por favor, introduce tu nombre completo.
+          </div>
         </div>
         <div class="mb-3 container__input">
-          <input type="text" class="form-control input_height input-form" id="exampleInputMessage">
-          <span class="popup__input-error message-error"></span>
-          <label for="exampleInputMessage" class="form-label">Mensaje</label>
+          <label for="validationCustom02" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="validationCustom02" aria-describedby="emailHelp" required>
+          <div class="invalid-feedback">
+            Por favor, introduce un correo electrónico válido example@example.com
+          </div>
+        </div>
+        <div class="mb-3 container__input">
+          <label for="validationCustom03" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" id="validationCustom03" pattern="[0-9]*" inputmode="numeric" required>
+          <div class="invalid-feedback">
+            Por favor, introduce un teléfono válido
+          </div>
+        </div>
+        <div class="mb-3 container__input">
+          <label for="validationCustom04" class="form-label">Mensaje</label>
+          <input type="text" class="form-control input_height" id="validationCustom04" minlength="10" maxlength="150"
+            required>
+          <div class="invalid-feedback">
+            Por favor, introduce un mensaje entre 10 y 150 caracteres.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check py-3">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Acepto los terminos y condiciones
+            </label>
+            <div class="invalid-feedback">
+              Debes estar de acuerdo antes de enviar
+            </div>
+          </div>
         </div>
         <div class="d-flex justify-content-center">
-          <button type="submit" class="btn text-white w-50 button button-form">Enviar mensaje</button>
+          <button class=" btn button text-white w-50" type="submit">Enviar mensaje</button>
         </div>
       </form>
     </section>
@@ -57,6 +76,7 @@
     </script>
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/modules/footer/footer.js"></script>
+  <script src="/src/pages/contact-us/contact-us.js"></script>
 </body>
 
 </html>
