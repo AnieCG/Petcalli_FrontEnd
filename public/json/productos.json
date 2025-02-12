@@ -1,87 +1,149 @@
 [
   {
-    "title": "Un Dos Treats",
-    "image": "https://www.petco.com.mx/medias/125395.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTgxODh8aW1hZ2UvanBlZ3xoN2MvaDhmLzEwNDA3MTQzMjQzODA2LzEyNTM5NS5qcGdfMzAwZnR3fDhiN2U3MDQ4Mjg2YmY2OTYzOTZkZTBmZmFmOWJiMDhmOWNhNDM2YmY1YjExNzQyNWUwMTc5ZjRjNWJmODQ3Y2U",
-    "price": "$111.60"
-  },
-  {
-    "title": "Un Dos Treats",
-    "image": "https://www.petco.com.mx/medias/125393.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjAzNTh8aW1hZ2UvanBlZ3xoZWIvaDk1LzEwNDA3MTQwOTUwMDQ2LzEyNTM5My5qcGdfMzAwZnR3fGRiOTA2M2Y3MjdlNTg2ZjQwOTViYjQxNDVhNmY5OWM2YjE2ZDIxYTU2MWE0ZWE5MmI0YTEzZjA1Nzk2NGIzMzc",
-    "price": "$111.60"
-  },
-  {
-    "title": "La Galleteria",
-    "image": "https://www.petco.com.mx/medias/130680.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzk5MzF8aW1hZ2UvanBlZ3xoMmEvaGYxLzk2ODM2NTU3NTM3NTguanBnfDk0MGJlZmQ4MmFiMDQ1MjYyYzM3ZGFkMDNiZWE0MzdhNmM0MWE1MTc1NWRjYzNkNDJjOWYyN2JjZDFkNTYxMjA",
-    "price": "$36.00"
-  },
-  {
-    "title": "GoDog",
-    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2OTc4MXxpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGFhLzk1MDIwNzUzMjIzOTguanBnfDQ0NzVhZTU5YjQxNmVmNDkzNjU1Nzk5NWJhY2Q2MTJkMjJlMjA2ZGNlNTRhMzk1YzdmZWUyNmQxMzgyMjllM2E",
-    "price": "$329.00"
-  },
-  {
-    "title": "Leaps & Bounds",
-    "image": "https://www.petco.com.mx/medias/138372.jpg-300ftw?context=bWFzdGVyfHJvb3R8MjQ3Mzd8aW1hZ2UvanBlZ3xoNDgvaDI0LzEwMzY2NDUzMjUyMTI2LzEzODM3Mi5qcGdfMzAwZnR3fGFkYWI2NWM0YzI1ZjJiZTZmNWJjMGE1MTI0YmE2YWQxMjYxMDM0MjU3MGZlNTE1YWZlMjY0M2EyNDA4YWM1NTQ",
-    "price": "$299.25"
-  },
-  {
-    "title": "Fringe",
-    "image": "https://www.petco.com.mx/medias/300ftw-147335.jpg?context=bWFzdGVyfHJvb3R8MzI1NDl8aW1hZ2UvanBlZ3xoOTgvaDc5LzEwOTE2NTg5MjQwMzUwLzMwMGZ0d18xNDczMzUuanBnfDM2OWIxYTRiMTQyYjEwNTZiMGU3OTkxMGQ0NTI3MjFkZGZiOWYxYzVhMGZhYTI4NGUxODU5NWE3MmE5MDJhMTQ",
-    "price": "$74.70"
-  },
-  {
-    "title": "Chuckit!",
-    "image": "https://www.petco.com.mx/medias/300ftw-144173.jpg?context=bWFzdGVyfHJvb3R8MTk0NDN8aW1hZ2UvanBlZ3xoZTQvaDhiLzEwNzk5MzIwNzI3NTgyLzMwMGZ0d18xNDQxNzMuanBnfDQzOTNkNmE5NWZkYzE0MWYzZDFlMzc3YzA0YjdjNWFmN2ZiYjJhZTZjMGZhNDg4Zjk0OTc2NTk3MzU4YjQ2NGQ",
-    "price": "$119.00"
-  },
-  {
-    "title": "Bark",
-    "image": "https://www.petco.com.mx/medias/140193.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzk3NTl8aW1hZ2UvanBlZ3xoMTEvaGI2LzEwMjUxMjA5OTAwMDYyLzE0MDE5My5qcGdfMzAwZnR3fDY1NTUyOTk3YjJlMDE0ZDg0OWUwNjFkYmRjNWJjYjc4ODg2NTZhZjNmOTBjNjkyZWY2MDAxMTRkMzQ2MGNkZmQ",
-    "price": "$229.00"
-  },
-  {
-    "title": "Fringe",
-    "image": "https://www.petco.com.mx/medias/300ftw-147825.jpg?context=bWFzdGVyfHJvb3R8OTM0OTJ8aW1hZ2UvanBlZ3xoZDEvaDIzLzExMDA4MDg3NDU3ODIyLzMwMGZ0d18xNDc4MjUuanBnfDI5YmNlZGI1MWRjMDE1ZDJlODg5ZDI1M2NlMTdiYzQ3MjhhYWYyODRiNmZmMTNlNDk4N2ViZjQyZDFiNTk5YjE",
-    "price": "$299.00"
-  },
-  {
     "title": "Royal Canin",
     "image": "https://www.petco.com.mx/medias/104805.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDU4Nzh8aW1hZ2UvanBlZ3xoYmQvaGIxLzk5MTQ0NDE2Mjk3MjYvMTA0ODA1LmpwZ18zMDBmdHd8OWU5YzMxOTVjZjA2OTRlZGEyYTFmZjY0MjNkZjY5NmJkMTQ5YWZlODFlZTVlOGM5ZWEzZWM2MGRlMTFjNTM4Mw",
-    "price": "$675.00"
+    "price": "$675.00",
+    "descripcion": "Royal Canin Alimento Seco para Gato Adulto de Interior Receta Pollo, 3.1 kg"
   },
+ 
   {
     "title": "Hill's Science Diet",
     "image": "https://www.petco.com.mx/medias/114696.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjU4MDF8aW1hZ2UvanBlZ3xoZWIvaDc2LzEwMzgzMDM2OTQwMzE4LzExNDY5Ni5qcGdfMzAwZnR3fDU0MWJlZGZkMjQ5YTQ1ODJmYWY1ODhiM2JjY2FjYmI1NDk0YmI1N2U3MjVkYjgzNjhhN2I2MjFmNmMyOWU3OTI",
-    "price": "$1,225.50"
+    "price": "$1,225.50",
+    "descripcion": "Hill's Science Diet Alimento de Control de Peso para Gato Adulto Receta Pollo, 6.8 kg"
   },
   {
     "title": "Royal Canin",
     "image": "https://www.petco.com.mx/medias/104789.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzMwMDF8aW1hZ2UvanBlZ3xoOTIvaDE0LzEwMzgyNzM3NDA4MDMwLzEwNDc4OS5qcGdfMzAwZnR3fGIyMGFmOGE3NTA2Y2Y4YzllNzhmN2M3NGJjMDIwMGFhYWE3ZGNiNmIxODdlODA3MDQzMjEwMDhlMTFiMDE0Nzk",
-    "price": "$788.40"
+    "price": "$788.40",
+    "descripcion": "Royal Canin Alimento Seco para Gato Persa Adulto Receta Pollo, 3.1 kg"
   },
+ 
   {
     "title": "Instinct",
     "image": "https://www.petco.com.mx/medias/114115.jpg-300ftw?context=bWFzdGVyfHJvb3R8ODIzNzB8aW1hZ2UvanBlZ3xoM2QvaGM4Lzk4MzcwODk2NTI3NjYvMTE0MTE1LmpwZ18zMDBmdHd8N2QxYzM1ZGNkNzdjMDFlYTUxYTQwNWM1ZWIyZmNlYzE1ZmQ0YzRkMDBjNjE4YWYyY2U2YzI0ZWU2NDUxZjFmYg",
-    "price": "$1,395.00"
+    "price": "$1,395.00",
+    "descripcion": "Instinct Original Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5 kg"
   },
+
   {
     "title": "Royal Canin",
     "image": "https://www.petco.com.mx/medias/104803.jpg-300ftw?context=bWFzdGVyfHJvb3R8MjgyOTl8aW1hZ2UvanBlZ3xoNjEvaGYyLzEwMzgyNzM5NzAxNzkwLzEwNDgwMy5qcGdfMzAwZnR3fDRlMWU2ODAzNTY5NGVmYWNlZjNjN2FiMmNhZWM4OTM5ZTZjMTc2YzQ2MzdjMjc4MmM4ZTc0MDM5Yzk1YmI4NWQ",
-    "price": "$900.00"
+    "price": "$900.00",
+    "descripcion": "Royal Canin Hairball Alimento Seco para Gato Adulto Control Bolas de Pelo Receta Pollo, 2.7 kg"
   },
+ 
   {
     "title": "Bravery",
     "image": "https://www.petco.com.mx/medias/300ftw-143666.jpg?context=bWFzdGVyfHJvb3R8NTg1Nzd8aW1hZ2UvanBlZ3xoM2EvaGQ1LzEwODAxNzQ1NTU5NTgyLzMwMGZ0d18xNDM2NjYuanBnfDQ2ZWIzMDlkZGM2YjdjMjhkMWI5YTUyNDdhMDkxOTAxYTlhY2I2M2M0YzAyNTNjMTE5NWYzZDZlZTY2NDdhZDY",
-    "price": "$450.00"
+    "price": "$450.00",
+    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gato Adulto Receta Salmón, 2 kg"
   },
+
   {
     "title": "WholeHearted",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1Nzc0M3xpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDlhLzk0MDMyNTc3MTY3NjYuanBnfDQ5ZDdjMzNmZTM1NzlhN2NlZWJiM2JmMjg1NjcxOWRiNTYwZWIwYzIzOWZkZjAwNmFjZGI2YTk0YzRiOTMxNzg",
-    "price": "$850.00"
+    "price": "$850.00",
+    "descripcion": "WholeHearted Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5.4 kg"
+  },
+ 
+  {
+    "title": "Bravery",
+    "image": "https://www.petco.com.mx/medias/300ftw-143668.jpg?context=bWFzdGVyfHJvb3R8MzY4NTd8aW1hZ2UvanBlZ3xoMTIvaDBjLzEwODIyMDcxMzIwNjA2LzMwMGZ0d18xNDM2NjguanBnfDcxZGRkMDRiZGVhZGQ5NDY4ZTQyZThjMTg5OTk0ZTM4ZTNlYTkzMmVhMzU5ODdmNjliNGZmNjExNzJlMDI2Njk",
+    "price": "$450.00",
+    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gato Esterilizado Receta Pollo, 2 kg"
+  },
+  
+  {
+    "title": "Bravery",
+    "image": "https://www.petco.com.mx/medias/300ftw-143665.jpg?context=bWFzdGVyfHJvb3R8NDg5MjV8aW1hZ2UvanBlZ3xoYjUvaDUxLzEwODAxOTc2NDc1Njc4LzMwMGZ0d18xNDM2NjUuanBnfGM3YmRiNDczNjk5MmZkN2QyYWEwZDllOTgxYmExYzJlZmE2ZDM4MzJiYzFiMTcxYTY4MDM1MTQzNWMwNmMyMDM",
+    "price": "$450.00",
+    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gatito Receta Pollo, 2 kg"
   },
   {
-    "title": "Pro Plan",
-    "image": "https://www.petco.com.mx/medias/300ftw-118652.jpg?context=bWFzdGVyfHJvb3R8NTcyMTl8aW1hZ2UvanBlZ3xoMWEvaDg2LzExMDA4MDEzNDAyMTQyLzMwMGZ0d18xMTg2NTIuanBnfGY0OWUxOGQ4MGE1MGY3NTY0ZDAyYWZlMDcwN2FlNDkxZjZlYmQ0ZThmYTZmMjRmZmIwYTIxNDkyNzA2YTdhMTE",
-    "price": "$841.50"
-  }
+    "title": "Azoo",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NDEyM3xpbWFnZS9qcGVnfGltYWdlcy9oNDQvaGE5Lzk0MDAwNjkxOTM3NTguanBnfDU5NzEzZTNlNTQwMjlhMjc3ODFmNDA3ODQ0NjhlNDkzZmY2Y2VhYjg1MGI3ZGZlYmMyMTBjMTUzN2JjODBmNWE",
+    "price": "$451.25",
+    "descripcion": "Azooplus Alimento para Tortuga Acuática, 380 g"
+  },
+  {
+    "title": "Tetra",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1NTI4NnxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDhhLzk0NTc0NDAyMjczNTguanBnfGI2ZmNmNmJhYzk5ZWMyOTdiYzEwMzM5NGFmZGE2NWY3MDQ0MWFhYmI3ZGE5NDJlMjk2MGFjNjVkYTgwNmM5M2U",
+    "price": "$711.55",
+    "descripcion": "Tetra Reptomin Pellet Flotante para Tortuga Acuática, 650 g"
+  },
+  {
+    "title": "Mazuri",
+    "image": "https://www.petco.com.mx/medias/127514.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTAyMzl8aW1hZ2UvanBlZ3xoOGYvaDY5LzEwMDg1MDM3OTk4MTEwLzEyNzUxNC5qcGdfMzAwZnR3fGY2ODdiN2EzOWY2YTlhZDY0Y2QyNTFmNzcxMjQwMTk2YmQ2YzY0Yzk3ZWZkMGIxY2IwNzFlZmFjOWIyNTcwNmQ",
+    "price": "$232.75",
+    "descripcion": "Mazuri Tortoise Diet Alimento en Pellet para Tortuga, 500 g"
+  },
+  {
+    "title": "Zoo Med",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w5MTAyMnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDQ3Lzk0MDAxMTYzMTQxNDIuanBnfDQ0MmM1NDlhNGE4MWU5ZjY0Mzg0MjIzOGJlNDg0ZGQ3NzFlMDMwYmQ4NzBjNjcxNWUwYzRkNDJlZTEyMDAwNGM",
+    "price": "$217.55",
+    "descripcion": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g"
+  },
+  {
+    "title": "Tetra",
+    "image": "https://www.petco.com.mx/medias/106783.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTk5NTB8aW1hZ2UvanBlZ3xoMTYvaDZiLzEwNTA3NDAwMDE5OTk4LzEwNjc4My5qcGdfMzAwZnR3fDEzNWEzMTI0NWRlNjcwYjY0YzI1ZWI1ZjhiYTE1YTFhNmFlY2ZjZWM0OGU3ZjU1NjY3NTdiYTJjNWVjMjk0ZjI",
+    "price": "$308.75",
+    "descripcion": "Tetra Alimento Reptomin Palitos, 300 g"
+  },
+  {
+    "title": "Petmmal",
+    "image": "https://www.petco.com.mx/medias/106112.jpg-300ftw?context=bWFzdGVyfHJvb3R8OTE0ODN8aW1hZ2UvanBlZ3xoZDgvaDg2LzEwMzY2NDM2MjEyNzY2LzEwNjExMi5qcGdfMzAwZnR3fDJkMzA1MmNjYzQ4YTEwNDAwYmUyMzBhZTMwYjY5MmYwNmU0ZmE3NTViNmEzNTI5NjU2ZjQ0YmQ5NGIzYzAzZjg",
+    "price": "$199.50",
+    "descripcion": "Petmmal Alimento para Tortuga Tortugueta Vegetal, 500 g"
+  },
+  {
+    "title": "Zoo Med",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3OTI5M3xpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDA2LzkzNTM0NTg2MTQzMDIuanBnfGY0YWQxYjk3ZTkzMDg1MWRjNWYyMWM5ODIxNGY4NmNlMjgwOGJmODc5YzRjOTIyYjM3ZGUwNTY2ZTU5OTQxZjc",
+    "price": "$360.05",
+    "descripcion": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g"
+  },
+  {
+    "title": "Zoo Med",
+    "image": "https://www.petco.com.mx/medias/300ftw-127168.jpg?context=bWFzdGVyfHJvb3R8NzQ0NjB8aW1hZ2UvanBlZ3xoYTMvaDEzLzEwNzQxNDQ5NDI0OTI2LzMwMGZ0d18xMjcxNjguanBnfGRkNTgyYzYxNTViY2ZmZmRkOWViNWViMjg5Mzk4MDEwM2JiMGNkYmJlZTE3YmE3NWI2YWEwNTViMDE3ZmQ2NGE",
+    "price": "$160.55",
+    "descripcion": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g"
+  },
+  
+    {
+      "title": "You & Me",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNjY0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDkyLzk1MzUwMzU0NzM5NTAuanBnfDliODY0MDgwMWM0NzRhNDFhMDYyMzUwOGMwZjJkY2ZiM2EyYmM1ZTI2OTQ5MDU0MGQzYmUzYjMzOWUzN2NiZmQ",
+      "price": "$2,999.00",
+      "descripcion": "You & Me Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco"
+    },
+    {
+      "title": "You & Me",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyMDc5MHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDZhLzk1MzUwODcyNDczOTAuanBnfDYzNDkzYzdhMmJhOTFhMTVkN2NhNWVkOGY0YzZjZWNmM2E5ZmFhODU3OTM3MmE1NzQzZWVkNzE5MjBkZTJlNWI",
+      "price": "$419.40 Antes $699.00",
+      "descripcion": "You & Me Percha para Ventana con Memory Foam para Gato"
+    },
+    {
+      "title": "EveryYay",
+      "image": "https://www.petco.com.mx/medias/300ftw-142225.jpg?context=bWFzdGVyfHJvb3R8MjQxNzN8aW1hZ2UvanBlZ3xoMDQvaGZkLzEwNjA2NjA3NTY0ODMwLzMwMGZ0d18xNDIyMjUuanBnfGU2NjM2NTE4YWYxMTMzNTA1NDBiMmM2Nzc1ZjRmOGRlNzc0YWMzN2UyNmU1YjFmZTVjMmU4OWNkYmM1MWY1ZTA",
+      "price": "$1,619.40 Antes $2,699.00",
+      "descripcion": "EveryYay Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris"
+    },
+    {
+      "title": "EveryYay",
+      "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
+      "price": "$779.40 Antes $1,299.00",
+      "descripcion": "EveryYay Secret Hideout Condo Century con Cojín Extraíble para Gato"
+    },
+    {
+      "title": "EveryYay",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNTc1N3xpbWFnZS9qcGVnfGltYWdlcy9oNmIvaGU3Lzk1MzgzNjY3MzQzNjYuanBnfGMxNWVhY2E1ODBmMzUzOGMyMTc5NWVjZDQ1MGUwOTcwOWM0NzVjZTVjNjQ5OTRiODM1MTk1ZjZjNDc4Mjk2MTQ",
+      "price": "$1,079.40 Antes $1,799.00",
+      "descripcion": "EveryYay Mueble para Gatito Tipo Torre con Rampa"
+    },
+    {
+      "title": "EveryYay",
+      "image": "https://www.petco.com.mx/medias/300ftw-142229.jpg?context=bWFzdGVyfHJvb3R8MzQ4Mjd8aW1hZ2UvanBlZ3xoMjEvaGZhLzEwNjA2NjE1NzU2ODMwLzMwMGZ0d18xNDIyMjkuanBnfGUxZmI4YzBkOTEzYmFhZTc3OWJjNTlmNDVmYTU1MmQ3OTA3YmY5N2VkZjIzYWU1MjM3ZjJlMWI4MzRkZDQ0NGQ",
+      "price": "$1,679.40 Antes $2,799.00",
+      "descripcion": "EveryYay Mueble Tipo Torre con Guarida y Repisa para Gato, Beige"
+    }
+  
 ]
