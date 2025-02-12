@@ -1,5 +1,6 @@
 .row-seccion-cards {
-  background-color: #f2cc8f;
+  background-color: #f6f1dd;
+
   justify-content: center;
 }
 .resultados {
@@ -8,11 +9,34 @@
 }
 .card {
   color: black;
+  background-color: #f2cc8f;
 }
 .card #precio {
-  color: white;
+  color: black;
 }
 
 a {
   cursor: pointer;
+}
+
+@media (max-width: 948px) {
+  .row-seccion-cards {
+    background-color: #f6f1dd;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    height: 300px;
+    background-color: #f6f1dd;
+    border: none;
+  }
+  .card p {
+    width: 200px;
+    height: 80px;
+  }
+  .card-body {
+    background-color: #f2cc8f;
+  }
 }

@@ -2,8 +2,7 @@ const $seccionCards = document.getElementById("seccion-cards");
 const createCards = (producto) => {
   return `
     
-    <div class="card h-150 m-2" style="width: 12rem;background-color: #E07A5F;">
-      <a>  
+    <div class="card h-150 m-2" style="width:15rem;">
       <img
         src="${producto.image}"
         class="card-img-top"
@@ -15,7 +14,6 @@ const createCards = (producto) => {
         <p>${producto.descripcion}</p>
         <p id="precio">${producto.price}</p>
         </div>
-        </a>
     </div>
 `;
 };
