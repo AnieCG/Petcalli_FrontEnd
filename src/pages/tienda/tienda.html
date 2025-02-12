@@ -30,19 +30,22 @@
         <h2></h2>
       </section>
 
-      <section>
+      <section class="col-11">
         <!-- de productos y filtros -->
         <div class="row">
-          <div></div>
-          <!-- filtros -->
-          <div></div>
-          <!-- productos -->
-        </div>
-        <h2></h2>
-      </section>
+          <div class="col-4 d-none d-sm-block"> <!-- filtros -->
 
-      <section class="d-none d-sm-block">
-        <!-- carru. mas populares -->
+          </div>
+          <div class="col-lg-8 col-md-8 col-8">                       <!-- productos -->
+            <p class="resultados">12 de 36 resultados mostrados</p>
+            <div
+              class="row row-cols-3 row-seccion-cards m-5 p-2"
+              id="seccion-cards"
+            ></div>
+          </div>
+        </div>
+      </section>
+      <section class="d-none d-sm-block carruselMasPopulares">        <!-- carru. mas populares -->
         <section class="row">
           <h2 id="tituloCarrusel" class="text-center mb-4">Más Populares</h2>
           <div id="mostPopularContainer" class="container col-11">
@@ -56,74 +59,74 @@
                   <div class="carousel-item active">
                     <div class="row">
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/tienda/tienda.html">
                         <div class="card">
-                          <a href="/src/pages/tienda/tienda.html">
                             <img
                               src="https://m.media-amazon.com/images/I/71BsEhRcf+L._AC_SL1500_.jpg"
                               class="img-fluid"
                               alt="Dos medallas redondas con código QR"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/tienda/tienda.html">
                         <div class="card">
-                          <a href="/src/pages/tienda/tienda.html">
                             <img
                               src="https://m.media-amazon.com/images/I/61PNxgt963L._AC_SL1500_.jpg"
                               class="img-fluid"
                               alt="Dos jeringas de uso especial para instalación de microchip de localización con mascotas o animales de fondo"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/servicios/servicios.html">
                         <div class="card">
-                          <a href="/src/pages/servicios/servicios.html">
                             <img
                               src="/public-images/estetica2.png"
                               class="img-fluid"
                               alt="Estetica canina con dos tinas y dos trabajadoras con uniforme verde bañando un perro cada una"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
                     <div class="row">
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/tienda/tienda.html">
                         <div class="card">
-                          <a href="/src/pages/tienda/tienda.html">
                             <img
                               src="https://m.media-amazon.com/images/I/51K5hxWS5PL._AC_SL1000_.jpg"
                               class="img-fluid"
                               alt="Botella tipo atomizador color blanca de aceite de salmon con un filete de salmon al pie"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/servicios/servicios.html">
                         <div class="card">
-                          <a href="/src/pages/servicios/servicios.html">
                             <img
                               src="https://laboticaanimal.com/wp-content/uploads/2024/01/Imagen-de-WhatsApp-2024-01-15-a-las-00.56.52_35b57605.jpg"
                               class="img-fluid"
                               alt="Banner de servicio especializado para mascotas exoticas una piton amarilla como fondo"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                       <div class="col-md-4 col-sm-6">
+                        <a href="/src/pages/servicios/servicios.html">
                         <div class="card">
-                          <a href="/src/pages/servicios/servicios.html">
                             <img
                               src="https://scontent.fcvj2-2.fna.fbcdn.net/v/t1.6435-9/53886958_852553138411360_4738795970689499136_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZEc1pwUkHnAQ7kNvgGLXKw2&_nc_oc=AdiqhRMH4z5bpW-qB1JO-_eOrQ1WpGSXeOXi_7cOQYgCI43y4Uk4gkKdrkmdi0iQ95s&_nc_zt=23&_nc_ht=scontent.fcvj2-2.fna&_nc_gid=AvYaNMafZxUwKW1Fbd3BEju&oh=00_AYC3QUXYcE3QtwjplDk4FYW15qe7MKWDE2EQwoPstXtARg&oe=67D4499E"
                               class="img-fluid"
                               alt="Banner de residencia de animales exoticos con una imagen de jaula, pericos, hámsters"
                             />
-                          </a>
-                        </div>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -170,5 +173,6 @@
     ></script>
     <script src="/src/modules/footer/footer.js"></script>
     <script src="/src/modules/header/header.js"></script>
+    <script src="/src/pages/tienda/tienda.js"></script>
   </body>
 </html>
