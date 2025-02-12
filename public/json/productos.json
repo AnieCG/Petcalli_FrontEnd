@@ -1,68 +1,87 @@
 [
-    {
-      "nombre": "Nupec Croquetas para Perros Adulto Razas Pequeñas",
-      "precio": "$883.00",
-      "descripcion": "Alimento seco para perros adultos de razas pequeñas, formulado con ingredientes de alta calidad para una nutrición óptima.",
-      "imagen": "/public-images/estetica3.png"
-    },
-    {
-      "nombre": "Eukanuba Adult Chicken & Beef Lata",
-      "precio": "$85.00",
-      "descripcion": "Alimento húmedo para perros adultos con sabor a pollo y res, proporcionando una dieta equilibrada y deliciosa.",
-      "imagen": "/public-images/estetica3.png"
-    },
-    {
-      "nombre": "KONG Squeakair Balls 3 piezas",
-      "precio": "$135.00",
-      "descripcion": "Juego de 3 pelotas con sonido para perros, ideales para sesiones de juego y ejercicio.",
-      "imagen": "/public-images/estetica3.png"
-    },
-    {
-        "nombre": "Royal Canin Alimento Seco para Perro Adulto - Razas Medianas, 7.72 Kg",
-        "precio": "$1,840.00",
-        "descripcion": "Alimento seco formulado para perros adultos de razas medianas, proporcionando una nutrición equilibrada para mantener su salud y vitalidad.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Cama chica para mascota",
-        "precio": "$2,490.00",
-        "descripcion": "Cama pequeña y cómoda para mascotas, diseñada para brindar un lugar acogedor donde descansar.",
-        "imagen": "/public-images/estetica3.png"
-    },
-    {
-      "nombre": "Royal Canin Alimento Húmedo para Perro Adulto Todas las Razas, 385 g",
-      "precio": "$99.00",
-      "descripcion": "Alimento húmedo completo para perros adultos de todas las razas, ofreciendo una dieta equilibrada y sabrosa.",
-      "imagen": "/public-images/estetica3.png"
+  {
+    "title": "Un Dos Treats",
+    "image": "https://www.petco.com.mx/medias/125395.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTgxODh8aW1hZ2UvanBlZ3xoN2MvaDhmLzEwNDA3MTQzMjQzODA2LzEyNTM5NS5qcGdfMzAwZnR3fDhiN2U3MDQ4Mjg2YmY2OTYzOTZkZTBmZmFmOWJiMDhmOWNhNDM2YmY1YjExNzQyNWUwMTc5ZjRjNWJmODQ3Y2U",
+    "price": "$111.60"
   },
-    {
-      "nombre": "Aristopet Sudadera Augusto para Mascota",
-      "precio": "$990.00",
-      "descripcion": "Sudadera cómoda y moderna para mascotas, ideal para mantenerlas abrigadas en climas fríos.",
-      "imagen": "/public-images/estetica3.png"
+  {
+    "title": "Un Dos Treats",
+    "image": "https://www.petco.com.mx/medias/125393.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjAzNTh8aW1hZ2UvanBlZ3xoZWIvaDk1LzEwNDA3MTQwOTUwMDQ2LzEyNTM5My5qcGdfMzAwZnR3fGRiOTA2M2Y3MjdlNTg2ZjQwOTViYjQxNDVhNmY5OWM2YjE2ZDIxYTU2MWE0ZWE5MmI0YTEzZjA1Nzk2NGIzMzc",
+    "price": "$111.60"
   },
-      {
-        "nombre": "Aristopet Carriola para mascota XL Taupe",
-        "precio": "$7,990.00",
-        "descripcion": "Carriola extra grande para mascotas, ideal para paseos cómodos y seguros.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Cama para Mascota Maison",
-        "precio": "$2,990.00",
-        "descripcion": "Cama elegante para mascotas con diseño de casa, proporcionando un espacio privado y cómodo.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Filtro solar para perro, 75 ml",
-        "precio": "$290.00",
-        "descripcion": "Protector solar especialmente formulado para perros, ideal para proteger su piel de los rayos UV.",
-        "imagen": "/public-images/estetica3.png"
-    },
-      {
-        "nombre": "Aristopet Cama para mascota - Rosa",
-        "precio": "$4,590.00",
-        "descripcion": "Cama cómoda y estilizada en color rosa para mascotas, perfecta para un descanso placentero.",
-        "imagen": "/public-images/estetica3.png"
-    }
-  ]
+  {
+    "title": "La Galleteria",
+    "image": "https://www.petco.com.mx/medias/130680.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzk5MzF8aW1hZ2UvanBlZ3xoMmEvaGYxLzk2ODM2NTU3NTM3NTguanBnfDk0MGJlZmQ4MmFiMDQ1MjYyYzM3ZGFkMDNiZWE0MzdhNmM0MWE1MTc1NWRjYzNkNDJjOWYyN2JjZDFkNTYxMjA",
+    "price": "$36.00"
+  },
+  {
+    "title": "GoDog",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2OTc4MXxpbWFnZS9qcGVnfGltYWdlcy9oNTEvaGFhLzk1MDIwNzUzMjIzOTguanBnfDQ0NzVhZTU5YjQxNmVmNDkzNjU1Nzk5NWJhY2Q2MTJkMjJlMjA2ZGNlNTRhMzk1YzdmZWUyNmQxMzgyMjllM2E",
+    "price": "$329.00"
+  },
+  {
+    "title": "Leaps & Bounds",
+    "image": "https://www.petco.com.mx/medias/138372.jpg-300ftw?context=bWFzdGVyfHJvb3R8MjQ3Mzd8aW1hZ2UvanBlZ3xoNDgvaDI0LzEwMzY2NDUzMjUyMTI2LzEzODM3Mi5qcGdfMzAwZnR3fGFkYWI2NWM0YzI1ZjJiZTZmNWJjMGE1MTI0YmE2YWQxMjYxMDM0MjU3MGZlNTE1YWZlMjY0M2EyNDA4YWM1NTQ",
+    "price": "$299.25"
+  },
+  {
+    "title": "Fringe",
+    "image": "https://www.petco.com.mx/medias/300ftw-147335.jpg?context=bWFzdGVyfHJvb3R8MzI1NDl8aW1hZ2UvanBlZ3xoOTgvaDc5LzEwOTE2NTg5MjQwMzUwLzMwMGZ0d18xNDczMzUuanBnfDM2OWIxYTRiMTQyYjEwNTZiMGU3OTkxMGQ0NTI3MjFkZGZiOWYxYzVhMGZhYTI4NGUxODU5NWE3MmE5MDJhMTQ",
+    "price": "$74.70"
+  },
+  {
+    "title": "Chuckit!",
+    "image": "https://www.petco.com.mx/medias/300ftw-144173.jpg?context=bWFzdGVyfHJvb3R8MTk0NDN8aW1hZ2UvanBlZ3xoZTQvaDhiLzEwNzk5MzIwNzI3NTgyLzMwMGZ0d18xNDQxNzMuanBnfDQzOTNkNmE5NWZkYzE0MWYzZDFlMzc3YzA0YjdjNWFmN2ZiYjJhZTZjMGZhNDg4Zjk0OTc2NTk3MzU4YjQ2NGQ",
+    "price": "$119.00"
+  },
+  {
+    "title": "Bark",
+    "image": "https://www.petco.com.mx/medias/140193.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzk3NTl8aW1hZ2UvanBlZ3xoMTEvaGI2LzEwMjUxMjA5OTAwMDYyLzE0MDE5My5qcGdfMzAwZnR3fDY1NTUyOTk3YjJlMDE0ZDg0OWUwNjFkYmRjNWJjYjc4ODg2NTZhZjNmOTBjNjkyZWY2MDAxMTRkMzQ2MGNkZmQ",
+    "price": "$229.00"
+  },
+  {
+    "title": "Fringe",
+    "image": "https://www.petco.com.mx/medias/300ftw-147825.jpg?context=bWFzdGVyfHJvb3R8OTM0OTJ8aW1hZ2UvanBlZ3xoZDEvaDIzLzExMDA4MDg3NDU3ODIyLzMwMGZ0d18xNDc4MjUuanBnfDI5YmNlZGI1MWRjMDE1ZDJlODg5ZDI1M2NlMTdiYzQ3MjhhYWYyODRiNmZmMTNlNDk4N2ViZjQyZDFiNTk5YjE",
+    "price": "$299.00"
+  },
+  {
+    "title": "Royal Canin",
+    "image": "https://www.petco.com.mx/medias/104805.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDU4Nzh8aW1hZ2UvanBlZ3xoYmQvaGIxLzk5MTQ0NDE2Mjk3MjYvMTA0ODA1LmpwZ18zMDBmdHd8OWU5YzMxOTVjZjA2OTRlZGEyYTFmZjY0MjNkZjY5NmJkMTQ5YWZlODFlZTVlOGM5ZWEzZWM2MGRlMTFjNTM4Mw",
+    "price": "$675.00"
+  },
+  {
+    "title": "Hill's Science Diet",
+    "image": "https://www.petco.com.mx/medias/114696.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjU4MDF8aW1hZ2UvanBlZ3xoZWIvaDc2LzEwMzgzMDM2OTQwMzE4LzExNDY5Ni5qcGdfMzAwZnR3fDU0MWJlZGZkMjQ5YTQ1ODJmYWY1ODhiM2JjY2FjYmI1NDk0YmI1N2U3MjVkYjgzNjhhN2I2MjFmNmMyOWU3OTI",
+    "price": "$1,225.50"
+  },
+  {
+    "title": "Royal Canin",
+    "image": "https://www.petco.com.mx/medias/104789.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzMwMDF8aW1hZ2UvanBlZ3xoOTIvaDE0LzEwMzgyNzM3NDA4MDMwLzEwNDc4OS5qcGdfMzAwZnR3fGIyMGFmOGE3NTA2Y2Y4YzllNzhmN2M3NGJjMDIwMGFhYWE3ZGNiNmIxODdlODA3MDQzMjEwMDhlMTFiMDE0Nzk",
+    "price": "$788.40"
+  },
+  {
+    "title": "Instinct",
+    "image": "https://www.petco.com.mx/medias/114115.jpg-300ftw?context=bWFzdGVyfHJvb3R8ODIzNzB8aW1hZ2UvanBlZ3xoM2QvaGM4Lzk4MzcwODk2NTI3NjYvMTE0MTE1LmpwZ18zMDBmdHd8N2QxYzM1ZGNkNzdjMDFlYTUxYTQwNWM1ZWIyZmNlYzE1ZmQ0YzRkMDBjNjE4YWYyY2U2YzI0ZWU2NDUxZjFmYg",
+    "price": "$1,395.00"
+  },
+  {
+    "title": "Royal Canin",
+    "image": "https://www.petco.com.mx/medias/104803.jpg-300ftw?context=bWFzdGVyfHJvb3R8MjgyOTl8aW1hZ2UvanBlZ3xoNjEvaGYyLzEwMzgyNzM5NzAxNzkwLzEwNDgwMy5qcGdfMzAwZnR3fDRlMWU2ODAzNTY5NGVmYWNlZjNjN2FiMmNhZWM4OTM5ZTZjMTc2YzQ2MzdjMjc4MmM4ZTc0MDM5Yzk1YmI4NWQ",
+    "price": "$900.00"
+  },
+  {
+    "title": "Bravery",
+    "image": "https://www.petco.com.mx/medias/300ftw-143666.jpg?context=bWFzdGVyfHJvb3R8NTg1Nzd8aW1hZ2UvanBlZ3xoM2EvaGQ1LzEwODAxNzQ1NTU5NTgyLzMwMGZ0d18xNDM2NjYuanBnfDQ2ZWIzMDlkZGM2YjdjMjhkMWI5YTUyNDdhMDkxOTAxYTlhY2I2M2M0YzAyNTNjMTE5NWYzZDZlZTY2NDdhZDY",
+    "price": "$450.00"
+  },
+  {
+    "title": "WholeHearted",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1Nzc0M3xpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDlhLzk0MDMyNTc3MTY3NjYuanBnfDQ5ZDdjMzNmZTM1NzlhN2NlZWJiM2JmMjg1NjcxOWRiNTYwZWIwYzIzOWZkZjAwNmFjZGI2YTk0YzRiOTMxNzg",
+    "price": "$850.00"
+  },
+  {
+    "title": "Pro Plan",
+    "image": "https://www.petco.com.mx/medias/300ftw-118652.jpg?context=bWFzdGVyfHJvb3R8NTcyMTl8aW1hZ2UvanBlZ3xoMWEvaDg2LzExMDA4MDEzNDAyMTQyLzMwMGZ0d18xMTg2NTIuanBnfGY0OWUxOGQ4MGE1MGY3NTY0ZDAyYWZlMDcwN2FlNDkxZjZlYmQ0ZThmYTZmMjRmZmIwYTIxNDkyNzA2YTdhMTE",
+    "price": "$841.50"
+  }
+]

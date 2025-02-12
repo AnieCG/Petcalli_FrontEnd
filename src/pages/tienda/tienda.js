@@ -3,18 +3,18 @@ const createCards = (producto) => {
   return `
     <div class="card h-100 m-2" style="width: 14rem;background-color: #E07A5F;">
         <img
-        src="${producto.imagen}"
+        src="${producto.image}"
         class="card-img-top"
         alt="Imagen de producto"
         id="image"
         />
         <div class="card-body">
         <h5 class="card-title" id="nombre-producto">${
-          producto.nombre.length > 30
-            ? producto.nombre.slice(0, 24) + "..."
-            : producto.nombre
+          producto.title.length > 30
+            ? producto.title.slice(0, 24) + "..."
+            : producto.title
         }</h5>
-        <p id="precio">${producto.precio}</p>
+        <p id="precio">${producto.price}</p>
         </div>
     </div>
 `;
