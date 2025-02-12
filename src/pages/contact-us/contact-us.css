@@ -28,19 +28,3 @@
     margin: auto;
   }
 }
-
-.button-submit_disabled {
-  border: 1px solid #c4c4c4;
-  background-color: transparent;
-  color: #c4c4c4;
-  cursor: none;
-}
-
-.input-error_active {
-  opacity: 1;
-}
-
-.input_type-error {
-  border: 2px solid red;
-  background-color: #ffe6e6;
-}
