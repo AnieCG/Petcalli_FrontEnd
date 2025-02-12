@@ -10,7 +10,7 @@ const createCards = (producto) => {
         />
         <div class="card-body">
         <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
-        <p id="precio">${producto.descripcion}</p>
+        <p>${producto.descripcion}</p>
         <p id="precio">${producto.price}</p>
         </div>
     </div>
