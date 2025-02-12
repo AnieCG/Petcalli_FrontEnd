@@ -17,35 +17,43 @@
 </head>
 
 <body>
-  <main class="pt-5">
-    <div class="container-contact"> 
-      <section class="d-flex flex-column justify-content-center contact-us">
-        <h2 class="display-2 fw-bold">Petcalli</h2>
-        <h3 class="display-5 text-center fw-bold">Contáctanos</h3>
-  
-        <form class="contact_form container p-5">
-          <div class="mb-3  d-flex flex-column align-items-center">
-            <input type="text" class="form-control" w-75" id="exampleInputName">
-            <label for="exampleInputName" class="form-label text-start w-100">Nombre Completo</label>
-          </div>
-          <div class="mb-3  d-flex flex-column align-items-center">
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <label for="exampleInputEmail1" class="form-label text-start w-100">Correo Electronico</label>
-          </div>
-          <div class="mb-3  d-flex flex-column align-items-center">
-            <input type="text" class="form-control" id="exampleInputMessage">
-            <label for="exampleInputMessage" class="form-label text-start w-100">Mensaje</label>
-          </div>
-          <button type="submit" class="btn text-center text-white w-75 button">Enviar mensaje</button>
-        </form>
-      </section>
-    </div>
-    
+  <header>
+    <nav id="navbar"></nav>
+  </header>
+  <main>
+    <section class="contact-us pb-5">
+      <!--<h2 class="display-2 fw-bold ps-2 ps-md-5 pt-5">Petcalli</h2> <!-- Se le agrega ps -->
+      <h3 class="display-5 text-center fw-bold mb-5 pt-5">Contáctanos</h3> <!-- Se le agrega mb -->
 
+      <form class="contact_form container p-4 border rounded-5"> <!-- se le agrega borde -->
+        <div class="mb-3 container__input">
+          <input type="text" class="form-control" id="exampleInputName"> <!-- Se les agrega w-75 -->
+          <label for="exampleInputName" class="form-label">Nombre Completo</label>
+        </div>
+        <div class="mb-3  container__input">
+          <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
+          <label for="exampleInputEmail" class="form-label">Correo Electronico</label>
+        </div>
+        <div class="mb-3  container__input">
+          <input type="tel" class="form-control" id="exampleInputTel">
+          <label for="exampleInputTel" class="form-label">Teléfono</label>
+        </div>
+        <div class="mb-3 container__input">
+          <input type="text" class="form-control input_height" id="exampleInputMessage">
+          <label for="exampleInputMessage" class="form-label">Mensaje</label>
+        </div>
+        <div class="d-flex justify-content-center"> <!-- Se agrega div -->
+          <button type="submit" class="btn text-white w-50 button">Enviar mensaje</button>
+        </div>
+      </form>
+    </section>
   </main>
+  <footer id="footer"></footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+  <script type="module" src="/src/modules/nav/nav.js"></script>
+  <script type="module" src="/src/modules/footer/footer.js"></script>
 </body>
 
 </html>
