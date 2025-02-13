@@ -1,39 +1,34 @@
-
-
-
-
-main{
-
-#filtro {
+main {
+  #filtro {
     background-color: var(--block-images1);
     border-radius: 20px;
     padding-left: 0;
 
     h2 {
-    color: var(--subtitle);
-    text-align:start;
-    font-size:larger;
-    font-family: var(--font_subtitle);
+      color: var(--subtitle);
+      text-align: start;
+      font-size: larger;
+      font-family: var(--font_subtitle);
     }
 
     .form-check-input {
-        background-color: var(--block-images1);
+      background-color: var(--block-images1);
     }
 
     .form-check-label {
-        font-family: var(--font_text);
-        font-size: medium;
+      font-family: var(--font_text);
+      font-size: medium;
     }
     .list-group {
-        text-align: start;
+      text-align: start;
     }
   }
 
-.conteiner {
+  .conteiner {
     padding-left: 5rem;
+  }
 }
-}
- 
+
 .petSelection {
   .animal {
     /* cartas animales */
@@ -99,7 +94,6 @@ a {
     height: 80px;
   }
 }
-
 
 .row-seccion-cards {
   background-color: #f6f1dd;
