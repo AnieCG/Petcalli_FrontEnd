@@ -1,22 +1,23 @@
 .petSelection {
   .animal {
     /* cartas animales */
-    width: 17rem;
-    height: 12rem;
+ 
+    width: 250px;
+    height: 240px;
     background-color: #F2CC8F;
 
   }
 
   .img-pets {
-    width: 17rem;
-    height: 9rem;
+    width: 250px;
+    height: 200px;
     border-radius: 40%;
   }
 
   .carouselAnimals {
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #F2CC8F;
-    height: 17.5rem;
+    height: 360px;
     border-radius: 5cap;
   }
 
@@ -24,10 +25,6 @@
     color: #81B29A;
   }
 
-  button {
-
-
-  }
 }
 
 a {
