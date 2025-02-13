@@ -10,12 +10,43 @@
 //stopPropagation: previene que el evento se propague, deteniendo la burbuja del evento
 //was-validated: es una clase de bootstrap que añade los estados de validación o invalidación de acuerdo a su estado.
 
+const checkFormValidity = () => {
+  const name = document.querySelector("#validationCustom01");
+  const telephone = document.querySelector("#validationCustom03");
+  /*   const message = document.querySelector("#validationCustom04");
+   */ const submitButton = document.querySelector(".button");
+
+  const isNameValid =
+    name.value.trim() !== "" &&
+    name.value.length >= 5 &&
+    name.value.length <= 31;
+
+  const isTelephoneValid =
+    telephone.value.trim() !== "" &&
+    /^\d+$/.test(telephone.value) &&
+    telephone.value.length >= 10;
+
+  /*  const isMessageValid =
+    message.value.trim() !== "" &&
+    message.value.length >= 10 &&
+    message.value.length <= 150;*/
+
+  submitButton.disabled = !(isNameValid && isTelephoneValid);
+};
+
+document
+  .querySelector("#validationCustom01")
+  .addEventListener("input", checkFormValidity);
+document
+  .querySelector("#validationCustom03")
+  .addEventListener("input", checkFormValidity);
+
+document.addEventListener("DOMContentLoaded", checkFormValidity);
+
 (function () {
-  "use strict";
-
   const forms = document.querySelectorAll(".needs-validation");
-
   Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener("input", checkFormValidity);
     form.addEventListener(
       "submit",
       function (event) {
@@ -28,5 +59,8 @@
       },
       false
     );
+  });
+  document.addEventListener("DOMContentLoaded", () => {
+    forms.forEach((form) => checkFormValidity.call(form));
   });
 })();
