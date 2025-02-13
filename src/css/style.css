@@ -128,15 +128,4 @@ footer {
     width: 20px;
     cursor: pointer;
   }
-
 }
-
-
-
-
-/* Tienda */
-#mostPopularContainer{
-  background-color: var(--block-images2);
-  border-radius: 20px;
-}
-
