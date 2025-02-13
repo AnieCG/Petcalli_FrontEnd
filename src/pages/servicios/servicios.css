@@ -3,8 +3,8 @@
     perspective: 1000px;
     width: 18rem;
     height: 300px; 
-    margin: 20px; /* Espacio entre tarjetas */
-    cursor: url('/public-images/huella-cursor.png'), auto; /* Cambia el cursor a una garrita de perrito */
+    margin: 40px; /* Espacio entre tarjetas */
+    cursor: url('/public-images/huellas-cursor.png'), auto; /* Cambia el cursor a una garrita de perrito */
 }
 
 .flip-card-inner {
