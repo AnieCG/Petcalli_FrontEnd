@@ -1,19 +1,30 @@
-:root {
-    --title: #81b29a;
-    --subtitle: #3d405b;
-    --block-images1: #e07a5f;
-    --block-images2: #f2cc8f;
-    --background_page: #f6f1dd;
-    --font_title: "Baloo Thambi 2", serif;
-    --font_subtitle: "Fira Sans Condensed", serif;
-    --font_text: "Hind Guntur", serif;
+.contact-us {
+  background-color: var(--background_page);
+  font-family: var(--font_text);
+  background-image: url(./images/background-contact.png);
+  max-width: 1920px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h3 {
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
   }
 
-  #dog {
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    margin-left: 200px;
-    margin-right: 200px;
+  .contact_form {
+    background-color: var(--block-images2);
   }
-  
+
+  .button {
+    background-color: var(--block-images1);
+  }
+
+  .input_height {
+    min-height: 150px;
+  }
+
+  .container__input {
+    max-width: 920px;
+    margin: auto;
+  }
+}
