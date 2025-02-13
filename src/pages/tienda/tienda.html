@@ -1,132 +1,286 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <!-- rutas absolutas en archivos js
+
+<head>
+  <!-- rutas absolutas en archivos js
          rutas relativas imagenes -->
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Petcalli</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet" />
-        <link rel="stylesheet" href="/src/css/style.css" />
-      </head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Petcalli</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <link rel="stylesheet" href="./tienda.css" />
+</head>
+
 <body>
-    <header id="header" class="container-fluid">
-    </header>
+  <header id="header" class="container-fluid">
+  </header>
 
-    <main>
-        <section> <!-- Carru. selec. mascota -->
-            <h2></h2>
-        </section>
+  <main>
+    <section> <!-- Carru. selec. mascota -->
+      
 
-        <section> <!-- de productos y filtros -->
+      <div class="container border col-10 carouselAnimals">
+        <h2 class="text-center align-bottom">Categoría por mascota</h2>
+        <div id="carouselAnimales" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- <div class="container col-9 mt-5"> -->
+              <div class="carousel-item active">
+                <!-- primer seccion de animales-->
+                <div class="row">
+
+                  <div class="col align-bottom">
+                    <div class="card animal border border-0 ">
+                      <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                      <div class="card-body">
+                        <a href="../about/Acerca_de_nosotros.html">
+                          <h5 class="card-title text-center">Gatos</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col align-bottom">
+                    <div class="card animal border border-0 ">
+                      <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                      <div class="card-body">
+                        <a href="../about/Acerca_de_nosotros.html">
+                          <h5 class="card-title text-center">Perros</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col align-bottom">
+                    <div class="card animal border border-0 ">
+                      <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                      <div class="card-body">
+                        <a href="../about/Acerca_de_nosotros.html">
+                          <h5 class="card-title text-center">Tortugas</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col align-bottom">
+                    <div class="card animal border border-0 ">
+                      <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                      <div class="card-body">
+                        <a href="../about/Acerca_de_nosotros.html">
+                          <h5 class="card-title text-center">Aves</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col align-bottom">
+                    <div class="card animal border border-0 ">
+                      <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                      <div class="card-body">
+                        <a href="../about/Acerca_de_nosotros.html">
+                          <h5 class="card-title text-center">Mini-pigs</h5>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div> <!-- final del -->
+              </div>
+            <!-- </div> -->
+          </div>
+          <!-- segunda seccion de animales-->
+          <div class="carousel-item">
             <div class="row">
-                <div></div><!-- filtros -->
-                <div></div><!-- productos -->
-            </div>
-            <h2></h2>
-        </section>
 
-        <section> <!-- carru. mas populares -->
-           <section class="row">
-            <div id="mostPopularContainer" class="container col-11">
-            <div class="container col-9 mt-5">
-                <h2 class="text-center mb-4">Más Populares</h2>
-                <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\chip_para_mascotas.jpg" class="card-img-top 300x200" alt="Kit Completo">
-                            <div class="card-body">
-                              <h5 class="card-title">El Kit Completo</h5>
-                              <p class="card-text">Contiene chip NFC, llavero personalizado y más.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\Hospivet.avif" class="card-img-top" alt="Microchip">
-                            <div class="card-body">
-                              <h5 class="card-title">Microchip</h5>
-                              <p class="card-text">Incluye aguja, microchip y mango ergonómico.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\Ludos_toallitas_humedas.webp" class="card-img-top" alt="Registro Animal">
-                            <div class="card-body">
-                              <h5 class="card-title">Registro Animal México</h5>
-                              <p class="card-text">Información esencial para vincular el chip.</p>
-                            </div>
-                          </div>
+              <div class="col align-bottom">
+                <div class="card animal border border-0 ">
+                  <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                  <div class="card-body">
+                    <a href="../about/Acerca_de_nosotros.html">
+                      <h5 class="card-title text-center">Rumiantes</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-bottom">
+                <div class="card animal border border-0 ">
+                  <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                  <div class="card-body">
+                    <a href="../about/Acerca_de_nosotros.html">
+                      <h5 class="card-title text-center">Conejos</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-bottom">
+                <div class="card animal border border-0 ">
+                  <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                  <div class="card-body">
+                    <a href="../about/Acerca_de_nosotros.html">
+                      <h5 class="card-title text-center">Hamsters</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-bottom">
+                <div class="card animal border border-0 ">
+                  <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                  <div class="card-body">
+                    <a href="../about/Acerca_de_nosotros.html">
+                      <h5 class="card-title text-center">Cuyos</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col align-bottom">
+                <div class="card animal border border-0 ">
+                  <a href="#"><img src="/public-images/estetica.png" class="card-img-top img-fluid img-pets " alt="Foto de perrito"></a>
+                  <div class="card-body">
+                    <a href="../about/Acerca_de_nosotros.html">
+                      <h5 class="card-title text-center">Peces</h5>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section> <!-- de productos y filtros -->
+      <div class="row">
+        <div></div><!-- filtros -->
+        <div></div><!-- productos -->
+      </div>
+      <h2></h2>
+    </section>
+
+    <section> <!-- carru. mas populares -->
+      <section class="row">
+        <div id="mostPopularContainer" class="container col-11">
+          <div class="container col-9 mt-5">
+            <h2 class="text-center mb-4">Más Populares</h2>
+            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\chip_para_mascotas.jpg" class="card-img-top 300x200"
+                          alt="Kit Completo">
+                        <div class="card-body">
+                          <h5 class="card-title">El Kit Completo</h5>
+                          <p class="card-text">Contiene chip NFC, llavero personalizado y más.</p>
                         </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\Aceite_d_ salmon_para_perros_y_gatos.webp" class="card-img-top" alt="Kit Completo">
-                            <div class="card-body">
-                              <h5 class="card-title">Kit Extra</h5>
-                              <p class="card-text">Accesorios adicionales para tu mascota.</p>
-                            </div>
-                          </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\Hospivet.avif" class="card-img-top" alt="Microchip">
+                        <div class="card-body">
+                          <h5 class="card-title">Microchip</h5>
+                          <p class="card-text">Incluye aguja, microchip y mango ergonómico.</p>
                         </div>
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\Estetica_pomerania.jpg" class="card-img-top" alt="Microchip">
-                            <div class="card-body">
-                              <h5 class="card-title">Herramienta Especial</h5>
-                              <p class="card-text">Facilita la implantación del microchip.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="card">
-                            <img src="/public-images\Guarderia_loros.jpg" class="card-img-top" alt="Registro Animal">
-                            <div class="card-body">
-                              <h5 class="card-title">Guía de Registro</h5>
-                              <p class="card-text">Pasos para completar el registro animal.</p>
-                            </div>
-                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\Ludos_toallitas_humedas.webp" class="card-img-top"
+                          alt="Registro Animal">
+                        <div class="card-body">
+                          <h5 class="card-title">Registro Animal México</h5>
+                          <p class="card-text">Información esencial para vincular el chip.</p>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                  </button>
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\Aceite_d_ salmon_para_perros_y_gatos.webp" class="card-img-top"
+                          alt="Kit Completo">
+                        <div class="card-body">
+                          <h5 class="card-title">Kit Extra</h5>
+                          <p class="card-text">Accesorios adicionales para tu mascota.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\Estetica_pomerania.jpg" class="card-img-top" alt="Microchip">
+                        <div class="card-body">
+                          <h5 class="card-title">Herramienta Especial</h5>
+                          <p class="card-text">Facilita la implantación del microchip.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <img src="/public-images\Guarderia_loros.jpg" class="card-img-top" alt="Registro Animal">
+                        <div class="card-body">
+                          <h5 class="card-title">Guía de Registro</h5>
+                          <p class="card-text">Pasos para completar el registro animal.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
             </div>
-           </section>
+          </div>
+        </div>
+      </section>
 
 
-          </section>
-    </main>
+    </section>
+  </main>
 
 
-    <footer id="footer">
-        <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-      <script src="/src/modules/footer/footer.js"></script>
-      <script src="/src/modules/header/header.js"></script>
+  <footer id="footer">
+    <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="/src/modules/footer/footer.js"></script>
+  <script src="/src/modules/header/header.js"></script>
 </body>
+
 </html>

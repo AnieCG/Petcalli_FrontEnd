@@ -1,0 +1,21 @@
+.animal { /* cartas animales */
+    width: 11rem;
+    height: 10rem;
+    background-color: #F2CC8F;
+
+}
+.img-pets{
+    width: 11rem;
+    height: 8rem;
+    border-radius: 40%;
+}
+
+.carouselAnimals{ /* Contenedor del carrusel de categoria de mascotas */
+    background-color: #F2CC8F; 
+    height: 15rem;
+    border-radius: 5cap;
+}
+
+a{
+    color: black;
+}
