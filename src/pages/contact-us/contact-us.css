@@ -1,11 +1,10 @@
 .contact-us {
   background-color: var(--background_page);
   font-family: var(--font_text);
-
-  h2 {
-    color: var(--title);
-    font-family: var(--font_title);
-  }
+  background-image: url(./images/background-contact.png);
+  max-width: 1920px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   h3 {
     font-family: var(--font_subtitle);
@@ -18,5 +17,14 @@
 
   .button {
     background-color: var(--block-images1);
+  }
+
+  .input_height {
+    min-height: 150px;
+  }
+
+  .container__input {
+    max-width: 920px;
+    margin: auto;
   }
 }
