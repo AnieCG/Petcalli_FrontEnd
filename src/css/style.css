@@ -103,19 +103,19 @@ header {
 
 .daycare {
   width: 100%;
-  height: 250px; 
+  height: 250px;
   margin: 40px;
-  object-fit: cover; 
-  border-radius: 10px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 
-footer{
+footer {
   background-color: #e07a5f;
   padding-block: 30px;
 
   a {
-      text-decoration: none;
-      color: black;
+    text-decoration: none;
+    color: black;
   }
 
   .metodos-pago {
@@ -130,13 +130,3 @@ footer{
   }
 
 }
-
-<<<<<<< HEAD
-
-=======
-/* Tienda */
-#mostPopularContainer{
-  background-color: var(--block-images2);
-  border-radius: 20px;
-}
->>>>>>> carruselMasPopulares
