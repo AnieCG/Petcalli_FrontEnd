@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,78 +15,134 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/pages/about/about.css" />
+    <link rel="stylesheet" href="/src/pages/servicios/servicios.css">
 
 </head>
 
-<header id="header" class="container-fluid"></header>
+<header id="header" class="container-fluid"><nav id="navbar"></nav></header>
 
 <body>
+    <!-- Banner Servicios  -->
+    <div class="container-fluid text-center p-0 banner-servicios">
+        <p>En Petcalli nos preocupamos por el bienestar de tu mascota y por ello, te recomendamos
+            algunos establecimientos que serán auxiliares en su cuidado, higiene y diversión;
+            porque devolverles el amor que nos dan, está en nuestras manos.</p>
+    </div>
 
+<<<<<<< HEAD
     <div class="container mt-4">
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium pariatur facere excepturi! Iste velit error ad suscipit dolorem facilis, ut quo at? Placeat nemo temporibus amet reprehenderit nisi tenetur perferendis.</p>
     </section>
+=======
+    <!-- Sección Hopitales veterinarios -->
+    <div class="container-fluid text-center p-2">
+        <h1>Hospitales Veterinarios</h1>
+    </div>
+    <div class="container ">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 d-flex align-items-stretch" >
+            <!-- primera tarjeta  -->
+            <div class="col" id="tarjetas-servicios" >
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card ">
+                                <img src="/public-images/veterinario1.png" class="card-img-top" alt="veterinario1">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="card-text mb-0 me-2">Centro Veterinario Granados </p>
+                                    </div>
+                                </div>
+>>>>>>> 3dc6e6fbef74d3d49f6b5a3d74b9aa9b2a787b3f
 
-        <div class="container mt-4">
-            <div class="row">
-                <!-- Tarjeta 1 -->
-                <div class="col-md-3 col-6 mb-3">
-                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-inner">
-                            <!-- Frente -->
-                            <div class="flip-front">
-                                <img src ="/public-images/veterinario1.png" class="w-100 h-100 object-fit-cover rounded" alt="Veterinario 1">
                             </div>
-                            <!-- Parte trasera -->
-                            <div class="flip-back">
-                                Av. Guillermo Prieto 230.
-                                Santa Ana Sur.Tláhuac. 13360
-                                Ciudad de México, CDMX, México
-                                Contacto:55-53-32-3253
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">Av.Guillermo Prieto 230. Santa Ana Sur. Tláhuac,13360 Ciudad de
+                                        México, CDMX.<br> Contacto: 55-53-32-32-52</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Tarjeta 2 -->
-                <div class="col-md-3 col-6 mb-3">
-                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-inner">
-                            <div class="flip-front">
-                                <img src="/public-images/veterinario2.png" class="w-100 h-100 object-fit-cover rounded" alt="Veterinario 2">
+            </div>
+            <!-- segunda tarjeta -->
+            <div class="col" id="tarjetas-servicios">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/veterinario2.png" class="card-img-top" alt="veterinario2">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="card-text mb-0 me-2">Hospital Veterinario del Sur </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="flip-back">
-                                Viaducto Tlalpan 4806
-                                Niño Jesús, Tlalpan.
-                                Contacto:55-32-56-86-22
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text"> Av. Cuauhtémoc No.754, Narvarte Poniente, Benito Juárez, 03020
+                                        Ciudad de México, CDMX Contacto: 55-62-22-12-35</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Tarjeta 3 -->
-                <div class="col-md-3 col-6 mb-3">
-                    <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                        <div class="flip-inner">
-                            <div class="flip-front">
-                                <img src="/public-images/veterinario3.png" class="w-100 h-100 object-fit-cover rounded" alt="Veterinario 3">
-                            </div>
-                            <div class="flip-back">
-                                Nebraska 151, Nápoles.
-                                Benito Juárez 03810
-                                Ciudad de México, México
-                                Contacto: 55-65-34-86-01
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
-                <!-- Tarjeta 4 -->
-        <div class="col-md-3 col-6 mb-3">
-            <div class="flip-card" onclick="this.classList.toggle('flipped')">
-                <div class="flip-inner">
-                    <div class="flip-front">
-                        <img src="/public-images/veterinario4.png" class="w-100 h-100 object-fit-cover rounded" alt="veterinario 4">
+            <!--    tercera tarjeta -->
+            <div class="col" id="tarjetas-servicios">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem; height: 100%; ">
+                                <img src="/public-images/veterinario3.png" class="card-img-top" alt="veterinario3">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="card-text mb-0 me-2">Aztecan Hospital Veterinario </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">Viaducto Tlalpan 4806.Niño Jesús Tlalpan Contacto:
+                                        55-32-56-86-22</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+            <!-- cuarta tarjeta  -->
+            <div class="col " id="tarjetas-servicios">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/veterinario4.png" class="card-img-top" alt="veterinario4">
+                                <div class="card-body d-flex">
+                                    <div class=" align-items-center justify-content-between">
+                                        <p class="card-text  me-2">Hospital Veterinario de Alta Especialidad DELTA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">Nebraska 151, Nápoles, Benito Juárez, 03810 Ciudad de México,
+                                        México Contacto: 55-65-34-86-01</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<<<<<<< HEAD
                     <div class="flip-back">
                         Av. Cuahutemoc. No.754,
                         Narvarte Poniente, Benito Juárez,
@@ -100,50 +157,62 @@
             error ad suscipit dolorem facilis, ut quo at? Placeat nemo temporibus amet reprehenderit nisi tenetur
             perferendis.</p>
     </section>
-
-    <section class="section2">
-        <p>CARTAS VETERINARIO</p>
-    </section>
-
-    <!-- seccion de guarderias -->
-    <h2 class="h2 text-center">Guarderías</h2>
-    <div class="container-fluid" style="background-color: #e07a5f;">
-        <div class="row align-items-center text-center">
-            <div class="col-10 col-md-6 d-flex justify-content-center">
-                <img src="./../../../public-images/guarderias.png" alt="Establecimiento de la guardería Pet Central." class="img-fluid daycare">
-            </div>
-            <div class="col-12 col-md-6">
-                <ul class="list-unstyled" style="font-size: 26px;">
-                    <li><a href="https://www.adventuredogcamp.com/">Adventure Dog Camp</a></li>
-                    <li><a href="https://www.thewoofpark.com/">WoofPark</a></li>
-                    <li><a href="https://www.inteligenciacanina.com/escuela-para-perros-cdmx">Inteligencia Canina</a></li>
-                    <li><a href="https://www.facebook.com/PetCentralMexico/">Pet Central</a></li>
-                </ul>
+=======
+                </div>
             </div>
         </div>
     </div>
 
-     <!-- seccion de esteticas -->
-      
-<h2 class="h2 text-center">Estéticas</h2>
-<section >
-    <div class="container d-flex row">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="card">
-                        <img src="../../../public-images/estetica.png" class="card-img-top" alt="Frente">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Doggy Wash</strong></p>
+>>>>>>> 3dc6e6fbef74d3d49f6b5a3d74b9aa9b2a787b3f
+
+
+    <!-- seccion de guarderias -->
+    <section style="margin: 2rem;">
+        <h1 class="text-center">Guarderías</h1>
+        <div class="container-fluid" style="background-color: #e07a5f;">
+            <div class="row align-items-center text-center">
+                <div class="col-10 col-md-6 d-flex justify-content-center">
+                    <img src="./../../../public-images/guarderias.png"
+                        alt="Establecimiento de la guardería Pet Central." class="img-fluid daycare">
+                </div>
+                <div class="col-12 col-md-6">
+                    <ul class="list-unstyled" style="font-size: 26px;">
+                        <li><a href="https://www.adventuredogcamp.com/">Adventure Dog Camp</a></li>
+                        <li><a href="https://www.thewoofpark.com/">WoofPark</a></li>
+                        <li><a href="https://www.inteligenciacanina.com/escuela-para-perros-cdmx">Inteligencia
+                                Canina</a></li>
+                        <li><a href="https://www.facebook.com/PetCentralMexico/">Pet Central</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- seccion de esteticas -->
+
+    <section style="margin: 2rem;">
+        <h1 class="text-center">Estéticas</h1>
+        <div class="container d-flex justify-content-center flex-wrap">
+            <div class="flip-card mx-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card">
+                            <img src="../../../public-images/estetica.png" class="card-img-top" alt="Frente">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Doggy Wash</strong></p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="flip-card-back">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Avenida Xichimetl #21, Narvarte Poniente, Benito Juárez, Ciudad de México. </strong></p>
-                            <p class="card-text"><strong>Contacto: 55 - 32 - 45 - 23 - 22 </strong></p>
+                    <div class="flip-card-back">
+                        <div class="card" style="height: 100%">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Avenida Xichimetl #21, Narvarte Poniente, Benito
+                                        Juárez, Ciudad de México. </strong></p>
+                                <p class="card-text"><strong>Contacto: 55 - 32 - 45 - 23 - 22 </strong></p>
+                            </div>
                         </div>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 4a13537e9a3438eb12a686ddebf96243f12ee9ca
@@ -176,29 +245,57 @@
 =======
 >>>>>>> tienda
 =======
+=======
+                    </div>
+                </div>
+            </div>
+>>>>>>> 3dc6e6fbef74d3d49f6b5a3d74b9aa9b2a787b3f
 
-    <div class="container d-flex row">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div class="card">
-                        <img src="../../../public-images/estetica2.png" class="card-img-top" alt="Frente">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Mister Mascotas</strong></p>
-                            <p class="card-text"><strong>Contacto: 56 - 31 - 12 - 53 - 12</strong></p>
+            <div class="flip-card mx-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card">
+                            <img src="../../../public-images/estetica2.png" class="card-img-top" alt="Frente">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Mister Mascotas</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card" style="height: 100%">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Calle Ballena #32, Colonia Los Olivos, Iztapalapa,
+                                        Ciudad de México. </strong></p>
+                                <p class="card-text"><strong>Contacto: 55 - 32 - 45 - 23 - 22 </strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flip-card-back">
-                    <div class="card">
-                        <div class="card-body">
-                            <p class="card-text"><strong>Calle Ballena #32, Colonia Los Olivos, Iztapalapa, Ciudad de México. </strong></p>
-                            <p class="card-text"><strong>Contacto: 55 - 32 - 45 - 23 - 22 </strong></p>
+            </div>
+
+            <div class="flip-card mx-3">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="card" style="height: 100%">
+                            <img src="../../../public-images/estetica3.png" class="card-img-top" alt="Frente">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Divine Estética Canina</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="card" style="height: 100%">
+                            <div class="card-body">
+                                <p class="card-text"><strong>Viaducto Tlalpan, Colonia Las Arenas, Tepepan,
+                                        Ciudad de México. </strong></p>
+                                <p class="card-text"><strong>Contacto: 55 - 11 - 21 - 53 - 93 </strong></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+<<<<<<< HEAD
     </div>
     <div class="container d-flex row">
         <div class="flip-card">
@@ -224,16 +321,187 @@
     </div>
     
 
+=======
+>>>>>>> 3dc6e6fbef74d3d49f6b5a3d74b9aa9b2a787b3f
     </section>
 
 
-
-
-
+<!-- Seccion reseñas de los clientes -->
     <section class="section5">
-        <p>reseñas</p>
+        <h1 class="container-fluid text-center p-4">Reseñas de Nuestros clientes</h1>
+
+    <div class="container text-center mt-4">
+        <div class="row align-items-start">
+            <!-- Primera Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña6.png" class="card-img-top" alt="reseña de Jennifer" style="object-fit: fill;">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="card-text mb-0 me-2"><strong>Jennifer González</strong></p>
+                                        <img src="/public/images/like-products.svg" alt="Imagen de Corazón" style="width: 20px; height: 20px; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"Recomiendo al 100% a Inteligencia Canina. Te mandan fotos para que sepas cómo está tu perrihijo y no tengas preocupaciones en absoluto"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña1.png" class="card-img-top img-fluid" alt="Reseña de Marco" style="object-fit: fill;">
+                                
+                                <div class="card-body d-flex">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0 me-2"><strong>Marco López</strong></p>
+                                        <img src="/public/images/like-products.svg" class="img-fluid" alt="Imagen de Corazón" style="width: 20px; height: 20px; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"Me encantó Doggy Wash, mis gatitos odian bañarse y salieron felices con olor a coco."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercera Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña5.png" class="card-img-top" alt="Reseña de Karla" style="object-fit: fill;">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0 me-2"><strong>Karla García</strong></p>
+                                        <img src="/public/images/like-products.svg" alt="Imagen de Corazón" style="width: 19px; height: 19px; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"Pet Central me salvó, no tenía quien me cuidará a mi bea Mila, mi perrita y la aceptaron, súper buen precio y yo la vi muy feliz"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
 
+    <!-- Segunda Fila de Reseñas -->
+    <div class="container text-center mt-4">
+        <div class="row align-items-start">
+            <!-- Primera Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña3.png" class="card-img-top" alt="reseña de David" style="object-fit: fill;">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="card-text mb-0 me-2"><strong>David Juárez</strong></p>
+                                        <img src="/public/images/like-products.svg" alt="Imagen de Corazón" style="width: 20px; height: 20px;   object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"No había encontrado un veterinario que pudiese atender
+                                        a mi hurón hasta que llegue a Granado, no puedo pedir más."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Segunda Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña4.png" class="card-img-top" alt="Reseña de Belen" style="object-fit: fill;">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0 me-2"><strong>Belen Pérez</strong></p>
+                                        <img src="/public/images/like-products.svg" alt="Imagen de Corazón"
+                                            style="width: 20px; height: 20px; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"Acudí a Aztecan porque mi pajarito estaba enfermo, no
+                                        comía y lo trataron y ahora anda más feliz que nada."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tercera Columna -->
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="card" style="width: 18rem;">
+                                <img src="/public-images/reseña2.png" class="card-img-top" alt="Reseña de Carlos" style="object-fit: fill;">
+                                <div class="card-body d-flex">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <p class="card-text mb-0 me-2"><strong>Carlos Ferrer</strong></p>
+                                        <img src="/public/images/like-products.svg" alt="Imagen de Corazón"
+                                            style="width: 19px; height: 19px; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="card" style="width: 18rem; height: 100%;">
+                                <div class="card-body">
+                                    <p class="card-text">"He probado casi todas las guarderías y mi perro
+                                        siempre está bien cuidado, feliz, luego no quiere salir de ahí."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
 
 
 
@@ -251,6 +519,9 @@
 <script src="/src/modules/header/header.js"></script>
 
 <script src="/src/modules/footer/footer.js"></script>
+<!-- Script para voltear las tarjetas -->
+<script src="/src/pages/servicios/Servicios.js"></script>
+<script type="module" src="/src/modules/nav/nav.js"></script>
 
 
 </html>
