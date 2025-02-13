@@ -31,44 +31,79 @@ main{
 
 .conteiner {
     padding-left: 5rem;
+}
+}
+ 
+.petSelection {
+  .animal {
+    /* cartas animales */
+ 
+    width: 250px;
+    height: 240px;
+    background-color: #F2CC8F;
+
+  }
+
+  .img-pets {
+    width: 250px;
+    height: 200px;
+    border-radius: 40%;
+  }
+
+  .carouselAnimals {
+    /* Contenedor del carrusel de categoria de mascotas */
+    background-color: #F2CC8F;
+    height: 360px;
+    border-radius: 5cap;
+  }
+
+  .titulo {
+    color: #81B29A;
   }
 
 }
 
-.carruselMasPopulares{
-    
-    #mostPopularContainer{
-        background-color: var(--block-images2);
-        border-radius: 20px;
-      }
-    .card {
-        display: flex;
-        height: 300px;
-        align-items: center;
-        justify-content: space-between;
-        border-radius: 15px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        background: linear-gradient(135deg, #f4f1de, #f4f1de);
-        color: white;
-        margin-bottom: 15px;
-      }
-      
-     .card img {
-        height: 100%;
-        object-fit: contain;
-      }  
-    #tituloCarrusel{
-        font-family: var(--font_subtitle);
-        color: var(--subtitle);
-        font-weight: 550;
-        font-size: 55px;
-    }
-    .envolventeBoton{
-        align-self: center;
-        background-color: var(--block-images1);
-        width: 80px;
-        height: 80px;
-    }
+a {
+  color: black;
+}
+
+.carruselMasPopulares {
+
+  #mostPopularContainer {
+    background-color: var(--block-images2);
+    border-radius: 20px;
+  }
+
+  .card {
+    display: flex;
+    height: 300px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f4f1de, #f4f1de);
+    color: white;
+    margin-bottom: 15px;
+  }
+
+  .card img {
+    height: 100%;
+    object-fit: contain;
+  }
+
+  #tituloCarrusel {
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
+    font-weight: 550;
+    font-size: 55px;
+  }
+
+  .envolventeBoton {
+    align-self: center;
+    background-color: var(--block-images1);
+    width: 80px;
+    height: 80px;
+  }
 }
 
 
@@ -76,13 +111,16 @@ main{
   background-color: #f2cc8f;
   justify-content: center;
 }
+
 .resultados {
   margin-left: 100px;
   margin-top: 30px;
 }
+
 .card {
   color: black;
 }
+
 .card #precio {
   color: white;
 }
