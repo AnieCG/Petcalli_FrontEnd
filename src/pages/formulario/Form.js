@@ -13,8 +13,7 @@
 const checkFormValidity = () => {
   const name = document.querySelector("#validationCustom01");
   const telephone = document.querySelector("#validationCustom03");
-  /*   const message = document.querySelector("#validationCustom04");
-   */ const submitButton = document.querySelector(".button");
+  const submitButton = document.querySelector(".button");
 
   const isNameValid =
     name.value.trim() !== "" &&
@@ -26,12 +25,7 @@ const checkFormValidity = () => {
     /^\d+$/.test(telephone.value) &&
     telephone.value.length >= 10;
 
-  /*  const isMessageValid =
-    message.value.trim() !== "" &&
-    message.value.length >= 10 &&
-    message.value.length <= 150;*/
-
-  submitButton.disabled = !(isNameValid && isTelephoneValid);
+  submitButton = !(isNameValid && isTelephoneValid);
 };
 
 document
@@ -53,13 +47,18 @@ document.addEventListener("DOMContentLoaded", checkFormValidity);
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else {
+          form.classList.add("was-validated");
+          setTimeout(() => {
+            form.reset();
+            form.classList.remove("was-validated");
+          }, 1000);
         }
-
-        form.classList.add("was-validated");
       },
       false
     );
   });
+
   document.addEventListener("DOMContentLoaded", () => {
     forms.forEach((form) => checkFormValidity.call(form));
   });
