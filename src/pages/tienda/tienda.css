@@ -7,38 +7,37 @@ main{
     padding-left: 0;
 
     h2 {
-    color: var(--subtitle);
-    text-align:start;
-    font-size:larger;
-    font-family: var(--font_subtitle);
+      color: var(--subtitle);
+      text-align: start;
+      font-size: larger;
+      font-family: var(--font_subtitle);
     }
 
     .form-check-input {
-        background-color: var(--block-images1);
+      background-color: var(--block-images1);
     }
 
     .form-check-label {
-        font-family: var(--font_text);
-        font-size: medium;
+      font-family: var(--font_text);
+      font-size: medium;
     }
     .list-group {
-        text-align: start;
+      text-align: start;
     }
   }
 
-.conteiner {
+  .conteiner {
     padding-left: 5rem;
+  }
 }
-}
- 
+
 .petSelection {
   .animal {
     /* cartas animales */
- 
+
     width: 250px;
     height: 240px;
-    background-color: #F2CC8F;
-
+    background-color: #f2cc8f;
   }
 
   .img-pets {
@@ -49,15 +48,14 @@ main{
 
   .carouselAnimals {
     /* Contenedor del carrusel de categoria de mascotas */
-    background-color: #F2CC8F;
+    background-color: #f2cc8f;
     height: 360px;
     border-radius: 5cap;
   }
 
   .titulo {
-    color: #81B29A;
+    color: #81b29a;
   }
-
 }
 
 a {
@@ -65,12 +63,10 @@ a {
 }
 
 .carruselMasPopulares {
-
   #mostPopularContainer {
     background-color: var(--block-images2);
     border-radius: 20px;
   }
-
   .card {
     display: flex;
     height: 300px;
@@ -87,14 +83,12 @@ a {
     height: 100%;
     object-fit: contain;
   }
-
   #tituloCarrusel {
     font-family: var(--font_subtitle);
     color: var(--subtitle);
     font-weight: 550;
     font-size: 55px;
   }
-
   .envolventeBoton {
     align-self: center;
     background-color: var(--block-images1);
@@ -103,25 +97,57 @@ a {
   }
 }
 
-
 .row-seccion-cards {
-  background-color: #f2cc8f;
-  justify-content: center;
+  background-color: #f6f1dd;
+
+  justify-content: start;
 }
 
 .resultados {
-  margin-left: 100px;
+  text-align: center;
   margin-top: 30px;
 }
 
 .card {
   color: black;
+  background-color: #f2cc8f;
 }
 
 .card #precio {
-  color: white;
+  color: black;
 }
 
 a {
   cursor: pointer;
+}
+
+@media (max-width: 575px) {
+  .row-seccion-cards {
+    background-color: #f6f1dd;
+    justify-content: center;
+  }
+  .card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    height: 300px;
+    background-color: #f6f1dd;
+    border: none;
+  }
+  #image {
+    height: 280px;
+    width: 14rem;
+    border-radius: 15px;
+  }
+  .card p {
+    width: 200px;
+    height: 80px;
+  }
+  .card-body {
+    background-color: #f2cc8f;
+  }
+  .resultados {
+    margin-left: 50px;
+  }
 }
