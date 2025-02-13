@@ -47,13 +47,16 @@ document.addEventListener("DOMContentLoaded", checkFormValidity);
         if (!form.checkValidity()) {
           event.preventDefault();
           event.stopPropagation();
+        } else {
+          form.classList.add("was-validated");
+          setTimeout(() => {
+            form.reset();
+            form.classList.remove("was-validated");
+          }, 1000);
         }
-
-        form.classList.add("was-validated");
       },
       false
     );
-    console.log(form);
   });
 
   document.addEventListener("DOMContentLoaded", () => {
