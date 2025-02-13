@@ -14,6 +14,7 @@
           href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
           rel="stylesheet" />
         <link rel="stylesheet" href="/src/css/style.css" />
+        <link rel="stylesheet" href="/src/pages/tienda/tienda.css" />
       </head>
 <body>
     <header id="header" class="container-fluid">
@@ -25,9 +26,161 @@
         </section>
 
         <section> <!-- de productos y filtros -->
-            <div class="row">
-                <div></div><!-- filtros -->
+            <div class="conteiner">
+            <div class="row gx-5">
+            <!-- Columna filtro -->
+                <div id="filtro" class="col-10 col-md-3">
+
+                  <div class="p-2">
+                    <h2>Filtrar por categorias</h2>
+<!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
+                      <div class="form-check d-flex justify-content-between">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Accesorios
+                        </label><span class="badge text-bg-primary rounded-pill">14</span>
+                      </div>
+
+                      <!-- FORMA SIN CONTADOR DE RESULTADOS -->
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Viaje
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Ropa
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Comida
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Jugetes
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Medicamentos
+                        </label>
+                      </div>
+                  </div>
+
+                  <!-- FILTRAR POR PRECIO -->
+                  <div class="p-2">
+                    <h2>Filtrar por precio</h2>
+                    <input type="range" class="form-range" id="customRange1"><label for="customRange1" class="form-label">Precio $10.00 - $1,000.00</label>
+                  </div>
+
+                  <!-- FILTRAR POR MARCAS -->
+                  <div class="p-2">
+                    <h2>Filtrar por marca</h2>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Instinct
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Royal Canin
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Hills Science Diet
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Cunipic
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          JW Pet Company
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          Tetra
+                        </label>
+                      </div>
+                  </div>
+
+                  <!-- FILTRAR POR TAGS -->
+                  <div class="p-2">
+                    <h2>Filtrar por tags</h2>
+                  </div>
+
+                  <!-- PRODUCTOS PREMIUM -->
+                  <div class="p-2">
+                    <h2>Productos premium</h2>
+
+                    <div class="d-flex position-relative">
+                      <img src="..." class="flex-shrink-0 me-3" alt="...">
+                      <div>
+                        <h5 class="mt-0">Royal Canin</h5>
+                        <p>$1000.00 mnx.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex position-relative">
+                      <img src="..." class="flex-shrink-0 me-3" alt="...">
+                      <div>
+                        <h5 class="mt-0">Royal Canin</h5>
+                        <p>$1000.00 mnx.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex position-relative">
+                      <img src="..." class="flex-shrink-0 me-3" alt="...">
+                      <div>
+                        <h5 class="mt-0">Royal Canin</h5>
+                        <p>$1000.00 mnx.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex position-relative">
+                      <img src="..." class="flex-shrink-0 me-3" alt="...">
+                      <div>
+                        <h5 class="mt-0">Royal Canin</h5>
+                        <p>$1000.00 mnx.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex position-relative">
+                      <img src="..." class="flex-shrink-0 me-3" alt="...">
+                      <div>
+                        <h5 class="mt-0">Royal Canin</h5>
+                        <p>$1000.00 mnx.</p>
+                        <a href="#" class="stretched-link">Go somewhere</a>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+
                 <div></div><!-- productos -->
+            </div>
             </div>
             <h2></h2>
         </section>

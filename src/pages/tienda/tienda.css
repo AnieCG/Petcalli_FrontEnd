@@ -1,0 +1,42 @@
+
+
+
+
+main{
+#mostPopularContainer{
+    background-color: var(--block-images2);
+    border-radius: 20px;
+  }
+  
+#filtro {
+    background-color: var(--block-images1);
+    border-radius: 20px;
+    padding-left: 0;
+
+    h2 {
+    color: var(--subtitle);
+    text-align:start;
+    font-size:larger;
+    font-family: var(--font_subtitle);
+    }
+
+    .form-check-input {
+        background-color: var(--block-images1);
+    }
+
+    .form-check-label {
+        font-family: var(--font_text);
+        font-size: medium;
+    }
+    .list-group {
+        text-align: start;
+    }
+  }
+
+.conteiner {
+    padding-left: 5rem;
+  }
+
+
+
+}
