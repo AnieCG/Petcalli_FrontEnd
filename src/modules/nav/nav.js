@@ -16,7 +16,7 @@ const insertNav = () => {
             <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Tienda</a>
+            <a class="nav-link" href="/src/pages/tienda/tienda.html">Tienda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/src/pages/servicios/servicios.html">Servicios</a>
