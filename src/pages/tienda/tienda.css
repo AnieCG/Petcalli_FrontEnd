@@ -1,7 +1,6 @@
+main {
 
-main{
-
-#filtro {
+  #filtro {
     background-color: var(--block-images1);
     border-radius: 20px;
     padding-left: 0;
@@ -21,6 +20,7 @@ main{
       font-family: var(--font_text);
       font-size: medium;
     }
+
     .list-group {
       text-align: start;
     }
@@ -35,13 +35,14 @@ main{
   .animal {
     /* cartas animales */
 
-    width: 250px;
+    width: 200px;
     height: 240px;
     background-color: #f2cc8f;
   }
 
+
   .img-pets {
-    width: 250px;
+    width: 200px;
     height: 200px;
     border-radius: 40%;
   }
@@ -50,6 +51,8 @@ main{
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #f2cc8f;
     height: 360px;
+ /*    width: fit-content; */
+    /*     min-width: 700px; */
     border-radius: 5cap;
   }
 
@@ -67,6 +70,7 @@ a {
     background-color: var(--block-images2);
     border-radius: 20px;
   }
+
   .card {
     display: flex;
     height: 300px;
@@ -83,12 +87,14 @@ a {
     height: 100%;
     object-fit: contain;
   }
+
   #tituloCarrusel {
     font-family: var(--font_subtitle);
     color: var(--subtitle);
     font-weight: 550;
     font-size: 55px;
   }
+
   .envolventeBoton {
     align-self: center;
     background-color: var(--block-images1);
@@ -126,6 +132,7 @@ a {
     background-color: #f6f1dd;
     justify-content: center;
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -135,18 +142,22 @@ a {
     background-color: #f6f1dd;
     border: none;
   }
+
   #image {
     height: 280px;
     width: 14rem;
     border-radius: 15px;
   }
+
   .card p {
     width: 200px;
     height: 80px;
   }
+
   .card-body {
     background-color: #f2cc8f;
   }
+
   .resultados {
     margin-left: 50px;
   }
