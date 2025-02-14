@@ -69,6 +69,10 @@ header {
   width: 153px;
 }
 
+.bg {
+  background-color: var(--background_page);
+}
+
 #terms {
   color: var(--title);
   font-family: var(--font_title);
@@ -129,13 +133,3 @@ footer {
     cursor: pointer;
   }
 }
-
-
-
-
-/* Tienda */
-#mostPopularContainer{
-  background-color: var(--block-images2);
-  border-radius: 20px;
-}
-
