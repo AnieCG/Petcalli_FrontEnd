@@ -1,3 +1,9 @@
+main {
+  background-image: url("./images/background-login.png");
+  max-width: 1920px;
+  background-size: cover;
+}
+
 section {
   max-width: 1920px;
   overflow: hidden;
