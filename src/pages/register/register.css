@@ -1,0 +1,32 @@
+section {
+  max-width: 1920px;
+  overflow: hidden;
+
+  h2 {
+    font-family: var(--font_title);
+    color: var(--title);
+    font-weight: 700;
+    font-size: 65px;
+  }
+
+  h3 {
+    font-family: var(--font_title);
+    color: white;
+    background-color: var(--block-images1);
+  }
+
+  .provisional {
+    background-color: var(--block-images2);
+    width: 850px;
+    height: 530px;
+  }
+
+  .text-register {
+    color: white;
+    background-color: var(--block-images1);
+  }
+
+  .dog-register {
+    min-width: 380px;
+  }
+}
