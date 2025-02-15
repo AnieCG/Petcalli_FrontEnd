@@ -35,22 +35,35 @@ main {
   .animal {
     /* cartas animales */
 
-    width: 200px;
-    height: 240px;
+    width: 202px;
+    height: 290px;
     background-color: #f2cc8f;
+    margin-bottom: 0px;
   }
 
+  h5{
+    margin:0;
+  }
 
   .img-pets {
-    width: 200px;
-    height: 200px;
-    border-radius: 40%;
+    width: 207px;
+    height: 255px;
+    border-radius: 45%;
+    margin-bottom: 0;
+    
+  }
+
+  .card-body{
+margin-top: 0%;
+    width: 203px;
+    height: 30px;
+    margin-bottom: 0px;
   }
 
   .carouselAnimals {
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #f2cc8f;
-    height: 360px;
+    height: 375px;
  /*    width: fit-content; */
     /*     min-width: 700px; */
     border-radius: 5cap;
