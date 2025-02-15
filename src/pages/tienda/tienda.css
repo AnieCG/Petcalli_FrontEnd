@@ -1,3 +1,14 @@
+
+.franja{
+  background-color: var(--block-images1);
+  width: auto;
+  height: 88px;
+}
+
+body{
+  max-width: 1920px;
+}
+
 main {
 
   #filtro {
@@ -105,13 +116,12 @@ a {
 
 .row-seccion-cards {
   background-color: #f6f1dd;
-
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .resultados {
-  text-align: center;
-  margin-top: 30px;
+  text-align: start;
+  margin-top: 20px;
 }
 
 .card {

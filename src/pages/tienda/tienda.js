@@ -2,7 +2,7 @@ const $seccionCards = document.getElementById("seccion-cards");
 const createCards = (producto) => {
   return `
     
-    <div class="card h-150 m-2" style="width:13rem;">
+    <div class="card h-150 m-2" style="width:16rem;">
       <img
         src="${producto.image}"
         class="card-img-top"
