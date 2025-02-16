@@ -133,3 +133,10 @@ footer {
     cursor: pointer;
   }
 }
+
+login {
+  color: var(--title);
+  font-family: var(--font_title);
+  font-weight: 700;
+  font-size: 85px;
+}

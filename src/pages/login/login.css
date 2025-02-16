@@ -1,0 +1,32 @@
+
+
+h1 {
+  color: var(--title);
+  font-family: var(--font_title);
+  font-weight: 700;
+  font-size: 85px;
+}
+
+.input {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.count {
+  border-radius: 20%;
+  background-color: #e07a5f;
+}
+
+.imgtext {
+  text-align: center;
+  border: 0;
+  margin-left: -50px;
+}
+
+.textimg {
+  font-size: 16px;
+  color: #333;
+  margin-top: 0;
+  padding: 0%;
+}
