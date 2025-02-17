@@ -185,3 +185,39 @@ a {
     margin-left: 50px;
   }
 }
+
+/* Seccion de mobile header */
+.mobileHeader{
+  background-image: url(/public-images/Vector_Header_Mobile.png);
+  .postalCode{
+    background-color: var(--block-images2);
+    font-size: 10px;
+  }
+  p{
+    color: #6C757D;
+  }
+  .title{
+    background-color: var(--block-images2);
+  }
+  h2{
+    font-family: var(--font_title);
+    color: var(--title);
+    font-size: 35px;
+    font-weight:bolder ;
+  }
+  .ads{
+    background-color: var(--block-images2);
+  }
+  #shape2{
+    width: 20px;  
+    height: 20px;
+  }
+  #mapPin{
+    width: 15px;
+    height: 15px;
+  }
+  button{
+    background-color: var(--block-images1);
+    color: white;
+  }
+}

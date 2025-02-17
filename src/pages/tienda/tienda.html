@@ -20,13 +20,66 @@
 
 <body>
   <nav id="navbar"></nav>
-  <header id="header" class="container-fluid"></header>
+  <header id="header" class="container-fluid d-none d-md-block"></header>
 
-  <div class="franja mt-1">
-
+  <div class="franja mt-1 d-none d-md-block">
   </div>
   <main>
+    
+    <section class="d-block d-md-none mobileHeader">    <!-- Seccion header mobile desde dispositivo mediano hacia abajo se despliega -->
+      <div class="container postalCode rounded-3">
+        <a class="text-decoration-none d-flex" href="#hacia pagina de registro">
+          <img id="mapPin" class="m-1" src="/public/images/map-pin-svgrepo-com.svg" alt="icono de posición en un mapa">
+          <p class="m-1">Ingresa tu código postal</p>
+        </a>
+      </div>
+      <div class="container d-flex">
+        <div class="d-flex title justify-content-center px-5 fw-bold rounded-4 position-relative my-3 w-75">
+          <img src="/public-images/Shape2.png" alt="Mancha de fondo" class="position-absolute top-50 start-0 translate-middle-y" id="shape2">
+          <h2 class="m-1">Tienda</h2>
+        </div>
+        <p class="d-inline-flex-end gap-1 m-3 w-25">
+          <button class="btn fs-3 text fw-semibold rounded-4 px-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Filtrar
+          </button>
+        </p>
+      </div>
+        <div class="collapse" id="collapseExample">
+          <div class="card-body">
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+      
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+      
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+            <p>Aqui va la parte de filtros </p>
+      
+          </div>
+        </div>
+      <div class="container d-flex ads p-4">
+        <a class="w-50" href="https://mexico.generation.org/encuentra-una-carrera/">
+          <img class="img-fluid rounded-4" 
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnHjijo6x53Rn5z9Gas8IzoLTNDZfgxn66Q&s" 
+          alt="Publicidad Generation mexico">
+        </a>
+        <a class="w-50" href="https://www.harvard.edu/">
+          <img class="img-fluid rounded-4"
+            src="https://images.squarespace-cdn.com/content/v1/5409fd72e4b08734f6c05b4c/a20f0852-cb71-4a59-b4e6-298204c0c894/HGSE.png" 
+            alt="Publicidad Harvard">
+        </a>
+      </div>
 
+    </section>
     <section class="petSelection mt-2">
       <div id="carouselExampleAutoplaying" class="carousel slide-fade" data-bs-ride="carousel">
         <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
@@ -281,10 +334,9 @@
     <br>
 
     <section class="col-12"> <!-- de productos y filtros -->
-      <div class="container">
         <div class="row gx-5">
           <!-- Columna filtro d-none d-sm-block para que desaparezca-->
-          <div id="filtro" class="col-10 col-md-3 m-3">
+          <div id="filtro" class="col-10 col-md-3 m-3 d-none d-md-block">
 
             <div class="p-2">
               <h2>Filtrar por categorias</h2>
@@ -442,92 +494,11 @@
           </div>
         </div>
     </section>
-    <section class="d-none d-sm-block carruselMasPopulares"> <!-- carru. mas populares -->
-      <section class="row">
-        <h2 id="tituloCarrusel" class="text-center mb-4">Más Populares</h2>
-        <div id="mostPopularContainer" class="container col-11">
-          <div class="container col-11 mt-5 mb-5">
-            <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/tienda/tienda.html">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/71BsEhRcf+L._AC_SL1500_.jpg" class="img-fluid"
-                            alt="Dos medallas redondas con código QR" />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/tienda/tienda.html">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/61PNxgt963L._AC_SL1500_.jpg" class="img-fluid"
-                            alt="Dos jeringas de uso especial para instalación de microchip de localización con mascotas o animales de fondo" />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/servicios/servicios.html">
-                        <div class="card">
-                          <img src="/public-images/estetica2.png" class="img-fluid"
-                            alt="Estetica canina con dos tinas y dos trabajadoras con uniforme verde bañando un perro cada una" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/tienda/tienda.html">
-                        <div class="card">
-                          <img src="https://m.media-amazon.com/images/I/51K5hxWS5PL._AC_SL1000_.jpg" class="img-fluid"
-                            alt="Botella tipo atomizador color blanca de aceite de salmon con un filete de salmon al pie" />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/servicios/servicios.html">
-                        <div class="card">
-                          <img
-                            src="https://laboticaanimal.com/wp-content/uploads/2024/01/Imagen-de-WhatsApp-2024-01-15-a-las-00.56.52_35b57605.jpg"
-                            class="img-fluid"
-                            alt="Banner de servicio especializado para mascotas exoticas una piton amarilla como fondo" />
-                        </div>
-                      </a>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                      <a href="/src/pages/servicios/servicios.html">
-                        <div class="card">
-                          <img
-                            src="https://scontent.fcvj2-2.fna.fbcdn.net/v/t1.6435-9/53886958_852553138411360_4738795970689499136_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=ZEc1pwUkHnAQ7kNvgGLXKw2&_nc_oc=AdiqhRMH4z5bpW-qB1JO-_eOrQ1WpGSXeOXi_7cOQYgCI43y4Uk4gkKdrkmdi0iQ95s&_nc_zt=23&_nc_ht=scontent.fcvj2-2.fna&_nc_gid=AvYaNMafZxUwKW1Fbd3BEju&oh=00_AYC3QUXYcE3QtwjplDk4FYW15qe7MKWDE2EQwoPstXtARg&oe=67D4499E"
-                            class="img-fluid"
-                            alt="Banner de residencia de animales exoticos con una imagen de jaula, pericos, hámsters" />
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button class="envolventeBoton rounded-circle carousel-control-prev" type="button"
-                data-bs-target="#productCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-              </button>
-
-              <button class="envolventeBoton rounded-circle carousel-control-next" type="button"
-                data-bs-target="#productCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-              </button>
-            </div>
-
-          </div>
-        </div>
-
-      </section>
+    <section id="seccionCarrusel" class="d-none d-sm-block carruselMasPopulares"> <!-- carru. mas populares -->
+    
+    </section>
   </main>
+  
   <footer id="footer">
     <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
   </footer>
