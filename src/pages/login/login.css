@@ -18,11 +18,6 @@ h1 {
   background-color: #e07a5f;
 }
 
-.imgtext {
-  text-align: center;
-  border: 0;
-  margin-left: -50px;
-}
 
 .textimg {
   font-size: 16px;
@@ -41,4 +36,17 @@ h1 {
 
 #phrase {
   margin-bottom: 0;
+}
+ 
+#not {
+  background-color: #e07a5f;
+  color: black;
+  font-size: medium;
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.dog-login {
+  min-width: 380px;
 }
