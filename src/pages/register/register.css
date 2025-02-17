@@ -1,5 +1,5 @@
 main {
-  background-image: url("./images/background-login.png");
+  background-image: url("/public/images/header-shapes.png");
   max-width: 1920px;
   background-size: cover;
 }
