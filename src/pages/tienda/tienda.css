@@ -185,3 +185,35 @@ a {
     margin-left: 50px;
   }
 }
+
+
+.modal-header{
+  background-color: #f4f1de;
+}
+
+.modal-btn{
+  background-color:#E07A5F ;
+  border: 0;
+}
+
+.mas-menos{
+  border-radius: 50%;
+}
+
+.modal-body{
+  background-color: #f2cc8f;
+}
+
+.modal-img{
+  border-radius: 30%;
+  height: 30%;
+}
+
+.modal-footer{
+  background-color: #f4f1de;
+  
+  .btn{
+    background-color:#f2cc8f;
+
+  }
+}
