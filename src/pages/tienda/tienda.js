@@ -104,9 +104,11 @@ const createCards = (producto) => {
         <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
         <p>${producto.descripcion}</p>
         <p id="precio">${producto.price}</p>
-        <button class="btn btn-warning">Añadir a carrito</button>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#${producto.image}"
+        >Ver producto</button>
         </div>
     </div>
+
 `;
 };
 
