@@ -30,3 +30,15 @@ h1 {
   margin-top: 0;
   padding: 0%;
 }
+.logbutton {
+  align-items: center;
+}
+
+.logbutton :active {
+  color: #e07a5f;
+
+}
+
+#phrase {
+  margin-bottom: 0;
+}

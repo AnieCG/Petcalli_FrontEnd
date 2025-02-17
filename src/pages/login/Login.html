@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <nav id="navbar"></nav>
   <header>
     <section>
       <div class="container">
@@ -18,9 +19,8 @@
           <!-- Formulario (a la izquierda en pantallas grandes) -->
           <div class="col-12 col-lg-6 d-flex flex-column pt-5 order-2 order-lg-1">
             <h1 class="text-center text-lg-start  col-12 col-lg-6 d-flex flex-column pt-5 ">Petcalli</h1>
-            <div class="pt-3 text-center text-md-center text-lg-start">
-              <div class="login-container">
-
+                      <div class="pt-3 text-center text-md-center text-lg-start">
+               <div class="login-container">
                 <input type="button" value="¿Aún no tienes cuenta Petcalli? Regístrate aquí.">
           <br>
                 <a><img src="/public-images/DeviconGoogle.png" style="height:25px; justify-items: center; justify-content: space-between;" alt="logo de google"></a>
@@ -29,7 +29,8 @@
                 <br>
                 <div class="text-center my-3">o inicia sesión</div>
 
-                <form style="border: 0; background-color:#f2cc8f; margin: #f2cc8f; padding:#f2cc8f;">
+                <div class=" container provisional mx-auto shadow-lg rounded-3 mb-4">
+                <form>
                   <div class="mb-3">
                     <label for="email" class="form-label" style="border-radius: 20px;">Correo Electrónico</label>
                     <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
@@ -38,26 +39,30 @@
                     <label for="password" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
                   </div>
-                  <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
-                </form>
+                  <button type="submit" class="btn btn-primary w-150 logbutton">Iniciar Sesión</button>
+                </form> </div>
               </div>
             </div>
           </div>
 
-          <!-- Imagen (a la derecha en pantallas grandes, arriba en móviles) -->
+          <!-- Imagen perrito  -->
           <div class="col-12 col-lg-6 d-flex flex-column align-items-lg-end order-1 order-lg-2">
-            <img class="container-fluid mt-auto imgtext" src="/public-images/dog-header.PNG"
-              alt="Perro crestado rodesiano asomando la cabeza" />
-            <p class="mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-3 textimg">
+            <p id="phrase" class="mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-3 textimg">
               "Porque en el corazón de nuestra tienda está el compromiso de cuidar a tu mascota tanto como tú lo haces"
             </p>
+            <img class="container-fluid mt-auto imgtext" src="/public-images/dog-header.PNG"
+              alt="Perro crestado rodesiano asomando la cabeza" />
+          
           </div>
         </div>
       </div>
     </section>
-  </header>
 
+  <footer id="footer" class="bd-footer py-4 py-md-5 mt-5">
+
+  </footer>
+  <script src="/src/modules/footer/footer.js"></script>
+  <script type="module" src="/src/modules/nav/nav.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
