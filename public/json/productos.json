@@ -243,9 +243,6 @@
   },
 
 
-
-
-
   {
     "id":23,
     "title": "Hill's Science Diet",
@@ -257,8 +254,6 @@
     "category":"Alimento",
     "size": "6.8 kg"
   },
- 
- 
   {
     "id": 24,
     "title": "Instinct Alimento Seco Pollo",
@@ -270,9 +265,6 @@
     "category":"Alimento",
     "size": "5 kg"
   },
-
-
- 
   {
     "id": 25,
     "title": "Alimento Seco Natural Salmón Libre de Granos",
@@ -284,7 +276,6 @@
     "category":"Alimento",
     "size": "2 kg"
   },
-
   {
     "id": 26,
     "title": "Alimento Seco de Pollo Libre de Granos Todas las Edades",
@@ -296,7 +287,6 @@
     "category":"Alimento",
     "size": "5.4 kg"
   },
- 
   {
     "id": 27,
     "title": "Alimento Seco de Pollo Libre de Granos para Gato Esterilizado",
@@ -308,7 +298,6 @@
     "category":"Alimento",
     "size":"2 kg"
   },
-  
   {
     "id": 28,
     "title": "Alimento Seco Libre de Granos Receta Pollo",
@@ -324,7 +313,7 @@
     "id": 29,
     "title": "Alimento para Tortuga Acuática",
     "marca": "Azoo",
-    "petType": "Tortuga",
+    "petType": "Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NDEyM3xpbWFnZS9qcGVnfGltYWdlcy9oNDQvaGE5Lzk0MDAwNjkxOTM3NTguanBnfDU5NzEzZTNlNTQwMjlhMjc3ODFmNDA3ODQ0NjhlNDkzZmY2Y2VhYjg1MGI3ZGZlYmMyMTBjMTUzN2JjODBmNWE",
     "price": "$451.25",
     "descripcion": "Azooplus Alimento para Tortuga Acuática, 380 g",
@@ -333,12 +322,12 @@
   },
   {
     "id": 30,
-    "title": "Pellet Flotante",
+    "title": "Alimento para Tortuga Pellet Flotante",
     "marca": "Tetra ReptoMin",
-    "petType":"Tortuga",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1NTI4NnxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDhhLzk0NTc0NDAyMjczNTguanBnfGI2ZmNmNmJhYzk5ZWMyOTdiYzEwMzM5NGFmZGE2NWY3MDQ0MWFhYmI3ZGE5NDJlMjk2MGFjNjVkYTgwNmM5M2U",
     "price": "$711.55",
-    "descripcion": "Tproteínas de alta calidad y aminoácidos esenciales para promover el crecimiento saludable, 650 g",
+    "descripcion": "Proteínas de alta calidad y aminoácidos esenciales para promover el crecimiento saludable, 650 g",
     "category":"Alimento",
     "size": "650 g"
   },
@@ -346,7 +335,7 @@
     "id": 31,
     "title": "Tortoise Diet",
     "marca": "Mazuri",
-    "petType":"Tortuga",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/127514.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTAyMzl8aW1hZ2UvanBlZ3xoOGYvaDY5LzEwMDg1MDM3OTk4MTEwLzEyNzUxNC5qcGdfMzAwZnR3fGY2ODdiN2EzOWY2YTlhZDY0Y2QyNTFmNzcxMjQwMTk2YmQ2YzY0Yzk3ZWZkMGIxY2IwNzFlZmFjOWIyNTcwNmQ",
     "price": "$232.75",
     "descripcion": "Alimento en Pellet para Tortuga, 500 g",
@@ -355,72 +344,127 @@
   },
   {
     "id": 32,
-    "title": "ZGourmet Reptisticks Alimento en Pellet",
+    "title": "Gourmet Reptisticks Alimento para Tortuga en Pellet",
     "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w5MTAyMnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDQ3Lzk0MDAxMTYzMTQxNDIuanBnfDQ0MmM1NDlhNGE4MWU5ZjY0Mzg0MjIzOGJlNDg0ZGQ3NzFlMDMwYmQ4NzBjNjcxNWUwYzRkNDJlZTEyMDAwNGM",
     "price": "$217.55",
-    "descripcion": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g"
+    "descripcion": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g",
+    "category":"Alimento",
+    "size": "128 g"
   },
   {
-    "title": "Tetra",
+    "id": 33,
+    "title": "Alimento Reptomin",
+    "marca": "Tetra",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/106783.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTk5NTB8aW1hZ2UvanBlZ3xoMTYvaDZiLzEwNTA3NDAwMDE5OTk4LzEwNjc4My5qcGdfMzAwZnR3fDEzNWEzMTI0NWRlNjcwYjY0YzI1ZWI1ZjhiYTE1YTFhNmFlY2ZjZWM0OGU3ZjU1NjY3NTdiYTJjNWVjMjk0ZjI",
     "price": "$308.75",
-    "descripcion": "Tetra Alimento Reptomin Palitos, 300 g"
+    "descripcion": "Alimento Reptomin para Tortugas en Palitos, 300 g",
+    "category":"Alimento",
+    "size": "300 g"
   },
   {
-    "title": "Petmmal",
+    "id": 34,
+    "title": "Alimento Vegetal para Tortuga",
+    "marca": "Petmmal",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/106112.jpg-300ftw?context=bWFzdGVyfHJvb3R8OTE0ODN8aW1hZ2UvanBlZ3xoZDgvaDg2LzEwMzY2NDM2MjEyNzY2LzEwNjExMi5qcGdfMzAwZnR3fDJkMzA1MmNjYzQ4YTEwNDAwYmUyMzBhZTMwYjY5MmYwNmU0ZmE3NTViNmEzNTI5NjU2ZjQ0YmQ5NGIzYzAzZjg",
     "price": "$199.50",
-    "descripcion": "Petmmal Alimento para Tortuga Tortugueta Vegetal, 500 g"
+    "descripcion": "Alimento para Tortuga Tortugueta Vegetal, 500 g",
+    "category":"Alimento",
+    "size": "500 g"
   },
   {
-    "title": "Zoo Med",
+    "id": 35,
+    "title": "Alimento para Tortuga Acuática",
+    "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3OTI5M3xpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDA2LzkzNTM0NTg2MTQzMDIuanBnfGY0YWQxYjk3ZTkzMDg1MWRjNWYyMWM5ODIxNGY4NmNlMjgwOGJmODc5YzRjOTIyYjM3ZGUwNTY2ZTU5OTQxZjc",
     "price": "$360.05",
-    "descripcion": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g"
+    "descripcion": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g",
+    "category":"Alimento",
+    "size": "850 g"
   },
   {
-    "title": "Zoo Med",
+    "id": 36,
+    "title": "Food Topper para Tortugas",
+    "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/300ftw-127168.jpg?context=bWFzdGVyfHJvb3R8NzQ0NjB8aW1hZ2UvanBlZ3xoYTMvaDEzLzEwNzQxNDQ5NDI0OTI2LzMwMGZ0d18xMjcxNjguanBnfGRkNTgyYzYxNTViY2ZmZmRkOWViNWViMjg5Mzk4MDEwM2JiMGNkYmJlZTE3YmE3NWI2YWEwNTViMDE3ZmQ2NGE",
     "price": "$160.55",
-    "descripcion": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g"
+    "descripcion": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g",
+    "category":"Alimento",
+    "size": "40 g"
   },
-  
-    {
-      "title": "You & Me",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNjY0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDkyLzk1MzUwMzU0NzM5NTAuanBnfDliODY0MDgwMWM0NzRhNDFhMDYyMzUwOGMwZjJkY2ZiM2EyYmM1ZTI2OTQ5MDU0MGQzYmUzYjMzOWUzN2NiZmQ",
-      "price": "$2,999.00",
-      "descripcion": "You & Me Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco"
-    },
-    {
-      "title": "You & Me",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyMDc5MHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDZhLzk1MzUwODcyNDczOTAuanBnfDYzNDkzYzdhMmJhOTFhMTVkN2NhNWVkOGY0YzZjZWNmM2E5ZmFhODU3OTM3MmE1NzQzZWVkNzE5MjBkZTJlNWI",
-      "price": "$419.40 Antes $699.00",
-      "descripcion": "You & Me Percha para Ventana con Memory Foam para Gato"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/300ftw-142225.jpg?context=bWFzdGVyfHJvb3R8MjQxNzN8aW1hZ2UvanBlZ3xoMDQvaGZkLzEwNjA2NjA3NTY0ODMwLzMwMGZ0d18xNDIyMjUuanBnfGU2NjM2NTE4YWYxMTMzNTA1NDBiMmM2Nzc1ZjRmOGRlNzc0YWMzN2UyNmU1YjFmZTVjMmU4OWNkYmM1MWY1ZTA",
-      "price": "$1,619.40 Antes $2,699.00",
-      "descripcion": "EveryYay Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
-      "price": "$779.40 Antes $1,299.00",
-      "descripcion": "EveryYay Secret Hideout Condo Century con Cojín Extraíble para Gato"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNTc1N3xpbWFnZS9qcGVnfGltYWdlcy9oNmIvaGU3Lzk1MzgzNjY3MzQzNjYuanBnfGMxNWVhY2E1ODBmMzUzOGMyMTc5NWVjZDQ1MGUwOTcwOWM0NzVjZTVjNjQ5OTRiODM1MTk1ZjZjNDc4Mjk2MTQ",
-      "price": "$1,079.40 Antes $1,799.00",
-      "descripcion": "EveryYay Mueble para Gatito Tipo Torre con Rampa"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/300ftw-142229.jpg?context=bWFzdGVyfHJvb3R8MzQ4Mjd8aW1hZ2UvanBlZ3xoMjEvaGZhLzEwNjA2NjE1NzU2ODMwLzMwMGZ0d18xNDIyMjkuanBnfGUxZmI4YzBkOTEzYmFhZTc3OWJjNTlmNDVmYTU1MmQ3OTA3YmY5N2VkZjIzYWU1MjM3ZjJlMWI4MzRkZDQ0NGQ",
-      "price": "$1,679.40 Antes $2,799.00",
-      "descripcion": "EveryYay Mueble Tipo Torre con Guarida y Repisa para Gato, Beige"
-    }
+  {
+    "id": 37,
+    "title": "Mueble Tipo Árbol",
+    "marca": "You & Me",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNjY0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDkyLzk1MzUwMzU0NzM5NTAuanBnfDliODY0MDgwMWM0NzRhNDFhMDYyMzUwOGMwZjJkY2ZiM2EyYmM1ZTI2OTQ5MDU0MGQzYmUzYjMzOWUzN2NiZmQ",
+    "price": "$2,999.00",
+    "descripcion": "Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco",
+    "category": "Juguetes",
+    "color": "Blanco"
+  },
+  {
+    "id": 38,
+    "title": "Percha para Ventana",
+    "marca": "You & Me",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyMDc5MHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDZhLzk1MzUwODcyNDczOTAuanBnfDYzNDkzYzdhMmJhOTFhMTVkN2NhNWVkOGY0YzZjZWNmM2E5ZmFhODU3OTM3MmE1NzQzZWVkNzE5MjBkZTJlNWI",
+    "price": "$419.40",
+    "descripcion": "Percha para Ventana con Memory Foam para Gato",
+    "category":"Juguetes",
+    "color":"Blanco"
+  },
+  {
+    "id": 39,
+    "title": "Mueble con Rascadores",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/300ftw-142225.jpg?context=bWFzdGVyfHJvb3R8MjQxNzN8aW1hZ2UvanBlZ3xoMDQvaGZkLzEwNjA2NjA3NTY0ODMwLzMwMGZ0d18xNDIyMjUuanBnfGU2NjM2NTE4YWYxMTMzNTA1NDBiMmM2Nzc1ZjRmOGRlNzc0YWMzN2UyNmU1YjFmZTVjMmU4OWNkYmM1MWY1ZTA",
+    "price": "$1,619.40",
+    "descripcion": "Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris",
+    "category":"Juguetes",
+    "color": "Gris"
+  },
+  {
+    "id": 40,
+    "title": "Condo con Cojín Extraíble",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
+    "price": "$779.40",
+    "descripcion": "Secret Hideout Condo Century con Cojín Extraíble para Gato",
+    "category": "Accesorios",
+    "color":"Gris"
+  },
+  {
+    "id": 41,
+    "title": "Mueble Tipo Torre con Rampa",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNTc1N3xpbWFnZS9qcGVnfGltYWdlcy9oNmIvaGU3Lzk1MzgzNjY3MzQzNjYuanBnfGMxNWVhY2E1ODBmMzUzOGMyMTc5NWVjZDQ1MGUwOTcwOWM0NzVjZTVjNjQ5OTRiODM1MTk1ZjZjNDc4Mjk2MTQ",
+    "price": "$1,079.40",
+    "descripcion": "Mueble para Gatito Tipo Torre con Rampa",
+    "category":"Juguetes",
+    "color":"Gris"
+  },
+  {
+    "id": 42,
+    "title": "Mueble Tipo Torre Con Guarida y Repisa",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/300ftw-142229.jpg?context=bWFzdGVyfHJvb3R8MzQ4Mjd8aW1hZ2UvanBlZ3xoMjEvaGZhLzEwNjA2NjE1NzU2ODMwLzMwMGZ0d18xNDIyMjkuanBnfGUxZmI4YzBkOTEzYmFhZTc3OWJjNTlmNDVmYTU1MmQ3OTA3YmY5N2VkZjIzYWU1MjM3ZjJlMWI4MzRkZDQ0NGQ",
+    "price": "$1,679.40",
+    "descripcion": "Mueble Tipo Torre con Guarida y Repisa para Gato, Beige",
+    "category":"Juguetes",
+    "color": "Beige"
+  },
+  {
+    
+  }
   
 ]
