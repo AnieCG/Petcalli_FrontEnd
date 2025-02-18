@@ -112,16 +112,14 @@ const createCards = (producto) => {
 `;
 };
 
-/* 
-fetch("/public/json/productos.json")
-  .then((productos) => productos.json())
-  .then((productos) => {
-    $seccionCards.innerHTML = productos
+
+   fetch("/public/json/productos.json")
+    .then((productos) => productos.json())
+    .then((productos) => {
+      $seccionCards.innerHTML = productos
       .map((card) => createCards(card))
       .join("");
-  });
-*/
-
+  }); 
 
 const filterProducts = (category) => {
   fetch("/public/json/productos.json")
@@ -159,4 +157,9 @@ const filterProducts = (category) => {
   otherButton.addEventListener( "click", () => {
     filterProducts("Otros");
   });
+
+
+  const button = document.getElementById("flexCheckDefault");
+  button.addEventListener( "click", () => console.log(button));
+  console.log(button);
   
