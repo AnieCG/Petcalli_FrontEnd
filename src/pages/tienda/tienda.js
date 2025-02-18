@@ -112,6 +112,7 @@ const createCards = (producto) => {
 `;
 };
 
+/* 
 fetch("/public/json/productos.json")
   .then((productos) => productos.json())
   .then((productos) => {
@@ -119,57 +120,43 @@ fetch("/public/json/productos.json")
       .map((card) => createCards(card))
       .join("");
   });
+*/
 
 
 const filterProducts = (category) => {
-  const productsToShow = products.filter( product => product.category === category )
+  fetch("/public/json/productos.json")
+  .then((products) => products.json())
+  .then((products) => {
+    const productsToShow = products.filter( product => product.petType === category );
+    $seccionCards.innerHTML = productsToShow
+      .map((card) => createCards(card))
+      .join("");
+  });
+  
 }
-  const gatosBoton = document.getElementById(Gatos);
-  const perrosBoton = document.getElementById(Perros);
-  const tortugasBoton = document.getElementById(Tortugas);
-  const avesBoton = document.getElementById(Aves);
-  const miniPigsBoton = document.getElementById(Mini-pigs);
-  const rumiantesBoton = document.getElementById(Rumiantes);
-  const conejosBoton = document.getElementById(Conejos);
-  const hamstersBoton = document.getElementById(Hamsters);
-  const cuyosBoton = document.getElementById(Cuyos);
-  const pecesBoton = document.getElementById(Peces);
-  const huronesBoton = document.getElementById(Hurones);
-  const iguanaBoton = document.getElementById(Iguanas);
+  const catsButton = document.getElementById( "Gatos" );
+  const dogsButton = document.getElementById( "Perros" );
+  const birdsButton = document.getElementById( "Aves" );
+  const rabbitsButton = document.getElementById( "Conejos" );
+  const fishesButton = document.getElementById( "Peces" );
+  const otherButton = document.getElementById( "Otros" );
 
-  gatosBoton.addEventListener( ` click `, () => {
-    filterProducts(`Gatos`);
+  catsButton.addEventListener( "click", () => {
+    filterProducts("Gato");
   });
-  perrosBoton.addEventListener( ` click `, () => {
-    filterProducts(`Perros`);
+  dogsButton.addEventListener( "click", () => {
+    filterProducts("Perro");
   });
-  tortugasBoton.addEventListener( ` click `, () => {
-    filterProducts(`Tortugas`);
+  rabbitsButton.addEventListener( "click", () => {
+    filterProducts("Conejo");
   });
-  avesBoton.addEventListener( ` click `, () => {
-    filterProducts(`Aves`);
+  fishesButton.addEventListener( "click", () => {
+    filterProducts("Peces");
   });
-  miniPigsBoton.addEventListener( ` click `, () => {
-    filterProducts(`Mini-pigs`);
+  birdsButton.addEventListener( "click", () => {
+    filterProducts("Aves");
   });
-  rumiantesBoton.addEventListener( ` click `, () => {
-    filterProducts(`Rumiantes`);
+  otherButton.addEventListener( "click", () => {
+    filterProducts("Otros");
   });
-  conejosBoton.addEventListener( ` click `, () => {
-    filterProducts(`Conejos`);
-  });
-  hamstersBoton.addEventListener( ` click `, () => {
-    filterProducts(`Hamsters`);
-  });
-  cuyosBoton.addEventListener( ` click `, () => {
-    filterProducts(`Cuyos`);
-  });
-  pecesBoton.addEventListener( ` click `, () => {
-    filterProducts(`Peces`);
-  });
-  huronesBoton.addEventListener( ` click `, () => {
-    filterProducts(`Hurones`);
-  });
-  iguanasBoton.addEventListener( ` click `, () => {
-    filterProducts(`Iguanas`);
-  });
+  
