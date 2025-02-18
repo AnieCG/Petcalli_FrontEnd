@@ -119,3 +119,57 @@ fetch("/public/json/productos.json")
       .map((card) => createCards(card))
       .join("");
   });
+
+
+const filterProducts = (category) => {
+  const productsToShow = products.filter( product => product.category === category )
+}
+  const gatosBoton = document.getElementById(Gatos);
+  const perrosBoton = document.getElementById(Perros);
+  const tortugasBoton = document.getElementById(Tortugas);
+  const avesBoton = document.getElementById(Aves);
+  const miniPigsBoton = document.getElementById(Mini-pigs);
+  const rumiantesBoton = document.getElementById(Rumiantes);
+  const conejosBoton = document.getElementById(Conejos);
+  const hamstersBoton = document.getElementById(Hamsters);
+  const cuyosBoton = document.getElementById(Cuyos);
+  const pecesBoton = document.getElementById(Peces);
+  const huronesBoton = document.getElementById(Hurones);
+  const iguanaBoton = document.getElementById(Iguanas);
+
+  gatosBoton.addEventListener( ` click `, () => {
+    filterProducts(`Gatos`);
+  });
+  perrosBoton.addEventListener( ` click `, () => {
+    filterProducts(`Perros`);
+  });
+  tortugasBoton.addEventListener( ` click `, () => {
+    filterProducts(`Tortugas`);
+  });
+  avesBoton.addEventListener( ` click `, () => {
+    filterProducts(`Aves`);
+  });
+  miniPigsBoton.addEventListener( ` click `, () => {
+    filterProducts(`Mini-pigs`);
+  });
+  rumiantesBoton.addEventListener( ` click `, () => {
+    filterProducts(`Rumiantes`);
+  });
+  conejosBoton.addEventListener( ` click `, () => {
+    filterProducts(`Conejos`);
+  });
+  hamstersBoton.addEventListener( ` click `, () => {
+    filterProducts(`Hamsters`);
+  });
+  cuyosBoton.addEventListener( ` click `, () => {
+    filterProducts(`Cuyos`);
+  });
+  pecesBoton.addEventListener( ` click `, () => {
+    filterProducts(`Peces`);
+  });
+  huronesBoton.addEventListener( ` click `, () => {
+    filterProducts(`Hurones`);
+  });
+  iguanasBoton.addEventListener( ` click `, () => {
+    filterProducts(`Iguanas`);
+  });
