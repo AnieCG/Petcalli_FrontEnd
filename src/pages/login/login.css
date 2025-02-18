@@ -1,10 +1,12 @@
 
 
+#letter {
+  font-family: var(--font_text);
+}
+
 h1 {
-  color: var(--title);
   font-family: var(--font_title);
-  font-weight: 700;
-  font-size: 85px;
+  color: #81b29a;
 }
 
 .input {
@@ -18,27 +20,43 @@ h1 {
   background-color: #e07a5f;
 }
 
-.imgtext {
-  text-align: center;
-  border: 0;
-  margin-left: -50px;
-}
-
-.textimg {
-  font-size: 16px;
-  color: #333;
-  margin-top: 0;
-  padding: 0%;
-}
 .logbutton {
   align-items: center;
+  font-family: var(--font_subtitle);
 }
 
 .logbutton :active {
   color: #e07a5f;
 
 }
+.h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #3d405b;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 
-#phrase {
-  margin-bottom: 0;
+#yet {
+  border-radius: 17px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e07a5f;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+}
+
+#logbutton {
+  border-radius: 17px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e07a5f;
+  color: white;
+  cursor: pointer;
+  align-items: center;
 }

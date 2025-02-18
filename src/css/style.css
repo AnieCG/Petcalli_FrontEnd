@@ -134,7 +134,7 @@ footer {
   }
 }
 
-login {
+.login {
   color: var(--title);
   font-family: var(--font_title);
   font-weight: 700;

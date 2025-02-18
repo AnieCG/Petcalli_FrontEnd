@@ -47,7 +47,7 @@ const insertNav = () => {
           <img src="/public/images/shopping-cart.svg" alt="icono de carrito" />
         </button>
 
-        <button class="btn" type="button" href="#">
+        <button class="btn" type="button" href="">
           <img src="/public/images/user.svg" alt="icono de usuario" />
         </button>
       </div>
