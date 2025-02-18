@@ -33,26 +33,37 @@
                             method="POST" target="_blank" novalidate>
                             <div class="mb-3">
                                 <label for="validationCustom01" class="form-label">Nombre Completo</label>
-                                <input type="text hidden" class="form-control" id="validationCustom01" name="_captcha"
+                                <input type="text hidden" class="form-control validationCustom01" name="_captcha"
                                     minlength="5" maxlength="30" required>
                                 <div class="invalid-feedback">
                                     Por favor, introduce tu nombre completo.
                                 </div>
                             </div>
+
                             <div class="mb-3">
                                 <label for="validationCustom02" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control" id="validationCustom02" name="correo"
+                                <input type="email" class="form-control validationCustom02" name="correo"
                                     aria-describedby="emailHelp" required>
                                 <div class="invalid-feedback">
                                     Por favor, introduce un correo electrónico válido example@example.com
                                 </div>
                             </div>
+                            
+                            <div class="mb-3 container__input">
+                                <label for="validationCustom03" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control validationCustom03" name="telefono" pattern="[0-9]*"
+                                  inputmode="numeric" required>
+                                <div class="invalid-feedback">
+                                  Por favor, introduce un teléfono válido
+                                </div>
+                              </div>
+
                             <div class="mb-3">
-                                <label for="validationCustom03" class="form-label">Contraseña</label>
-                                <input type="text hidden" class="form-control" id="validationCustom01" name="_captcha"
+                                <label for="validationCustom05" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control validationCustom05" name="_captcha"
                                     minlength="5" maxlength="30" required>
                                 <div class="invalid-feedback">
-                                    Por favor, introduce tu nombre completo.
+                                    Por favor, introduce una contraseña válida
                                 </div>
                             </div>
                             <div class="col-12">
@@ -97,6 +108,7 @@
         crossorigin="anonymous"></script>
     <script src="/src/modules/footer/footer.js"></script>
     <script type="module" src="/src/modules/nav/nav.js"></script>
+    <script src="/src/pages/formulario/Form.js"></script>
 </body>
 
 </html>

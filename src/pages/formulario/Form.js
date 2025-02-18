@@ -9,10 +9,10 @@
 //function form es la función para cada formulario individual por eso el parámetro form
 //stopPropagation: previene que el evento se propague, deteniendo la burbuja del evento
 //was-validated: es una clase de bootstrap que añade los estados de validación o invalidación de acuerdo a su estado.
-
 const checkFormValidity = () => {
-  const name = document.querySelector("#validationCustom01");
-  const telephone = document.querySelector("#validationCustom03");
+  const name = document.querySelector(".validationCustom01");
+  const telephone = document.querySelector(".validationCustom03");
+  const password = document.querySelector(".validationCustom05");
   const submitButton = document.querySelector(".button");
 
   const isNameValid =
@@ -25,14 +25,26 @@ const checkFormValidity = () => {
     /^\d+$/.test(telephone.value) &&
     telephone.value.length >= 10;
 
-  submitButton = !(isNameValid && isTelephoneValid);
+  const isPasswordValid =
+    password.value.trim() !== "" &&
+    /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]+$/.test(password.value) &&
+    password.value.length >= 10;
+
+  if (isNameValid && isTelephoneValid && isPasswordValid) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
 };
 
 document
-  .querySelector("#validationCustom01")
+  .querySelector(".validationCustom01")
   .addEventListener("input", checkFormValidity);
 document
-  .querySelector("#validationCustom03")
+  .querySelector(".validationCustom03")
+  .addEventListener("input", checkFormValidity);
+document
+  .querySelector(".validationCustom05")
   .addEventListener("input", checkFormValidity);
 
 document.addEventListener("DOMContentLoaded", checkFormValidity);
