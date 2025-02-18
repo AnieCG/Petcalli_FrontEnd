@@ -29,6 +29,10 @@ const createCards = (producto) => {
                         <button type="button" class="btn btn-primary modal-btn mas-menos"><strong>-</strong></button>
                         <button type="button" class="btn btn-primary modal-btn mas-menos"><strong>+</strong></button>
                     </div>
+                    <div class="btn-group me-2" role="group" aria-label="Fourth group">
+                        <span class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" id="contador${producto.image}">
+                        <strong> 0 </strong> </span>
+                    </div>
                     <div class="btn-group me-2" role="group" aria-label="Second group">
                         <div class="btn-group dropend" role="group">
                             <button type="button" class="btn btn-primary dropdown-toggle modal-btn" data-bs-toggle="dropdown" aria-expanded="false">
@@ -68,3 +72,12 @@ fetch("/public/json/productos.json")
             .map((card) => createCards(card))
             .join("");
     });
+
+
+const contadorPiezas = document.getElementById(`contador${producto.image}`);
+let contadorIndividual = 0;
+
+const controlarContador = ( ) =>{
+    contadorIndividual ++;
+    contadorPiezas.textContent = contadorIndividual;
+};

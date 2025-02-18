@@ -52,6 +52,11 @@ main {
     margin-bottom: 0px;
   }
 
+  .carrusel-btn{
+    background-color: #f2cc8f;
+    border:0;
+  }
+
   h5{
     margin:0;
   }
