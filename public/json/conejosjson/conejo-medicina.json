@@ -1,0 +1,21 @@
+[
+    {
+      "title": "Ware",
+      "image": "https://www.petco.com.mx/medias/300ftw-102448.jpg?context=bWFzdGVyfHJvb3R8Nzg0NDV8aW1hZ2UvanBlZ3xoNjMvaDNmLzEwNjQxNzU4NTg0ODYyLzMwMGZ0d18xMDI0NDguanBnfGU4NjUxZGIzNTMwNTg5OGY4OThlOTYyNWFhNGVhMGM2ZWY2MDQ5MDZlYWI4YWIzODUzZDI5YWJjMTAyNzViZTU",
+      "price": "$251.75",
+      "descripcion": "Ware Kit de Grooming"
+    },
+    {
+      "title": "Sophresh",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNDU3NHxpbWFnZS9qcGVnfGltYWdlcy9oMmQvaDI5LzkyNTg2MjkwNzA4NzguanBnfDEzNTA3NWJhYjI5OGY0NzZjMzQ0N2IwMDE0NmM2YmY5ZTBhOTYxMjU0NWQ2Y2RhZTZkODA1ODZiY2U2MDZmMjk",
+      "price": "$144.00",
+      "descripcion": "Sophresh Limpiador Hábitat para Mamíferos, 473 ml"
+    },
+    {
+      "title": "Zoo Med",
+      "image": "https://www.petco.com.mx/medias/300ftw-130683.jpg?context=bWFzdGVyfHJvb3R8OTc0ODl8aW1hZ2UvanBlZ3xoZTgvaGE3LzEwODA0MzY3MTYzNDIyLzMwMGZ0d18xMzA2ODMuanBnfGViODg3OWExOWZmMTAxNzVkYmQwZjM3ZjU1ZDU0YWFiNjFjNGQzOWRlZjBjNzI1MzJhOWMzMGJmNjBkMGJlYmY",
+      "price": "$46.55",
+      "descripcion": "Zoo Med Small Animal Mineral Block Hueso de Jibia para Roedores, 24 g"
+    }
+  ]
+  

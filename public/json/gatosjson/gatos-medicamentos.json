@@ -1,0 +1,75 @@
+[
+    {
+      "title": "Seresto",
+      "image": "https://www.petco.com.mx/medias/300ftw-116475.jpg?context=bWFzdGVyfHJvb3R8Njg4MjV8aW1hZ2UvanBlZ3xoZTAvaGQxLzEwNzQ4NjE4OTY1MDIyLzMwMGZ0d18xMTY0NzUuanBnfDA2MmY1Yzc2MjAyNDE0MWQ2M2U5MjViZmY1YzRkODFmZWM0MTNjODg5ZWQ5Mjk2MmZkYzlmYWVhNWNlYTFjNGQ",
+      "price": "$975.41",
+      "descripcion": "Seresto Collar Antipulgas y Garrapatas para Perro y Gato, Chico"
+    },
+    {
+      "title": "Advantage Multi",
+      "image": "https://www.petco.com.mx/medias/104718.jpg-300ftw?context=bWFzdGVyfHJvb3R8NzU0MDN8aW1hZ2UvanBlZ3xoMGYvaDE1LzEwNTYzNTU5NDU2Nzk4LzEwNDcxOC5qcGdfMzAwZnR3fGU3MmFhZTAxMThlYmE4MjE4NDRmZWZjYzA3NzZlOWIyYmNhOTI1MDJkNjlkNDRkZDQ0OGM5NTFmZjM3Njk0MTk",
+      "price": "$391.16",
+      "descripcion": "Advantage Multi Pipeta Antiparasitaria Interna y Externa para Gato, 4 a 8 kg"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/122246.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDQzMDB8aW1hZ2UvanBlZ3xoYWIvaGJjLzEwNDk5MTMxNjcwNTU4LzEyMjI0Ni5qcGdfMzAwZnR3fDA3YTk2N2QzYzA3OWEyZTIwOGIyMTcxNTEwZGYxOTE3MjJhMTgwZDVhNmI5YmViZjM4OWEwMjU2YTFkYjA5MmY",
+      "price": "$1,033.70",
+      "descripcion": "Feliway Classic Spray con Efecto Calmante para Gato, 60 ml"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/126895.jpg-300ftw?context=bWFzdGVyfHJvb3R8OTA5OTB8aW1hZ2UvanBlZ3xoZTAvaGJmLzEwNDkyNjUxMTQzMTk4LzEyNjg5NS5qcGdfMzAwZnR3fGRkMzU5NGUzNTY3MDdlZDhhZWUzN2I4NTg4ODk2MzBkNmFmM2Y0YzI4ODRkMzM3ZjdiNmY4OWEzNmZmOTJhNTU",
+      "price": "$1,256.00",
+      "descripcion": "Feliway Friends Set Difusor y Repuesto para Gato, 48 ml"
+    },
+    {
+      "title": "Hill's Prescription Diet",
+      "image": "https://www.petco.com.mx/medias/105193.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTE4MjZ8aW1hZ2UvanBlZ3xoZWQvaGY4LzEwNDcxODM0NzE0MTQyLzEwNTE5My5qcGdfMzAwZnR3fGU0NGVlMTBlNDdhZWIwMTQzMzJkNTQ3MTkwMzA1ZDBjZmFjMDdjYzgzMjIxNDQ1MTg0NjkzN2FmOWExOWMwN2U",
+      "price": "$95.00",
+      "descripcion": "Hill's Prescription Diet i/d Alimento Húmedo Gastrointestinal para Gato, 155 g"
+    },
+    {
+      "title": "Royal Canin Veterinary Diet",
+      "image": "https://www.petco.com.mx/medias/104827.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzkxNTl8aW1hZ2UvanBlZ3xoOGEvaDdmLzEwNTUwODA5ODIxMjE0LzEwNDgyNy5qcGdfMzAwZnR3fDJhNDA5ODY5MjFhNGQzNDk0MGYxZDNiODBmNjEzZGRjMDUzOGIyMTU3ZWE4NWQ3MjUxOGY5Njc0ZmFiMGZmOTA",
+      "price": "$1,586.50",
+      "descripcion": "Royal Canin Veterinary Diet Alimento Seco Gastrointestinal Alto en Energía para Gato Adulto, 4 kg"
+    },
+    {
+      "title": "Vetriderm",
+      "image": "https://www.petco.com.mx/medias/300ftw-116477.jpg?context=bWFzdGVyfHJvb3R8MTg5MjJ8aW1hZ2UvanBlZ3xoZjAvaDE0LzEwODk2NTA2OTQ1NTY2LzMwMGZ0d18xMTY0NzcuanBnfDVlNjI5ZDgxN2Y2M2Q2YWJkNzQ3YmIyYzEzMzliZTM1ZjAxNTU2NzI2YmQ4YWU0MWU4NWU1MGExZWUzYTVhZWI",
+      "price": "$227.29",
+      "descripcion": "Vetriderm Shampoo Terapéutico para Perro y Gato, 350 ml"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NjE5OHxpbWFnZS9qcGVnfGltYWdlcy9oZDIvaDg5LzkyMzQ3NTYzMDQ5MjYuanBnfDBkNzUzMmNjNDc1ZmE2ZWJlOGVlMWQ1ZWNjZWI1MTkwZDIwYjg5ZWZmMjIzYTc4MjcxMjM3ZDg3YzhjM2VjYmI",
+      "price": "$711.55",
+      "descripcion": "Feliway Friends Repuesto para Difusor para Gato, 48 ml"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/122244.jpg-300ftw?context=bWFzdGVyfHJvb3R8OTIyNzF8aW1hZ2UvanBlZ3xoYWYvaDk5LzEwNDkyNjQ2ODgzMzU4LzEyMjI0NC5qcGdfMzAwZnR3fDZiZDFmOGJjN2JhM2I4NzNkNmRmZDM1YTU1MDZjNzAxNDc5YjJkYjQ1OGU5OTA0ZDEzNzQ1MzI1YWIwODZjOTg",
+      "price": "$1,187.60",
+      "descripcion": "Feliway Classic Set Difusor y Repuesto con Efecto Calmante para Gato, 48 ml"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/122245.jpg-300ftw?context=bWFzdGVyfHJvb3R8NzUyOTd8aW1hZ2UvanBlZ3xoZTcvaDQwLzEwNDkyNjQ5MTc3MTE4LzEyMjI0NS5qcGdfMzAwZnR3fDVlNWQyNWZkZDM0MTU5MDM2MzM4ZmI1NTZhNjAyM2Y1N2M0YzllYTFkZGMwMzM3MGRmNTcxMTJhMWI2NTkxYWQ",
+      "price": "$683.05",
+      "descripcion": "Feliway Classic Repuesto para Difusor para Gato, 48 ml"
+    },
+    {
+      "title": "Advantage Multi",
+      "image": "https://www.petco.com.mx/medias/300ftw-104716.jpg?context=bWFzdGVyfHJvb3R8NzEzMDZ8aW1hZ2UvanBlZ3xoNGYvaGJlLzEwODk2NTA0OTc5NDg2LzMwMGZ0d18xMDQ3MTYuanBnfDgxZTZkMDYxMWU5MWZhZGU3N2RjMTlhZTJhNDM1MWRhMDhhYWMzZjM4NTJlMWYwZTE1ZjA5NGVmMjBkODZlNzA",
+      "price": "$355.54",
+      "descripcion": "Advantage Multi Pipeta Antiparasitaria Interna y Externa para Gato, 4 kg"
+    },
+    {
+      "title": "Vetriderm",
+      "image": "https://www.petco.com.mx/medias/107385.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjM4NDh8aW1hZ2UvanBlZ3xoMTkvaDVhLzEwNDg2MzUxOTIxMTgyLzEwNzM4NS5qcGdfMzAwZnR3fGQ2MjE5NGFhY2JiOTcxMjVlMzRiYzkwZmNhNGRjNDU0NDA0NDViMTY3MTI0NjU5NjgyYWUwNmE2MjFjMWQ5ODQ",
+      "price": "$113.29",
+      "descripcion": "Vetriderm Jabón Dermatológico para Perro y Gato, 100 g"
+    }
+  ]
+  
