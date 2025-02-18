@@ -23,32 +23,68 @@
     </header>
 
     <main>
-        <section class="container-fluid pt-sm-5">
+        <section class="container-fluid">
             <div class="row row-colums-sm-12 row-columns-md-8 row-columns-lg-6 d-flex flex-wrap-reverse">
                 <div class="col">
-                    <img src="/public-images/dog-burbuja.registro.png" alt="Perro asomado en imagen de círculo"
-                        class="img-fluid dog-register d-sm-none">
-                    <h2 class="ps-3">Petcalli</h2>
+                    <h2 class="ps-3 text-center text-lg-start pt-3">Petcalli</h2>
                     <h3 class="display-6 mt-4 mb-4 text-center rounded-pill w-50 mx-auto shadow-lg">Registro</h3>
-                    <div class=" container provisional mx-auto shadow-lg rounded-3 mb-4">
-                        <!-- Aquí va el form Ana :D -->
+                    <div class=" container mx-auto shadow-lg rounded-3 mb-4">
+                        <form class="container p-4 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com"
+                            method="POST" target="_blank" novalidate>
+                            <div class="mb-3">
+                                <label for="validationCustom01" class="form-label">Nombre Completo</label>
+                                <input type="text hidden" class="form-control" id="validationCustom01" name="_captcha"
+                                    minlength="5" maxlength="30" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationCustom02" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="validationCustom02" name="correo"
+                                    aria-describedby="emailHelp" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce un correo electrónico válido example@example.com
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationCustom03" class="form-label">Contraseña</label>
+                                <input type="text hidden" class="form-control" id="validationCustom01" name="_captcha"
+                                    minlength="5" maxlength="30" required>
+                                <div class="invalid-feedback">
+                                    Por favor, introduce tu nombre completo.
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check py-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck">
+                                        <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
+                                            términos y condiciones</a>
+                                        <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
+                                            privacidad</a>
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Debes estar de acuerdo antes de enviar
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2"
+                                    type="submit">Crear
+                                    cuenta</button>
+                                <input type="hidden" name="_captcha" value="false">
+                            </div>
+                        </form>
                     </div>
                 </div>
                 <div class="col d-flex flex-column justify-content-end">
-                    <p class="w-75 text-justify mx-auto mt-5 rounded-5 text-register p-4 shadow-lg">
-                        "Porque en el
-                        corazón
-                        de nuestra
-                        tienda
-                        está el
-                        compromiso
-                        de cuidar a tu mascota tanto como tú lo haces.”
-                        <br>Cada animalito tiene una historia única, y está buscando una segunda oportunidad para ser
-                        feliz.
-                        Descubre a tu nuevo amigo y empieza una nueva aventura juntos.
+                    <img src="/public-images/dog-burbuja.registro.png" alt="Perro asomado en imagen de círculo"
+                        class="img-fluid dog-register">
+                    <p class="fs-2 w-75 mx-auto my-auto text-register p-4">
+                        "Porque en el corazón de nuestra tienda está el
+                        compromiso de cuidar a tu mascota tanto como tú lo haces.”
                     </p>
-                    <img src="/public-images/dog-registro.png" alt="Perro asomado"
-                        class="img-fluid dog-register d-none d-sm-block">
                 </div>
             </div>
         </section>
