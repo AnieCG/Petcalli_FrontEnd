@@ -23,11 +23,33 @@ rel="stylesheet" />
     action="" method="POST" target="_blank" novalidate>
         <div class="mb-3 container__input">
           <label for="exampleInputProducto">Nombre del producto</label>
-          <input type="text hidden" class="form-control" id="exampleInputProducto" aria-describedby="productoHelp">
+          <input type="text hidden" class="form-control" id="title" aria-describedby="productoHelp">
           <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
         </div>
+
         <div class="mb-3 container__input">
           <label for="exampleInputDescripcion">Descripcion</label>
+          <input type="descripcion" class="form-control" id="exampleInputDescripcion">
+        </div>
+
+        <div class="mb-3 container__input">
+          <label for="exampleInputTipoDeMascota">Tipo de mascota</label><br>
+          <!--<input type="text" class="form-control" id="exampleInputTipoDeMascota">-->
+          <label for="Perro">
+           <input id="Perro"  type="radio" name="Tipo de mascota">Perro</label>
+           <label for="Gato">
+            <input id="Gato" type="radio" name="Tipo de mascota">Gato</label>
+            <label for="Canario">
+              <input id="Canario" type="radio" name="Tipo de mascota">Canario</label>
+              <label for="Pez">
+                <input id="Pez" type="radio" name="Tipo de mascota">Pez</label>
+            <div class="valid-feedback">Tienes que elegir el tipo de mascota</div><br>
+
+          <label for="exampleInputDescripcion">Tipo de producto</label>
+          <input type="descripcion" class="form-control" id="exampleInputDescripcion"><div class="valid-feedback">Tienes que elegir el tipo producto</div>
+        </div>
+        <div class="mb-3 container__input">
+          <label for="exampleInputDescripcion">Precio</label>
           <input type="descripcion" class="form-control" id="exampleInputDescripcion">
         </div>
         <!--<div class="form-group form-check">
