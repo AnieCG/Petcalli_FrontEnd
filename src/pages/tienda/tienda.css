@@ -15,6 +15,7 @@ main {
     background-color: var(--block-images1);
     border-radius: 20px;
     padding-left: 0;
+    padding-right: 0;
 
     h2 {
       color: var(--subtitle);
@@ -35,14 +36,33 @@ main {
     .list-group {
       text-align: start;
     }
+
+    div.card {
+      background-color: var(--background_page);
+      margin: 0;
+      border-radius: 20px;
+      padding: 0;
+    }
+
+    p.card-text {
+      margin: 0;
+    }
     
+    img.card-img-top{
+      height: 350px;
+    }
   }
 
   .conteiner {
     padding-left: 5rem;
-  }
+    }
 
 }
+  
+ 
+
+
+
 
 .petSelection {
   .animal {

@@ -279,151 +279,244 @@
 
     <br />
 
-    <section class="container">
-      <!-- de productos y filtros -->
-      <div class="row gx-5">
-        <!-- Columna filtro -->
-        <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3 white-space: nowrap">
+      <section class="container">
+        <!-- de productos y filtros -->
+        <div class="row gx-5">
+          <!-- Columna filtro -->
+          <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
 
-          <div class="p-2">
-            <h2>Filtrar por categorias</h2>
-            <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-            <div class="form-check">
-              <input class="form-check-input d-flex" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault" style="padding-right: 60%;">
-                Accesorios
-              </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
+            <!-- Filtrar por categoria -->
+            <div class="p-2">
+              <h2>Filtrar por categorias</h2>
+              <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
+              <div class="form-check">
+                <input class="form-check-input d-flex" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault" style="padding-right: 60%;">
+                  Accesorios
+                </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
+              </div>
+
+              <!-- FORMA SIN CONTADOR DE RESULTADOS -->
+              <div class="form-check">
+                <input class="form-check-input" 
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked" 
+                  checked
+                />
+                <label class="form-check-label"
+                  for="flexCheckChecked">
+                  Ropa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Alimento
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Jugetes
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Medicamentos
+                </label>
+              </div>
             </div>
 
-            <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Ropa
-              </label>
+            <!-- FILTRAR POR PRECIO -->
+            <div class="p-2">
+              <h2>Filtrar por precio</h2>
+              <input type="range" class="form-range" id="customRange1" /><label
+                for="customRange1"
+                class="form-label"
+                >Precio $10.00 - $1,000.00</label
+              >
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Alimento
-              </label>
+
+            <!-- FILTRAR POR MARCAS -->
+            <div class="p-2">
+              <h2>Filtrar por marca</h2>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Instinct
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Royal Canin
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Hills Science Diet
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Cunipic
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  JW Pet Company
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexCheckChecked">
+                  Tetra
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Jugetes
-              </label>
+
+            <!-- Filtrar por Tag -->
+            <div class="p-2">
+              <h2>Filtrado por Tags</h2>
+                  <a href="/" class="badge rounded-pill text-bg-light">Juguetes</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Alimento</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Natural</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Salmón</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Catnip</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Arnés</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Cachorro</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Rueda</a>
+                  <a href="/" class="badge rounded-pill text-bg-light">Jaula</a>              
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Medicamentos
-              </label>
+
+            <!-- PRODUCTOS PREMIUM -->
+            <div class="p-2">
+              <h2>Productos Premium</h2>
+
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img src="" class="flex-shrink-0 me-3" alt="..." />
+                  <div>
+                    <h5 class="mt-0">Royal Canin</h5>
+                    <p>$1000.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                  <div>
+                    <h5 class="mt-0">Instinct</h5>
+                    <p>$2,700.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                  <div>
+                    <h5 class="mt-0">WholeHearted</h5>
+                    <p>$850.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                  <div>
+                    <h5 class="mt-0">Bravery</h5>
+                    <p>$450.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                  <div>
+                    <h5 class="mt-0">Tetra ReptoMin</h5>
+                    <p>$711.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+             <!-- ANUNCIOS -->
+            <div class="card">
+              <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1" class="card-img-top" alt="">
+                <div class="card-body">
+                  <p class="card-text">USC Hotel</p>
+                  <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&" class="btn">Booking.com</a>
+                </div>
             </div>
           </div>
 
-          <!-- FILTRAR POR PRECIO -->
-          <div class="p-2">
-            <h2>Filtrar por precio</h2>
-            <input type="range" class="form-range" id="customRange1" /><label for="customRange1"
-              class="form-label">Precio $10.00 - $1,000.00</label>
-          </div>
-
-          <!-- FILTRAR POR MARCAS -->
-          <div class="p-2">
-            <h2>Filtrar por marca</h2>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Instinct
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Royal Canin
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Hills Science Diet
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Cunipic
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                JW Pet Company
-              </label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-              <label class="form-check-label" for="flexCheckChecked">
-                Tetra
-              </label>
-            </div>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-            <label class="form-check-label" for="flexCheckChecked">
-              Comida
-            </label>
-          </div>
-
-          <!-- PRODUCTOS PREMIUM -->
-          <div class="p-2">
-            <h2>Productos premium</h2>
-
-            <div class="d-flex position-relative">
-              <img src="..." class="flex-shrink-0 me-3" alt="..." />
-              <div>
-                <h5 class="mt-0">Royal Canin</h5>
-                <p>$1000.00 mnx.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="d-flex position-relative">
-              <img src="..." class="flex-shrink-0 me-3" alt="..." />
-              <div>
-                <h5 class="mt-0">Royal Canin</h5>
-                <p>$1000.00 mnx.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="d-flex position-relative">
-              <img src="..." class="flex-shrink-0 me-3" alt="..." />
-              <div>
-                <h5 class="mt-0">Royal Canin</h5>
-                <p>$1000.00 mnx.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="d-flex position-relative">
-              <img src="..." class="flex-shrink-0 me-3" alt="..." />
-              <div>
-                <h5 class="mt-0">Royal Canin</h5>
-                <p>$1000.00 mnx.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
-
-            <div class="d-flex position-relative">
-              <img src="..." class="flex-shrink-0 me-3" alt="..." />
-              <div>
-                <h5 class="mt-0">Royal Canin</h5>
-                <p>$1000.00 mnx.</p>
-                <a href="#" class="stretched-link">Go somewhere</a>
-              </div>
-            </div>
+          <div class="col-lg-8 col-md-8 col-8">
+            <!-- productos -->
+            <p class="resultados">12 de 36 resultados mostrados</p>
+            <div
+              class="row row-cols-3 row-seccion-cards p-2"
+              id="seccion-cards"
+            ></div>
+            <div id="seccion-cards2"></div>
+            <!-- modales -->
           </div>
         </div>
 
