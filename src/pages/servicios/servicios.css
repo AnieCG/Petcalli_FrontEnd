@@ -1,5 +1,5 @@
    /* Estilos para el efecto de volteo */
-.flip-card {
+   .flip-card {
     perspective: 1000px;
     width: 18rem;
     height: 300px; 
@@ -62,9 +62,6 @@
 .banner-servicios p{
     
     background-color: #f2cc8f;
-    font-size: x-large;
-    height: 120px;
     padding-top: 25px;
-
-
+    font-size: x-large;
 }
