@@ -24,6 +24,7 @@ section {
   .form-container {
     background-color: transparent;
     max-width: 850px;
+    min-width: 350px;
   }
 
   .button {
