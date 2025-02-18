@@ -283,26 +283,20 @@
     <section class="col-12"> <!-- de productos y filtros -->
       <div class="container">
         <div class="row gx-5">
-          <!-- Columna filtro d-none d-sm-block para que desaparezca-->
-          <div id="filtro" class="col-10 col-md-3 m-3">
+          <!-- Columna filtro -->
+          <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3 white-space: nowrap">
 
             <div class="p-2">
               <h2>Filtrar por categorias</h2>
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check d-flex justify-content-between">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
+              <div class="form-check">
+                <input class="form-check-input d-flex" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault" style="padding-right: 60%;">
                   Accesorios
-                </label><span class="badge text-bg-primary rounded-pill">14</span>
+                </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
               </div>
 
               <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                <label class="form-check-label" for="flexCheckChecked">
-                  Viaje
-                </label>
-              </div>
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
@@ -312,7 +306,7 @@
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                 <label class="form-check-label" for="flexCheckChecked">
-                  Comida
+                  Alimento
                 </label>
               </div>
               <div class="form-check">
