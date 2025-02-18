@@ -35,18 +35,20 @@ main {
     .list-group {
       text-align: start;
     }
+    
   }
 
   .conteiner {
     padding-left: 5rem;
   }
+
 }
 
 .petSelection {
   .animal {
     /* cartas animales */
 
-    width: 202px;
+    max-width: 202px;
     height: 290px;
     background-color: #f2cc8f;
     margin-bottom: 0px;
@@ -62,7 +64,7 @@ main {
   }
 
   .img-pets {
-    width: 207px;
+    max-width: 250px;
     height: 255px;
     border-radius: 45%;
     margin-bottom: 0;
@@ -71,7 +73,7 @@ main {
 
   .card-body{
 margin-top: 0%;
-    width: 203px;
+    max-width: 250px;
     height: 30px;
     margin-bottom: 0px;
   }
@@ -79,14 +81,21 @@ margin-top: 0%;
   .carouselAnimals {
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #f2cc8f;
-    height: 375px;
- /*    width: fit-content; */
+    height: 380px;
+  max-width: 1000px;
     /*     min-width: 700px; */
     border-radius: 5cap;
   }
 
   .titulo {
     color: #81b29a;
+  }
+
+  .button-next-before{
+    background-color: #E07A5F;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
   }
 }
 
