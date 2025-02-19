@@ -201,3 +201,13 @@ const filterProductsByCategory = (category) => {
   });
 
 
+
+
+
+
+
+
+// Seccion de filtrado por tags
+
+
+  
