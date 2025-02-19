@@ -121,15 +121,26 @@ const createCards = (producto) => {
       .join("");
   }); 
 
-const filterProducts = (category) => {
+const filterProductsByPetType = (petType) => {
   fetch("/public/json/productos.json")
   .then((products) => products.json())
   .then((products) => {
-    const productsToShow = products.filter( product => product.petType === category );
+    const productsToShow = products.filter( product => product.petType === petType );
     $seccionCards.innerHTML = productsToShow
       .map((card) => createCards(card))
       .join("");
   });
+}
+
+const filterProductsByCategory = (category) => {
+  fetch("/public/json/productos.json")
+    .then((products) => products.json())
+    .then((products) => {
+      const productsToShow = products.filter( product => product.category === category );
+      $seccionCards.innerHTML = productsToShow
+        .map((card) => createCards(card))
+        .join("");
+    });
   
 }
   const catsButton = document.getElementById( "Gatos" );
@@ -140,26 +151,53 @@ const filterProducts = (category) => {
   const otherButton = document.getElementById( "Otros" );
 
   catsButton.addEventListener( "click", () => {
-    filterProducts("Gato");
+    filterProductsByPetType("Gato");
   });
   dogsButton.addEventListener( "click", () => {
-    filterProducts("Perro");
+    filterProductsByPetType("Perro");
   });
   rabbitsButton.addEventListener( "click", () => {
-    filterProducts("Conejo");
+    filterProductsByPetType("Conejo");
   });
   fishesButton.addEventListener( "click", () => {
-    filterProducts("Peces");
+    filterProductsByPetType("Peces");
   });
   birdsButton.addEventListener( "click", () => {
-    filterProducts("Aves");
+    filterProductsByPetType("Aves");
   });
   otherButton.addEventListener( "click", () => {
-    filterProducts("Otros");
+    filterProductsByPetType("Otros");
   });
 
 
-  const button = document.getElementById("flexCheckDefault");
-  button.addEventListener( "click", () => console.log(button));
-  console.log(button);
-  
+  /* const button = document.getElementById("flexCheckDefault");
+  button.addEventListener( "click", () => console.log(button.checked)); */
+
+  const accesoriesButton = document.getElementById("accesories");
+  const clothesButton = document.getElementById("clothes");
+  const foodButton = document.getElementById("food");
+  const toysButton = document.getElementById("toys");
+  const medicinesButton = document.getElementById("medicines");
+
+  accesoriesButton.addEventListener( "click", () => {
+    if ( accesoriesButton.checked )
+      filterProductsByCategory("Accesorios");
+  });
+  clothesButton.addEventListener( "click", () => {
+    if ( clothesButton.checked )
+      filterProductsByCategory("Ropa");
+  });
+  toysButton.addEventListener( "click", () => {
+    if ( toysButton.checked )
+      filterProductsByCategory("Juguetes");
+  });
+  foodButton.addEventListener( "click", () => {
+    if ( foodButton.checked )
+      filterProductsByCategory("Alimento");
+  });
+  medicinesButton.addEventListener( "click", () => {
+    if ( medicinesButton.checked )
+      filterProductsByCategory("Medicamentos");
+  });
+
+
