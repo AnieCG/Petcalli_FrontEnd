@@ -19,74 +19,92 @@ rel="stylesheet" />
 <main>
 <section>
     <h3 class="display-5 text-center fw-bold mb-5 pt-5">Nuevo Producto</h3>
-    <form class="contact_form container p-4 border rounded-5 needs-validation"
-    action="" method="POST" target="_blank" novalidate>
-        
-    <div class="mb-3 container__input">
-          <label for="exampleInputProducto">Nombre del producto</label>
-          <input type="text hidden" class="form-control" id="title" aria-describedby="productoHelp" required>
-          <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+    <form class="contact_form container p-4 border rounded-5 needs-validation" action="" method="POST" target="_blank"
+      novalidate>
+    
+      <div class="mb-3 container__input">
+        <label for="title" class="form-label">Nombre del producto</label>
+        <input type="text hidden" class="form-control" id="title" name="producto" aria-describedby="titleHelp" required>
+        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <div class="valid-feedback">Debes indicar el nombre</div>
+      </div>
+    
+      <div class="mb-3 container__input">
+        <label for="marca">Marca</label>
+        <input type="text hidden" class="form-control" id="marca" name="marca" required>
+        <div class="valid-feedback">Debes indicar la marca</div>
+      </div>
+    
+      <div class="mb-3 container__input">
+        <label for="petType" class="form-label">Tipo de mascota</label>
+    
+        <div class="form-check">
+          <label class="form-check-label" for="petType">Perro
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option1" required>
+          </label>
+        </div>
+    
+        <div class="form-check">
+          <label class="form-check-label" for="petType">Gato
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option2" required>
+          </label>
+        </div>
+    
+        <div class="form-check">
+          <label class="form-check-label" for="petType">Canario
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option3" required>
+          </label>
+        </div>
+    
+        <div class="form-check">
+          <label class="form-check-label" for="petType">Pez
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option4" required>
+          </label>
+        </div>
+    
+        <div class="form-check">
+          <label class="form-check-label" for="petType">Otros
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option5" required>
+          </label>
+        </div><br>
+    
+        <div class="mb-3 container__input">
+          <label for="image" class="form-label">Image URL</label>
+          <input type="text" class="form-control" id="image" name="image" required>
+          <div class="valid-feedback">Debes dar una direccion URL</div>
+        </div>
+    
+        <div class="mb-3 container__input">
+          <label for="price" class="form-label">Precio</label>
+          <input type="number" class="form-control" id="price" name="precio" required>
+          <div class="valid-feedback">Debes indicar el precio</div>
+        </div>
+    
+        <div class="mb-3 container__input">
+          <label for="description" class="form-label">Descripcion</label>
+          <input type="text hidden" class="form-control" id="description" name="descripcion" required>
+          <div class="valid-feedback">Debes dar una descripcion general</div>
         </div>
 
         <div class="mb-3 container__input">
-          <label for="exampleInputDescripcion">Marca</label>
-          <input type="descripcion" class="form-control" id="marca" required>
-        </div>
+          <label for="category" class="form-label">Categoria</label>
+          <select class="form-control form-control-lg" id="category" name="categoria" required>
+            <option>Alimentos</option>
+            <option>Cuidado/Higiene</option>
+            <option>Ropa/Accesorios</option>
+          </select>
 
-        <div class="mb-3 container__input">
-          <label for="exampleInputTipoDeMascota">Tipo de mascota</label>
-          <!--<input type="text" class="form-control" id="exampleInputTipoDeMascota">-->
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Tipo de mascota" id="petType" value="option1" checked>
-            <label class="form-check-label" for="exampleRadios1">
-              Perro
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Tipo de mascota" id="petType" value="option2" required>
-            <label class="form-check-label" for="exampleRadios2">
-              Gato
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Tipo de mascota" id="petType" value="option3" required>
-            <label class="form-check-label" for="exampleRadios3">
-              Canario
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="Tipo de mascota" id="petType" value="option4" required>
-            <label class="form-check-label" for="exampleRadios4">
-              Pez
-            </label>
-          </div> 
-          <div class="form-check">
-              <input class="form-check-input" type="radio" name="Tipo de mascota" id="petType" value="option5" required>
-              <label class="form-check-label" for="exampleRadios5">
-                Otros
-              </label>
-            </div><br>
-            <div class="mb-3 container__input">
-              <label for="newItemImageUrl">Image URL</label>
-              <input type="text" class="form-control" id="image" required>
-          </div> 
           <div class="mb-3 container__input">
-            <label for="exampleInputPrecio">Precio</label>
-            <input type="text" class="form-control" id="price" required>
+            <label for="size" class="form-label">Tamaño</label>
+            <input type="text hidden" class="form-control" id="size" name="tamaño" required>
+            <div class="valid-feedback">Debes indicar el tamaño</div>
           </div>
 
-
-        <label for="exampleInputDescripcion">Tipo de producto</label>
-          <input type="descripcion" class="form-control" id="exampleInputDescripcion"><div class="valid-feedback" required>Tienes que elegir el tipo producto</div>
-        </div>
-        <div class="mb-3 container__input">
-          <label for="exampleInputDescripcion">Precio</label>
-          <input type="descripcion" class="form-control" id="exampleInputDescripcion">
-        </div>
-        <!--<div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>-->
+          <div class="mb-3 container__input">
+            <label for="color" class="form-label">Color</label>
+            <input type="text hidden" class="form-control" id="color" name="color" required>
+            <div class="valid-feedback">Debes indicar el color</div>
+          </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
 </section>
