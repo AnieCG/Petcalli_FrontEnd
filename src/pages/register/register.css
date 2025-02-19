@@ -24,11 +24,17 @@ section {
   .form-container {
     background-color: transparent;
     max-width: 850px;
+    min-width: 350px;
   }
 
   .button {
     background-color: var(--block-images1);
     border: none;
+  }
+
+  p {
+    color: var(--subtitle);
+    font-weight: 600;
   }
 
   .dog-register {
