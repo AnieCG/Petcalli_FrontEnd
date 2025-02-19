@@ -10,55 +10,46 @@
 //stopPropagation: previene que el evento se propague, deteniendo la burbuja del evento
 //was-validated: es una clase de bootstrap que añade los estados de validación o invalidación de acuerdo a su estado.
 
-const checkFormValidity = (form) => {
-  const inputs = form.querySelectorAll("input, select, textarea");
-  let allValid = true;
-
-  inputs.forEach((input) => {
-    if (input.checkValidity()) {
-      input.classList.remove("is-invalid");
-      input.classList.add("is-valid");
-    } else {
-      input.classList.remove("is-valid");
-      input.classList.add("is-invalid");
-      allValid = false;
-    }
-  });
-
-  return allValid;
-};
-
-// Añadir los event listeners para la validación en tiempo real
-document
-  .querySelectorAll(
-    ".needs-validation input, .needs-validation select, .needs-validation textarea"
-  )
-  .forEach((input) => {
-    input.addEventListener("input", (event) => {
-      const form = event.target.closest("form");
-      checkFormValidity(form);
-    });
-  });
-
-// Validación al enviar el formulario
 (function () {
+  "use strict";
   const forms = document.querySelectorAll(".needs-validation");
   Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener("submit", function (event) {
-      if (!checkFormValidity(form) || !form.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      } else {
-        form.classList.add("was-validated");
-        setTimeout(() => {
-          form.reset();
-          form.classList.remove("was-validated");
-          form.querySelectorAll(".is-valid, .is-invalid").forEach((input) => {
-            input.classList.remove("is-valid");
-            input.classList.remove("is-invalid");
+    form.addEventListener(
+      "submit",
+      function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        } else {
+          event.preventDefault(); // Previene el envío predeterminado
+          fetch(form.action, {
+            //es el post del form-submit quiero realizar una solicitud
+            method: "POST", //Es el mètodo con el cuàl voy a enviar los datos del form
+            body: new FormData(form),
+          }).then(() => {
+            //Si se resuelve el formulario se resetea, se remueven los validadores y aparece el alert
+            form.reset(); // Restablece el formulario después del envío exitoso
+            form.classList.remove("was-validated"); // Remueve la clase de validación
+            alert("El formulario se envió correctamente!"); //Se lo puse porque ya no redirige a otra pàgina lo hace enseguida
           });
-        }, 1000);
-      }
-    });
+        }
+        form.classList.add("was-validated"); //Se le añaden las validaciones a acada uno
+      },
+      false
+    );
   });
 })();
+
+// JavaScript para mostrar/ocultar la contraseña
+const togglePassword = document.querySelector("#togglePassword"); //es del boton este id
+const password = document.querySelector("#password"); //es el del input
+
+togglePassword.addEventListener("click", () => {
+  //cuando le doy click al boton de toggle voy a cambiar entre el input del password y el texto del input
+  // Alterna entre ver y no ver la contraseña
+  const type =
+    //se obtiene el atributo type del input
+    //si type es = password ? text y al revès
+    password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+});
