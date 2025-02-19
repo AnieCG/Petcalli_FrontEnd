@@ -13,85 +13,132 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
-    <link rel="stylesheet" href="prueba.css">
+  <link rel="stylesheet" href="prueba.css">
 </head>
 
 <body>
 
-        <header>
-            <nav id="navbar"></nav> 
+  <header>
+    <nav id="navbar"></nav>
     <section>
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-6 d-flex flex-column pt-5 order-2 order-lg-1">
-              <h1 class="text-center text-lg-start col-12 col-lg-6 d-flex flex-column pt-1"> Petcalli</h1>
-              <div class="pt-3 text-center text-md-center text-lg-start">
-                <div class="login-container">
-                  <div class="button-container">
-                    <h3><a href="/src/pages/register/register.html">
-                        <input id="yet" type="button" value="¿Aún no tienes cuenta Petcalli? Regístrate aquí." /> </a>
-                    </h3>
-                  </div> <br />
-                  <div style="display: flex; justify-content: center; gap: 15px; align-items: center; w-100">
-                    <img style="height: 25px; flex-shrink: 0" src="/public-images/DeviconGoogle.png"
-                      alt="logo de google" />
-                    <img style="height: 25px; flex-shrink: 0" src="/public-images/LogosFacebook.png"
-                      alt="logo de facebook" />
-                    <img style="height: 25px; flex-shrink: 0" src="/public-images/PrimeTwitter.png"
-                      alt="logo de twitter ahora x" />
-                  </div> <br />
-                  <div id="letter" class="text-center my-3">o inicia sesión</div>
-  
-                  <div class="container provisional mx-auto shadow-lg rounded-3 mb-4 mt-5 p-3">
-  
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 d-flex flex-column pt-5 order-2 order-lg-1">
+            <h1 class="text-center text-lg-start col-12 col-lg-6 d-flex flex-column pt-1"> Petcalli</h1>
+            <div class="pt-3 text-center text-md-center text-lg-start">
+              <div class="login-container">
+                <div class="button-container">
+                  <h3><a href="/src/pages/register/register.html">
+                      <input id="yet" type="button" value="¿Aún no tienes cuenta Petcalli? Regístrate aquí." /> </a>
+                  </h3>
+                </div> <br />
+                <div style="display: flex; justify-content: center; gap: 15px; align-items: center; w-100">
+                  <img style="height: 25px; flex-shrink: 0" src="/public-images/DeviconGoogle.png"
+                    alt="logo de google" />
+                  <img style="height: 25px; flex-shrink: 0" src="/public-images/LogosFacebook.png"
+                    alt="logo de facebook" />
+                  <img style="height: 25px; flex-shrink: 0" src="/public-images/PrimeTwitter.png"
+                    alt="logo de twitter ahora x" />
+                </div> <br />
+                <div id="letter" class="text-center my-1"> o inicia sesión </div>
 
-  <!--          FORMULARIO    -->
-                    <form id="loginForm">
-                      <div class="mb-3">
-                        <label for="email" class="form-label letter" style="border-radius: 20px w-100">Correo
-                          Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="petcalli_genial@gmail.com" />
+                <div class="container provisional mx-auto shadow-lg rounded-3 mb-4 mt-5 p-3">
+
+
+                  <!--          FORMULARIO    -->
+                  <form id="loginForm">
+                    <div class="mb-3">
+                      <label for="email" class="form-label letter" style="border-radius: 20px w-100">Correo
+                        Electrónico</label>
+                      <input type="email" class="form-control" id="email" placeholder="petcalli_genial@gmail.com" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label letter">Contraseña</label>
+                      <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" />
+                      <div class="mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          <span>Acepto los </span><a href="/src/pages/terminosyaviso/terminos.html" target="_blank">
+                            términos y condiciones</a> <span>y el</span>
+                          <a href="/src/pages/terminosyaviso/aviso.html" target="_blank"> aviso de
+                            privacidad</a>
+                        </label>
                       </div>
-                      <div class="mb-3">
-                        <label for="password" class="form-label letter">Contraseña</label>
-                        <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" />
-                        <div class="mt-2">
-                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                          <label class="form-check-label" for="invalidCheck">
-                            <span>Acepto los </span><a href="/src/pages/terminosyaviso/terminos.html" target="_blank">
-                              términos y condiciones</a> <span>y el</span>
-                            <a href="/src/pages/terminosyaviso/aviso.html" target="_blank"> aviso de
-                              privacidad</a>
-                          </label>
+                    </div>
+                    <button id="logbutton" type="submit" class="btn btn-primary w-150 mb-3"> Iniciar Sesión </button>
+                    <br>
+
+
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Restablece tu contraseña</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Ingresa el correo electrónicos asociado a tu cuenta Petcalli.
+                            <input type="email" class="form-control" id="email" placeholder="petcalli_29@gmail.com" />
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn" data-bs-target="#exampleModalToggle2"
+                              data-bs-toggle="modal">Enviar</button>
+                          </div>
                         </div>
                       </div>
-                      <button id="logbutton" type="submit" class="btn btn-primary w-150 mb-3"> Iniciar Sesión </button>
-                    </form>
-        
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">¡Listo!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Te hemos enviado una contraseña temporal al correo electrónico proporcionado. Para mayor
+                            seguridad, cambiala en cuanto tengas acceso a tu cuenta.
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste tu contraseña? 
+                    </u></button>
 
-                  </div>
+                  </form>
+
+
+
+
+
+
+
                 </div>
               </div>
-            </div>    
-            <div class="col-12 col-lg-6 d-flex flex-column align-items-lg-end order-1 order-lg-2"> 
-              <p class=" mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-5">
-                "Porque en el corazón de nuestra tienda está el compromiso de
-                cuidar a tu mascota tanto como tú lo haces"
-              </p>
-              <div class="d-flex row d-md-block d-lg-block d-sm-none" style="flex-grow: 1; margin-top: auto;">
             </div>
-              <div class="d-flex d-md-none d-lg-none d-md-block">
-                <img style="border-radius: 50%; text-align: center; align-items: center;"
+          </div>
+          <div class="col-12 col-lg-6 d-flex flex-column align-items-lg-end order-1 order-lg-2">
+            <p id="frase" class=" mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-5">
+              "Porque en el corazón de nuestra tienda está el compromiso de
+              cuidar a tu mascota tanto como tú lo haces"
+            </p>
+            <div class="d-flex row d-md-block d-lg-block d-sm-none" style="flex-grow: 1; margin-top: auto;">
+            </div>
+            <div class="d-flex d-md-none d-lg-none d-md-block">
+              <img style="border-radius: 50%; text-align: center; align-items: center;"
                 src="/public-images/dog-header.PNG" alt="Perro crestado rodesiano asomando la cabeza" />
             </div>
-            <img id="perrito2" class="d-flex  d-none d-lg-block" src="/public-images/dog-header.PNG" alt="Perro crestado rodesiano asomando la cabeza" />
-            </div> 
+            <img id="perrito2" class="d-flex d-none d-lg-block" src="/public-images/dog-header.PNG"
+              alt="Perro crestado rodesiano asomando la cabeza" />
           </div>
         </div>
-      </section>
-    </header>
+      </div>
+    </section>
+  </header>
 
-  
+
   <footer id="footer" class="bd-footer py-4 py-md-5"></footer>
 
 
@@ -101,4 +148,3 @@
 </body>
 
 </html>
-

@@ -58,19 +58,58 @@
                           </label>
                         </div>
                       </div>
-                      <button id="logbutton" type="submit" class="btn btn-primary w-150 mb-3"> Iniciar Sesión </button>
+                      <button id="logbutton" type="submit" class="btn btn-primary w-150 mb-3"> Iniciar Sesión </button> <br>
+                      
+                      <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Restablece tu contraseña</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Ingresa el correo electrónicos asociado a tu cuenta Petcalli.
+                            <input type="email" class="form-control" id="email" placeholder="petcalli_29@gmail.com" />
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn" data-bs-target="#exampleModalToggle2"
+                              data-bs-toggle="modal">Enviar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="exampleModalToggle2" aria-hidden="true"
+                      aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">¡Listo!</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            Te hemos enviado una contraseña temporal al correo electrónico proporcionado. Para mayor
+                            seguridad, cambiala en cuanto tengas acceso a tu cuenta.
+                          </div>
+                        
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste tu contraseña? 
+                    </u></button>
+
+
+
+
                     </form>
         
-
                   </div>
                 </div>
               </div>
-            </div>    
+            </div> 
+
             <div class="col-12 col-lg-6 d-flex flex-column align-items-lg-end order-1 order-lg-2"> 
-              <p class=" mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-5">
-                "Porque en el corazón de nuestra tienda está el compromiso de
-                cuidar a tu mascota tanto como tú lo haces"
-              </p>
+              <p id="frase" class=" mx-auto mx-md-auto mx-lg-0 text-center text-md-center text-lg-start fs-4 col-9 pt-5"> "Porque en el corazón de nuestra tienda está el compromiso de cuidar a tu mascota tanto como tú lo haces" </p>
               <div class="d-flex row d-md-block d-lg-block d-sm-none" style="flex-grow: 1; margin-top: auto;">
             </div>
               <div class="d-flex d-md-none d-lg-none d-md-block">
