@@ -9,69 +9,56 @@
 //function form es la función para cada formulario individual por eso el parámetro form
 //stopPropagation: previene que el evento se propague, deteniendo la burbuja del evento
 //was-validated: es una clase de bootstrap que añade los estados de validación o invalidación de acuerdo a su estado.
-const checkFormValidity = () => {
-  const name = document.querySelector(".validationCustom01");
-  const telephone = document.querySelector(".validationCustom03");
-  const password = document.querySelector(".validationCustom05");
-  const submitButton = document.querySelector(".button");
 
-  const isNameValid =
-    name.value.trim() !== "" &&
-    name.value.length >= 5 &&
-    name.value.length <= 31;
+const checkFormValidity = (form) => {
+  const inputs = form.querySelectorAll("input, select, textarea");
+  let allValid = true;
 
-  const isTelephoneValid =
-    telephone.value.trim() !== "" &&
-    /^\d+$/.test(telephone.value) &&
-    telephone.value.length >= 10;
+  inputs.forEach((input) => {
+    if (input.checkValidity()) {
+      input.classList.remove("is-invalid");
+      input.classList.add("is-valid");
+    } else {
+      input.classList.remove("is-valid");
+      input.classList.add("is-invalid");
+      allValid = false;
+    }
+  });
 
-  const isPasswordValid =
-    password.value.trim() !== "" &&
-    /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]+$/.test(password.value) &&
-    password.value.length >= 10;
-
-  if (isNameValid && isTelephoneValid && isPasswordValid) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
+  return allValid;
 };
 
+// Añadir los event listeners para la validación en tiempo real
 document
-  .querySelector(".validationCustom01")
-  .addEventListener("input", checkFormValidity);
-document
-  .querySelector(".validationCustom03")
-  .addEventListener("input", checkFormValidity);
-document
-  .querySelector(".validationCustom05")
-  .addEventListener("input", checkFormValidity);
+  .querySelectorAll(
+    ".needs-validation input, .needs-validation select, .needs-validation textarea"
+  )
+  .forEach((input) => {
+    input.addEventListener("input", (event) => {
+      const form = event.target.closest("form");
+      checkFormValidity(form);
+    });
+  });
 
-document.addEventListener("DOMContentLoaded", checkFormValidity);
-
+// Validación al enviar el formulario
 (function () {
   const forms = document.querySelectorAll(".needs-validation");
   Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener("input", checkFormValidity);
-    form.addEventListener(
-      "submit",
-      function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        } else {
-          form.classList.add("was-validated");
-          setTimeout(() => {
-            form.reset();
-            form.classList.remove("was-validated");
-          }, 1000);
-        }
-      },
-      false
-    );
-  });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    forms.forEach((form) => checkFormValidity.call(form));
+    form.addEventListener("submit", function (event) {
+      if (!checkFormValidity(form) || !form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        form.classList.add("was-validated");
+        setTimeout(() => {
+          form.reset();
+          form.classList.remove("was-validated");
+          form.querySelectorAll(".is-valid, .is-invalid").forEach((input) => {
+            input.classList.remove("is-valid");
+            input.classList.remove("is-invalid");
+          });
+        }, 1000);
+      }
+    });
   });
 })();
