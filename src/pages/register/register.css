@@ -32,6 +32,11 @@ section {
     border: none;
   }
 
+  p {
+    color: var(--subtitle);
+    font-weight: 600;
+  }
+
   .dog-register {
     min-width: 380px;
   }
