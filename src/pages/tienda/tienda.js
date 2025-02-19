@@ -162,4 +162,16 @@ const filterProducts = (category) => {
   const button = document.getElementById("flexCheckDefault");
   button.addEventListener( "click", () => console.log(button));
   console.log(button);
+
+
+
+
+
+
+
+
+
+// Seccion de filtrado por tags
+
+
   

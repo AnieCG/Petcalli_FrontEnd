@@ -57,6 +57,10 @@ main {
     padding-left: 5rem;
     }
 
+    button{
+      border-radius: 40%;
+    }
+
 }
   
  
