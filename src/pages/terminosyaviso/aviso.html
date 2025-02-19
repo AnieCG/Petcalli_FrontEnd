@@ -17,63 +17,12 @@
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/public/images/Logo-shape.svg" alt="logo de tienda petcalli con una huella de mascota" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mr-lg-5">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Servicios</a>
-              </li>
-              <li class="nav-item li-item">
-                <a class="nav-link" href="/src/pages/about/Acerca_de_nosotros.html">Sobre nosotros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-            </ul>
-  
-            <form class="d-flex" role="search">
-              <div class="input-group">
-                <input class="form-control input" type="search" placeholder="buscar productos"
-                  aria-label="buscar productos" />
-                <button class="btn boton-buscar" type="submit">
-                  <img src="/public/images/share.svg" alt="buscar" />
-                </button>
-              </div>
-            </form>
-  
-            <button class="btn" type="button" href="#">
-              <img src="/public/images/like-products.svg" alt="icono de favoritos" />
-            </button>
-  
-            <button class="btn" type="button" href="#">
-              <img src="/public/images/shopping-cart.svg" alt="icono de carrito" />
-            </button>
-  
-            <button class="btn" type="button" href="#">
-              <img src="/public/images/user.svg" alt="icono de usuario" />
-            </button>
-          </div>
-        </div>
-      </nav>
+  <nav id="navbar"></nav>
 </header>
 
 <h2 id="terms"> Aviso de Privacidad </h2>
 
-<body>
+<body class="bg">
 
     <main class="container_terms">
         <p id="terminos">  En nombre de Petcalli,  nos comprometemos a proteger la privacidad de nuestros usuarios. Este Aviso de Privacidad explica cómo recopilamos, usamos y protegemos la información personal que nos proporcionas en calidad de cliente, al utilizar nuestro sitio web y nuestros servicios. Debes saber que all acceder y/o utilizar nuestra plataforma, estás aceptando las prácticas descritas en este Aviso de Privacidad. Podemos recopilar la siguiente información de nuestros usuarios: </p>
@@ -114,25 +63,28 @@ Sin embargo, ningún sistema es 100% seguro. Si detectas actividad sospechosa en
 
 <h4 id="conditions"> 1.6 Cambios en el Aviso de Privacidad </h4>
 <p id="terminos">Podemos actualizar este Aviso de Privacidad en cualquier momento. Te notificaremos sobre cambios importantes a través del sitio web o por correo electrónico.</p>
-    </main>
+    
 
-     <section id="dog" class="z-1 col-12 col-lg-6">
-            <img
-              class="container-fluid"
-              src="/public-images/Dog-Principal-Banner.png"
-              alt="Perro crestado rodesiano asomando la cabeza" />
-    </section>
+</main>
 
-    <div id="footer">
-        <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
-    </div>
 
+<section id="dog" class="z-1 col-12 col-lg-6">
+  <img
+    class="container-fluid"
+    src="/public-images/Dog-Principal-Banner.png"
+    alt="Perro crestado rodesiano asomando la cabeza" />
+</section>
+
+    <footer id="footer" class="bd-footer py-4 py-md-5">
+      <!--  <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p> -->
+    </footer>
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-<script src="/src/modules/footer/footer.js"></script>
+    <script src="/src/modules/footer/footer.js"></script>
+    <script type="module" src="/src/modules/nav/nav.js"></script>
 
 </html>
