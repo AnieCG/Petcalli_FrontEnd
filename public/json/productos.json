@@ -8,6 +8,7 @@
     "price": "$610.00",
     "description": "Nutricion completa y balanceada para gatos en gestion y lactancia, así como para sus cachorros (de 1 a 4 meses de edad) durante el destete",
     "category": "Alimento",
+    "color": "NA",
     "size":"1.3 kg"
   },
   {
@@ -19,6 +20,7 @@
     "price": "$855.00",
     "description": "Nutricion completa y balanceada para gatos en gestion y lactancia, así como para sus cachorros (de 1 a 4 meses de edad) durante el destete",
     "category": "Alimento",
+    "color":"NA",
     "size":"2.6 kg"
   },
   {
@@ -30,6 +32,7 @@
     "price": "$650.00",
     "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.3 kg"
   },
   {
@@ -41,6 +44,7 @@
     "price": "$650.00",
     "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.3 kg"
   },
   {
@@ -52,6 +56,7 @@
     "price": "$610.00",
     "description": "Formulada para gatos adultos con sensibilidad en el tracto digestivo.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.5 kg"
   },
   {
@@ -63,6 +68,7 @@
     "price": "$1,385.00",
     "description": "Formulada para gatos adultos con sensibilidad en el tracto digestivo.",
     "category": "Alimento",
+    "color":"NA",
     "size":"6.8 kg"
   },
   {
@@ -74,6 +80,7 @@
     "price": "$590.00",
     "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.5 kg"
   },
   {
@@ -85,6 +92,7 @@
     "price": "$875.00",
     "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
     "category": "Alimento",
+    "color":"NA",
     "size":"2.7 kg"
   },
   {
@@ -96,6 +104,7 @@
     "price": "$590.00",
     "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.5 kg"
   },
   {
@@ -107,6 +116,7 @@
     "price": "$1,625.00",
     "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
     "category": "Alimento",
+    "color":"NA",
     "size":"6.3 kg"
   },
   {
@@ -118,6 +128,7 @@
     "price": "$470.00",
     "description": "Nutrición completa y equilibrada para perros: para la madre pequeña (hasta 10 kg) y sus cachorros. Madre al final de la gestación y durante la lactancia. Cachorros en el destete hasta los 2 meses de edad.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.1 kg"
   },
   {
@@ -129,6 +140,7 @@
     "price": "$1,630.00",
     "description": "Nutrición completa y equilibrada para perros: para la madre pequeña (hasta 10 kg) y sus cachorros. Madre al final de la gestación y durante la lactancia. Cachorros en el destete hasta los 2 meses de edad.",
     "category": "Alimento",
+    "color":"NA",
     "size":"6.3 kg"
   },
   {
@@ -140,6 +152,7 @@
     "price": "$485.00",
     "description": "Nutrición completa y balanceada para cachorros de raza pequeña. Hasta los 10 meses de edad.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.3 kg"
   },
   {
@@ -151,6 +164,7 @@
     "price": "$1,345.00",
     "description": "Nutrición completa y balanceada para cachorros de raza pequeña. Hasta los 10 meses de edad.",
     "category": "Alimento",
+    "color":"NA",
     "size":"6.3 kg"
   },
   {
@@ -162,6 +176,7 @@
     "price": "$1,505.00",
     "description": "Nutrición completa y equilibrada para cachorros de raza mediana. Hasta 12 meses.",
     "category": "Alimento",
+    "color":"NA",
     "size":"7.7 kg"
   },
   {
@@ -173,6 +188,7 @@
     "price": "$510.00",
     "description": "Nutrición completa y equilibrada para cachorros de raza mediana. Hasta 12 meses.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.1 kg"
   },
   {
@@ -184,6 +200,7 @@
     "price": "$1,625.00",
     "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
     "category": "Alimento",
+    "color":"NA",
     "size":"7.7 kg"
   },
   {
@@ -195,6 +212,7 @@
     "price": "$2,235.00",
     "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
     "category": "Alimento",
+    "color":"NA",
     "size":"13.6 kg"
   },
   {
@@ -206,6 +224,7 @@
     "price": "$510.00",
     "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
     "category": "Alimento",
+    "color":"NA",
     "size":"1.1 kg"
   },
   {
@@ -217,6 +236,7 @@
     "price": "$2,700.00",
     "description": "Receta de Salmón, alimentación Premium 100% natural. 70% de ingredientes animales y 30% de verduras, frutas y otros ingredientes saludables. No contiene granos ni gluten. Adicionado con Omegas 6 y 3 para ayudar a tu perro a tener una piel y pelo saludables.",
     "category": "Alimento",
+    "color":"NA",
     "size":"9 kg"
   },
   {
@@ -228,6 +248,7 @@
     "price": "$2,700.00",
     "description": "Dieta de Ingredientes Limitados receta de Cordero, contiene una fuente de proteína animal y una vegetal. Es ideal para perros con sensibilidad digestiva.",
     "category": "Alimento",
+    "color":"NA",
     "size":"9 kg"
   },
   {
@@ -239,6 +260,7 @@
     "price": "$2,700.00",
     "description": "Alimento seco sin granos adicionado con trozos crudos liofilizados de carne de res.",
     "category": "Alimento",
+    "color":"NA",
     "size":"9 kg"
   },
 
@@ -252,6 +274,7 @@
     "price": "$1,225.50",
     "description": "Hill's Science Diet Alimento de Control de Peso para Gato Adulto Receta Pollo, 6.8 kg",
     "category":"Alimento",
+    "color":"NA",
     "size": "6.8 kg"
   },
   {
@@ -263,6 +286,7 @@
     "price": "$1,395.00",
     "description": "Instinct Original Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5 kg",
     "category":"Alimento",
+    "color":"NA",
     "size": "5 kg"
   },
   {
@@ -274,6 +298,7 @@
     "price": "$450.00",
     "description": "Alimento Seco Natural Libre de Granos para Gato Adulto Receta Salmón, 2 kg",
     "category":"Alimento",
+    "color":"NA",
     "size": "2 kg"
   },
   {
@@ -285,6 +310,7 @@
     "price": "$850.00",
     "description": "WholeHearted Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5.4 kg",
     "category":"Alimento",
+    "color":"NA",
     "size": "5.4 kg"
   },
   {
@@ -296,6 +322,7 @@
     "price": "$450.00",
     "description": "Bravery Alimento Seco Natural Libre de Granos para Gato Esterilizado Receta Pollo, 2 kg",
     "category":"Alimento",
+    "color":"NA",
     "size":"2 kg"
   },
   {
@@ -307,6 +334,7 @@
     "price": "$450.00",
     "description": "Bravery Alimento Seco Natural Libre de Granos para Gatito Receta Pollo, 2 kg",
     "category":"Alimento",
+    "color":"NA",
     "size":"2 kg"
   },
   {
@@ -318,6 +346,7 @@
     "price": "$451.25",
     "description": "Azooplus Alimento para Tortuga Acuática, 380 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "380 g"
   },
   {
@@ -329,6 +358,7 @@
     "price": "$711.55",
     "description": "Proteínas de alta calidad y aminoácidos esenciales para promover el crecimiento saludable, 650 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "650 g"
   },
   {
@@ -340,6 +370,7 @@
     "price": "$232.75",
     "description": "Alimento en Pellet para Tortuga, 500 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "500 g"
   },
   {
@@ -351,6 +382,7 @@
     "price": "$217.55",
     "description": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "128 g"
   },
   {
@@ -362,6 +394,7 @@
     "price": "$308.75",
     "description": "Alimento Reptomin para Tortugas en Palitos, 300 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "300 g"
   },
   {
@@ -373,6 +406,7 @@
     "price": "$199.50",
     "description": "Alimento para Tortuga Tortugueta Vegetal, 500 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "500 g"
   },
   {
@@ -384,6 +418,7 @@
     "price": "$360.05",
     "description": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "850 g"
   },
   {
@@ -395,6 +430,7 @@
     "price": "$160.55",
     "description": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g",
     "category":"Alimento",
+    "color":"NA",
     "size": "40 g"
   },
   {
@@ -406,7 +442,8 @@
     "price": "$2,999.00",
     "description": "Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco",
     "category": "Juguetes",
-    "color": "Blanco"
+    "color": "Blanco",
+    "size": "NA"
   },
   {
     "id": 38,
@@ -417,7 +454,8 @@
     "price": "$419.40",
     "description": "Percha para Ventana con Memory Foam para Gato",
     "category":"Juguetes",
-    "color":"Blanco"
+    "color":"Blanco",
+    "size": "NA"
   },
   {
     "id": 39,
@@ -428,7 +466,8 @@
     "price": "$1,619.40",
     "description": "Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris",
     "category":"Juguetes",
-    "color": "Gris"
+    "color": "Gris",
+    "size": "NA"
   },
   {
     "id": 40,
@@ -439,7 +478,8 @@
     "price": "$779.40",
     "description": "Secret Hideout Condo Century con Cojín Extraíble para Gato",
     "category": "Accesorios",
-    "color":"Gris"
+    "color":"Gris",
+    "size": "NA"
   },
   {
     "id": 41,
@@ -450,7 +490,8 @@
     "price": "$1,079.40",
     "description": "Mueble para Gatito Tipo Torre con Rampa",
     "category":"Juguetes",
-    "color":"Gris"
+    "color":"Gris",
+    "size": "NA"
   },
   {
     "id": 42,
@@ -461,7 +502,8 @@
     "price": "$1,679.40",
     "description": "Mueble Tipo Torre con Guarida y Repisa para Gato, Beige",
     "category":"Juguetes",
-    "color": "Beige"
+    "color": "Beige",
+    "size": "NA"
   },
   {
     "id": 43,
@@ -471,7 +513,9 @@
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNDE5MXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaDI2Lzk1MjkxNTczNTM1MDIuanBnfDFlNmYwOGZhMzU5YjJhNTU5NWM1ZGY5ZWIxMDJkNTJkY2FmYzMyZWQ2NTQyYjA0NGM3OGI2YTZlMGU5YWUzMjM",
     "price": "$775.00",
     "description": "Marshall Alberca de Pelotas para Juegos Pop-n-Play",
-    "category": "Juguetes"
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
   },
   {
     "id": 44,
@@ -481,7 +525,9 @@
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MTA4OXxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDIzLzkyMDEzNTU4MTY5OTAuanBnfGQyMjBmNWQ5MGY3ZmI5NjI4OTI1ZDJlMWQxNmI5MzEyZGYzMWYxOWI2MjcyYzhiZWNiYzcyNTFhNDQ1ZmMyODk",
     "price": "$123.50",
     "description": "You & Me Chew Esferas de Sauce, 3 Piezas",
-    "category": "Juguetes"
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
   },
   {
     "id": 45,
@@ -491,7 +537,9 @@
     "image": "https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA",
     "price": "$161.50",
     "description": "Oxbow Enriched Life Bolas Rodadoras para Pequeñas Mascotas",
-    "category": "Juguetes"
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
   },
   {
     "id": 46,
@@ -501,7 +549,9 @@
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w0ODA3OXxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDQxLzkyMDEzMTk1NDI4MTQuanBnfDFlYzY0ODljZjVlMzU4ZWJhMjNiNWYxYmQxMDk5OTlmYzc3YjdjZDJkOWM0NDA1YjExODZhMGExZDIzN2ZlOTQ",
     "price": "$145.00",
     "description": "You & Me Escondite Castillo, Mediano",
-    "category": "Juguetes"
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
   },
   {
     "id": 47,
@@ -511,7 +561,9 @@
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1MjI5MHxpbWFnZS9naWZ8aW1hZ2VzL2gwMy9oNGQvODg0ODEwMzU3MTQ4Ni5naWZ8MjYyMjhiMjJkY2U4ODY3ZTA0NjI1ZGY0YzU4N2MzMGQ2ZWE5YjVjMGZkNWQ3YzY4NzMzNzMyNzc0ODE2NzI1Nw",
     "price": "$289.75",
     "description": "Ware Túnel, XX-Grande",
-    "category": "Juguetes"
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
   }
   
 ]
