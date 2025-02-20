@@ -40,9 +40,9 @@ section {
   .dog-register {
     min-width: 380px;
   }
+
   .secciones-registro {
     font-size: x-large;
-    color:darkgoldenrod;
-
+    color: darkgoldenrod;
   }
 }

@@ -27,82 +27,105 @@
         <section class="container-fluid">
             <div class="row row-colums-sm-12 row-columns-md-8 row-columns-lg-6 d-flex flex-wrap-reverse">
                 <div class="col">
-                    <h2 class="ps-3 text-center text-lg-start pt-3">Petcalli</h2>
-                    <h3 class="display-6 mt-4 mb-4 text-center rounded-pill w-50 mx-auto shadow-lg">Registro de tienda
+                    <h3 class="display-6 mt-4 mb-4 text-center rounded-pill mx-auto shadow-lg w-50">Registro
+                        de
+                        tienda
                     </h3>
                     <div class=" container mx-auto shadow-lg border rounded-3 mb-4 form-container">
-                        <form class="container p-4 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com"
-                            method="POST" target="_blank" novalidate>
+                        <form class="container p-4 needs-validation" novalidate>
+
+                            <div class="mt-2 text-center secciones-registro">Datos de la tienda</div>
 
                             <!-- Nombre de la tienda -->
-                            <div class="mt-2 text-center secciones-registro">Datos de la tienda </div>
                             <div class="mb-3">
                                 <label for="nombreTienda" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombreTienda" name="Nombre tienda" minlength="2"  required>
+                                <input type="text" class="form-control" id="nombreTienda" name="Nombre tienda"
+                                    minlength="2" placeholder="Petcalli" required>
                                 <div class="valid-feedback"></div>
-                                <div class="invalid-feedback">Mínimo 2 caracteres</div>
+                                <div class="invalid-feedback">Por favor, ingresa el nombre de tu tienda</div>
                             </div>
-                            <!-- Descripción de la tienda -->
 
+                            <!-- Descripción de la tienda -->
                             <div class="mb-3">
                                 <label for="descripcionTienda">Descripción</label>
                                 <textarea class="form-control" id="descripcionTienda" rows="3" minlength="50"
-                                    maxlength="250" required></textarea>
-                                <div class="valid-feedback"></div>
-                                <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
-                            </div>
-
-                            <!--  Categorias de la tienda
-                            <div class="mb-3">
-                                <h4>Categorias</h4>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Medicamento
-                                </label>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Alimento
-                                </label>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Ropa
-                                </label>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Accesorios
-                                </label>
-                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
-                                    value="option1" checked>
-                                <label class="form-check-label" for="exampleRadios1">
-                                    Juguetes
-                                </label>
-                            </div> -->
-
-                            <!-- Dirección de la tienda -->
-
-                            <div class="form-group mt-2">
-                                <label for="address">Dirección</label>
-                                <input type="text" class="form-control" id="address" minlength="50" maxlength="250"
+                                    maxlength="250" placeholder="Mínimo 50 caracteres y máximo 250 caracteres"
                                     required></textarea>
                                 <div class="valid-feedback"></div>
-                                <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
-
+                                <div class="invalid-feedback">Por favor, ingresa una descripción válida entre 50 y 250
+                                    caracteres</div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6 mt-2">
+
+                            <!--  Categorias de la tienda -->
+                            <div class="mb-3">
+                                <h4>Categorias</h4>
+                                <div class="row row-cols-lg-8 row-cols-md-3 row-cols-sm-2 row-cols-1">
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios1" value="option1" required>
+                                        <label class="form-check-label" for="exampleRadios1">Medicamento</label>
+                                    </div>
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios2" value="option2">
+                                        <label class="form-check-label" for="exampleRadios2">Alimento</label>
+                                    </div>
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios3" value="option3">
+                                        <label class="form-check-label" for="exampleRadios3">Ropa</label>
+                                    </div>
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios4" value="option4">
+                                        <label class="form-check-label" for="exampleRadios4">Accesorios</label>
+                                    </div>
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios5" value="option5">
+                                        <label class="form-check-label" for="exampleRadios5">Juguetes</label>
+                                    </div>
+                                    <div class="col pb-3">
+                                        <input class="form-check-input" type="radio" name="exampleRadios"
+                                            id="exampleRadios6" value="option6">
+                                        <label class="form-check-label" for="exampleRadios6">General</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <!-- Dirección de la tienda -->
+                                <div class="form-group mb-3 col-12 col-sm-9 col-md-8">
+                                    <label for="address">Dirección</label>
+                                    <input type="text" class="form-control" id="address" minlength="50" maxlength="250"
+                                        placeholder="123 Calle Principal" required></textarea>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Por favor, ingresa una dirección.</div>
+                                </div>
+
+                                <!-- Código postal -->
+                                <div class="form-group mb-3 col-6 col-sm-3 col-md-4">
+                                    <label for="Zip">Código postal</label>
+                                    <input type="text" class="form-control" id="Zip" minlength="5" maxlength="5"
+                                        placeholder="01234" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa un Código Postal válido
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row mb-3 row row-cols-1 row-cols-sm-2">
+                                <!-- Ciudad -->
+                                <div class="form-group mb-3 col">
                                     <label for="City">Ciudad</label>
                                     <input type="text" class="form-control" id="City" minlength="7" maxlength="17"
-                                        required>
+                                        placeholder="Ciudad de México" required>
                                     <div class="valid-feedback"></div>
                                     <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
                                 </div>
 
-
-                                <div class="form-group col-md-4 mt-2">
+                                <!-- Estado -->
+                                <div class="form-group mb-3 col">
                                     <label for="State">Estado</label>
                                     <select id="State" class="form-control" required>
                                         <option value="" selected>Elegir</option>
@@ -140,112 +163,105 @@
                                         <option>Zacatecas</option>
                                     </select>
                                     <div class="invalid-feedback">
-                                        Debes seleccionar un estado.
+                                        Por favor, selecciona un estado.
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="form-group col-md-2 mt-2">
-                                    <label for="Zip">Código postal</label>
-                                    <input type="text" class="form-control" id="Zip" minlength="5" maxlength="5"
-                                        required>
-                                    <div class="invalid-feedback">
-                                        Ingresa un Código postal válido
+                            <div class="mt-2 mb-3 text-center secciones-registro">Datos del propietario </div>
+
+                            <!-- Nombre del propietario -->
+                            <div class="mb-3">
+                                <label for="nombreCompleto" class="form-label">Nombre completo </label>
+                                <div class="row row-cols-1 row-cols-md-3">
+                                    <div class="col mb-3">
+                                        <input type="text" class="form-control" placeholder="Nombre(s)" minlength="2"
+                                            maxlength="35" required>
                                     </div>
-
-                                </div>
-                                <!-- Nombre completo del títular -->
-                                <!-- Faltaría agregar las clases que vayan con el label -->
-                                <div class="mt-2">
-
-                                    <div class="mt-2 text-center secciones-registro">Datos del propietario </div>
-                                    <label for="nombreCompleto" class="form-label">Nombre completo </label>
-                                    <div class="row">
-                                        <div class="col">
-
-                                            <input type="text" class="form-control" placeholder="Nombre(s)"
-                                                minlength="2" maxlength="35" required>
-                                        </div>
-                                        <div class="col">
-
-                                            <input type="text" class="form-control" placeholder="Apellido paterno"
-                                                minlength="2" maxlength="35" required>
-                                        </div>
-                                        <div class="col">
-
-                                            <input type="text" class="form-control" placeholder="Apellido materno"
-                                                minlength="2" maxlength="35" required>
-                                        </div>
+                                    <div class="col mb-3">
+                                        <input type="text" class="form-control" placeholder="Apellido paterno"
+                                            minlength="2" maxlength="35" required>
                                     </div>
-
-                                    <!-- correo -->
-                                </div>
-                                <div class="mt-2">
-                                    <label for="emailDueño" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" id="emailDueño" name="email" required>
-                                    <div class="invalid-feedback">Por favor ingresa un correo electrónico válido
-                                        example@example.com</div>
-                                    <div class="valid-feedback"></div>
-                                </div>
-
-
-                                <!--teléfono  -->
-                                <div class="mb-3 container__input">
-                                    <label for="telefonoDueño" class="form-label">Teléfono</label>
-                                    <input type="tel" class="form-control" id="telefonoDueño" name="telefono"
-                                        pattern="[0-9]{5,10}" inputmode="numeric" required>
-                                    <div class="valid-feedback"></div>
-                                    <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
-                                </div>
-
-                                <!-- RFC -->
-                                <div class="mt-2">
-                                    <label for="RFC">Número de identificación fiscal (RFC) </label>
-                                    <input type="number" class="form-control" id="RFC" minlength="2" maxlength="35"
-                                        required>
-                                    <div class="valid-feedback"></div>
-                                    <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
-
-                                </div>
-
-                                
-
-                                <!-- URL del sitio web o tienda en línea (si es aplicable) -->
-                                <div class="mt-2">
-                                    <label for="validationTooltip01">URL del sitio web o tienda en línea (si aplica)</label>
-                                    <input type="url" class="form-control" id="" value="" required>
-                                </div>
-
-                                <!-- Políticas de envío y devoluciones -->
-                                <div class="custom-filemt-2 mt-2">
-                                    <label class="custom-file-label" for="customFileLang">Políticas de envío y
-                                        devoluciones</label>
-                                    <br>
-                                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-                                </div>
-
-                                <!-- Términos y condiciones de la tienda -->
-                                <div class="custom-file mt-2">
-                                    <label class="custom-file-label" for="customFileLang">Términos y condiciones de la
-                                        tienda</label>
-                                    <br>
-                                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-                                </div>
-                                <div class="form-check py-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                        <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
-                                            términos y condiciones</a>
-                                        <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
-                                            privacidad</a>
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Debes aceptar los Términos y condiciones antes de enviar.
+                                    <div class="col mb-3">
+                                        <input type="text" class="form-control" placeholder="Apellido materno"
+                                            minlength="2" maxlength="35" required>
                                     </div>
                                 </div>
-                                <div class="d-flex justify-content-center">
-                                    <button class=" btn button text-white w-50" type="submit">Crear Tienda</button>
-                                    <input type="hidden" name="_captcha" value="false">
+                            </div>
+
+                            <!-- correo -->
+                            <div class="mb-3">
+                                <label for="emailDueño" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="emailDueño" name="email"
+                                    placeholder="example@example.com" required>
+                                <div class="invalid-feedback">Por favor, ingresa un correo electrónico válido
+                                    example@example.com</div>
+                                <div class="valid-feedback"></div>
+                            </div>
+
+                            <!--teléfono  -->
+                            <div class="mb-3 container__input">
+                                <label for="telefonoDueño" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefonoDueño" name="telefono"
+                                    pattern="[0-9]{5,10}" inputmode="numeric" placeholder="5555555555" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback"> Por favor, introduce un número válido de 10 dígitos</div>
+                            </div>
+
+                            <!-- RFC -->
+                            <div class="mb-3">
+                                <label for="RFC">Número de identificación fiscal (RFC) </label>
+                                <input type="text" class="form-control" id="RFC" minlength="10" maxlength="13"
+                                    placeholder="Ingresar RFC con homoclave (13 dígitos)" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
+                            </div>
+
+                            <!-- URL del sitio web o tienda en línea (si es aplicable) -->
+                            <div class="mb-3">
+                                <label for="URL">URL del sitio web o tienda en línea (si
+                                    aplica)</label>
+                                <input type="url" class="form-control" id="URL" name="URL"
+                                    placeholder="https://www.ejemplo.com" required>
+                            </div>
+
+                            <!-- Políticas de envío y devoluciones -->
+                            <div class="custom-file mb-3">
+                                <label class="custom-file-label" for="politicas">Políticas de envío y
+                                    devoluciones</label>
+                                <br>
+                                <input type="file" class="custom-file-input w-75" id="politicas" name="politicas"
+                                    lang="es">
+                            </div>
+
+                            <!-- Términos y condiciones de la tienda -->
+                            <div class="custom-file mb-3">
+                                <label class="custom-file-label" for="terminos">Términos y condiciones de la
+                                    tienda</label>
+                                <br>
+                                <input type="file" class="custom-file-input w-75 m-0" id="terminos" name="terminos"
+                                    lang="es">
+                            </div>
+
+
+                            <div class="form-check py-3">
+                                <input class="form-check-input" type="checkbox" name="check-true" id="invalidCheck"
+                                    required>
+                                <label class="form-check-label" for="invalidCheck">
+                                    <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
+                                        términos y condiciones</a>
+                                    <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
+                                        privacidad</a>
+                                </label>
+                                <div class="invalid-feedback">
+                                    Debes aceptar los Términos y condiciones antes de enviar.
                                 </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2"
+                                    type="submit">Crear Tienda</button>
+                                <input type="hidden" name="_captcha" value="false">
+                            </div>
                         </form>
                     </div>
                 </div>
