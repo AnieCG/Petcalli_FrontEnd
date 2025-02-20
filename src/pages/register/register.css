@@ -1,0 +1,51 @@
+main {
+  background-image: url("/public/images/header-shapes.png");
+  max-width: 1920px;
+  background-size: cover;
+}
+
+section {
+  max-width: 1920px;
+  overflow: hidden;
+
+  h2 {
+    font-family: var(--font_title);
+    color: var(--title);
+    font-weight: 700;
+    font-size: 65px;
+  }
+
+  h3 {
+    font-family: var(--font_title);
+    color: white;
+    background-color: var(--block-images1);
+  }
+
+  .form-container {
+    background-color: transparent;
+    max-width: 850px;
+    min-width: 350px;
+  }
+
+  .button {
+    background-color: var(--block-images1);
+    border: none;
+  }
+
+  p {
+    color: var(--subtitle);
+  }
+
+  .dog-register {
+    min-width: 380px;
+  }
+
+  .secciones-registro {
+    font-size: x-large;
+    color: darkgoldenrod;
+  }
+
+  .button-password {
+    margin-left: 20px;
+  }
+}
