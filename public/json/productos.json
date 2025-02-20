@@ -1,149 +1,569 @@
 [
   {
-    "title": "Royal Canin",
-    "image": "https://www.petco.com.mx/medias/104805.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDU4Nzh8aW1hZ2UvanBlZ3xoYmQvaGIxLzk5MTQ0NDE2Mjk3MjYvMTA0ODA1LmpwZ18zMDBmdHd8OWU5YzMxOTVjZjA2OTRlZGEyYTFmZjY0MjNkZjY5NmJkMTQ5YWZlODFlZTVlOGM5ZWEzZWM2MGRlMTFjNTM4Mw",
-    "price": "$675.00",
-    "descripcion": "Royal Canin Alimento Seco para Gato Adulto de Interior Receta Pollo, 3.1 kg"
+    "id": 1,
+    "title": "Mother & Babycat Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/rz_NTIcBRYZmsWpcJPUx/v56/00030111450036-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$610.00",
+    "description": "Nutricion completa y balanceada para gatos en gestion y lactancia, así como para sus cachorros (de 1 a 4 meses de edad) durante el destete",
+    "category": "Alimento",
+    "color": "NA",
+    "size":"1.3 kg"
   },
- 
   {
+    "id": 2,
+    "title": "Mother & Babycat Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/rz_NTIcBRYZmsWpcJPUx/v56/00030111450036-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$855.00",
+    "description": "Nutricion completa y balanceada para gatos en gestion y lactancia, así como para sus cachorros (de 1 a 4 meses de edad) durante el destete",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"2.6 kg"
+  },
+  {
+    "id": 3,
+    "title": "Cachorro Maine Coon Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/ylaNe28BBKJuub5qxmK_/v62/2019-c-mainecoon-kitten-spt-fbn-packshot-b2?w=640&fm=jpg&auto=format,compress",
+    "price": "$650.00",
+    "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.3 kg"
+  },
+  {
+    "id": 4,
+    "title": "Cachorro Persa Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/WyLhBmwBaxEApS7LaSIO/v14/persian-kitten-1?w=640&fm=jpg&auto=format,compress",
+    "price": "$650.00",
+    "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.3 kg"
+  },
+  {
+    "id": 5,
+    "title": "Digestión Sensible Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/xFaJem8BBKJuub5qBWIv/v70/2019-c-sensitivedigestion-spt-fhn-packshot-b2?w=640&fm=jpg&auto=format,compress",
+    "price": "$610.00",
+    "description": "Formulada para gatos adultos con sensibilidad en el tracto digestivo.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.5 kg"
+  },
+  {
+    "id": 6,
+    "title": "Digestión Sensible Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/xFaJem8BBKJuub5qBWIv/v70/2019-c-sensitivedigestion-spt-fhn-packshot-b2?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,385.00",
+    "description": "Formulada para gatos adultos con sensibilidad en el tracto digestivo.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"6.8 kg"
+  },
+  {
+    "id": 7,
+    "title": "Cuidado Urinario Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/klZXTYcBBKJuub5qYPmM/v75/00030111546470b-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$590.00",
+    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.5 kg"
+  },
+  {
+    "id": 8,
+    "title": "Cuidado Urinario Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/klZXTYcBBKJuub5qYPmM/v75/00030111546470b-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$875.00",
+    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"2.7 kg"
+  },
+  {
+    "id": 9,
+    "title": "Cuidado De Peso Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/fOd3TYcBaPOZra8qUPya/v64/00030111442703f-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$590.00",
+    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.5 kg"
+  },
+  {
+    "id": 10,
+    "title": "Cuidado De Peso Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Gato",
+    "image": "https://cdn.royalcanin-weshare-online.io/fOd3TYcBaPOZra8qUPya/v64/00030111442703f-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,625.00",
+    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"6.3 kg"
+  },
+  {
+    "id": 11,
+    "title": "Small Starter Mother & Babydog",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/f-fQTYcBaPOZra8qVPyg/v71/00030111445148-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$470.00",
+    "description": "Nutrición completa y equilibrada para perros: para la madre pequeña (hasta 10 kg) y sus cachorros. Madre al final de la gestación y durante la lactancia. Cachorros en el destete hasta los 2 meses de edad.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.1 kg"
+  },
+  {
+    "id": 12,
+    "title": "Small Starter Mother & Babydog",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/f-fQTYcBaPOZra8qVPyg/v71/00030111445148-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,630.00",
+    "description": "Nutrición completa y equilibrada para perros: para la madre pequeña (hasta 10 kg) y sus cachorros. Madre al final de la gestación y durante la lactancia. Cachorros en el destete hasta los 2 meses de edad.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"6.3 kg"
+  },
+  {
+    "id": 13,
+    "title": "Small Puppy",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/sX4Gf28BGYYl5D-lhUKH/v150/2019-d-small-puppy-spt-shn-packshot-b2?w=640&fm=jpg&auto=format,compress",
+    "price": "$485.00",
+    "description": "Nutrición completa y balanceada para cachorros de raza pequeña. Hasta los 10 meses de edad.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.3 kg"
+  },
+  {
+    "id": 14,
+    "title": "Small Puppy",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/sX4Gf28BGYYl5D-lhUKH/v150/2019-d-small-puppy-spt-shn-packshot-b2?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,345.00",
+    "description": "Nutrición completa y balanceada para cachorros de raza pequeña. Hasta los 10 meses de edad.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"6.3 kg"
+  },
+  {
+    "id": 15,
+    "title": "Medium Puppy",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/fefKTYcBaPOZra8qZvzQ/v99/00030111493880c-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,505.00",
+    "description": "Nutrición completa y equilibrada para cachorros de raza mediana. Hasta 12 meses.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"7.7 kg"
+  },
+  {
+    "id": 16,
+    "title": "Pomerania Adulto Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/4T9CvYcBRYZmsWpcHPjS/v15/center-front-hero-image-1255-030111141316-dog-01-jpg?w=640&fm=jpg&auto=format,compress",
+    "price": "$510.00",
+    "description": "Nutrición completa y equilibrada para cachorros de raza mediana. Hasta 12 meses.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.1 kg"
+  },
+  {
+    "id": 17,
+    "title": "Dalmata Adulto Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/tz8_vYcBRYZmsWpcifjd/v15/center-front-hero-image-2598-030111520739-dog-01-jpg?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,625.00",
+    "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"7.7 kg"
+  },
+  {
+    "id": 18,
+    "title": "Gran Danés Adulto Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/zD9AvYcBRYZmsWpc1Pj-/v15/center-front-hero-image-2592-030111222237-dog-01-jpg?w=640&fm=jpg&auto=format,compress",
+    "price": "$2,235.00",
+    "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"13.6 kg"
+  },
+  {
+    "id": 19,
+    "title": "Maltés Adulto Comida Seca",
+    "marca": "Royal Canin",
+    "petType": "Perro",
+    "image": "https://cdn.royalcanin-weshare-online.io/zD9AvYcBRYZmsWpc1Pj-/v15/center-front-hero-image-2592-030111222237-dog-01-jpg?w=640&fm=jpg&auto=format,compress",
+    "price": "$510.00",
+    "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"1.1 kg"
+  },
+  {
+    "id": 20,
+    "title": "Alimento Seco Natural Salmón Libre de Granos para Todas las Edades",
+    "marca": "Instinct Original",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/114128.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NTI5NjE3fGltYWdlL2pwZWd8aGNhL2gwZi85ODM1NDE4NjE1ODM4LzExNDEyOC5qcGdfMTIwMGZ0d3xlYTQ5N2Y0NWRiZDBmMGYyNjBjNTE0NTM4MWM0Njc4MzcxMmFjZWNjMzIxOTg4Njc1NzIyN2M3NjhkN2JlYTI5",
+    "price": "$2,700.00",
+    "description": "Receta de Salmón, alimentación Premium 100% natural. 70% de ingredientes animales y 30% de verduras, frutas y otros ingredientes saludables. No contiene granos ni gluten. Adicionado con Omegas 6 y 3 para ayudar a tu perro a tener una piel y pelo saludables.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"9 kg"
+  },
+  {
+    "id": 21,
+    "title": "LID Alimento Seco Natural Cordero sin Granos para Perro Adulto",
+    "marca": "Instinct Original",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/111810.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NDM5MTYzfGltYWdlL2pwZWd8aDU2L2g5My85Njc0NzcxODkwMjA2LmpwZ3wzNWE5MmU1MjBhODg5YjdjM2Q5OWE2YmU3YzQ1NzQ4YjQyM2Q2NWIxNWI0OTNmNGI1YTIyODg4ODRlYzA1NTMx",
+    "price": "$2,700.00",
+    "description": "Dieta de Ingredientes Limitados receta de Cordero, contiene una fuente de proteína animal y una vegetal. Es ideal para perros con sensibilidad digestiva.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"9 kg"
+  },
+  {
+    "id": 22,
+    "title": "Raw Boost Alimento Seco Res para Todas las Etapas de Vida",
+    "marca": "Instinct Original",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/137562.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NzgxMTMyfGltYWdlL2pwZWd8aGUyL2g1NS8xMDAyNzAwODQ1ODc4Mi8xMzc1NjIuanBnXzEyMDBmdHd8ODZlYmJkYTIyNWY5ZGIyMWQ4YTAxYTIyMGQ3MzY1NWQ1ZTRlN2IyNzg4N2UwMjQ2MDJhMzAxNjVjYWQ2YzNhYg",
+    "price": "$2,700.00",
+    "description": "Alimento seco sin granos adicionado con trozos crudos liofilizados de carne de res.",
+    "category": "Alimento",
+    "color":"NA",
+    "size":"9 kg"
+  },
+
+
+  {
+    "id":23,
     "title": "Hill's Science Diet",
+    "marca": "Hill's",
+    "petType": "Gato",
     "image": "https://www.petco.com.mx/medias/114696.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjU4MDF8aW1hZ2UvanBlZ3xoZWIvaDc2LzEwMzgzMDM2OTQwMzE4LzExNDY5Ni5qcGdfMzAwZnR3fDU0MWJlZGZkMjQ5YTQ1ODJmYWY1ODhiM2JjY2FjYmI1NDk0YmI1N2U3MjVkYjgzNjhhN2I2MjFmNmMyOWU3OTI",
     "price": "$1,225.50",
-    "descripcion": "Hill's Science Diet Alimento de Control de Peso para Gato Adulto Receta Pollo, 6.8 kg"
+    "description": "Hill's Science Diet Alimento de Control de Peso para Gato Adulto Receta Pollo, 6.8 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "6.8 kg"
   },
   {
-    "title": "Royal Canin",
-    "image": "https://www.petco.com.mx/medias/104789.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzMwMDF8aW1hZ2UvanBlZ3xoOTIvaDE0LzEwMzgyNzM3NDA4MDMwLzEwNDc4OS5qcGdfMzAwZnR3fGIyMGFmOGE3NTA2Y2Y4YzllNzhmN2M3NGJjMDIwMGFhYWE3ZGNiNmIxODdlODA3MDQzMjEwMDhlMTFiMDE0Nzk",
-    "price": "$788.40",
-    "descripcion": "Royal Canin Alimento Seco para Gato Persa Adulto Receta Pollo, 3.1 kg"
-  },
- 
-  {
-    "title": "Instinct",
+    "id": 24,
+    "title": "Instinct Alimento Seco Pollo",
+    "marca": "Instinct Original",
+    "petType":"Gato",
     "image": "https://www.petco.com.mx/medias/114115.jpg-300ftw?context=bWFzdGVyfHJvb3R8ODIzNzB8aW1hZ2UvanBlZ3xoM2QvaGM4Lzk4MzcwODk2NTI3NjYvMTE0MTE1LmpwZ18zMDBmdHd8N2QxYzM1ZGNkNzdjMDFlYTUxYTQwNWM1ZWIyZmNlYzE1ZmQ0YzRkMDBjNjE4YWYyY2U2YzI0ZWU2NDUxZjFmYg",
     "price": "$1,395.00",
-    "descripcion": "Instinct Original Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5 kg"
+    "description": "Instinct Original Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "5 kg"
   },
-
   {
-    "title": "Royal Canin",
-    "image": "https://www.petco.com.mx/medias/104803.jpg-300ftw?context=bWFzdGVyfHJvb3R8MjgyOTl8aW1hZ2UvanBlZ3xoNjEvaGYyLzEwMzgyNzM5NzAxNzkwLzEwNDgwMy5qcGdfMzAwZnR3fDRlMWU2ODAzNTY5NGVmYWNlZjNjN2FiMmNhZWM4OTM5ZTZjMTc2YzQ2MzdjMjc4MmM4ZTc0MDM5Yzk1YmI4NWQ",
-    "price": "$900.00",
-    "descripcion": "Royal Canin Hairball Alimento Seco para Gato Adulto Control Bolas de Pelo Receta Pollo, 2.7 kg"
-  },
- 
-  {
-    "title": "Bravery",
+    "id": 25,
+    "title": "Alimento Seco Natural Salmón Libre de Granos",
+    "marca": "Bravery",
+    "petType":"Gato",
     "image": "https://www.petco.com.mx/medias/300ftw-143666.jpg?context=bWFzdGVyfHJvb3R8NTg1Nzd8aW1hZ2UvanBlZ3xoM2EvaGQ1LzEwODAxNzQ1NTU5NTgyLzMwMGZ0d18xNDM2NjYuanBnfDQ2ZWIzMDlkZGM2YjdjMjhkMWI5YTUyNDdhMDkxOTAxYTlhY2I2M2M0YzAyNTNjMTE5NWYzZDZlZTY2NDdhZDY",
     "price": "$450.00",
-    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gato Adulto Receta Salmón, 2 kg"
+    "description": "Alimento Seco Natural Libre de Granos para Gato Adulto Receta Salmón, 2 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "2 kg"
   },
-
   {
-    "title": "WholeHearted",
+    "id": 26,
+    "title": "Alimento Seco de Pollo Libre de Granos Todas las Edades",
+    "marca": "WholeHearted",
+    "petType":"Gato",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1Nzc0M3xpbWFnZS9qcGVnfGltYWdlcy9oYTYvaDlhLzk0MDMyNTc3MTY3NjYuanBnfDQ5ZDdjMzNmZTM1NzlhN2NlZWJiM2JmMjg1NjcxOWRiNTYwZWIwYzIzOWZkZjAwNmFjZGI2YTk0YzRiOTMxNzg",
     "price": "$850.00",
-    "descripcion": "WholeHearted Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5.4 kg"
+    "description": "WholeHearted Libre de Granos Alimento Natural para Gato Todas las Edades Receta Pollo, 5.4 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "5.4 kg"
   },
- 
   {
-    "title": "Bravery",
+    "id": 27,
+    "title": "Alimento Seco de Pollo Libre de Granos para Gato Esterilizado",
+    "marca": "Bravery",
+    "petType":"Gato",
     "image": "https://www.petco.com.mx/medias/300ftw-143668.jpg?context=bWFzdGVyfHJvb3R8MzY4NTd8aW1hZ2UvanBlZ3xoMTIvaDBjLzEwODIyMDcxMzIwNjA2LzMwMGZ0d18xNDM2NjguanBnfDcxZGRkMDRiZGVhZGQ5NDY4ZTQyZThjMTg5OTk0ZTM4ZTNlYTkzMmVhMzU5ODdmNjliNGZmNjExNzJlMDI2Njk",
     "price": "$450.00",
-    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gato Esterilizado Receta Pollo, 2 kg"
+    "description": "Bravery Alimento Seco Natural Libre de Granos para Gato Esterilizado Receta Pollo, 2 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size":"2 kg"
   },
-  
   {
-    "title": "Bravery",
+    "id": 28,
+    "title": "Alimento Seco Libre de Granos Receta Pollo",
+    "marca": "Bravery",
+    "petType":"Gato",
     "image": "https://www.petco.com.mx/medias/300ftw-143665.jpg?context=bWFzdGVyfHJvb3R8NDg5MjV8aW1hZ2UvanBlZ3xoYjUvaDUxLzEwODAxOTc2NDc1Njc4LzMwMGZ0d18xNDM2NjUuanBnfGM3YmRiNDczNjk5MmZkN2QyYWEwZDllOTgxYmExYzJlZmE2ZDM4MzJiYzFiMTcxYTY4MDM1MTQzNWMwNmMyMDM",
     "price": "$450.00",
-    "descripcion": "Bravery Alimento Seco Natural Libre de Granos para Gatito Receta Pollo, 2 kg"
+    "description": "Bravery Alimento Seco Natural Libre de Granos para Gatito Receta Pollo, 2 kg",
+    "category":"Alimento",
+    "color":"NA",
+    "size":"2 kg"
   },
   {
-    "title": "Azoo",
+    "id": 29,
+    "title": "Alimento para Tortuga Acuática",
+    "marca": "Azoo",
+    "petType": "Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NDEyM3xpbWFnZS9qcGVnfGltYWdlcy9oNDQvaGE5Lzk0MDAwNjkxOTM3NTguanBnfDU5NzEzZTNlNTQwMjlhMjc3ODFmNDA3ODQ0NjhlNDkzZmY2Y2VhYjg1MGI3ZGZlYmMyMTBjMTUzN2JjODBmNWE",
     "price": "$451.25",
-    "descripcion": "Azooplus Alimento para Tortuga Acuática, 380 g"
+    "description": "Azooplus Alimento para Tortuga Acuática, 380 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "380 g"
   },
   {
-    "title": "Tetra",
+    "id": 30,
+    "title": "Alimento para Tortuga Pellet Flotante",
+    "marca": "Tetra ReptoMin",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1NTI4NnxpbWFnZS9qcGVnfGltYWdlcy9oYTgvaDhhLzk0NTc0NDAyMjczNTguanBnfGI2ZmNmNmJhYzk5ZWMyOTdiYzEwMzM5NGFmZGE2NWY3MDQ0MWFhYmI3ZGE5NDJlMjk2MGFjNjVkYTgwNmM5M2U",
     "price": "$711.55",
-    "descripcion": "Tetra Reptomin Pellet Flotante para Tortuga Acuática, 650 g"
+    "description": "Proteínas de alta calidad y aminoácidos esenciales para promover el crecimiento saludable, 650 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "650 g"
   },
   {
-    "title": "Mazuri",
+    "id": 31,
+    "title": "Tortoise Diet",
+    "marca": "Mazuri",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/127514.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTAyMzl8aW1hZ2UvanBlZ3xoOGYvaDY5LzEwMDg1MDM3OTk4MTEwLzEyNzUxNC5qcGdfMzAwZnR3fGY2ODdiN2EzOWY2YTlhZDY0Y2QyNTFmNzcxMjQwMTk2YmQ2YzY0Yzk3ZWZkMGIxY2IwNzFlZmFjOWIyNTcwNmQ",
     "price": "$232.75",
-    "descripcion": "Mazuri Tortoise Diet Alimento en Pellet para Tortuga, 500 g"
+    "description": "Alimento en Pellet para Tortuga, 500 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "500 g"
   },
   {
-    "title": "Zoo Med",
+    "id": 32,
+    "title": "Gourmet Reptisticks Alimento para Tortuga en Pellet",
+    "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w5MTAyMnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDQ3Lzk0MDAxMTYzMTQxNDIuanBnfDQ0MmM1NDlhNGE4MWU5ZjY0Mzg0MjIzOGJlNDg0ZGQ3NzFlMDMwYmQ4NzBjNjcxNWUwYzRkNDJlZTEyMDAwNGM",
     "price": "$217.55",
-    "descripcion": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g"
+    "description": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "128 g"
   },
   {
-    "title": "Tetra",
+    "id": 33,
+    "title": "Alimento Reptomin",
+    "marca": "Tetra",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/106783.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTk5NTB8aW1hZ2UvanBlZ3xoMTYvaDZiLzEwNTA3NDAwMDE5OTk4LzEwNjc4My5qcGdfMzAwZnR3fDEzNWEzMTI0NWRlNjcwYjY0YzI1ZWI1ZjhiYTE1YTFhNmFlY2ZjZWM0OGU3ZjU1NjY3NTdiYTJjNWVjMjk0ZjI",
     "price": "$308.75",
-    "descripcion": "Tetra Alimento Reptomin Palitos, 300 g"
+    "description": "Alimento Reptomin para Tortugas en Palitos, 300 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "300 g"
   },
   {
-    "title": "Petmmal",
+    "id": 34,
+    "title": "Alimento Vegetal para Tortuga",
+    "marca": "Petmmal",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/106112.jpg-300ftw?context=bWFzdGVyfHJvb3R8OTE0ODN8aW1hZ2UvanBlZ3xoZDgvaDg2LzEwMzY2NDM2MjEyNzY2LzEwNjExMi5qcGdfMzAwZnR3fDJkMzA1MmNjYzQ4YTEwNDAwYmUyMzBhZTMwYjY5MmYwNmU0ZmE3NTViNmEzNTI5NjU2ZjQ0YmQ5NGIzYzAzZjg",
     "price": "$199.50",
-    "descripcion": "Petmmal Alimento para Tortuga Tortugueta Vegetal, 500 g"
+    "description": "Alimento para Tortuga Tortugueta Vegetal, 500 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "500 g"
   },
   {
-    "title": "Zoo Med",
+    "id": 35,
+    "title": "Alimento para Tortuga Acuática",
+    "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3OTI5M3xpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDA2LzkzNTM0NTg2MTQzMDIuanBnfGY0YWQxYjk3ZTkzMDg1MWRjNWYyMWM5ODIxNGY4NmNlMjgwOGJmODc5YzRjOTIyYjM3ZGUwNTY2ZTU5OTQxZjc",
     "price": "$360.05",
-    "descripcion": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g"
+    "description": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "850 g"
   },
   {
-    "title": "Zoo Med",
+    "id": 36,
+    "title": "Food Topper para Tortugas",
+    "marca": "Zoo Med",
+    "petType":"Otros",
     "image": "https://www.petco.com.mx/medias/300ftw-127168.jpg?context=bWFzdGVyfHJvb3R8NzQ0NjB8aW1hZ2UvanBlZ3xoYTMvaDEzLzEwNzQxNDQ5NDI0OTI2LzMwMGZ0d18xMjcxNjguanBnfGRkNTgyYzYxNTViY2ZmZmRkOWViNWViMjg5Mzk4MDEwM2JiMGNkYmJlZTE3YmE3NWI2YWEwNTViMDE3ZmQ2NGE",
     "price": "$160.55",
-    "descripcion": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g"
+    "description": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g",
+    "category":"Alimento",
+    "color":"NA",
+    "size": "40 g"
   },
-  
-    {
-      "title": "You & Me",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNjY0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDkyLzk1MzUwMzU0NzM5NTAuanBnfDliODY0MDgwMWM0NzRhNDFhMDYyMzUwOGMwZjJkY2ZiM2EyYmM1ZTI2OTQ5MDU0MGQzYmUzYjMzOWUzN2NiZmQ",
-      "price": "$2,999.00",
-      "descripcion": "You & Me Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco"
-    },
-    {
-      "title": "You & Me",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyMDc5MHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDZhLzk1MzUwODcyNDczOTAuanBnfDYzNDkzYzdhMmJhOTFhMTVkN2NhNWVkOGY0YzZjZWNmM2E5ZmFhODU3OTM3MmE1NzQzZWVkNzE5MjBkZTJlNWI",
-      "price": "$419.40 Antes $699.00",
-      "descripcion": "You & Me Percha para Ventana con Memory Foam para Gato"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/300ftw-142225.jpg?context=bWFzdGVyfHJvb3R8MjQxNzN8aW1hZ2UvanBlZ3xoMDQvaGZkLzEwNjA2NjA3NTY0ODMwLzMwMGZ0d18xNDIyMjUuanBnfGU2NjM2NTE4YWYxMTMzNTA1NDBiMmM2Nzc1ZjRmOGRlNzc0YWMzN2UyNmU1YjFmZTVjMmU4OWNkYmM1MWY1ZTA",
-      "price": "$1,619.40 Antes $2,699.00",
-      "descripcion": "EveryYay Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
-      "price": "$779.40 Antes $1,299.00",
-      "descripcion": "EveryYay Secret Hideout Condo Century con Cojín Extraíble para Gato"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNTc1N3xpbWFnZS9qcGVnfGltYWdlcy9oNmIvaGU3Lzk1MzgzNjY3MzQzNjYuanBnfGMxNWVhY2E1ODBmMzUzOGMyMTc5NWVjZDQ1MGUwOTcwOWM0NzVjZTVjNjQ5OTRiODM1MTk1ZjZjNDc4Mjk2MTQ",
-      "price": "$1,079.40 Antes $1,799.00",
-      "descripcion": "EveryYay Mueble para Gatito Tipo Torre con Rampa"
-    },
-    {
-      "title": "EveryYay",
-      "image": "https://www.petco.com.mx/medias/300ftw-142229.jpg?context=bWFzdGVyfHJvb3R8MzQ4Mjd8aW1hZ2UvanBlZ3xoMjEvaGZhLzEwNjA2NjE1NzU2ODMwLzMwMGZ0d18xNDIyMjkuanBnfGUxZmI4YzBkOTEzYmFhZTc3OWJjNTlmNDVmYTU1MmQ3OTA3YmY5N2VkZjIzYWU1MjM3ZjJlMWI4MzRkZDQ0NGQ",
-      "price": "$1,679.40 Antes $2,799.00",
-      "descripcion": "EveryYay Mueble Tipo Torre con Guarida y Repisa para Gato, Beige"
-    }
+  {
+    "id": 37,
+    "title": "Mueble Tipo Árbol",
+    "marca": "You & Me",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNjY0NHxpbWFnZS9qcGVnfGltYWdlcy9oNDMvaDkyLzk1MzUwMzU0NzM5NTAuanBnfDliODY0MDgwMWM0NzRhNDFhMDYyMzUwOGMwZjJkY2ZiM2EyYmM1ZTI2OTQ5MDU0MGQzYmUzYjMzOWUzN2NiZmQ",
+    "price": "$2,999.00",
+    "description": "Mueble para Gato Tipo Árbol de 5 Niveles con Juguete y Arco",
+    "category": "Juguetes",
+    "color": "Blanco",
+    "size": "NA"
+  },
+  {
+    "id": 38,
+    "title": "Percha para Ventana",
+    "marca": "You & Me",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyMDc5MHxpbWFnZS9qcGVnfGltYWdlcy9oOWIvaDZhLzk1MzUwODcyNDczOTAuanBnfDYzNDkzYzdhMmJhOTFhMTVkN2NhNWVkOGY0YzZjZWNmM2E5ZmFhODU3OTM3MmE1NzQzZWVkNzE5MjBkZTJlNWI",
+    "price": "$419.40",
+    "description": "Percha para Ventana con Memory Foam para Gato",
+    "category":"Juguetes",
+    "color":"Blanco",
+    "size": "NA"
+  },
+  {
+    "id": 39,
+    "title": "Mueble con Rascadores",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/300ftw-142225.jpg?context=bWFzdGVyfHJvb3R8MjQxNzN8aW1hZ2UvanBlZ3xoMDQvaGZkLzEwNjA2NjA3NTY0ODMwLzMwMGZ0d18xNDIyMjUuanBnfGU2NjM2NTE4YWYxMTMzNTA1NDBiMmM2Nzc1ZjRmOGRlNzc0YWMzN2UyNmU1YjFmZTVjMmU4OWNkYmM1MWY1ZTA",
+    "price": "$1,619.40",
+    "description": "Mueble de Tres Niveles con Rascadores de Yute para Gato, Gris",
+    "category":"Juguetes",
+    "color": "Gris",
+    "size": "NA"
+  },
+  {
+    "id": 40,
+    "title": "Condo con Cojín Extraíble",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
+    "price": "$779.40",
+    "description": "Secret Hideout Condo Century con Cojín Extraíble para Gato",
+    "category": "Accesorios",
+    "color":"Gris",
+    "size": "NA"
+  },
+  {
+    "id": 41,
+    "title": "Mueble Tipo Torre con Rampa",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wzNTc1N3xpbWFnZS9qcGVnfGltYWdlcy9oNmIvaGU3Lzk1MzgzNjY3MzQzNjYuanBnfGMxNWVhY2E1ODBmMzUzOGMyMTc5NWVjZDQ1MGUwOTcwOWM0NzVjZTVjNjQ5OTRiODM1MTk1ZjZjNDc4Mjk2MTQ",
+    "price": "$1,079.40",
+    "description": "Mueble para Gatito Tipo Torre con Rampa",
+    "category":"Juguetes",
+    "color":"Gris",
+    "size": "NA"
+  },
+  {
+    "id": 42,
+    "title": "Mueble Tipo Torre Con Guarida y Repisa",
+    "marca": "EveryYay",
+    "petType":"Gato",
+    "image": "https://www.petco.com.mx/medias/300ftw-142229.jpg?context=bWFzdGVyfHJvb3R8MzQ4Mjd8aW1hZ2UvanBlZ3xoMjEvaGZhLzEwNjA2NjE1NzU2ODMwLzMwMGZ0d18xNDIyMjkuanBnfGUxZmI4YzBkOTEzYmFhZTc3OWJjNTlmNDVmYTU1MmQ3OTA3YmY5N2VkZjIzYWU1MjM3ZjJlMWI4MzRkZDQ0NGQ",
+    "price": "$1,679.40",
+    "description": "Mueble Tipo Torre con Guarida y Repisa para Gato, Beige",
+    "category":"Juguetes",
+    "color": "Beige",
+    "size": "NA"
+  },
+  {
+    "id": 43,
+    "title": "Alberca de Pelotas para Juegos",
+    "marca": "Marshall",
+    "petType": "Conejo",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNDE5MXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaDI2Lzk1MjkxNTczNTM1MDIuanBnfDFlNmYwOGZhMzU5YjJhNTU5NWM1ZGY5ZWIxMDJkNTJkY2FmYzMyZWQ2NTQyYjA0NGM3OGI2YTZlMGU5YWUzMjM",
+    "price": "$775.00",
+    "description": "Marshall Alberca de Pelotas para Juegos Pop-n-Play",
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
+  },
+  {
+    "id": 44,
+    "title": "Chew Esferas de Sauce",
+    "marca": "You & Me",
+    "petType": "Conejo",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MTA4OXxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDIzLzkyMDEzNTU4MTY5OTAuanBnfGQyMjBmNWQ5MGY3ZmI5NjI4OTI1ZDJlMWQxNmI5MzEyZGYzMWYxOWI2MjcyYzhiZWNiYzcyNTFhNDQ1ZmMyODk",
+    "price": "$123.50",
+    "description": "You & Me Chew Esferas de Sauce, 3 Piezas",
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
+  },
+  {
+    "id": 45,
+    "title": "Bolas Rodadoras para Pequeñas Mascotas",
+    "marca": "Oxbow",
+    "petType": "Conejo",
+    "image": "https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA",
+    "price": "$161.50",
+    "description": "Oxbow Enriched Life Bolas Rodadoras para Pequeñas Mascotas",
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
+  },
+  {
+    "id": 46,
+    "title": "You & Me",
+    "marca": "Escondite Castillo",
+    "petType": "Conejo",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w0ODA3OXxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDQxLzkyMDEzMTk1NDI4MTQuanBnfDFlYzY0ODljZjVlMzU4ZWJhMjNiNWYxYmQxMDk5OTlmYzc3YjdjZDJkOWM0NDA1YjExODZhMGExZDIzN2ZlOTQ",
+    "price": "$145.00",
+    "description": "You & Me Escondite Castillo, Mediano",
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
+  },
+  {
+    "id": 47,
+    "title": "Túnel",
+    "marca": "Ware",
+    "petType": "Conejo",    
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1MjI5MHxpbWFnZS9naWZ8aW1hZ2VzL2gwMy9oNGQvODg0ODEwMzU3MTQ4Ni5naWZ8MjYyMjhiMjJkY2U4ODY3ZTA0NjI1ZGY0YzU4N2MzMGQ2ZWE5YjVjMGZkNWQ3YzY4NzMzNzMyNzc0ODE2NzI1Nw",
+    "price": "$289.75",
+    "description": "Ware Túnel, XX-Grande",
+    "category": "Juguetes",
+    "color":"NA",
+    "size": "NA"
+  }
   
 ]

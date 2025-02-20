@@ -1,0 +1,53 @@
+[
+    {
+      "id": 43,
+      "title": "Marshall",
+      "marca": "",
+      "petType": "conejo",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNDE5MXxpbWFnZS9qcGVnfGltYWdlcy9oYTQvaDI2Lzk1MjkxNTczNTM1MDIuanBnfDFlNmYwOGZhMzU5YjJhNTU5NWM1ZGY5ZWIxMDJkNTJkY2FmYzMyZWQ2NTQyYjA0NGM3OGI2YTZlMGU5YWUzMjM",
+      "price": "$775.00",
+      "descripcion": "Marshall Alberca de Pelotas para Juegos Pop-n-Play",
+      "category": "Juguetes"
+    },
+    {
+      "id": 44,
+      "title": "You & Me",
+      "marca": "",
+      "petType": "conejo",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MTA4OXxpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDIzLzkyMDEzNTU4MTY5OTAuanBnfGQyMjBmNWQ5MGY3ZmI5NjI4OTI1ZDJlMWQxNmI5MzEyZGYzMWYxOWI2MjcyYzhiZWNiYzcyNTFhNDQ1ZmMyODk",
+      "price": "$123.50",
+      "descripcion": "You & Me Chew Esferas de Sauce, 3 Piezas",
+      "category": "Juguetes"
+    },
+    {
+      "id": 45,
+      "title": "Oxbow",
+      "marca": "",
+      "petType": "conejo",
+      "image": "https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA",
+      "price": "$161.50",
+      "descripcion": "Oxbow Enriched Life Bolas Rodadoras para Pequeñas Mascotas",
+      "category": "Juguetes"
+    },
+    {
+      "id": 46,
+      "title": "You & Me",
+      "marca": "",
+      "petType": "conejo",
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w0ODA3OXxpbWFnZS9qcGVnfGltYWdlcy9oZTIvaDQxLzkyMDEzMTk1NDI4MTQuanBnfDFlYzY0ODljZjVlMzU4ZWJhMjNiNWYxYmQxMDk5OTlmYzc3YjdjZDJkOWM0NDA1YjExODZhMGExZDIzN2ZlOTQ",
+      "price": "$145.00",
+      "descripcion": "You & Me Escondite Castillo, Mediano",
+      "category": "Juguetes"
+    },
+    {
+      "id": 47,
+      "title": "Ware",
+      "marca": "",
+      "petType": "conejo",    
+      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1MjI5MHxpbWFnZS9naWZ8aW1hZ2VzL2gwMy9oNGQvODg0ODEwMzU3MTQ4Ni5naWZ8MjYyMjhiMjJkY2U4ODY3ZTA0NjI1ZGY0YzU4N2MzMGQ2ZWE5YjVjMGZkNWQ3YzY4NzMzNzMyNzc0ODE2NzI1Nw",
+      "price": "$289.75",
+      "descripcion": "Ware Túnel, XX-Grande",
+      "category": "Juguetes"
+    }
+  ]
+  

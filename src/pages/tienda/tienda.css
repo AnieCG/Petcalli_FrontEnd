@@ -1,8 +1,21 @@
+
+.franja{
+  background-color: var(--block-images1);
+  width: auto;
+  height: 88px;
+}
+
+body{
+  max-width: 1920px;
+}
+
 main {
+
   #filtro {
     background-color: var(--block-images1);
     border-radius: 20px;
     padding-left: 0;
+    padding-right: 0;
 
     h2 {
       color: var(--subtitle);
@@ -19,40 +32,92 @@ main {
       font-family: var(--font_text);
       font-size: medium;
     }
+
     .list-group {
       text-align: start;
+    }
+
+    div.card {
+      background-color: var(--background_page);
+      margin: 0;
+      border-radius: 20px;
+      padding: 0;
+    }
+
+    p.card-text {
+      margin: 0;
+    }
+    
+    img.card-img-top{
+      height: 350px;
     }
   }
 
   .conteiner {
     padding-left: 5rem;
-  }
+    }
+
+
+
 }
+  
+ 
+
+
+
 
 .petSelection {
   .animal {
     /* cartas animales */
 
-    width: 250px;
-    height: 240px;
+    max-width: 202px;
+    height: 290px;
     background-color: #f2cc8f;
+    margin-bottom: 0px;
+  }
+
+  .carrusel-btn{
+    background-color: #f2cc8f;
+    border:0;
+  }
+
+  h5{
+    margin:0;
   }
 
   .img-pets {
-    width: 250px;
-    height: 200px;
-    border-radius: 40%;
+    max-width: 250px;
+    height: 255px;
+    border-radius: 45%;
+    margin-bottom: 0;
+    
+  }
+
+  .card-body{
+margin-top: 0%;
+    max-width: 250px;
+    height: 30px;
+    margin-bottom: 0px;
   }
 
   .carouselAnimals {
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #f2cc8f;
-    height: 360px;
+    height: 380px;
+  max-width: 1000px;
+    /*     min-width: 700px; */
     border-radius: 5cap;
   }
 
   .titulo {
     color: #81b29a;
+  }
+
+  .button-next-before{
+    background-color: #E07A5F;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
   }
 }
 
@@ -65,6 +130,7 @@ a {
     background-color: var(--block-images2);
     border-radius: 20px;
   }
+
   .card {
     display: flex;
     height: 300px;
@@ -81,12 +147,14 @@ a {
     height: 100%;
     object-fit: contain;
   }
+
   #tituloCarrusel {
     font-family: var(--font_subtitle);
     color: var(--subtitle);
     font-weight: 550;
     font-size: 55px;
   }
+
   .envolventeBoton {
     align-self: center;
     background-color: var(--block-images1);
@@ -97,13 +165,12 @@ a {
 
 .row-seccion-cards {
   background-color: #f6f1dd;
-
-  justify-content: start;
+  justify-content: space-between;
 }
 
 .resultados {
-  text-align: center;
-  margin-top: 30px;
+  text-align: start;
+  margin-top: 20px;
 }
 
 .card {
@@ -124,6 +191,7 @@ a {
     background-color: #f6f1dd;
     justify-content: center;
   }
+
   .card {
     display: flex;
     flex-direction: row;
@@ -133,19 +201,90 @@ a {
     background-color: #f6f1dd;
     border: none;
   }
+
   #image {
     height: 280px;
     width: 14rem;
     border-radius: 15px;
   }
+
   .card p {
     width: 200px;
     height: 80px;
   }
+
   .card-body {
     background-color: #f2cc8f;
   }
+
   .resultados {
     margin-left: 50px;
+  }
+}
+
+/* Seccion de mobile header */
+.mobileHeader{
+  background-image: url(/public-images/Vector_Header_Mobile.png);
+  .postalCode{
+    background-color: var(--block-images2);
+    font-size: 10px;
+  }
+  p{
+    color: #6C757D;
+  }
+  .title{
+    background-color: var(--block-images2);
+  }
+  h2{
+    font-family: var(--font_title);
+    color: var(--title);
+    font-size: 35px;
+    font-weight:bolder ;
+  }
+  .ads{
+    background-color: var(--block-images2);
+  }
+  #shape2{
+    width: 20px;  
+    height: 20px;
+  }
+  #mapPin{
+    width: 15px;
+    height: 15px;
+  }
+  button{
+    background-color: var(--block-images1);
+    color: white;
+  }
+}
+
+.modal-header{
+  background-color: #f4f1de;
+}
+
+.modal-btn{
+  background-color:#E07A5F ;
+  border: 0;
+}
+
+.mas-menos{
+  border-radius: 50%;
+}
+
+.modal-body{
+  background-color: #f2cc8f;
+}
+
+.modal-img{
+  border-radius: 30%;
+  height: 30%;
+}
+
+.modal-footer{
+  background-color: #f4f1de;
+  
+  .btn{
+    background-color:#f2cc8f;
+
   }
 }
