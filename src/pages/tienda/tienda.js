@@ -87,7 +87,7 @@ const insertCarruselMasPopulares = () => {
         </div>
 
       </section>`;
-}
+};
 insertCarruselMasPopulares();
 
 const createCards = (producto) => {
@@ -112,98 +112,105 @@ const createCards = (producto) => {
 `;
 };
 
-
-   fetch("/public/json/productos.json")
-    .then((productos) => productos.json())
-    .then((productos) => {
-      $seccionCards.innerHTML = productos
-      .map((card) => createCards(card))
-      .join("");
-  }); 
-
-const filterProductsByPetType = (petType) => {
-  fetch("/public/json/productos.json")
-  .then((products) => products.json())
-  .then((products) => {
-    const productsToShow = products.filter( product => product.petType === petType );
-    $seccionCards.innerHTML = productsToShow
+fetch("/public/json/productos.json")
+  .then((productos) => productos.json())
+  .then((productos) => {
+    $seccionCards.innerHTML = productos
       .map((card) => createCards(card))
       .join("");
   });
-}
+
+const filterProductsByPetType = (petType) => {
+  fetch("/public/json/productos.json")
+    .then((products) => products.json())
+    .then((products) => {
+      const productsToShow = products.filter(
+        (product) => product.petType === petType
+      );
+      $seccionCards.innerHTML = productsToShow
+        .map((card) => createCards(card))
+        .join("");
+    });
+};
 
 const filterProductsByCategory = (category) => {
   fetch("/public/json/productos.json")
     .then((products) => products.json())
     .then((products) => {
-      const productsToShow = products.filter( product => product.category === category );
+      const productsToShow = products.filter(
+        (product) => product.category === category
+      );
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
     });
-  
-}
-  const catsButton = document.getElementById( "Gatos" );
-  const dogsButton = document.getElementById( "Perros" );
-  const birdsButton = document.getElementById( "Aves" );
-  const rabbitsButton = document.getElementById( "Conejos" );
-  const fishesButton = document.getElementById( "Peces" );
-  const otherButton = document.getElementById( "Otros" );
+};
+const catsButton = document.getElementById("Gatos");
+const dogsButton = document.getElementById("Perros");
+const birdsButton = document.getElementById("Aves");
+const rabbitsButton = document.getElementById("Conejos");
+const fishesButton = document.getElementById("Peces");
+const otherButton = document.getElementById("Otros");
 
-  catsButton.addEventListener( "click", () => {
-    filterProductsByPetType("Gato");
-  });
-  dogsButton.addEventListener( "click", () => {
-    filterProductsByPetType("Perro");
-  });
-  rabbitsButton.addEventListener( "click", () => {
-    filterProductsByPetType("Conejo");
-  });
-  fishesButton.addEventListener( "click", () => {
-    filterProductsByPetType("Peces");
-  });
-  birdsButton.addEventListener( "click", () => {
-    filterProductsByPetType("Aves");
-  });
-  otherButton.addEventListener( "click", () => {
-    filterProductsByPetType("Otros");
-  });
-  
-  const accesoriesButton = document.getElementById("accesories");
-  const clothesButton = document.getElementById("clothes");
-  const foodButton = document.getElementById("food");
-  const toysButton = document.getElementById("toys");
-  const medicinesButton = document.getElementById("medicines");
+catsButton.addEventListener("click", () => {
+  filterProductsByPetType("Gato");
+});
+dogsButton.addEventListener("click", () => {
+  filterProductsByPetType("Perro");
+});
+rabbitsButton.addEventListener("click", () => {
+  filterProductsByPetType("Conejo");
+});
+fishesButton.addEventListener("click", () => {
+  filterProductsByPetType("Peces");
+});
+birdsButton.addEventListener("click", () => {
+  filterProductsByPetType("Aves");
+});
+otherButton.addEventListener("click", () => {
+  filterProductsByPetType("Otros");
+});
 
-  accesoriesButton.addEventListener( "click", () => {
-    if ( accesoriesButton.checked )
-      filterProductsByCategory("Accesorios");
-  });
-  clothesButton.addEventListener( "click", () => {
-    if ( clothesButton.checked )
-      filterProductsByCategory("Ropa");
-  });
-  toysButton.addEventListener( "click", () => {
-    if ( toysButton.checked )
-      filterProductsByCategory("Juguetes");
-  });
-  foodButton.addEventListener( "click", () => {
-    if ( foodButton.checked )
-      filterProductsByCategory("Alimento");
-  });
-  medicinesButton.addEventListener( "click", () => {
-    if ( medicinesButton.checked )
-      filterProductsByCategory("Medicamentos");
-  });
+const accesoriesButton = document.getElementById("accesories");
+const clothesButton = document.getElementById("clothes");
+const foodButton = document.getElementById("food");
+const toysButton = document.getElementById("toys");
+const medicinesButton = document.getElementById("medicines");
 
+accesoriesButton.addEventListener("click", () => {
+  if (accesoriesButton.checked) filterProductsByCategory("Accesorios");
+});
+clothesButton.addEventListener("click", () => {
+  if (clothesButton.checked) filterProductsByCategory("Ropa");
+});
+toysButton.addEventListener("click", () => {
+  if (toysButton.checked) filterProductsByCategory("Juguetes");
+});
+foodButton.addEventListener("click", () => {
+  if (foodButton.checked) filterProductsByCategory("Alimento");
+});
+medicinesButton.addEventListener("click", () => {
+  if (medicinesButton.checked) filterProductsByCategory("Medicamentos");
+});
 
+//Seccion de filtrado por precio
+const $inputFiltradoPrecios = document.getElementById("customRange");
+const $priceValue = document.getElementById("price-value");
 
+$inputFiltradoPrecios.addEventListener("input", function () {
+  let maxPrice = parseInt($inputFiltradoPrecios.value);
+  $priceValue.textContent = `$ ${maxPrice}`;
 
-
-
-
-
+  fetch("/public/json/productos.json")
+    .then((products) => products.json())
+    .then((products) => {
+      const productsToShow = products.filter((product) => {
+        let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
+        return productPrice <= maxPrice;
+      });
+      $seccionCards.innerHTML = productsToShow
+        .map((card) => createCards(card))
+        .join("");
+    });
+});
 // Seccion de filtrado por tags
-
-
-  
