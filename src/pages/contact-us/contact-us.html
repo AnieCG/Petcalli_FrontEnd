@@ -23,58 +23,57 @@
   <main>
     <section class="contact-us pb-5">
       <h3 class="display-5 text-center fw-bold mb-5 pt-5">Contáctanos</h3>
-      <form class="row g-3 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com" target="_blank"
-        method="POST" novalidate>
-        <div class="col-md-4">
-          <label for="nombre" class="form-label">First name</label>
-          <input type="text" class="form-control" id="nombre" name="name" minlength="10" required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">Necesitas 10 caracteres.</div>
+      <form class="contact_form container p-4 border rounded-5 needs-validation"
+        action="https://formsubmit.co/kalocesa95@gmail.com" method="POST" target="_blank" novalidate>
+        <div class="mb-3 container__input">
+          <label for="validationCustom01" class="form-label">Nombre Completo</label>
+          <input type="text hidden" class="form-control" class="validationCustom01" name="_captcha" minlength="5"
+            maxlength="30" required>
+          <div class="invalid-feedback">
+            Por favor, introduce tu nombre completo.
+          </div>
         </div>
-        <div class="col-md-4">
-          <label for="apellido" class="form-label">Last name</label>
-          <input type="text" class="form-control" id="apellido" name="last-name" minlength="5" maxlength="10" required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">necesitas entre 5 y 10.</div>
-        </div>
-        <div class="col-md-4">
-          <label for="telefono" class="form-label">telefono</label>
-          <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{5,10}" inputmode="numeric"
+        <div class="mb-3 container__input">
+          <label for="validationCustom02" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" class="validationCustom02" name="correo" aria-describedby="emailHelp"
             required>
-          <div class="valid-feedback">Looks good!</div>
-          <div class="invalid-feedback">necesitas entre 5 y 10.</div>
-        </div>
-        <div class="col-md-4">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input type="email" class="form-control" id="email" name="email" required>
-          <div class="invalid-feedback">Por favor ingresa un correo electrónico válido.</div>
-          <div class="valid-feedback">Looks good!</div>
-        </div>
-        <div class="col-md-4">
-          <label for="password" class="form-label">Contraseña</label>
-          <div class="input-group">
-            <input type="password" class="form-control" id="password" name="password"
-              pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}" required>
-            <button type="button" class="btn btn-outline-secondary" id="togglePassword">Show</button>
-            <div class="invalid-feedback">La contraseña debe contener al menos una letra mayúscula, un carácter
-              especial, un número y tener un mínimo de 8 caracteres.</div>
-            <div class="valid-feedback">Looks good!</div>
+          <div class="invalid-feedback">
+            Por favor, introduce un correo electrónico válido example@example.com
           </div>
         </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="invalidCheck" name="conditions" required>
-            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
-            <div class="invalid-feedback">You must agree before submitting.</div>
-            <div class="valid-feedback">Looks good!</div>
+        <div class="mb-3 container__input">
+          <label for="validationCustom03" class="form-label">Teléfono</label>
+          <input type="tel" class="form-control" class="validationCustom03" name="telefono" pattern="[0-9]*"
+            inputmode="numeric" required>
+          <div class="invalid-feedback">
+            Por favor, introduce un teléfono válido
           </div>
         </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+        <div class="mb-3 container__input">
+          <label for="validationCustom04" class="form-label">Mensaje</label>
+          <textarea type="text" class="form-control" id="validationCustom04" rows="3" name="mensaje" minlength="10"
+            maxlength="150" required></textarea>
+          <div class="invalid-feedback">
+            Por favor, introduce un mensaje entre 10 y 150 caracteres.
+          </div>
         </div>
-        <input type="hidden" name="_captcha" value="false">
+        <div class="col-12 container__input">
+          <div class="form-check py-3">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los términos y condiciones</a>
+              <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de privacidad</a>
+            </label>
+            <div class="invalid-feedback">
+              Debes estar de acuerdo antes de enviar
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button class=" btn button text-white w-50" type="submit">Enviar mensaje</button>
+          <input type="hidden" name="_captcha" value="false">
+        </div>
       </form>
-
     </section>
   </main>
   <footer id="footer"></footer>
