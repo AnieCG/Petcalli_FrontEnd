@@ -1,0 +1,69 @@
+[
+    {
+      "title": "Seresto",
+      "image": "https://www.petco.com.mx/medias/300ftw-116476.jpg?context=bWFzdGVyfHJvb3R8NDAyMzV8aW1hZ2UvanBlZ3xoODgvaGM0LzEwNzQ4NjE5OTQ4MDYyLzMwMGZ0d18xMTY0NzYuanBnfDM3NzY1ZTk1MWQ3MmFkN2U3NDIxYmI0NmM0ZjE3OWU2MGI1MzFiNmMyNTdiMTkxOGYxNTA2MWUxMjg4ZWQ1MjY",
+      "price": "$1,068.04",
+      "descripcion": "Seresto Collar Antipulgas y Garrapatas para Perro, Grande"
+    },
+    {
+      "title": "Seresto",
+      "image": "https://www.petco.com.mx/medias/300ftw-116475.jpg?context=bWFzdGVyfHJvb3R8Njg4MjV8aW1hZ2UvanBlZ3xoZTAvaGQxLzEwNzQ4NjE4OTY1MDIyLzMwMGZ0d18xMTY0NzUuanBnfDA2MmY1Yzc2MjAyNDE0MWQ2M2U5MjViZmY1YzRkODFmZWM0MTNjODg5ZWQ5Mjk2MmZkYzlmYWVhNWNlYTFjNGQ",
+      "price": "$975.41",
+      "descripcion": "Seresto Collar Antipulgas y Garrapatas para Perro y Gato, Chico"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/108119.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDA2NTR8aW1hZ2UvanBlZ3xoN2EvaDEyLzEwNTU1Njc2MTMxMzU4LzEwODExOS5qcGdfMzAwZnR3fDEwZjJjMTFhYWZjM2UwMjZjNTQ1NzU3MzU0OTlhYmJmMjdlMWRlOWRiOWE0MGM5Yjc5YjRhZDY4Nzc4YmU0MzA",
+      "price": "$2,555.50",
+      "descripcion": "Royal Canin Prescripción Alimento Seco Gastrointestinal Bajo en Grasa para Perro Adulto, 13 kg"
+    },
+    {
+      "title": "Hill's Prescription Diet",
+      "image": "https://www.petco.com.mx/medias/105335.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDM3NDl8aW1hZ2UvanBlZ3xoYjAvaDE2LzEwMzc5NjcxNjAxMTgyLzEwNTMzNS5qcGdfMzAwZnR3fDdjZjVjYjU1ZWFkZTFiY2UyNWY3NDA2YjdlMDNmOWQxMGQwZmE3N2Y1MjUxMzc1NTczNDlkYmU3NzJjOGE1YWM",
+      "price": "$2,080.50",
+      "descripcion": "Hill's Prescription Diet i/d Alimento Seco Gastrointestinal para Perro Adulto, 8 kg"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/104905.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzg3NDZ8aW1hZ2UvanBlZ3xoNDkvaDY2LzEwNTU1NjQxMzk3Mjc4LzEwNDkwNS5qcGdfMzAwZnR3fDFkMDIzODdmNTI0ODg1NGY4MThmYzljYTU3OTlmMjNkOTEyMDY4MGUzYTBiZDM5NzQzNjhmMmJlZjA1ZDIxOWE",
+      "price": "$99.75",
+      "descripcion": "Royal Canin Prescripción Alimento Húmedo Gastrointestinal Bajo en Grasa para Perro Adulto, 385 g"
+    },
+    {
+      "title": "Sin título",
+      "image": "https://www.petco.com.mx/medias/104915.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mzk0MzR8aW1hZ2UvanBlZ3xoMWIvaDkyLzEwNTU1NjQ4OTMzOTE4LzEwNDkxNS5qcGdfMzAwZnR3fDZlMzc3N2ViOWMxZTM4YmEzN2ExMDQ5MDZmZTcyODc5ODNlMDgxYTJlZGFiZDA5ODg1ZDgzMWMwZTg2MzQ4ZGY",
+      "price": "$2,223.00",
+      "descripcion": "Royal Canin Prescripción Alimento Seco Gastrointestinal Alto en Energía para Perro Adulto, 10 kg"
+    },
+    {
+      "title": "Hill's Prescription Diet",
+      "image": "https://www.petco.com.mx/medias/105306.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDEzNDZ8aW1hZ2UvanBlZ3xoOWUvaGM5LzEwMzAwOTE2MjM2MzE4LzEwNTMwNi5qcGdfMzAwZnR3fDc5NzA3ZDRlMDdhZWY5NzY0MmQyYmMwY2Q2NjRkMDJkY2EyM2YxOGQxNjYyN2YzNzZhYTczYmMyZGI4MjhlYWE",
+      "price": "$3,040.00",
+      "descripcion": "Hill's Prescription Diet j/d Alimento Seco para Movilidad para Perro Adulto, 12.5 kg"
+    },
+    {
+      "title": "Holland",
+      "image": "https://www.petco.com.mx/medias/300ftw-106712.jpg?context=bWFzdGVyfHJvb3R8MjIyNDR8aW1hZ2UvanBlZ3xoYjUvaGUwLzEwNzMzNjQwMDU2ODYyLzMwMGZ0d18xMDY3MTIuanBnfDUyMGFmNDY5OTIyYWM3ZmU2NmM3NTM2ZDU0ZmNhZDY2M2Q0YjM5YzcyM2MwZDlmNTQ4YmE5OGE2OGMwZjcxNzA",
+      "price": "$521.55",
+      "descripcion": "Holland Rx Cartiplex Suplemento Nutricional Articular para Perros, 30 Tabletas"
+    },
+    {
+      "title": "Hill's Prescription Diet",
+      "image": "https://www.petco.com.mx/medias/105337.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDU3OTV8aW1hZ2UvanBlZ3xoODEvaGFiLzEwMzAwOTM3ODYzMTk4LzEwNTMzNy5qcGdfMzAwZnR3fDE3MzVkMWFkNGIxZDliMjM3ODI5OTMzNWQ1NzIwZmY1YWE5MDExYjBkYWVmYTczYmYzZWE1M2EwYjE2ZDNhYmQ",
+      "price": "$2,080.50",
+      "descripcion": "Hill's Prescription Diet h/d, Cuidado del corazón, Alimento para Perro 7.9 kg"
+    },
+    {
+      "title": "Hill's Prescription Diet",
+      "image": "https://www.petco.com.mx/medias/300ftw-115629.jpg?context=bWFzdGVyfHJvb3R8MzQ3MjR8aW1hZ2UvanBlZ3xoOWIvaDRlLzEwNjU4NjI3ODQ2MTc0LzMwMGZ0d18xMTU2MjkuanBnfGI3ZTI1YmRlM2EzNTU0ZWJiMDI4ZGIyYzQ1OGRlMjExMDgwODA0ZDhjZDkwMjM1YjFmMDIzNTlkM2MxZTgzNDI",
+      "price": "$114.00",
+      "descripcion": "Hill's Prescription Diet i/d Alimento Húmedo Gastrointestinal para Perro Adulto Receta Pollo/Vegetales, 354 g"
+    },
+    {
+      "title": "Dogswell",
+      "image": "https://www.petco.com.mx/medias/300ftw-130348.jpg?context=bWFzdGVyfHJvb3R8MTcwMzB8aW1hZ2UvanBlZ3xoZGUvaGNkLzEwNjU1ODAyNzUzMDU0LzMwMGZ0d18xMzAzNDguanBnfDA0YjBiNGIxZmIzYTAzYTFlOWZkMjA3NmNiMjM5ZGE4NWI5ZDY4MWVjN2FlYTdhMmNkOGFjOGFmYjRmYmI5NTg",
+      "price": "$1,099.00",
+      "descripcion": "Dogswell Wild Alaskan Aceite de Salmón para Perro, 964 ml"
+    }
+  ]
+  
