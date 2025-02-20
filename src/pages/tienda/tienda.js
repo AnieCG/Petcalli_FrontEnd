@@ -1,5 +1,5 @@
 const $seccionCards = document.getElementById("seccion-cards");
-
+const $resultadosProductos = document.getElementById("resultados-productos");
 const insertCarruselMasPopulares = () => {
   const seccionCarrusel = document.getElementById("seccionCarrusel");
   seccionCarrusel.innerHTML = `
@@ -118,6 +118,8 @@ fetch("/public/json/productos.json")
     $seccionCards.innerHTML = productos
       .map((card) => createCards(card))
       .join("");
+    $resultadosProductos.textContent = productos.length;
+    console.log($resultadosProductos);
   });
 
 const filterProductsByPetType = (petType) => {
