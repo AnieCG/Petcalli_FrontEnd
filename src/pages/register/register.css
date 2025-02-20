@@ -34,10 +34,18 @@ section {
 
   p {
     color: var(--subtitle);
-    font-weight: 600;
   }
 
   .dog-register {
     min-width: 380px;
+  }
+
+  .secciones-registro {
+    font-size: x-large;
+    color: darkgoldenrod;
+  }
+
+  .button-password {
+    margin-left: 20px;
   }
 }
