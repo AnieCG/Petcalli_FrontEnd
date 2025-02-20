@@ -9,50 +9,11 @@
 //function form es la función para cada formulario individual por eso el parámetro form
 //stopPropagation: previene que el evento se propague, deteniendo la burbuja del evento
 //was-validated: es una clase de bootstrap que añade los estados de validación o invalidación de acuerdo a su estado.
-const checkFormValidity = () => {
-  const name = document.querySelector(".validationCustom01");
-  const telephone = document.querySelector(".validationCustom03");
-  const password = document.querySelector(".validationCustom05");
-  const submitButton = document.querySelector(".button");
-
-  const isNameValid =
-    name.value.trim() !== "" &&
-    name.value.length >= 5 &&
-    name.value.length <= 31;
-
-  const isTelephoneValid =
-    telephone.value.trim() !== "" &&
-    /^\d+$/.test(telephone.value) &&
-    telephone.value.length >= 10;
-
-  const isPasswordValid =
-    password.value.trim() !== "" &&
-    /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]+$/.test(password.value) &&
-    password.value.length >= 10;
-
-  if (isNameValid && isTelephoneValid && isPasswordValid) {
-    submitButton.disabled = false;
-  } else {
-    submitButton.disabled = true;
-  }
-};
-
-document
-  .querySelector(".validationCustom01")
-  .addEventListener("input", checkFormValidity);
-document
-  .querySelector(".validationCustom03")
-  .addEventListener("input", checkFormValidity);
-document
-  .querySelector(".validationCustom05")
-  .addEventListener("input", checkFormValidity);
-
-document.addEventListener("DOMContentLoaded", checkFormValidity);
 
 (function () {
+  "use strict";
   const forms = document.querySelectorAll(".needs-validation");
   Array.prototype.slice.call(forms).forEach(function (form) {
-    form.addEventListener("input", checkFormValidity);
     form.addEventListener(
       "submit",
       function (event) {
@@ -60,18 +21,35 @@ document.addEventListener("DOMContentLoaded", checkFormValidity);
           event.preventDefault();
           event.stopPropagation();
         } else {
-          form.classList.add("was-validated");
-          setTimeout(() => {
-            form.reset();
-            form.classList.remove("was-validated");
-          }, 1000);
+          event.preventDefault(); // Previene el envío predeterminado
+          fetch(form.action, {
+            //es el post del form-submit quiero realizar una solicitud
+            method: "POST", //Es el mètodo con el cuàl voy a enviar los datos del form
+            body: new FormData(form),
+          }).then(() => {
+            //Si se resuelve el formulario se resetea, se remueven los validadores y aparece el alert
+            form.reset(); // Restablece el formulario después del envío exitoso
+            form.classList.remove("was-validated"); // Remueve la clase de validación
+            alert("El formulario se envió correctamente!"); //Se lo puse porque ya no redirige a otra pàgina lo hace enseguida
+          });
         }
+        form.classList.add("was-validated"); //Se le añaden las validaciones a acada uno
       },
       false
     );
   });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    forms.forEach((form) => checkFormValidity.call(form));
-  });
 })();
+
+// JavaScript para mostrar/ocultar la contraseña
+const togglePassword = document.querySelector("#togglePassword"); //es del boton este id
+const password = document.querySelector("#password"); //es el del input
+
+togglePassword.addEventListener("click", () => {
+  //cuando le doy click al boton de toggle voy a cambiar entre el input del password y el texto del input
+  // Alterna entre ver y no ver la contraseña
+  const type =
+    //se obtiene el atributo type del input
+    //si type es = password ? text y al revès
+    password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+});

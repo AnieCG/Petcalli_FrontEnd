@@ -23,52 +23,213 @@
     </header>
 
     <main>
+
         <section class="container-fluid">
             <div class="row row-colums-sm-12 row-columns-md-8 row-columns-lg-6 d-flex flex-wrap-reverse">
                 <div class="col">
                     <h2 class="ps-3 text-center text-lg-start pt-3">Petcalli</h2>
                     <h3 class="display-6 mt-4 mb-4 text-center rounded-pill w-50 mx-auto shadow-lg">Registro de tienda
                     </h3>
-                    <div class=" container mx-auto shadow-lg rounded-3 mb-4">
+                    <div class=" container mx-auto shadow-lg border rounded-3 mb-4 form-container">
                         <form class="container p-4 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com"
                             method="POST" target="_blank" novalidate>
+
+                            <!-- Nombre de la tienda -->
+                            <div class="mt-2 text-center secciones-registro">Datos de la tienda </div>
                             <div class="mb-3">
-                                <label for="validationCustom01" class="form-label">Nombre de Tienda</label>
-                                <input type="text hidden" class="form-control validationCustom01" name="_captcha"
-                                    minlength="5" maxlength="30" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce un nombre descriptivo de tu tienda.
-                                </div>
+                                <label for="nombreTienda" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombreTienda" name="Nombre tienda" minlength="2"  required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Mínimo 2 caracteres</div>
                             </div>
+                            <!-- Descripción de la tienda -->
 
                             <div class="mb-3">
-                                <label for="validationCustom02" class="form-label">Correo Electrónico
-                                    empresarial</label>
-                                <input type="email" class="form-control validationCustom02" name="correo"
-                                    aria-describedby="emailHelp" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce un correo electrónico válido example@example.com
-                                </div>
+                                <label for="descripcionTienda">Descripción</label>
+                                <textarea class="form-control" id="descripcionTienda" rows="3" minlength="50"
+                                    maxlength="250" required></textarea>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
                             </div>
 
-                            <div class="mb-3 container__input">
-                                <label for="validationCustom03" class="form-label">Teléfono del propetario</label>
-                                <input type="tel" class="form-control validationCustom03" name="telefono"
-                                    pattern="[0-9]*" inputmode="numeric" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce un teléfono válido
-                                </div>
-                            </div>
-
+                            <!--  Categorias de la tienda
                             <div class="mb-3">
-                                <label for="validationCustom05" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control validationCustom05" name="_captcha"
-                                    minlength="5" maxlength="30" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce una contraseña válida
-                                </div>
+                                <h4>Categorias</h4>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Medicamento
+                                </label>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Alimento
+                                </label>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Ropa
+                                </label>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Accesorios
+                                </label>
+                                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1"
+                                    value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Juguetes
+                                </label>
+                            </div> -->
+
+                            <!-- Dirección de la tienda -->
+
+                            <div class="form-group mt-2">
+                                <label for="address">Dirección</label>
+                                <input type="text" class="form-control" id="address" minlength="50" maxlength="250"
+                                    required></textarea>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
+
                             </div>
-                            <div class="col-12">
+                            <div class="form-row">
+                                <div class="form-group col-md-6 mt-2">
+                                    <label for="City">Ciudad</label>
+                                    <input type="text" class="form-control" id="City" minlength="7" maxlength="17"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
+                                </div>
+
+
+                                <div class="form-group col-md-4 mt-2">
+                                    <label for="State">Estado</label>
+                                    <select id="State" class="form-control" required>
+                                        <option value="" selected>Elegir</option>
+                                        <option>Aguascalientes</option>
+                                        <option>Baja California</option>
+                                        <option>Baja California Sur</option>
+                                        <option>Campeche</option>
+                                        <option>Chiapas</option>
+                                        <option>Chihuahua</option>
+                                        <option>Ciudad de México</option>
+                                        <option>Coahuila</option>
+                                        <option>Colima</option>
+                                        <option>Durango</option>
+                                        <option>Estado de México</option>
+                                        <option>Guanajuato</option>
+                                        <option>Guerrero</option>
+                                        <option>Hidalgo</option>
+                                        <option>Jalisco</option>
+                                        <option>Michoacán</option>
+                                        <option>Morelos</option>
+                                        <option>Nayarit</option>
+                                        <option>Nuevo León</option>
+                                        <option>Oaxaca</option>
+                                        <option>Puebla</option>
+                                        <option>Querétaro</option>
+                                        <option>Quintana Roo</option>
+                                        <option>San Luis Potosí</option>
+                                        <option>Sinaloa</option>
+                                        <option>Sonora</option>
+                                        <option>Tabasco</option>
+                                        <option>Tamaulipas</option>
+                                        <option>Tlaxcala</option>
+                                        <option>Veracruz</option>
+                                        <option>Yucatán</option>
+                                        <option>Zacatecas</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Debes seleccionar un estado.
+                                    </div>
+                                </div>
+
+                                <div class="form-group col-md-2 mt-2">
+                                    <label for="Zip">Código postal</label>
+                                    <input type="text" class="form-control" id="Zip" minlength="5" maxlength="5"
+                                        required>
+                                    <div class="invalid-feedback">
+                                        Ingresa un Código postal válido
+                                    </div>
+
+                                </div>
+                                <!-- Nombre completo del títular -->
+                                <!-- Faltaría agregar las clases que vayan con el label -->
+                                <div class="mt-2">
+
+                                    <div class="mt-2 text-center secciones-registro">Datos del propietario </div>
+                                    <label for="nombreCompleto" class="form-label">Nombre completo </label>
+                                    <div class="row">
+                                        <div class="col">
+
+                                            <input type="text" class="form-control" placeholder="Nombre(s)"
+                                                minlength="2" maxlength="35" required>
+                                        </div>
+                                        <div class="col">
+
+                                            <input type="text" class="form-control" placeholder="Apellido paterno"
+                                                minlength="2" maxlength="35" required>
+                                        </div>
+                                        <div class="col">
+
+                                            <input type="text" class="form-control" placeholder="Apellido materno"
+                                                minlength="2" maxlength="35" required>
+                                        </div>
+                                    </div>
+
+                                    <!-- correo -->
+                                </div>
+                                <div class="mt-2">
+                                    <label for="emailDueño" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="emailDueño" name="email" required>
+                                    <div class="invalid-feedback">Por favor ingresa un correo electrónico válido
+                                        example@example.com</div>
+                                    <div class="valid-feedback"></div>
+                                </div>
+
+
+                                <!--teléfono  -->
+                                <div class="mb-3 container__input">
+                                    <label for="telefonoDueño" class="form-label">Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefonoDueño" name="telefono"
+                                        pattern="[0-9]{5,10}" inputmode="numeric" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
+                                </div>
+
+                                <!-- RFC -->
+                                <div class="mt-2">
+                                    <label for="RFC">Número de identificación fiscal (RFC) </label>
+                                    <input type="number" class="form-control" id="RFC" minlength="2" maxlength="35"
+                                        required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
+
+                                </div>
+
+                                
+
+                                <!-- URL del sitio web o tienda en línea (si es aplicable) -->
+                                <div class="mt-2">
+                                    <label for="validationTooltip01">URL del sitio web o tienda en línea (si aplica)</label>
+                                    <input type="url" class="form-control" id="" value="" required>
+                                </div>
+
+                                <!-- Políticas de envío y devoluciones -->
+                                <div class="custom-filemt-2 mt-2">
+                                    <label class="custom-file-label" for="customFileLang">Políticas de envío y
+                                        devoluciones</label>
+                                    <br>
+                                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                                </div>
+
+                                <!-- Términos y condiciones de la tienda -->
+                                <div class="custom-file mt-2">
+                                    <label class="custom-file-label" for="customFileLang">Términos y condiciones de la
+                                        tienda</label>
+                                    <br>
+                                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
+                                </div>
                                 <div class="form-check py-3">
                                     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                                     <label class="form-check-label" for="invalidCheck">
@@ -78,39 +239,28 @@
                                             privacidad</a>
                                     </label>
                                     <div class="invalid-feedback">
-                                        Debes estar de acuerdo antes de enviar
+                                        Debes aceptar los Términos y condiciones antes de enviar.
                                     </div>
                                 </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2"
-                                    type="submit">Crear
-                                    cuenta</button>
-                                <input type="hidden" name="_captcha" value="false">
-                            </div>
+                                <div class="d-flex justify-content-center">
+                                    <button class=" btn button text-white w-50" type="submit">Crear Tienda</button>
+                                    <input type="hidden" name="_captcha" value="false">
+                                </div>
                         </form>
                     </div>
-                </div>
-                <div class="col d-flex flex-column justify-content-end">
-                    <p class="fs-2 w-75 mx-auto my-auto text-register p-4">
-                        "Porque en el corazón de nuestra tienda está el
-                        compromiso de cuidar a tu mascota tanto como tú lo haces.”
-                    </p>
-                    <img src="/public-images/dog-burbuja.registro.png" alt="Perro asomado en imagen de círculo"
-                        class="img-fluid dog-register">
                 </div>
             </div>
         </section>
     </main>
-    <footer id="footer">
+    <footer id=" footer">
         <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="/src/modules/footer/footer.js"></script>
+    <script type="module" src="/src/modules/footer/footer.js"></script>
     <script type="module" src="/src/modules/nav/nav.js"></script>
-    <script src="/src/pages/formulario/Form.js"></script>
+    <script type="module" src="/src/pages/formulario/Form.js"></script>
 </body>
 
 </html>

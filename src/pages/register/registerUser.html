@@ -31,74 +31,83 @@
                     <div class=" container form-container mx-auto shadow-lg rounded-3 mb-4">
                         <form class="container p-4 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com"
                             method="POST" target="_blank" novalidate>
+                            <!-- Nombre -->
                             <div class="mb-3">
-                                <label for="validationCustom01" class="form-label">Nombre Completo</label>
-                                <input type="text hidden" class="form-control validationCustom01" name="_captcha"
-                                    minlength="5" maxlength="30" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce tu nombre completo.
-                                </div>
+                                <label for="name" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="name" name="Name" minlength="3" required>
+                                <div class="valid-feedback"></div>
+                                <div class="invalid-feedback">Se requiere un mínimo de 3 caracteres.</div>
                             </div>
+                    
+                    <!--  Apellido-->
+                    <div class="mb-3">
+                        <label for="last name" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id=apellido name="last name" minlength="2" maxlength="25"
+                            required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Se necesitan entre 2 y 25 caracteres.</div>
+                    </div>
+                    <!-- correo -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                        <div class="invalid-feedback">Por favor ingresa un correo electrónico válido example@example.com</div>
+                        <div class="valid-feedback"></div>
+                    </div>
+                
 
-                            <div class="mb-3">
-                                <label for="validationCustom02" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control validationCustom02" name="correo"
-                                    aria-describedby="emailHelp" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce un correo electrónico válido example@example.com
-                                </div>
-                            </div>
-
-                            <div class="mb-3 container__input">
-                                <label for="validationCustom03" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control validationCustom03" name="telefono"
-                                    pattern="[0-9]*" inputmode="numeric" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce un teléfono válido
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="validationCustom05" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control validationCustom05" name="_captcha"
-                                    minlength="5" maxlength="30" required>
-                                <div class="invalid-feedback">
-                                    Por favor, introduce una contraseña válida
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check py-3">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                                    <label class="form-check-label" for="invalidCheck">
-                                        <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
-                                            términos y condiciones</a>
-                                        <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
-                                            privacidad</a>
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Debes estar de acuerdo antes de enviar
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-center">
-                                <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2"
-                                    type="submit">Crear
-                                    cuenta</button>
-                                <input type="hidden" name="_captcha" value="false">
-                            </div>
-                        </form>
+                <!--teléfono  -->
+                <div class="mb-3 container__input"> 
+                    <label for="telefono" class="form-label">Teléfono</label>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" pattern="[0-9]{5,10}"
+                        inputmode="numeric" required>
+                    <div class="valid-feedback"></div>
+                    <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
+                </div>
+            
+            <!-- contraseña -->
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password"
+                    pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}" required>
+                <button type="button" class="btn btn-outline-secondary" id="togglePassword">Show</button>
+                <div class="invalid-feedback">
+                    Por favor, introduce una contraseña válida
+                </div>
+            
+            <div class="col-12">
+                <div class="form-check py-3">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
+                            términos y condiciones</a>
+                        <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
+                            privacidad</a>
+                    </label>
+                    <div class="invalid-feedback">
+                        Debes aceptar los términos y condiciones antes de enviar.
                     </div>
                 </div>
-                <div class="col d-flex flex-column justify-content-end">
-                    <p class="fs-2 w-75 mx-auto text-register pt-5">
-                        "Porque en el corazón de nuestra tienda está el compromiso de cuidar a tu mascota tanto como tú
-                        lo haces.”
-                    </p>
-                    <img src="/public-images/dog-burbuja.registro.png" alt="Perro asomado en imagen de círculo"
-                        class="img-fluid dog-register d-lg-none">
-                    <img src="/public-images/dog-registro.png" alt="Perro asomado en imagen de círculo"
-                        class="img-fluid dog-register d-none d-lg-block ">
-                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2" type="submit">Crear
+                    cuenta</button>
+                <input type="hidden" name="_captcha" value="false">
+            </div>
+        </div>
+            </form>
+            </div>
+            </div>
+            <div class="col d-flex flex-column justify-content-end">
+                <p class="fs-2 w-75 mx-auto text-register pt-5">
+                    "Porque en el corazón de nuestra tienda está el compromiso de cuidar a tu mascota tanto como tú
+                    lo haces.”
+                </p>
+                <img src="/public-images/dog-burbuja.registro.png" alt="Perro asomado en imagen de círculo"
+                    class="img-fluid dog-register d-lg-none">
+                <img src="/public-images/dog-registro.png" alt="Perro asomado en imagen de círculo"
+                    class="img-fluid dog-register d-none d-lg-block ">
+            </div>
             </div>
         </section>
     </main>
