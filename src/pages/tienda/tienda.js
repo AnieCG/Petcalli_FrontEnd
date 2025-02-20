@@ -168,11 +168,7 @@ const filterProductsByCategory = (category) => {
   otherButton.addEventListener( "click", () => {
     filterProductsByPetType("Otros");
   });
-
-
-  /* const button = document.getElementById("flexCheckDefault");
-  button.addEventListener( "click", () => console.log(button.checked)); */
-
+  
   const accesoriesButton = document.getElementById("accesories");
   const clothesButton = document.getElementById("clothes");
   const foodButton = document.getElementById("food");
