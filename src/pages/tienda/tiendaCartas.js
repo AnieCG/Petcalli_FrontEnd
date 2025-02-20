@@ -6,7 +6,7 @@ const createCards = (producto) => {
 
       <!-- Modal -->
 <div >
-    <div class="modal fade" id="${producto.image}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="${producto.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -15,11 +15,11 @@ const createCards = (producto) => {
             </div>
             <div class="modal-body">
 
-            <h4>${producto.descripcion}</h4>
+            <h4>${producto.description}</h4>
                 <img src="${producto.image}" class="card-img-top modal-img" alt="Imagen de producto" />
                 <div class="card-body">
                     <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
-                    <p>${producto.descripcion}</p>
+                    <p>${producto.description}</p>
                     <p id="precio">${producto.price}</p>
                 </div>
 
@@ -39,8 +39,8 @@ const createCards = (producto) => {
                             Versión disponible
                             </button>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Producto 1</a></li>
-                            <li><a class="dropdown-item" href="#">Producto 2</a></li>
+                            <li><a class="dropdown-item" href="#">${producto.category}</a></li>
+                            <li><a class="dropdown-item" href="#">N/A</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,16 +68,17 @@ const createCards = (producto) => {
 fetch("/public/json/productos.json")
     .then((productos) => productos.json())
     .then((productos) => {
+        console.log(typeof(productos));
         $seccionCards.innerHTML = productos
             .map((card) => createCards(card))
             .join("");
     });
 
 
-const contadorPiezas = document.getElementById(`contador${producto.image}`);
+/* const contadorPiezas = document.getElementById(`contador${producto.image}`);
 let contadorIndividual = 0;
 
 const controlarContador = ( ) =>{
     contadorIndividual ++;
     contadorPiezas.textContent = contadorIndividual;
-};
+}; */
