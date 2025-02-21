@@ -1,324 +1,467 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <!-- rutas absolutas en archivos js
+  <head>
+    <!-- rutas absolutas en archivos js
          rutas relativas imagenes -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Petcalli</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/css/style.css" />
-  <link rel="stylesheet" href="./tienda.css" />
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petcalli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="./tienda.css" />
+  </head>
 
-<body>
-  <nav id="navbar"></nav>
-  <header id="header" class="container-fluid d-none d-md-block"></header>
+  <body>
+    <nav id="navbar"></nav>
+    <header id="header" class="container-fluid d-none d-md-block"></header>
 
-  <div class="franja mt-1 d-none d-md-block"></div>
-  <main>
-    <section class="d-block d-md-none mobileHeader">
-      <!-- Seccion header mobile desde dispositivo mediano hacia abajo se despliega -->
-      <div class="container postalCode rounded-3">
-        <a class="text-decoration-none d-flex" href="#hacia pagina de registro">
-          <img id="mapPin" class="m-1" src="/public/images/map-pin-svgrepo-com.svg"
-            alt="icono de posición en un mapa" />
-          <p class="m-1">Ingresa tu código postal</p>
-        </a>
-      </div>
-      <div class="container d-flex">
-        <div class="d-flex title justify-content-center px-5 fw-bold rounded-4 position-relative my-3 w-75">
-          <img src="/public-images/Shape2.png" alt="Mancha de fondo"
-            class="position-absolute top-50 start-0 translate-middle-y" id="shape2" />
-          <h2 class="m-1">Tienda</h2>
+    <div class="franja mt-1 d-none d-md-block"></div>
+    <main>
+      <section class="d-block d-md-none mobileHeader">
+        <!-- Seccion header mobile desde dispositivo mediano hacia abajo se despliega -->
+        <div class="container postalCode rounded-3">
+          <a
+            class="text-decoration-none d-flex"
+            href="#hacia pagina de registro"
+          >
+            <img
+              id="mapPin"
+              class="m-1"
+              src="/public/images/map-pin-svgrepo-com.svg"
+              alt="icono de posición en un mapa"
+            />
+            <p class="m-1">Ingresa tu código postal</p>
+          </a>
         </div>
-        <p class="d-inline-flex-end gap-1 m-3 w-25">
-          <button class="btn fs-3 text fw-semibold rounded-4 px-4" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Filtrar
-          </button>
-        </p>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="collapse" id="collapseExample">
-          <section class="card p-4 w-100 shadow-lg mb-4">
-            <div class="card-body text-center">
-              <div class="d-flex justify-content-between mb-3">
-                <article class="mb-2">
-                  <h4 class="mb-4">Categorias</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-                <article class="mb-2">
-                  <h4 class="mb-4">Marca</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <article class="mb-2">
-                  <h4 class="mb-4">Categorias</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-                <article>
-                  <h4 class="mb-4">Marca</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-              </div>
-              <h2>Filtrar por precio</h2>
-              <input type="range" class="form-range my-3" id="customRange1" />
-              <label for="customRange1" class="form-label">Precio $10.00 - $1,000.00</label>
-              <div class="d-flex justify-content-around mt-3">
-                <button class="btn">Limpiar campos</button>
-                <button class="btn">Aplicar</button>
-              </div>
-            </div>
-          </section>
+        <div class="container d-flex">
+          <div
+            class="d-flex title justify-content-center px-5 fw-bold rounded-4 position-relative my-3 w-75"
+          >
+            <img
+              src="/public-images/Shape2.png"
+              alt="Mancha de fondo"
+              class="position-absolute top-50 start-0 translate-middle-y"
+              id="shape2"
+            />
+            <h2 class="m-1">Tienda</h2>
+          </div>
+          <p class="d-inline-flex-end gap-1 m-3 w-25">
+            <button
+              class="btn fs-3 text fw-semibold rounded-4 px-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Filtrar
+            </button>
+          </p>
         </div>
-      </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="collapse" id="collapseExample">
+            <section class="card p-4 w-100 shadow-lg mb-4">
+              <div class="card-body text-center">
+                <div class="d-flex justify-content-between mb-3">
+                  <article class="mb-2">
+                    <h4 class="mb-4">Categorias</h4>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Accesorios
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Royal Canin
+                      </label>
+                    </div>
+                  </article>
+                  <article class="mb-2">
+                    <h4 class="mb-4">Marca</h4>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Accesorios
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Royal Canin
+                      </label>
+                    </div>
+                  </article>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                  <article class="mb-2">
+                    <h4 class="mb-4">Categorias</h4>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Accesorios
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Royal Canin
+                      </label>
+                    </div>
+                  </article>
+                  <article>
+                    <h4 class="mb-4">Marca</h4>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Accesorios
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Royal Canin
+                      </label>
+                    </div>
+                  </article>
+                </div>
+                <h2>Filtrar por precio</h2>
+                <input type="range" class="form-range my-3" id="customRange1" />
+                <label for="customRange1" class="form-label"
+                  >Precio $10.00 - $1,000.00</label
+                >
+                <div class="d-flex justify-content-around mt-3">
+                  <button class="btn">Limpiar campos</button>
+                  <button class="btn">Aplicar</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
 
-      <div class="container d-flex ads p-4">
-        <a class="w-50" href="https://mexico.generation.org/encuentra-una-carrera/">
-          <img class="img-fluid rounded-4"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnHjijo6x53Rn5z9Gas8IzoLTNDZfgxn66Q&s"
-            alt="Publicidad Generation mexico" />
-        </a>
-        <a class="w-50" href="https://www.harvard.edu/">
-          <img class="img-fluid rounded-4"
-            src="https://images.squarespace-cdn.com/content/v1/5409fd72e4b08734f6c05b4c/a20f0852-cb71-4a59-b4e6-298204c0c894/HGSE.png"
-            alt="Publicidad Harvard" />
-        </a>
-      </div>
-    </section>
-    <section class="petSelection mt-2">
-      <div id="carouselExampleAutoplaying" class="carousel slide-fade" data-bs-ride="carousel">
-        <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
-          <br />
-          <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
-                    
-            <button class="rounded-circle carousel-control-next " type="button"
-            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
-            <span class="visually-hidden ">Next</span>
-          </button>
-            <button class="rounded-circle carousel-control-prev " type="button"
-              data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
-              <span class="visually-hidden ">Previous</span>
+        <div class="container d-flex ads p-4">
+          <a
+            class="w-50"
+            href="https://mexico.generation.org/encuentra-una-carrera/"
+          >
+            <img
+              class="img-fluid rounded-4"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnHjijo6x53Rn5z9Gas8IzoLTNDZfgxn66Q&s"
+              alt="Publicidad Generation mexico"
+            />
+          </a>
+          <a class="w-50" href="https://www.harvard.edu/">
+            <img
+              class="img-fluid rounded-4"
+              src="https://images.squarespace-cdn.com/content/v1/5409fd72e4b08734f6c05b4c/a20f0852-cb71-4a59-b4e6-298204c0c894/HGSE.png"
+              alt="Publicidad Harvard"
+            />
+          </a>
+        </div>
+      </section>
+      <section class="petSelection mt-2">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide-fade"
+          data-bs-ride="carousel"
+        >
+          <div
+            class="container-fluid d-none d-md-block border col-11 carouselAnimals"
+          >
+            <br />
+            <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
+
+            <button
+              class="rounded-circle carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon button-next-before"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="rounded-circle carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon button-next-before"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
 
-          <div class="carousel-inner">
-            <!-- Primer Seccion -->
+            <div class="carousel-inner">
+              <!-- Primer Seccion -->
 
-            <div class="carousel-item active">
-              <div class="row">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <!-- style="background-color: red;" -->
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Gatos"
+                      >
+                        <img
+                          src="/public-images/Carrusel2-Gato-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <!-- style="background-color: yellowgreen;" -->
+                          <h5 class="card-title text-center">Gatos</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
 
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto"> <!-- style="background-color: red;" -->
-                    <button class="border border-0 mx-auto carrusel-btn" id="Gatos">
-                      <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body"> <!-- style="background-color: yellowgreen;" -->
-                        <h5 class="card-title text-center">Gatos</h5>
-                      </div>
-                    </button>
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Perros"
+                      >
+                        <img
+                          src="/public-images/carrusel1-perro.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Perros</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Aves"
+                      >
+                        <img
+                          src="/public-images/Carrusel4-perico-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Aves</h5>
+                        </div>
+                      </button>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Perros">
-                      <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Perros</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0 ">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Aves">
-                      <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Aves</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
+                <!-- Final del row de la primer seccion -->
               </div>
-              <!-- Final del row de la primer seccion -->
+              <!-- Fin de la primer seccion -->
+
+              <!-- Tercer seccion -->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Conejos"
+                      >
+                        <img
+                          src="/public-images/Carrusel4-conejos-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Conejos</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Peces"
+                      >
+                        <img
+                          src="/public-images/Carrusel10-peces-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Peces</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="col mt-0">
+                    <div class="card animal border border-0 mx-auto">
+                      <button
+                        class="border border-0 mx-auto carrusel-btn"
+                        id="Otros"
+                      >
+                        <img
+                          src="/public-images/otros-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Otros</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin del tercer row -->
+              </div>
+              <!-- Fin de la tercer seccion -->
+
+              <!-- Cuarta seccion -->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col mt-0">
+                    <div class="s">
+                      <img
+                        width="400px"
+                        src="/public-images/petcalli2-Photoroom.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <!-- Fin del 4 row -->
+              </div>
+              <!-- Fin de la 4 seccion -->
             </div>
-            <!-- Fin de la primer seccion -->
+            <!-- Fin del contenido  -->
+          </div>
+          <!-- Fin del div contenedor courusel animal -->
+        </div>
+        <!-- Fin del carrusel y sus botones-->
+      </section>
 
-            <!-- Tercer seccion -->
-
-            <div class="carousel-item ">
-
-              <div class="row">
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Conejos">
-                      <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Conejos</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Peces">
-                      <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Peces</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Otros">
-                      <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Otros</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-
-
-              </div><!-- Fin del tercer row -->
-            </div><!-- Fin de la tercer seccion -->
-
-
-            <!-- Cuarta seccion -->
-
-            <div class="carousel-item">
-
-              <div class="row">
-                <div class="col"></div>
-                <div class="col mt-0 ">
-                  <div class="s">
-                    <img width="400px" src="/public-images/petcalli2-Photoroom.png" alt="">
-                  </div>
-                </div>
-                <div class="col"></div>
-
-
-              </div><!-- Fin del 4 row -->
-            </div><!-- Fin de la 4 seccion -->
-
-          </div> <!-- Fin del contenido  -->
-
-
-
-        </div><!-- Fin del div contenedor courusel animal -->
-
-      </div><!-- Fin del carrusel y sus botones-->
-    </section>
-
-    <br />
+      <br />
 
       <section class="container">
         <!-- de productos y filtros -->
         <div class="row gx-5">
           <!-- Columna filtro -->
           <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
-
             <!-- Filtrar por categoria -->
             <div class="p-2">
               <h2>Filtrar por categorias</h2>
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
               <div class="form-check">
-                <input class="form-check-input d-flex" type="checkbox" value="Accesorios" id="accesories" checked>
-                <label class="form-check-label" for="accesories" style="padding-right: 60%;">
-                  Accesorios
-                </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
+                <input
+                  class="form-check-input d-flex"
+                  type="checkbox"
+                  value="Accesorios"
+                  id="accesories"
+                  checked
+                />
+                <label
+                  class="form-check-label"
+                  for="accesories"
+                  style="padding-right: 60%"
+                >
+                  Accesorios </label
+                ><span
+                  class="badge text-bg-primary rounded-pill"
+                  style="white-space: nowrap"
+                  >14</span
+                >
               </div>
 
               <!-- FORMA SIN CONTADOR DE RESULTADOS -->
               <div class="form-check">
-                <input class="form-check-input" 
+                <input
+                  class="form-check-input"
                   type="checkbox"
                   value=""
-                  id="clothes" 
+                  id="clothes"
                   checked
                 />
-                <label class="form-check-label"
-                  for="clothes">
-                  Ropa
-                </label>
+                <label class="form-check-label" for="clothes"> Ropa </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input"
+                <input
+                  class="form-check-input"
                   type="checkbox"
                   value=""
                   id="food"
                   checked
                 />
-                <label class="form-check-label" for="food">
-                  Alimento
-                </label>
+                <label class="form-check-label" for="food"> Alimento </label>
               </div>
               <div class="form-check">
                 <input
@@ -328,9 +471,7 @@
                   id="toys"
                   checked
                 />
-                <label class="form-check-label" for="toys">
-                  Jugetes
-                </label>
+                <label class="form-check-label" for="toys"> Jugetes </label>
               </div>
               <div class="form-check">
                 <input
@@ -349,10 +490,16 @@
             <!-- FILTRAR POR PRECIO -->
             <div class="p-2">
               <h2>Filtrar por precio</h2>
-              <input type="range" class="form-range" id="customRange1" /><label
-                for="customRange1"
-                class="form-label"
-                >Precio $10.00 - $1,000.00</label
+              <input
+                type="range"
+                class="form-range"
+                id="customRange"
+                min="0"
+                max="2000"
+                value=""
+                step="100"
+              /><label for="customRange1" class="form-label"
+                >Precio: $0 - <span id="price-value">$2000</span></label
               >
             </div>
 
@@ -438,15 +585,60 @@
             <!-- Filtrar por Tag -->
             <div class="p-2">
               <h2>Filtrado por Tags</h2>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">Juguetes</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento"> Alimento</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Natural</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">Salmón</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip"> Catnip</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">Arnés</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">Cachorro</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagRueda"> Rueda</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Jaula</button>           
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagjuguetes"
+              >
+                Juguetes
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagAlimento"
+              >
+                Alimento
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagNatural"
+              >
+                Natural
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagSalmón"
+              >
+                Salmón
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagCatnip"
+              >
+                Catnip
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagArnés"
+              >
+                Arnés
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagCachorro"
+              >
+                Cachorro
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagRueda"
+              >
+                Rueda
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0"
+                id="tagNatural"
+              >
+                Jaula
+              </button>
             </div>
 
             <!-- PRODUCTOS PREMIUM -->
@@ -500,19 +692,29 @@
               </div>
             </div>
 
-             <!-- ANUNCIOS -->
+            <!-- ANUNCIOS -->
             <div class="card">
-              <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-text">USC Hotel</p>
-                  <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&" class="btn">Booking.com</a>
-                </div>
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">USC Hotel</p>
+                <a
+                  href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&"
+                  class="btn"
+                  >Booking.com</a
+                >
+              </div>
             </div>
           </div>
 
           <div class="col-lg-8 col-md-8 col-8">
             <!-- productos -->
-            <p class="resultados">12 de 36 resultados mostrados</p>
+            <p class="resultados">
+              0 de <span id="resultados-productos"></span> resultados mostrados
+            </p>
             <div
               class="row row-cols-3 row-seccion-cards p-2"
               id="seccion-cards"
@@ -521,26 +723,33 @@
             <!-- modales -->
           </div>
         </div>
-    </section>
-    <section id="seccionCarrusel" class="d-none d-sm-block carruselMasPopulares">
-      <!-- carru. mas populares -->
-    </section>
-  </main>
+      </section>
+      <section
+        id="seccionCarrusel"
+        class="d-none d-sm-block carruselMasPopulares"
+      >
+        <!-- carru. mas populares -->
+      </section>
+    </main>
 
-  <footer id="footer">
-    <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
-  </footer>
+    <footer id="footer">
+      <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="/src/modules/footer/footer.js"></script>
-  <script src="/src/modules/header/header.js"></script>
-  <script src="/src/pages/tienda/tienda.js"></script>
-  <script type="module" src="/src/pages/tienda/tiendaCartas.js"></script>
-  <script type="module" src="/src/modules/nav/nav.js"></script>
-  <script type="module" src="/src/pages/tienda/seccionCarruselMobile.js"></script>
-  <script src="/src/pages/tienda/funcionesAdmin.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/modules/footer/footer.js"></script>
+    <script src="/src/modules/header/header.js"></script>
+    <script src="/src/pages/tienda/tienda.js"></script>
+    <script type="module" src="/src/pages/tienda/tiendaCartas.js"></script>
+    <script type="module" src="/src/modules/nav/nav.js"></script>
+    <script
+      type="module"
+      src="/src/pages/tienda/seccionCarruselMobile.js"
+    ></script>
+    <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+  </body>
 </html>
