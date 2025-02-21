@@ -200,10 +200,26 @@ const filterProductsByCategory = (category) => {
 
 
 
-
-
-
 // Seccion de filtrado por tags
 
+
+
+// Seccion de filtrado por marca
+const filterProductsByMarca = (marca) => {
+  fetch("/public/json/productos.json")
+  .then((products) => products.json())
+  .then((products) => {
+    const productsToShow = products.filter( product => product.marca === marca );
+    $seccionCards.innerHTML = productsToShow
+      .map((card) => createCards(card))
+      .join("");
+  });
+}
+
+  const brandCheckbox = document.getElementById("brand");
+  brandCheckbox.addEventListener( "click", () => {
+  if ( brandCheckbox.checked )
+    filterProductsByCategory("marca");
+});
 
   
