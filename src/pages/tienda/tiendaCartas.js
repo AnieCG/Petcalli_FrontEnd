@@ -68,7 +68,8 @@ const createCards = (producto) => {
 fetch("/public/json/productos.json")
     .then((productos) => productos.json())
     .then((productos) => {
-        console.log(typeof(productos));
+   /*      console.log(typeof(productos));
+        console.log((productos)); */
         $seccionCards.innerHTML = productos
             .map((card) => createCards(card))
             .join("");
