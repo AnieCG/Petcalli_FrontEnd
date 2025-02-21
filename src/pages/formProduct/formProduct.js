@@ -104,13 +104,35 @@ function habilitarInputs() {
   const size= document.getElementById("size");
   const color= document.getElementById("color");
 
-  if (seleccion === "opcion1") {
-    size.disabled = false;
+  if (seleccion === "Accesorios") {
+    color.disabled = false;
+} else {
+ size.disabled = true;
+}
+if (seleccion === "Ropa") {
+  color.disabled = false;
+  size.disabled = false;
 } else {
   color.disabled = true;
+  size.disabled = true;
 }
-
-
+if (seleccion === "Alimento") {
+  size.disabled = false;
+ } else {
+ size.disabled = true;
+ }
+ 
+if (seleccion === "Juguetes") {
+ color.disabled = false;
+} else {
+size.disabled = true;
+}
+if (seleccion === "Medicamento") {
+  size.disabled = false;
+ } else {
+ size.disabled = true;
+ }
+ 
 }
 
 
