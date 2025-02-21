@@ -99,7 +99,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 /* Funcion para el cambio de categoria */
+function habilitarInputs() {
+  const seleccion = document.getElementById("category").value;
+  const size= document.getElementById("size");
+  const color= document.getElementById("color");
 
+  if (seleccion === "opcion1") {
+    size.disabled = false;
+} else {
+  color.disabled = true;
+}
+
+
+}
 
 
 /* Funcion para enviar la informacion del Json */
