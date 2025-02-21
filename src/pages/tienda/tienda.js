@@ -143,29 +143,48 @@ const filterProductsByCategory = (category) => {
     });
   
 }
-  const catsButton = document.getElementById( "Gatos" );
-  const dogsButton = document.getElementById( "Perros" );
-  const birdsButton = document.getElementById( "Aves" );
-  const rabbitsButton = document.getElementById( "Conejos" );
-  const fishesButton = document.getElementById( "Peces" );
-  const otherButton = document.getElementById( "Otros" );
+  const catsButton = document.getElementsByClassName( "Gatos" );
+  const dogsButton = document.getElementsByClassName( "Perros" );
+  const birdsButton = document.getElementsByClassName( "Aves" );
+  const rabbitsButton = document.getElementsByClassName( "Conejos" );
+  const fishesButton = document.getElementsByClassName( "Peces" );
+  const otherButton = document.getElementsByClassName( "Otros" );
 
-  catsButton.addEventListener( "click", () => {
+  catsButton[0].addEventListener( "click", () => {
     filterProductsByPetType("Gato");
   });
-  dogsButton.addEventListener( "click", () => {
+  dogsButton[0].addEventListener( "click", () => {
     filterProductsByPetType("Perro");
   });
-  rabbitsButton.addEventListener( "click", () => {
+  rabbitsButton[0].addEventListener( "click", () => {
     filterProductsByPetType("Conejo");
   });
-  fishesButton.addEventListener( "click", () => {
+  fishesButton[0].addEventListener( "click", () => {
     filterProductsByPetType("Peces");
   });
-  birdsButton.addEventListener( "click", () => {
+  birdsButton[0].addEventListener( "click", () => {
     filterProductsByPetType("Aves");
   });
-  otherButton.addEventListener( "click", () => {
+  otherButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Otros");
+  });
+
+  catsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Gato");
+  });
+  dogsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Perro");
+  });
+  rabbitsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Conejo");
+  });
+  fishesButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Peces");
+  });
+  birdsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Aves");
+  });
+  otherButton[1].addEventListener( "click", () => {
     filterProductsByPetType("Otros");
   });
   
