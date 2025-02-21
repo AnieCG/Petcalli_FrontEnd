@@ -24,15 +24,15 @@ rel="stylesheet" />
     
       <div class="mb-3 container__input">
         <label for="title" class="form-label">Nombre del producto</label>
-        <input type="text hidden" class="form-control" id="title" name="producto" aria-describedby="titleHelp" required>
+        <input type="text hidden" class="form-control" id="title" name="producto" aria-describedby="titleHelp" placeholder="Ingresa un nombre Ej: PetGuard" required>
         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-        <div class="valid-feedback">Debes indicar el nombre</div>
+        <div class="invalid-feedback">Debes indicar el nombre</div>
       </div>
     
       <div class="mb-3 container__input">
         <label for="marca">Marca</label>
-        <input type="text hidden" class="form-control" id="marca" name="marca" required>
-        <div class="valid-feedback">Debes indicar la marca</div>
+        <input type="text hidden" class="form-control" id="marca" name="marca" placeholder="Ingresa una marca Ej: Gatina" required>
+        <div class="invalid-feedback">Debes indicar la marca</div>
       </div>
     
       <div class="mb-3 container__input">
@@ -40,7 +40,7 @@ rel="stylesheet" />
     
         <div class="form-check">
           <label class="form-check-label" for="petType">Perros
-            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option1" required>
+            <input class="form-check-input" type="radio" name="Tipo_de_mascota" id="petType" value="option1"  required>
           </label>
         </div>
     
@@ -74,43 +74,46 @@ rel="stylesheet" />
     
         <div class="mb-3 container__input">
           <label for="image" class="form-label">Image URL</label>
-          <input type="text" class="form-control" id="image" name="image" required>
-          <div class="valid-feedback">Debes dar una direccion URL</div>
+          <input type="text" class="form-control" id="image" name="image" placeholder="Ingresa una URL Ej: https://www.example.com" required>
+          <div class="invalid-feedback">Debes dar una direccion URL</div>
         </div>
     
         <div class="mb-3 container__input">
           <label for="price" class="form-label">Precio</label>
-          <input type="number" class="form-control" id="price" name="precio" required>
-          <div class="valid-feedback">Debes indicar el precio</div>
+          <input type="number" class="form-control" id="price" name="precio" placeholder="Ingresa una precio Ej: 346" required>
+          <div class="invalid-feedback">Debes indicar el precio</div>
         </div>
     
         <div class="mb-3 container__input">
           <label for="description" class="form-label">Descripcion</label>
-          <input type="text hidden" class="form-control" id="description" name="descripcion" required>
-          <div class="valid-feedback">Debes dar una descripcion general</div>
+          <input type="text hidden" class="form-control" id="description" name="descripcion"  placeholder="Ingresa una descripcion como, para que sirve y que hace" required>
+          <div class="invalid-feedback">Debes dar una descripcion general</div>
         </div>
 
         <div class="mb-3 container__input">
           <label for="category" class="form-label">Categoria</label>
-          <select class="form-control form-control-lg" id="category" name="categoria" required>
-            <option>Accesorios</option>
-            <option>Ropa</option>
-            <option>Alimento</option>
-            <option>Juguetes</option>
-            <option>Medicamento</option>
+          <select class="form-control form-control-lg" id="category" name="categoria" onchange="habilitarInputs()" required>
+            <option value="seleción" selected >seleccione...</option>
+            <option value="opcion1">Accesorios</option>
+            <option value="opcion2">Ropa</option>
+            <option value="opcion3">Alimento</option>
+            <option value="opcion4">Juguetes</option>
+            <option value="opcion5">Medicamento</option>
           </select>
+            </div>
 
-          <div class="mb-3 container__input">
+            <div class="mb-3 container__input">
             <label for="size" class="form-label">Tamaño</label>
-            <input type="text hidden" class="form-control" id="size" name="tamaño" required>
-            <div class="valid-feedback">Debes indicar el tamaño</div>
+            <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamamño del producto" disabled required>
+            <div class="invalid-feedback">Debes indicar el tamaño</div>
           </div>
 
-          <div class="mb-3 container__input">
-            <label for="color" class="form-label">Color</label>
-            <input type="text hidden" class="form-control" id="color" name="color" required>
-            <div class="valid-feedback">Debes indicar el color</div>
+            <div class="mb-3 container__input">
+            <label for="size" class="form-label">Color</label>
+            <input type="text hidden" class="form-control" id="color" name="color" placeholder="Indica el color del producto" disabled required>
+            <div class="invalid-feedback">Debes indicar el color</div>
           </div>
+
         <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
 </section>
