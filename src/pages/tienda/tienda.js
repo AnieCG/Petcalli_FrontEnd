@@ -135,7 +135,7 @@ const filterProductsByPetType = (petType) => {
     });
 };
 
-const filterProductsByCategory = (category) => {
+const filterProductsByCategory = ( category, counter) => {
   fetch("/public/json/productos.json")
     .then((products) => products.json())
     .then((products) => {
@@ -145,54 +145,81 @@ const filterProductsByCategory = (category) => {
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
+        counter.textContent = productsToShow.length;
     });
-};
-const catsButton = document.getElementById("Gatos");
-const dogsButton = document.getElementById("Perros");
-const birdsButton = document.getElementById("Aves");
-const rabbitsButton = document.getElementById("Conejos");
-const fishesButton = document.getElementById("Peces");
-const otherButton = document.getElementById("Otros");
+  
+}
+  const catsButton = document.getElementsByClassName( "Gatos" );
+  const dogsButton = document.getElementsByClassName( "Perros" );
+  const birdsButton = document.getElementsByClassName( "Aves" );
+  const rabbitsButton = document.getElementsByClassName( "Conejos" );
+  const fishesButton = document.getElementsByClassName( "Peces" );
+  const otherButton = document.getElementsByClassName( "Otros" );
 
-catsButton.addEventListener("click", () => {
-  filterProductsByPetType("Gato");
-});
-dogsButton.addEventListener("click", () => {
-  filterProductsByPetType("Perro");
-});
-rabbitsButton.addEventListener("click", () => {
-  filterProductsByPetType("Conejo");
-});
-fishesButton.addEventListener("click", () => {
-  filterProductsByPetType("Peces");
-});
-birdsButton.addEventListener("click", () => {
-  filterProductsByPetType("Aves");
-});
-otherButton.addEventListener("click", () => {
-  filterProductsByPetType("Otros");
-});
+  catsButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Gato");
+  });
+  dogsButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Perro");
+  });
+  rabbitsButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Conejo");
+  });
+  fishesButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Peces");
+  });
+  birdsButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Aves");
+  });
+  otherButton[0].addEventListener( "click", () => {
+    filterProductsByPetType("Otros");
+  });
 
-const accesoriesButton = document.getElementById("accesories");
-const clothesButton = document.getElementById("clothes");
-const foodButton = document.getElementById("food");
-const toysButton = document.getElementById("toys");
-const medicinesButton = document.getElementById("medicines");
+  catsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Gato");
+  });
+  dogsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Perro");
+  });
+  rabbitsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Conejo");
+  });
+  fishesButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Peces");
+  });
+  birdsButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Aves");
+  });
+  otherButton[1].addEventListener( "click", () => {
+    filterProductsByPetType("Otros");
+  });
+  
+const accesoriesButton = document.getElementsByClassName("accesories");
+const clothesButton = document.getElementsByClassName("clothes");
+const foodButton = document.getElementsByClassName("food");
+const toysButton = document.getElementsByClassName("toys");
+const medicinesButton = document.getElementsByClassName("medicines");
 
-accesoriesButton.addEventListener("click", () => {
-  if (accesoriesButton.checked) filterProductsByCategory("Accesorios");
+const accesoriesCounter = document.getElementsByClassName("accesoriesCounter");
+const clothesCounter = document.getElementsByClassName("clothesCounter");
+const foodCounter = document.getElementsByClassName("foodCounter");
+const toysCounter = document.getElementsByClassName("toysCounter");
+const medicinesCounter = document.getElementsByClassName("medicinesCounter");
+
+accesoriesButton[0].addEventListener("click", () => {
+  if( accesoriesButton[0].checked ) filterProductsByCategory("Accesorios", accesoriesCounter[0]);
 });
-clothesButton.addEventListener("click", () => {
-  if (clothesButton.checked) filterProductsByCategory("Ropa");
+clothesButton[0].addEventListener("click", () => {
+  if (clothesButton[0].checked) filterProductsByCategory("Ropa", clothesCounter[0]);
 });
-toysButton.addEventListener("click", () => {
-  if (toysButton.checked) filterProductsByCategory("Juguetes");
+toysButton[0].addEventListener("click", () => {
+  if (toysButton[0].checked) filterProductsByCategory("Juguetes", toysCounter[0]);
 });
-foodButton.addEventListener("click", () => {
-  if (foodButton.checked) filterProductsByCategory("Alimento");
+foodButton[0].addEventListener("click", () => {
+  if (foodButton[0].checked) filterProductsByCategory("Alimento", foodCounter[0]);
 });
-medicinesButton.addEventListener("click", () => {
-  if (medicinesButton.checked) filterProductsByCategory("Medicamentos");
+medicinesButton[0].addEventListener("click", () => {
+  if (medicinesButton[0].checked) filterProductsByCategory("Medicamentos" ,medicinesCounter[0]);
 });
 
 //Seccion de filtrado por precio

@@ -288,3 +288,15 @@ a {
 
   }
 }
+
+.wrapperButtonMobilePet{
+  button{
+    background-color: var(--block-images2);
+    color: var(--subtitle);
+    border: 2px solid var(--block-images1);
+    border-radius: 20px;
+  }
+  h5{
+    font-weight: 700;
+  }
+}

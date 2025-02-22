@@ -56,6 +56,7 @@
             />
             <h2 class="m-1">Tienda</h2>
           </div>
+
           <p class="d-inline-flex-end gap-1 m-3 w-25">
             <button
               class="btn fs-3 text fw-semibold rounded-4 px-4"
@@ -72,6 +73,59 @@
         <div class="d-flex justify-content-center align-items-center">
           <div class="collapse" id="collapseExample">
             <section class="card p-4 w-100 shadow-lg mb-4">
+              <div class="container">
+                <div class="row wrapperButtonMobilePet">
+                  <div class="col-6">
+                    <button class="Gatos mb-4">
+                      <img
+                        src="/public-images/Carrusel2-Gato-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perrito"
+                      />
+                      <h5 class="card-title text-center">Gatos</h5>
+                    </button>
+                    <button class="Perros mb-4">
+                      <img
+                        src="/public-images/carrusel1-perro.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perrito"
+                      />
+                      <h5 class="card-title text-center">Perros</h5>
+                    </button>
+                    <button class="Aves mb-4">
+                      <img
+                        src="/public-images/Carrusel4-perico-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perrito"
+                      />
+                      <h5 class="card-title text-center">Aves</h5>
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button class="Conejos mb-4">
+                      <img
+                        src="/public-images/Carrusel4-conejos-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perrito"
+                      />
+                      <h5 class="card-title text-center">Conejos</h5>
+                    </button>
+                    <button class="Peces mb-4">
+                      <img
+                        src="/public-images/Carrusel10-peces-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perrito"
+                      />
+                      <h5 class="card-title text-center">Peces</h5>
+                    </button>
+                    <button class="Otros mb-4">
+                      <img src="/public-images/otros-Photoroom.jpg"
+                      class="card-img-top img-pets "" alt=" Foto de perrito">
+                      <h5 class="card-title text-center">Otros</h5>
+                    </button>
+                  </div>
+                </div>
+              </div>
               <div class="card-body text-center">
                 <div class="d-flex justify-content-between mb-3">
                   <article class="mb-2">
@@ -265,8 +319,7 @@
                     <div class="card animal border border-0 mx-auto">
                       <!-- style="background-color: red;" -->
                       <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Gatos"
+                        class="Gatos border border-0 mx-auto carrusel-btn"
                       >
                         <img
                           src="/public-images/Carrusel2-Gato-Photoroom.jpg"
@@ -284,8 +337,7 @@
                   <div class="col mt-0">
                     <div class="card animal border border-0 mx-auto">
                       <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Perros"
+                        class="Perros border border-0 mx-auto carrusel-btn"
                       >
                         <img
                           src="/public-images/carrusel1-perro.jpg"
@@ -301,10 +353,7 @@
 
                   <div class="col mt-0">
                     <div class="card animal border border-0 mx-auto">
-                      <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Aves"
-                      >
+                      <button class="Aves border border-0 mx-auto carrusel-btn">
                         <img
                           src="/public-images/Carrusel4-perico-Photoroom.jpg"
                           class="card-img-top img-pets"
@@ -317,19 +366,16 @@
                     </div>
                   </div>
                 </div>
-                <!-- Final del row de la primer seccion -->
               </div>
-              <!-- Fin de la primer seccion -->
 
-              <!-- Tercer seccion -->
+              <!-- Segunda seccion-->
 
               <div class="carousel-item">
                 <div class="row">
                   <div class="col mt-0">
                     <div class="card animal border border-0 mx-auto">
                       <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Conejos"
+                        class="Conejos border border-0 mx-auto carrusel-btn"
                       >
                         <img
                           src="/public-images/Carrusel4-conejos-Photoroom.jpg"
@@ -346,8 +392,7 @@
                   <div class="col mt-0">
                     <div class="card animal border border-0 mx-auto">
                       <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Peces"
+                        class="Peces border border-0 mx-auto carrusel-btn"
                       >
                         <img
                           src="/public-images/Carrusel10-peces-Photoroom.jpg"
@@ -364,8 +409,7 @@
                   <div class="col mt-0">
                     <div class="card animal border border-0 mx-auto">
                       <button
-                        class="border border-0 mx-auto carrusel-btn"
-                        id="Otros"
+                        class="Otros border border-0 mx-auto carrusel-btn"
                       >
                         <img
                           src="/public-images/otros-Photoroom.jpg"
@@ -418,72 +462,90 @@
           <!-- Columna filtro -->
           <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
             <!-- Filtrar por categoria -->
-            <div class="p-2">
+            <div class="container row-gap-3 p-2">
               <h2>Filtrar por categorias</h2>
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input d-flex"
+                  class="form-check-input d-flex accesories"
                   type="checkbox"
                   value="Accesorios"
                   id="accesories"
+                  value=""
                   checked
                 />
                 <label
-                  class="form-check-label"
-                  for="accesories"
-                  style="padding-right: 60%"
-                >
-                  Accesorios </label
-                ><span
-                  class="badge text-bg-primary rounded-pill"
-                  style="white-space: nowrap"
-                  >14</span
-                >
+                  class="form-check-label mx-2 "
+                  for="accesories">
+                  Accesorios 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto accesoriesCounter"> 
+                  </span>
               </div>
-
-              <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex clothes"
                   type="checkbox"
-                  value=""
+                  value="Ropa"
                   id="clothes"
-                  checked
                 />
-                <label class="form-check-label" for="clothes"> Ropa </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="clothes">
+                  Ropa 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto clothesCounter">
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex food"
                   type="checkbox"
-                  value=""
+                  value="Alimento"
                   id="food"
-                  checked
                 />
-                <label class="form-check-label" for="food"> Alimento </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="food">
+                  Alimento 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto foodCounter">
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex toys"
                   type="checkbox"
-                  value=""
+                  value="Juguetes"
                   id="toys"
-                  checked
                 />
-                <label class="form-check-label" for="toys"> Jugetes </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="toys">
+                  Juguetes 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto toysCounter">
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex mt-1 medicines"
                   type="checkbox"
-                  value=""
+                  value="Medicamentos"
                   id="medicines"
-                  checked
                 />
-                <label class="form-check-label" for="medicines">
+                <label
+                  class="form-check-label mx-2 "
+                  for="medicines">
                   Medicamentos
                 </label>
+                  <span
+                  class="badge rounded-pill border ms-auto medicinesCounter">
+                  </span>
               </div>
             </div>
 
