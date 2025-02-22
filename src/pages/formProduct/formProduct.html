@@ -12,6 +12,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
 rel="stylesheet" />
 <link rel="stylesheet" href="/src/css/style.css" />
+<link rel="stylesheet" href="./formProduct.css">
 </head>
 
 <body>
@@ -101,9 +102,9 @@ rel="stylesheet" />
             <option value="Medicamento">Medicamento</option>
           </select>
             </div>
-
+            
             <div class="mb-3 container__input">
-            <label for="size" class="form-label">Tamaño</label>
+            <label id="size-label" for="size" class="form-label">Tamaño</label>
             <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamamño del producto" disabled required>
             <div class="invalid-feedback">Debes indicar el tamaño</div>
           </div>

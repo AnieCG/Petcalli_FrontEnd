@@ -101,39 +101,68 @@ document.addEventListener("DOMContentLoaded", () => {
 /* Funcion para el cambio de categoria */
 function habilitarInputs() {
   const seleccion = document.getElementById("category").value;
-  const size= document.getElementById("size");
-  const color= document.getElementById("color");
+  const size = document.getElementById("size");
+  const color = document.getElementById("color");
 
-  if (seleccion === "Accesorios") {
+ /*  if (seleccion === "Accesorios") {
     color.disabled = false;
-} else {
- size.disabled = true;
-}
-if (seleccion === "Ropa") {
-  color.disabled = false;
-  size.disabled = false;
-} else {
-  color.disabled = true;
-  size.disabled = true;
-}
-if (seleccion === "Alimento") {
-  size.disabled = false;
- } else {
- size.disabled = true;
- }
- 
-if (seleccion === "Juguetes") {
- color.disabled = false;
-} else {
-size.disabled = true;
-}
-if (seleccion === "Medicamento") {
-  size.disabled = false;
- } else {
- size.disabled = true;
- }
- 
-}
+    size.disabled = false;
+  } else {
+    color.disabled =true;
+    size.disabled = true;
+  }
+  if (seleccion === "Ropa") {
+    color.disabled = false;
+    size.disabled = false;
+  } else {
+    color.disabled = true;
+    size.disabled = true;
+  }
+  if (seleccion === "Alimento") {
+    color.disabled = false;
+    size.disabled = false;
+  } else {
+    color.disabled = true;
+    size.disabled = true;
+  }
+
+  if (seleccion === "Juguetes") {
+    color.disabled = false;
+    size.disabled = false;
+  } else {
+    color.disabled = true;
+    size.disabled = true;
+  }
+  if (seleccion === "Medicamento") {
+    color.disabled = false ;
+    size.disabled = false;
+  } else {
+    color.disabled = true; 
+    size.disabled = true;
+  } */
+  
+    /* El codigo se puede refactorizar de la forma */
+
+    if (seleccion === "Alimento" || seleccion === "Medicamento") {
+      // Para "Alimento" y "Medicamento" mostrar size y ocultar color
+      size.classList.remove("hidden"); // Mostrar size
+      size.disabled = false;          // Habilitar size
+      color.classList.add("hidden");   // Ocultar color
+      color.disabled = true;           // Deshabilitar color
+    } else if (seleccion === "Accesorios" || seleccion === "Ropa" || seleccion === "Juguetes") {
+      // Para "Accesorios", "Ropa" y "Juguetes": mostrar color y ocultar size
+      color.classList.remove("hidden"); // Mostrar color
+      color.disabled = false;           // Habilitar color
+      size.classList.add("hidden");     // Ocultar size
+      size.disabled = true;             // Deshabilitar size
+    } else {
+      // Si no se selecciona ninguna opción válida:
+      size.classList.add("hidden");     // Ocultar size
+      size.disabled = true;             // Deshabilitar size
+      color.classList.add("hidden");    // Ocultar color
+      color.disabled = true;            // Deshabilitar color
+    }
+  }
 
 
 /* Funcion para enviar la informacion del Json */
