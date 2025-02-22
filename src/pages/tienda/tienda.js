@@ -281,3 +281,21 @@ tagRueda.addEventListener( "click", () => {
   let tag = filtroTag("Rueda", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
+
+/* FILTRADO POR MARCAS LISTA DINAMICA */
+
+const marcas = [...new Set(productos.map(producto => producto.marca))];
+
+    // Obtener el contenedor de la lista
+    const listaDeMarcas = document.getElementById('marca-list');
+
+    // Crear los elementos de la lista
+    marcas.forEach(marca => {
+      const li = document.createElement('li');
+      li.innerHTML = `
+        <label>
+          <input type="checkbox" value="${marca}"> ${marca}
+        </label>
+      `;
+      listaDeMarcas.appendChild(li);
+    });
