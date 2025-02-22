@@ -22,10 +22,44 @@
 
   </header>
 
-  <main class="pt-5"></main>
+  <main class="pt-5">
+<div>
+  <h1 id="welcome"> </h1>
+</div>
+  </main>
+
+
+
+
+
+  
+  <button id="sessionOut" >Cerrar sesión</button>
   <footer id="footer">
     <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
   </footer>
+
+
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const welcomeUser = document.getElementById("welcome");
+      const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
+      
+      if (usuarioGuardado.name) {
+          welcomeUser.textContent = "Cuanto tiempo sin verte " + usuarioGuardado.name + ". ¡Bienvenidx!";
+    
+      }
+
+// localStorage.removeItem("user"); 
+
+    });
+    </script>
+    
+     
+
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
@@ -33,6 +67,8 @@
   <script src="src/modules/header/header.js"></script>
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/pages/servicios/servicios.html"></script>
+  <script src="/src/pages/login/login.js" ></script>
+  <script src="/src/pages/register/localStorage.js" ></script>
 </body>
 
 </html>

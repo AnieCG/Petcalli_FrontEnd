@@ -15,10 +15,9 @@ document.getElementById("localRegister").addEventListener("submit", function (ev
         password,
         telephone
     };
-    console.log("sí se está ejecutando;", user);
+
 
     localStorage.setItem("user", JSON.stringify(user));
     alert("registro realizado");
 
 });
-
