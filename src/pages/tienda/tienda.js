@@ -309,20 +309,58 @@ tagRueda.addEventListener( "click", () => {
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
 
-/* FILTRADO POR MARCAS LISTA DINAMICA */
 
-const marcas = [...new Set(productos.map(producto => producto.marca))];
 
-    // Obtener el contenedor de la lista
-    const listaDeMarcas = document.getElementById('marca-list');
 
-    // Crear los elementos de la lista
-    marcas.forEach(marca => {
-      const li = document.createElement('li');
-      li.innerHTML = `
-        <label>
-          <input type="checkbox" value="${marca}"> ${marca}
-        </label>
-      `;
-      listaDeMarcas.appendChild(li);
+
+/* FILTRADO POR MARCAS */
+      // Función para filtrar productos por marca
+const filterProductsByMarca = (selectedBrands, counter) => {
+  fetch("/public/json/productos.json")
+    .then((response) => response.json())
+    .then((products) => {
+      // Filtrar productos por marcas seleccionadas
+      const productsToShow = products.filter((product) =>
+        selectedBrands.includes(product.marca)
+      );
+
+      // Sección de tarjetas con productos filtrados
+      $seccionCards.innerHTML = productsToShow
+        .map((card) => createCards(card))
+        .join("");
+      // Actualizar el contador con el número de productos filtrados
+      counter.textContent = productsToShow.length;
     });
+};
+
+// Para checkbox
+const brandCheck = document.getElementsByClassName("brand");
+// Para contadores
+const brandCounter = document.getElementsByClassName("brandCounter");
+
+// Para aplicar funcion
+let selectedBrands = [];
+
+// Cambio para cada checkbox de marca
+Array.from(brandCheck).forEach((checkbox, index) => {
+  checkbox.addEventListener("change", () => {
+    const brandName = checkbox.value;
+    const counter = brandCounter[index];
+    
+    if (checkbox.checked) {
+      // Si está seleccionado
+      selectedBrands.push(brandName);
+    } else {
+      // Si está desmarcado
+      selectedBrands = selectedBrands.filter((brand) => brand !== brandName);
+    }
+
+    // Productos según las marcas
+    filterProductsByMarca(selectedBrands, counter);
+  });
+});
+
+// Llamar a la función para cargar las marcas seleccionadas al inicio
+filterProductsByMarca(selectedBrands, brandCounter[0]);
+
+
