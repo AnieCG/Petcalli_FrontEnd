@@ -462,72 +462,95 @@
           <!-- Columna filtro -->
           <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
             <!-- Filtrar por categoria -->
-            <div class="p-2">
+            <div class="container row-gap-3 p-2">
               <h2>Filtrar por categorias</h2>
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input d-flex"
+                  class="form-check-input d-flex accesories"
                   type="checkbox"
                   value="Accesorios"
                   id="accesories"
+                  value=""
                   checked
                 />
                 <label
-                  class="form-check-label"
-                  for="accesories"
-                  style="padding-right: 60%"
-                >
-                  Accesorios </label
-                ><span
-                  class="badge text-bg-primary rounded-pill"
-                  style="white-space: nowrap"
-                  >14</span
-                >
+                  class="form-check-label mx-2 "
+                  for="accesories">
+                  Accesorios 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto accesoriesCounter">
+                  15
+                  </span>
               </div>
-
-              <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex clothes"
                   type="checkbox"
-                  value=""
+                  value="Ropa"
                   id="clothes"
-                  checked
                 />
-                <label class="form-check-label" for="clothes"> Ropa </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="clothes">
+                  Ropa 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto clothesCounter">
+                  14
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex mt-1 ">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex food"
                   type="checkbox"
-                  value=""
+                  value="Alimento"
                   id="food"
-                  checked
                 />
-                <label class="form-check-label" for="food"> Alimento </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="food">
+                  Alimento 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto foodCounter">
+                  14
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex toys"
                   type="checkbox"
-                  value=""
+                  value="Juguetes"
                   id="toys"
-                  checked
                 />
-                <label class="form-check-label" for="toys"> Jugetes </label>
+                <label
+                  class="form-check-label mx-2 "
+                  for="toys">
+                  Juguetes 
+                </label>
+                  <span
+                  class="badge rounded-pill border ms-auto toysCounter">
+                  14
+                  </span>
               </div>
-              <div class="form-check">
+              <div class="form-check d-flex">
                 <input
-                  class="form-check-input"
+                  class="form-check-input d-flex mt-1 medicines"
                   type="checkbox"
-                  value=""
+                  value="Medicamentos"
                   id="medicines"
-                  checked
                 />
-                <label class="form-check-label" for="medicines">
+                <label
+                  class="form-check-label mx-2 "
+                  for="medicines">
                   Medicamentos
                 </label>
+                  <span
+                  class="badge rounded-pill border ms-auto medicinesCounter">
+                  14
+                  </span>
               </div>
             </div>
 
