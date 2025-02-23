@@ -136,7 +136,6 @@
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
-                        checked
                       />
                       <label class="form-check-label" for="flexCheckChecked">
                         Accesorios
@@ -148,63 +147,6 @@
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Royal Canin
-                      </label>
-                    </div>
-                  </article>
-                  <article class="mb-2">
-                    <h4 class="mb-4">Marca</h4>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Accesorios
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Royal Canin
-                      </label>
-                    </div>
-                  </article>
-                </div>
-                <div class="d-flex justify-content-between mb-3">
-                  <article class="mb-2">
-                    <h4 class="mb-4">Categorias</h4>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
-                      />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Accesorios
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
-                        checked
                       />
                       <label class="form-check-label" for="flexCheckChecked">
                         Royal Canin
@@ -219,7 +161,6 @@
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
-                        checked
                       />
                       <label class="form-check-label" for="flexCheckChecked">
                         Accesorios
@@ -231,7 +172,6 @@
                         type="checkbox"
                         value=""
                         id="flexCheckChecked"
-                        checked
                       />
                       <label class="form-check-label" for="flexCheckChecked">
                         Royal Canin
@@ -239,11 +179,20 @@
                     </div>
                   </article>
                 </div>
-                <h2>Filtrar por precio</h2>
-                <input type="range" class="form-range my-3" id="customRange1" />
-                <label for="customRange1" class="form-label"
-                  >Precio $10.00 - $1,000.00</label
-                >
+                <div class="p-2">
+                  <h2>Filtrar por precio</h2>
+                  <input
+                    type="range"
+                    class="form-range"
+                    id="customRange"
+                    min="0"
+                    max="2000"
+                    value="0"
+                    step="100"
+                  /><label for="customRange1" class="form-label"
+                    >Precio: $0 - <span class="price-value">$2000</span></label
+                  >
+                </div>
                 <div class="d-flex justify-content-around mt-3">
                   <button class="btn">Limpiar campos</button>
                   <button class="btn">Aplicar</button>
@@ -465,7 +414,7 @@
             <div class="container row-gap-3 p-2">
               <h2>Filtrar por categorias</h2>
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check d-flex mt-1 ">
+              <div class="form-check d-flex mt-1">
                 <input
                   class="form-check-input d-flex accesories"
                   type="checkbox"
@@ -474,46 +423,39 @@
                   value=""
                   checked
                 />
-                <label
-                  class="form-check-label mx-2 "
-                  for="accesories">
-                  Accesorios 
+                <label class="form-check-label mx-2" for="accesories">
+                  Accesorios
                 </label>
-                  <span
-                  class="badge rounded-pill border ms-auto accesoriesCounter"> 
-                  </span>
+                <span
+                  class="badge rounded-pill border ms-auto accesoriesCounter"
+                >
+                </span>
               </div>
-              <div class="form-check d-flex mt-1 ">
+              <div class="form-check d-flex mt-1">
                 <input
                   class="form-check-input d-flex clothes"
                   type="checkbox"
                   value="Ropa"
                   id="clothes"
                 />
-                <label
-                  class="form-check-label mx-2 "
-                  for="clothes">
-                  Ropa 
+                <label class="form-check-label mx-2" for="clothes">
+                  Ropa
                 </label>
-                  <span
-                  class="badge rounded-pill border ms-auto clothesCounter">
-                  </span>
+                <span class="badge rounded-pill border ms-auto clothesCounter">
+                </span>
               </div>
-              <div class="form-check d-flex mt-1 ">
+              <div class="form-check d-flex mt-1">
                 <input
                   class="form-check-input d-flex food"
                   type="checkbox"
                   value="Alimento"
                   id="food"
                 />
-                <label
-                  class="form-check-label mx-2 "
-                  for="food">
-                  Alimento 
+                <label class="form-check-label mx-2" for="food">
+                  Alimento
                 </label>
-                  <span
-                  class="badge rounded-pill border ms-auto foodCounter">
-                  </span>
+                <span class="badge rounded-pill border ms-auto foodCounter">
+                </span>
               </div>
               <div class="form-check d-flex mt-1">
                 <input
@@ -522,14 +464,11 @@
                   value="Juguetes"
                   id="toys"
                 />
-                <label
-                  class="form-check-label mx-2 "
-                  for="toys">
-                  Juguetes 
+                <label class="form-check-label mx-2" for="toys">
+                  Juguetes
                 </label>
-                  <span
-                  class="badge rounded-pill border ms-auto toysCounter">
-                  </span>
+                <span class="badge rounded-pill border ms-auto toysCounter">
+                </span>
               </div>
               <div class="form-check d-flex">
                 <input
@@ -538,14 +477,13 @@
                   value="Medicamentos"
                   id="medicines"
                 />
-                <label
-                  class="form-check-label mx-2 "
-                  for="medicines">
+                <label class="form-check-label mx-2" for="medicines">
                   Medicamentos
                 </label>
-                  <span
-                  class="badge rounded-pill border ms-auto medicinesCounter">
-                  </span>
+                <span
+                  class="badge rounded-pill border ms-auto medicinesCounter"
+                >
+                </span>
               </div>
             </div>
 
@@ -558,17 +496,17 @@
                 id="customRange"
                 min="0"
                 max="2000"
-                value=""
+                value="0"
                 step="100"
               /><label for="customRange1" class="form-label"
-                >Precio: $0 - <span id="price-value">$2000</span></label
+                >Precio: $0 - <span class="price-value">$2000</span></label
               >
             </div>
 
             <!-- FILTRAR POR MARCAS -->
             <div class="p-2">
               <h2>Filtrar por marca</h2>
-              
+
               <div class="form-check d-flex mt-1">
                 <input
                   class="form-check-input d-flex brand"
@@ -578,8 +516,10 @@
                   checked
                 />
                 <label class="form-check-label mx-2" for="brand">
-                  Instinct
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                  Instinct </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
 
               <div class="form-check d-flex mt-1">
@@ -591,8 +531,10 @@
                   checked
                 />
                 <label class="form-check-label mx-2" for="brand">
-                  Royal Canin
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                  Royal Canin </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
 
               <div class="form-check d-flex mt-1">
@@ -604,8 +546,10 @@
                   checked
                 />
                 <label class="form-check-label mx-2" for="brand">
-                  WholeHearted
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                  WholeHearted </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
 
               <div class="form-check d-flex mt-1">
@@ -617,8 +561,10 @@
                   checked
                 />
                 <label class="form-check-label mx-2" for="brand">
-                  Bravery
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                  Bravery </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
 
               <div class="form-check d-flex mt-1">
@@ -629,9 +575,10 @@
                   id="brand"
                   checked
                 />
-                <label class="form-check-label mx-2" for="brand">
-                  Hill's
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                <label class="form-check-label mx-2" for="brand"> Hill's </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
 
               <div class="form-check d-flex mt-1">
@@ -642,9 +589,10 @@
                   id="brand"
                   checked
                 />
-                <label class="form-check-label mx-2" for="brand">
-                  Azoo
-                </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+                <label class="form-check-label mx-2" for="brand"> Azoo </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                ></span>
               </div>
             </div>
 

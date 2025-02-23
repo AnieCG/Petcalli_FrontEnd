@@ -135,7 +135,7 @@ const filterProductsByPetType = (petType) => {
     });
 };
 
-const filterProductsByCategory = ( category, counter) => {
+const filterProductsByCategory = (category, counter) => {
   fetch("/public/json/productos.json")
     .then((products) => products.json())
     .then((products) => {
@@ -145,55 +145,54 @@ const filterProductsByCategory = ( category, counter) => {
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
-        counter.textContent = productsToShow.length;
+      counter.textContent = productsToShow.length;
     });
-  
-}
-  const catsButton = document.getElementsByClassName( "Gatos" );
-  const dogsButton = document.getElementsByClassName( "Perros" );
-  const birdsButton = document.getElementsByClassName( "Aves" );
-  const rabbitsButton = document.getElementsByClassName( "Conejos" );
-  const fishesButton = document.getElementsByClassName( "Peces" );
-  const otherButton = document.getElementsByClassName( "Otros" );
+};
+const catsButton = document.getElementsByClassName("Gatos");
+const dogsButton = document.getElementsByClassName("Perros");
+const birdsButton = document.getElementsByClassName("Aves");
+const rabbitsButton = document.getElementsByClassName("Conejos");
+const fishesButton = document.getElementsByClassName("Peces");
+const otherButton = document.getElementsByClassName("Otros");
 
-  catsButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Gato");
-  });
-  dogsButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Perro");
-  });
-  rabbitsButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Conejo");
-  });
-  fishesButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Peces");
-  });
-  birdsButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Aves");
-  });
-  otherButton[0].addEventListener( "click", () => {
-    filterProductsByPetType("Otros");
-  });
+catsButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Gato");
+});
+dogsButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Perro");
+});
+rabbitsButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Conejo");
+});
+fishesButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Peces");
+});
+birdsButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Aves");
+});
+otherButton[0].addEventListener("click", () => {
+  filterProductsByPetType("Otros");
+});
 
-  catsButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Gato");
-  });
-  dogsButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Perro");
-  });
-  rabbitsButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Conejo");
-  });
-  fishesButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Peces");
-  });
-  birdsButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Aves");
-  });
-  otherButton[1].addEventListener( "click", () => {
-    filterProductsByPetType("Otros");
-  });
-  
+catsButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Gato");
+});
+dogsButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Perro");
+});
+rabbitsButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Conejo");
+});
+fishesButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Peces");
+});
+birdsButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Aves");
+});
+otherButton[1].addEventListener("click", () => {
+  filterProductsByPetType("Otros");
+});
+
 const accesoriesButton = document.getElementsByClassName("accesories");
 const clothesButton = document.getElementsByClassName("clothes");
 const foodButton = document.getElementsByClassName("food");
@@ -207,43 +206,51 @@ const toysCounter = document.getElementsByClassName("toysCounter");
 const medicinesCounter = document.getElementsByClassName("medicinesCounter");
 
 accesoriesButton[0].addEventListener("click", () => {
-  if( accesoriesButton[0].checked ) filterProductsByCategory("Accesorios", accesoriesCounter[0]);
+  if (accesoriesButton[0].checked)
+    filterProductsByCategory("Accesorios", accesoriesCounter[0]);
 });
 clothesButton[0].addEventListener("click", () => {
-  if (clothesButton[0].checked) filterProductsByCategory("Ropa", clothesCounter[0]);
+  if (clothesButton[0].checked)
+    filterProductsByCategory("Ropa", clothesCounter[0]);
 });
 toysButton[0].addEventListener("click", () => {
-  if (toysButton[0].checked) filterProductsByCategory("Juguetes", toysCounter[0]);
+  if (toysButton[0].checked)
+    filterProductsByCategory("Juguetes", toysCounter[0]);
 });
 foodButton[0].addEventListener("click", () => {
-  if (foodButton[0].checked) filterProductsByCategory("Alimento", foodCounter[0]);
+  if (foodButton[0].checked)
+    filterProductsByCategory("Alimento", foodCounter[0]);
 });
 medicinesButton[0].addEventListener("click", () => {
-  if (medicinesButton[0].checked) filterProductsByCategory("Medicamentos" ,medicinesCounter[0]);
+  if (medicinesButton[0].checked)
+    filterProductsByCategory("Medicamentos", medicinesCounter[0]);
 });
 
 //Seccion de filtrado por precio
-const $inputFiltradoPrecios = document.getElementById("customRange");
-const $priceValue = document.getElementById("price-value");
+const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
+const $priceValue = document.getElementsByClassName("price-value");
 
-$inputFiltradoPrecios.addEventListener("input", function () {
-  let maxPrice = parseInt($inputFiltradoPrecios.value);
-  $priceValue.textContent = `$ ${maxPrice}`;
+Array.from($inputFiltradoPrecios).forEach((input, index) => {
+  input.addEventListener("input", function () {
+    let maxPrice = parseInt(this.value);
+    Array.from($priceValue)[index].textContent = `$ ${maxPrice}`;
+    console.log(Array.from($priceValue)[index]);
 
-  fetch("/public/json/productos.json")
-    .then((products) => products.json())
-    .then((products) => {
-      const productsToShow = products.filter((product) => {
-        let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
-        return productPrice <= maxPrice;
+    fetch("/public/json/productos.json")
+      .then((products) => products.json())
+      .then((products) => {
+        const productsToShow = products.filter((product) => {
+          let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
+          return productPrice <= maxPrice;
+        });
+        $seccionCards.innerHTML = productsToShow
+          .map((card) => createCards(card))
+          .join("");
       });
-      $seccionCards.innerHTML = productsToShow
-        .map((card) => createCards(card))
-        .join("");
-    });
+  });
 });
 // Seccion de filtrado por tags
-  
+
 //      Botones de los tags
 const tagJuguetes = document.getElementById("tagjuguetes");
 const tagAlimento = document.getElementById("tagAlimento");
@@ -254,67 +261,68 @@ const tagArnés = document.getElementById("tagArnés");
 const tagCachorro = document.getElementById("tagCachorro");
 const tagRueda = document.getElementById("tagRueda");
 
- //     Funcion que me selecciona crea una lista  
-function lista(url) { ///"public/json/productos.json"
+//     Funcion que me selecciona crea una lista
+function lista(url) {
+  ///"public/json/productos.json"
   let listaDeTodo = [];
   fetch(url)
-            .then((productos) => productos.json())
-            .then((productos) => {
-    listaDeTodo.unshift(productos);
-    })
-return listaDeTodo;
+    .then((productos) => productos.json())
+    .then((productos) => {
+      listaDeTodo.unshift(productos);
+    });
+  return listaDeTodo;
 }
 
 const listaProductos = lista("/public/json/productos.json");
 //console.log(listaProductos);
 
 // funcion que filtrado
-const filtroTag = (tag, lista = []) =>{
-  let listaFiltrada = (lista.filter(product => product.description.includes(tag) || product.title.includes(tag)||product.category.includes(tag)));
+const filtroTag = (tag, lista = []) => {
+  let listaFiltrada = lista.filter(
+    (product) =>
+      product.description.includes(tag) ||
+      product.title.includes(tag) ||
+      product.category.includes(tag)
+  );
   return listaFiltrada;
-}
-
+};
 
 //   Acciones de los tags
-tagJuguetes.addEventListener( "click", () => {
+tagJuguetes.addEventListener("click", () => {
   let juguetes = filtroTag("Juguetes", listaProductos[0]);
   $seccionCards.innerHTML = juguetes.map((card) => createCards(card)).join("");
 });
-tagAlimento.addEventListener( "click", () => {
+tagAlimento.addEventListener("click", () => {
   let tag = filtroTag("Alimento", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagNatural.addEventListener( "click", () => {
+tagNatural.addEventListener("click", () => {
   let tag = filtroTag("Natural", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagSalmón.addEventListener( "click", () => {
+tagSalmón.addEventListener("click", () => {
   let tag = filtroTag("Salm", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagCatnip.addEventListener( "click", () => {
+tagCatnip.addEventListener("click", () => {
   let tag = filtroTag("Catnip", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagArnés.addEventListener( "click", () => {
+tagArnés.addEventListener("click", () => {
   let tag = filtroTag("Arn", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagCachorro.addEventListener( "click", () => {
+tagCachorro.addEventListener("click", () => {
   let tag = filtroTag("Cachorro", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
-tagRueda.addEventListener( "click", () => {
+tagRueda.addEventListener("click", () => {
   let tag = filtroTag("Rueda", listaProductos[0]);
   $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
 });
 
-
-
-
-
 /* FILTRADO POR MARCAS */
-      // Función para filtrar productos por marca
+// Función para filtrar productos por marca
 const filterProductsByMarca = (selectedBrands, counter) => {
   fetch("/public/json/productos.json")
     .then((response) => response.json())
@@ -346,7 +354,7 @@ Array.from(brandCheck).forEach((checkbox, index) => {
   checkbox.addEventListener("change", () => {
     const brandName = checkbox.value;
     const counter = brandCounter[index];
-    
+
     if (checkbox.checked) {
       // Si está seleccionado
       selectedBrands.push(brandName);
@@ -362,5 +370,3 @@ Array.from(brandCheck).forEach((checkbox, index) => {
 
 // Llamar a la función para cargar las marcas seleccionadas al inicio
 filterProductsByMarca(selectedBrands, brandCounter[0]);
-
-
