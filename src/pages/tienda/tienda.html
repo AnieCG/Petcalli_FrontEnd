@@ -144,17 +144,17 @@
         <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
           <br />
           <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
-                    
-            <button class="rounded-circle carousel-control-next " type="button"
+
+          <button class="rounded-circle carousel-control-next " type="button"
             data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
             <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
             <span class="visually-hidden ">Next</span>
           </button>
-            <button class="rounded-circle carousel-control-prev " type="button"
-              data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
-              <span class="visually-hidden ">Previous</span>
-            </button>
+          <button class="rounded-circle carousel-control-prev " type="button"
+            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
 
           <div class="carousel-inner">
             <!-- Primer Seccion -->
@@ -279,246 +279,184 @@
 
     <br />
 
-      <section class="container">
-        <!-- de productos y filtros -->
-        <div class="row gx-5">
-          <!-- Columna filtro -->
-          <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
+    <section class="container">
+      <!-- de productos y filtros -->
+      <div class="row gx-5">
+        <!-- Columna filtro -->
+        <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
 
-            <!-- Filtrar por categoria -->
-            <div class="p-2">
-              <h2>Filtrar por categorias</h2>
-              <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check">
-                <input class="form-check-input d-flex" type="checkbox" value="Accesorios" id="accesories" checked>
-                <label class="form-check-label" for="accesories" style="padding-right: 60%;">
-                  Accesorios
-                </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
-              </div>
-
-              <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-              <div class="form-check">
-                <input class="form-check-input" 
-                  type="checkbox"
-                  value=""
-                  id="clothes" 
-                  checked
-                />
-                <label class="form-check-label"
-                  for="clothes">
-                  Ropa
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="food"
-                  checked
-                />
-                <label class="form-check-label" for="food">
-                  Alimento
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="toys"
-                  checked
-                />
-                <label class="form-check-label" for="toys">
-                  Jugetes
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="medicines"
-                  checked
-                />
-                <label class="form-check-label" for="medicines">
-                  Medicamentos
-                </label>
-              </div>
+          <!-- Filtrar por categoria -->
+          <div class="p-2">
+            <h2>Filtrar por categorias</h2>
+            <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
+            <div class="form-check">
+              <input class="form-check-input d-flex" type="checkbox" value="Accesorios" id="accesories" checked>
+              <label class="form-check-label" for="accesories" style="padding-right: 60%;">
+                Accesorios
+              </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
             </div>
 
-            <!-- FILTRAR POR PRECIO -->
-            <div class="p-2">
-              <h2>Filtrar por precio</h2>
-              <input type="range" class="form-range" id="customRange1" /><label
-                for="customRange1"
-                class="form-label"
-                >Precio $10.00 - $1,000.00</label
-              >
+            <!-- FORMA SIN CONTADOR DE RESULTADOS -->
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="clothes" checked />
+              <label class="form-check-label" for="clothes">
+                Ropa
+              </label>
             </div>
-
-            <!-- FILTRAR POR MARCAS -->
-            <div class="p-2">
-              <h2>Filtrar por marca</h2>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Instinct
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Royal Canin
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Hills Science Diet
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Cunipic
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  JW Pet Company
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Tetra
-                </label>
-              </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="food" checked />
+              <label class="form-check-label" for="food">
+                Alimento
+              </label>
             </div>
-
-            <!-- Filtrar por Tag -->
-            <div class="p-2">
-              <h2>Filtrado por Tags</h2>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">Juguetes</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento"> Alimento</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Natural</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">Salmón</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip"> Catnip</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">Arnés</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">Cachorro</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagRueda"> Rueda</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Jaula</button>           
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="toys" checked />
+              <label class="form-check-label" for="toys">
+                Jugetes
+              </label>
             </div>
-
-            <!-- PRODUCTOS PREMIUM -->
-            <div class="p-2">
-              <h2>Productos Premium</h2>
-
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="" class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Royal Canin</h5>
-                    <p>$1000.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Instinct</h5>
-                    <p>$2,700.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">WholeHearted</h5>
-                    <p>$850.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Bravery</h5>
-                    <p>$450.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Tetra ReptoMin</h5>
-                    <p>$711.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-             <!-- ANUNCIOS -->
-            <div class="card">
-              <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-text">USC Hotel</p>
-                  <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&" class="btn">Booking.com</a>
-                </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="medicines" checked />
+              <label class="form-check-label" for="medicines">
+                Medicamentos
+              </label>
             </div>
           </div>
 
-          <div class="col-lg-8 col-md-8 col-8">
-            <!-- productos -->
-            <p class="resultados">12 de 36 resultados mostrados</p>
-            <div
-              class="row row-cols-3 row-seccion-cards p-2"
-              id="seccion-cards"
-            ></div>
-            <div id="seccion-cards2"></div>
-            <!-- modales -->
+          <!-- FILTRAR POR PRECIO -->
+          <div class="p-2">
+            <h2>Filtrar por precio</h2>
+            <input type="range" class="form-range" id="customRange1" /><label for="customRange1"
+              class="form-label">Precio $10.00 - $1,000.00</label>
+          </div>
+
+          <!-- FILTRAR POR MARCAS -->
+          <div class="p-2">
+            <h2>Filtrar por marca</h2>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Instinct
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Royal Canin
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Hills Science Diet
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Cunipic
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                JW Pet Company
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+              <label class="form-check-label" for="flexCheckChecked">
+                Tetra
+              </label>
+            </div>
+          </div>
+
+          <!-- Filtrar por Tag -->
+          <div class="p-2">
+            <h2>Filtrado por Tags</h2>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">Juguetes</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento"> Alimento</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Natural</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">Salmón</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip"> Catnip</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">Arnés</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">Cachorro</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagRueda"> Rueda</button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Jaula</button>
+          </div>
+
+          <!-- PRODUCTOS PREMIUM -->
+          <div class="p-2">
+            <h2>Productos Premium</h2>
+
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="" class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Royal Canin</h5>
+                  <p>$1000.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Instinct</h5>
+                  <p>$2,700.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">WholeHearted</h5>
+                  <p>$850.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Bravery</h5>
+                  <p>$450.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Tetra ReptoMin</h5>
+                  <p>$711.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- ANUNCIOS -->
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1"
+              class="card-img-top" alt="">
+            <div class="card-body">
+              <p class="card-text">USC Hotel</p>
+              <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&"
+                class="btn">Booking.com</a>
+            </div>
           </div>
         </div>
+
+        <div class="col-lg-8 col-md-8 col-8">
+          <!-- productos -->
+          <p class="resultados">12 de 36 resultados mostrados</p>
+          <div class="row row-cols-3 row-seccion-cards p-2" id="seccion-cards"></div>
+          <div id="seccion-cards2"></div>
+          <!-- modales -->
+        </div>
+      </div>
     </section>
     <section id="seccionCarrusel" class="d-none d-sm-block carruselMasPopulares">
       <!-- carru. mas populares -->
@@ -539,6 +477,7 @@
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/pages/tienda/seccionCarruselMobile.js"></script>
   <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+  <script src="/src/modules/user/userLogin.js"></script>
 </body>
 
 </html>
