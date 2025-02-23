@@ -1,28 +1,27 @@
-// validacion inicio de sesion temporal
-document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById('loginForm');
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
 
-  form.addEventListener('submit', function(event) {
-      if (!form.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-      } else {
-          event.preventDefault(); // se muestra un alert hasta que tengamos backend y lo vea en la base de datos
-          alert('Bienvenido usuario...');
-      }
+  const emailLogin = document.getElementById("email").value.trim();
+  const passwordLogin = document.getElementById("password").value.trim();
 
-      form.classList.add('was-validated');
-  });
+  // Recuperar el usuario almacenado en localStorage
+  const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
+  
+
+
+  if (!usuarioGuardado) {
+    alert("No hay usuarios registrados.");
+    return;
+  }
+
+  if (usuarioGuardado.email === emailLogin && usuarioGuardado.password === passwordLogin) {
+    alert("Inicio de sesión exitoso!");
+    window.location.href = "/Index.html"; 
+  } else {
+    alert("Email o contraseña incorrectos.");
+  }
+
+  
 });
 
-  // Validación de correo para recuperar contraseña
 
-  document.getElementById('sendResetEmail').addEventListener('click', () => {
-    const resetEmail = document.getElementById('resetEmail');
-    if (!resetEmail.checkValidity()) {
-      resetEmail.classList.add('is-invalid');
-    } else {
-      resetEmail.classList.remove('is-invalid');
-      alert('Correo enviado...'); // igual envia alert hasta tener una base.
-    }
-  });

@@ -39,6 +39,7 @@ const insertNav = () => {
           </div>
         </form>
 
+        <div id="div-nav">
         <button class="btn" type="button" href="#">
           <img src="/public/images/like-products.svg" alt="icono de favoritos" />
         </button>
@@ -49,7 +50,7 @@ const insertNav = () => {
 
         <a href="/src/pages/login/loginUser.html">
     <img src="/public/images/user.svg" alt="icono de usuario" />
-</a>
+</a> </div>
 
 
       </div>
