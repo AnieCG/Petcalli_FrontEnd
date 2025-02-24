@@ -164,5 +164,12 @@ function habilitarInputs() {
     }
   }
 
+  document.getElementById("price").addEventListener("input", function() {
+    if (this.value < 0) {
+        this.setCustomValidity("El precio debe ser un número positivo.");
+    } else {
+        this.setCustomValidity("");
+    }
+});
 
 /* Funcion para enviar la informacion del Json */

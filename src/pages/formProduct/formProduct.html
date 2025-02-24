@@ -81,7 +81,7 @@ rel="stylesheet" />
     
         <div class="mb-3 container__input">
           <label for="price" class="form-label">Precio</label>
-          <input type="number" class="form-control" id="price" name="precio" placeholder="Ingresa una precio Ej: 346" required>
+          <input type="number" class="form-control" id="price" name="precio" placeholder="Ingresa una precio Ej: 346" required min="0" >
           <div class="invalid-feedback">Debes indicar el precio</div>
         </div>
     
@@ -105,7 +105,7 @@ rel="stylesheet" />
             
             <div class="mb-3 container__input">
             <label id="size-label" for="size" class="form-label">Tamaño</label>
-            <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamamño del producto" disabled required>
+            <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamaño del producto" disabled required>
             <div class="invalid-feedback">Debes indicar el tamaño</div>
           </div>
 
