@@ -12,8 +12,16 @@ document.addEventListener("DOMContentLoaded", function () {
         ${usuarioGuardado.name}
       </button>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+        <li><a id="logout" class="dropdown-item" href="#">Cerrar sesión</a></li>
       </ul>
     </div>`;
-  }
+
+
+
+    document.getElementById("logout").addEventListener("click", function () {
+      localStorage.removeItem("user"); 
+      window.location.href = "/Index.html"; 
+  });
+}
 });
+

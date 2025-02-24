@@ -1,6 +1,4 @@
-document
-  .getElementById("loginForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
 
     const emailLogin = document.getElementById("email").value.trim();
@@ -19,8 +17,9 @@ document
       usuarioGuardado.password === passwordLogin
     ) {
       alert("Inicio de sesión exitoso!");
-      window.location.href = "/Index.html, ";
+      window.location.href = "/Index.html";
     } else {
       alert("Email o contraseña incorrectos.");
     }
   });
+
