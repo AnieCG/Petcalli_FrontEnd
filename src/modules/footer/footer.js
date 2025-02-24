@@ -31,7 +31,9 @@ const insertFooter = () => {
                 <p><strong>Links</strong></p>
                 <a href="#">Productos Premium</a> <br>
                 <a href="#">Productos más vendidos</a> <br>
-                <a href="#">Servicios</a>
+                <a href="#">Servicios</a> <br>
+                <a href="/src/pages/login/login_admi.html">Vendedor Petcalli</a>
+                
             </div>
             <div class="col d-none d-sm-block">
                 <p><strong>Servicio al cliente</strong></p>
