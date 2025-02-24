@@ -1,3 +1,26 @@
 .hidden {
     display: none;
 }
+.form-product {
+    font-family: var(--font_text);
+    /*manchas
+    background-image: url(./images/background-contact.png);
+      background-repeat: no-repeat;
+  background-size: cover;
+  */
+}
+
+h3 {
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
+}
+/*
+  } color de boton
+  .boton{
+    background-color: var(--block-images1);
+  }
+   color al cuadro
+  .product_form {
+    background-color: var(--block-images2);
+  }
+    */
