@@ -142,19 +142,32 @@ document.addEventListener("DOMContentLoaded", async () => {
 });
 
 /* Funcion para habilitar o desabilitar las categorias */
-function habilitarInputs() {
+window.habilitarInputs = function() {
   const seleccion = document.getElementById("category").value;
   const size = document.getElementById("size");
   const color = document.getElementById("color");
 
   if (seleccion === "Alimento" || seleccion === "Medicamento") {
+    // Mostrar y habilitar el campo "size"
+    size.style.display = "block";
     size.disabled = false;
+
+    // Ocultar y deshabilitar el campo "color"
+    color.style.display = "none";
     color.disabled = true;
   } else if (seleccion === "Accesorios" || seleccion === "Ropa" || seleccion === "Juguetes") {
-    size.disabled = true;
+    // Mostrar y habilitar el campo "color"
+    color.style.display = "block";
     color.disabled = false;
-  } else {
+
+    // Ocultar y deshabilitar el campo "size"
+    size.style.display = "none";
     size.disabled = true;
+  } else {
+    // Ocultar y deshabilitar ambos campos
+    size.style.display = "none";
+    size.disabled = true;
+    color.style.display = "none";
     color.disabled = true;
   }
 }
