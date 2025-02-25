@@ -53,11 +53,22 @@
                         requiered />
                       <div class="invalid-feedback">Por favor, introduce un correo válido.</div>
                     </div>
+
                     <div class="mb-3">
                       <label for="password" class="form-label letter">Contraseña</label>
-                      <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña"
-                        minlength="8" required />
-                      <div class="invalid-feedback">Contraseña incorrecta o inválida.</div>
+                      <div class="d-flex">
+                        <input type="password" class="form-control w-75" id="password" name="password"
+                          pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}"
+                          placeholder="Mín 8 dígitos, 1 mayúscula, 1 número, 1 especial (!@#$%^&*)" required>
+                        <button type="button" class="btn btn-light button-password" id="togglePassword">
+                          Mostrar
+                        </button>
+                        <div class="invalid-feedback">
+                          Por favor, introduce una contraseña de mínimo 8 dígitos que contenga minúsculas,
+                          1
+                          mayúscula, 1 número y 1 caracter especial (!@#$%^&*)
+                        </div>
+                      </div>
                     </div>
 
                     <div class="mt-2">
@@ -71,7 +82,7 @@
                     </div>
 
                     <!-- Botón de envío -->
-                    <button id="logbutton" type="submit" class="btn btn-primary w-150 mb-3"> Iniciar Sesión </button>
+                    <button id="logbutton" type="submit" class="btn btn-primary w-150 my-3"> Iniciar Sesión </button>
                     <br>
 
 
@@ -111,7 +122,8 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste tu
+                    <button class="btn" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste
+                        tu
                         contraseña?
                       </u></button>
 

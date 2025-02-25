@@ -31,15 +31,21 @@
             <div class="row row-colums-sm-12 row-columns-md-8 row-columns-lg-6 d-flex flex-wrap-reverse">
 
                 <div class="col">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <a href="/src/pages/login/login_admi.html" class="button-getback"><img
+                                src="/public/images/flecha-regresar.png" alt="icono de flecha para regresar"
+                                class="button-getback m-5"></a>
 
-                    <h3 class="display-6 mt-4 mb-4 text-center rounded-pill mx-auto shadow-lg w-50">
-                        Registro de tienda
-                    </h3>
+                        <h3 class="display-6 mt-4 mb-4 text-center rounded-pill mx-auto shadow-lg w-50">
+                            Registro de tienda
+                        </h3>
+                    </div>
+
 
                     <div class=" container mx-auto shadow-lg border rounded-3 mb-4 form-container">
 
                         <form id="localRegister" class="container p-4 needs-validation" novalidate>
-                            <a href="/src/pages/login/login_admi.html">Volver</a>
+
                             <div class="mt-2 text-center secciones-registro">Datos de la tienda</div>
 
                             <!-- Nombre de la tienda -->
@@ -62,44 +68,7 @@
                                     caracteres</div>
                             </div>
 
-                            <!--  Categorias de la tienda -->
-                            <div class="mb-3">
-                                <h4>Categorias</h4>
-                                <div class="row row-cols-lg-8 row-cols-md-3 row-cols-sm-2 row-cols-1">
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios1" value="option1" required>
-                                        <label class="form-check-label" for="exampleRadios1">Medicamento</label>
-                                    </div>
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios2" value="option2">
-                                        <label class="form-check-label" for="exampleRadios2">Alimento</label>
-                                    </div>
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios3" value="option3">
-                                        <label class="form-check-label" for="exampleRadios3">Ropa</label>
-                                    </div>
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios4" value="option4">
-                                        <label class="form-check-label" for="exampleRadios4">Accesorios</label>
-                                    </div>
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios5" value="option5">
-                                        <label class="form-check-label" for="exampleRadios5">Juguetes</label>
-                                    </div>
-                                    <div class="col pb-3">
-                                        <input class="form-check-input" type="radio" name="exampleRadios"
-                                            id="exampleRadios6" value="option6">
-                                        <label class="form-check-label" for="exampleRadios6">General</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- COntenedor de dirección -->
+                            <!-- Contenedor de dirección -->
                             <div class="row">
                                 <!-- Dirección de la tienda -->
                                 <div class="form-group mb-3 col-12 col-sm-9 col-md-8">
@@ -183,12 +152,12 @@
                                 <label for="nombreCompleto" class="form-label">Nombre completo </label>
                                 <div class="row row-cols-1 row-cols-md-3">
                                     <div class="col mb-3">
-                                        <input id="name" type="text" class="form-control" placeholder="Nombre(s)" minlength="2"
-                                            maxlength="35" required>
+                                        <input id="name" type="text" class="form-control" placeholder="Nombre(s)"
+                                            minlength="2" maxlength="35" required>
                                     </div>
                                     <div class="col mb-3">
-                                        <input id="last-name" type="text" class="form-control" placeholder="Apellido paterno"
-                                            minlength="2" maxlength="35" required>
+                                        <input id="last-name" type="text" class="form-control"
+                                            placeholder="Apellido paterno" minlength="2" maxlength="35" required>
                                     </div>
                                     <div class="col mb-3">
                                         <input type="text" class="form-control" placeholder="Apellido materno"
@@ -197,6 +166,7 @@
                                 </div>
                             </div>
 
+                            <!-- Contraseña de la tienda -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
                                 <div class="d-flex">
@@ -314,8 +284,8 @@
     <script type="module" src="/src/modules/nav/nav.js"></script>
     <script type="module" src="/src/pages/formulario/Form.js"></script>
     <script src="/src/modules/user/userLogin.js"></script>
-    <script src="/src/pages/register/localStorageSeller.js" ></script>
-    <script src="/src/pages/login/login.js" ></script>
+    <script src="/src/pages/register/localStorageSeller.js"></script>
+    <script src="/src/pages/login/login.js"></script>
 
 </body>
 
