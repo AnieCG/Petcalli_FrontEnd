@@ -231,6 +231,8 @@ medicinesButton[0].addEventListener("click", () => {
     filterProductsByCategory("Medicamentos", medicinesCounter[0]);
 });
 
+/*FILTRADO POR PRECIO */
+filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
 /* FILTRADO POR MARCAS */
 // Función para filtrar productos por marca
 const filterProductsByMarca = () => {
