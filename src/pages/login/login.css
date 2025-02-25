@@ -1,5 +1,3 @@
-
-
 #letter {
   font-family: var(--font_text);
 }
@@ -27,7 +25,6 @@ h1 {
 
 .logbutton :active {
   color: #e07a5f;
-
 }
 .h2 {
   font-size: 30px;
@@ -64,4 +61,6 @@ h1 {
   color: #3d405b;
 }
 
-
+.button-password {
+  margin-left: 20px;
+}
