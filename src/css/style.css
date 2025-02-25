@@ -140,3 +140,47 @@ footer {
   font-weight: 700;
   font-size: 85px;
 }
+
+.subtitulo{
+  background-color:#f2cc8f ;
+  font-size:1.5rem;
+  border: none;
+  margin: 2%;
+  padding: 10px;
+}
+
+.card-title{
+  background-color:#f2cc8f;
+
+}
+
+#botonAdopta{
+  font-family: var(--title);
+  font-size: 20px;
+  color: white;
+  background-color: var(--block-images1);
+  border: var(--block-images1);
+  border-radius: 12px;
+  height: 60px;
+  width: 153px;
+}
+
+.bg-banner {
+  background-color: var(--block-images1); 
+}
+
+.icono {
+  width: 40px;
+  height: auto;
+}
+
+.vr {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+}
+
+.texto {
+  font-size: 16px;
+  max-width: 220px;
+}
