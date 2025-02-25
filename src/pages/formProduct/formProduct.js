@@ -1,14 +1,19 @@
 import { addProduct, getJson, getProducts } from "../tienda/funcionesAdmin.js";
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
   const form = document.getElementById("formProduct");
-  
- 
+
+  // Cargar el JSON inicial
+  await getJson("/public/json/productos.json");
+  console.log("Productos cargados:", getProducts());
+
+  // Habilitar/deshabilitar inputs según la categoría
+  document.getElementById("category").addEventListener("change", habilitarInputs);
 
   form.addEventListener("submit", (event) => {
     let isValid = true;
 
-    // Obtenemos los valores del formulario y validar por su ID
+    // Validación de campos
     const title = document.getElementById("title");
     if (title.value.trim() === "") {
       isValid = false;
@@ -16,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       title.classList.remove("is-invalid");
     }
-    /* Obtener y validar la marca */
+
     const marca = document.getElementById("marca");
     if (marca.value.trim() === "") {
       isValid = false;
@@ -25,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
       marca.classList.remove("is-invalid");
     }
 
-    /* Obtener y validar el tipo de mascota */
     const petType = document.querySelectorAll('input[name="Tipo_de_mascota"]');
     let petTypeSelected = false;
     petType.forEach((radio) => {
@@ -43,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         radio.classList.remove("is-invalid");
       });
     }
-    /* Obtener y validar la imagen */
+
     const image = document.getElementById("image");
     if (image.value.trim() === "") {
       isValid = false;
@@ -51,41 +55,41 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       image.classList.remove("is-invalid");
     }
-    /* Obtener y validar el precio */
+
     const price = document.getElementById("price");
-    if (price.value.trim() === '' || isNaN(price.value) || parseFloat(price.value)<0) {
+    if (price.value.trim() === "" || isNaN(price.value) || parseFloat(price.value) < 0) {
       isValid = false;
       price.classList.add("is-invalid");
     } else {
       price.classList.remove("is-invalid");
     }
-    /* Obtener y validar la descripcion */
+
     const description = document.getElementById("description");
-    if (description.value.trim() === '') {
+    if (description.value.trim() === "") {
       isValid = false;
       description.classList.add("is-invalid");
     } else {
       description.classList.remove("is-invalid");
     }
-    /* Obtener y validar la categoria */
+
     const category = document.getElementById("category");
-    if (category.value.trim() === '') {
+    if (category.value.trim() === "") {
       isValid = false;
       category.classList.add("is-invalid");
     } else {
       category.classList.remove("is-invalid");
     }
-    /* Obtener y validar el tamaño */
+
     const size = document.getElementById("size");
-    if (!size.disabled && size.value.trim() === '') {
+    if (!size.disabled && size.value.trim() === "") {
       isValid = false;
       size.classList.add("is-invalid");
     } else {
-      size.classList.remove("is-invalited");
+      size.classList.remove("is-invalid");
     }
-    /* Obtener y Validar el color */
+
     const color = document.getElementById("color");
-    if (!color.disabled && color.value.trim() === '') {
+    if (!color.disabled && color.value.trim() === "") {
       isValid = false;
       color.classList.add("is-invalid");
     } else {
@@ -95,73 +99,62 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!isValid) {
       event.preventDefault();
       event.stopPropagation();
+      return; // Detener la ejecución si el formulario no es válido
     }
 
-    form.classList.add('was-validated');
+    // Captura los valores del formulario
+    const titleValue = title.value.trim();
+    const marcaValue = marca.value.trim();
+    const petTypeValue = document.querySelector('input[name="Tipo_de_mascota"]:checked')?.value || "";
+    const imageValue = image.value.trim();
+    const priceValue = parseFloat(price.value.trim());
+    const descriptionValue = description.value.trim();
+    const categoryValue = category.value.trim();
+    const sizeValue = size.value.trim();
+    const colorValue = color.value.trim();
 
+    // Obtener productos actuales y calcular nuevo ID
+    const Arrayproducts = getProducts();
+    const newId = Arrayproducts.length > 0 ? Math.max(...Arrayproducts.map(p => p.id)) + 1 : 1;
+
+    // Agregar el nuevo producto
+    const newProduct = addProduct(
+      newId,
+      titleValue,
+      marcaValue,
+      petTypeValue,
+      imageValue,
+      priceValue,
+      descriptionValue,
+      categoryValue,
+      colorValue,
+      sizeValue
+    );
+
+    console.log("Nuevo producto agregado:", newProduct);
+    console.log("Productos actualizados:", getProducts());
+
+    // Guardar el JSON actualizado en localStorage
+    localStorage.setItem('productos', JSON.stringify(getProducts()));
+
+    form.classList.add('was-validated');
   });
 });
 
-/* Funcion para el cambio de categoria */
+/* Funcion para habilitar o desabilitar las categorias */
 function habilitarInputs() {
   const seleccion = document.getElementById("category").value;
   const size = document.getElementById("size");
   const color = document.getElementById("color");
 
-
-    /* El codigo se puede refactorizar de la forma */
-
-    if (seleccion === "Alimento" || seleccion === "Medicamento") {
-      // Para "Alimento" y "Medicamento" mostrar size y ocultar color
-      size.classList.remove("hidden"); // Mostrar size
-      size.disabled = false;          // Habilitar size
-      color.classList.add("hidden");   // Ocultar color
-      color.disabled = true;           // Deshabilitar color
-    } else if (seleccion === "Accesorios" || seleccion === "Ropa" || seleccion === "Juguetes") {
-      // Para "Accesorios", "Ropa" y "Juguetes": mostrar color y ocultar size
-      color.classList.remove("hidden"); // Mostrar color
-      color.disabled = false;           // Habilitar color
-      size.classList.add("hidden");     // Ocultar size
-      size.disabled = true;             // Deshabilitar size
-    } else {
-      // Si no se selecciona ninguna opción válida:
-      size.classList.add("hidden");     // Ocultar size
-      size.disabled = true;             // Deshabilitar size
-      color.classList.add("hidden");    // Ocultar color
-      color.disabled = true;            // Deshabilitar color
-    }
+  if (seleccion === "Alimento" || seleccion === "Medicamento") {
+    size.disabled = false;
+    color.disabled = true;
+  } else if (seleccion === "Accesorios" || seleccion === "Ropa" || seleccion === "Juguetes") {
+    size.disabled = true;
+    color.disabled = false;
+  } else {
+    size.disabled = true;
+    color.disabled = true;
   }
-
-
-/* Funcion para enviar la informacion del Json */
-const titleValue = document.getElementById("title").value.trim();
-const marcaValue = document.getElementById("marca").value.trim();
-const petTypeValue = document.querySelector('input[name="Tipo_de_mascota"]:checked')?.value;
-const imageValue = document.getElementById("image").value.trim();
-const priceValue = document.getElementById("price").value.trim();
-const descriptionValue = document.getElementById("description").value.trim();
-const categoryValue = document.getElementById("category").value.trim();
-const sizeValue = document.getElementById("size").value.trim();
-const colorValue = document.getElementById("color").value.trim();
-
-// Validación de campos
-if (!titleValue || !marcaValue || !petTypeValue || !imageValue || !priceValue || !descriptionValue || !categoryValue || !sizeValue || !colorValue) {
-  alert("Por favor, completa todos los campos.");
-  return;
 }
-
-// Generar un ID único para el nuevo producto
-const newId = Arrayproducts.length > 0 ? Math.max(...Arrayproducts.map(p => p.id)) + 1 : 1;
-
-// Crear el nuevo producto
-const newProduct = addProduct(
-  newId, titleValue, marcaValue, petTypeValue, imageValue, priceValue, descriptionValue,
-  categoryValue, colorValue, sizeValue
-);
-
-// Obtener los productos actuales desde localStorage y agregar el nuevo producto
-const products = JSON.parse(localStorage.getItem('productos')) || [];
-products.push(newProduct);  // Agregar el nuevo producto al array
-
-// Guardar el array actualizado en localStorage
-localStorage.setItem('productos', JSON.stringify(products));
