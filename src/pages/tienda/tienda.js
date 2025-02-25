@@ -1,5 +1,7 @@
 const $seccionCards = document.getElementById("seccion-cards");
 const $resultadosProductos = document.getElementById("resultados-productos");
+const counterProductsToShow = document.getElementById("counterProductsToShow");
+
 const insertCarruselMasPopulares = () => {
   const seccionCarrusel = document.getElementById("seccionCarrusel");
   seccionCarrusel.innerHTML = `
@@ -119,6 +121,7 @@ fetch("/public/json/productos.json")
       .map((card) => createCards(card))
       .join("");
     $resultadosProductos.textContent = productos.length;
+    counterProductsToShow.textContent = productos.length;
     console.log($resultadosProductos);
   });
 
@@ -135,19 +138,25 @@ const filterProductsByPetType = (petType) => {
     });
 };
 
-const filterProductsByCategory = (category, counter) => {
+const filterProductsByBrandAndCategory = (selectedBrands, selectedCategories /* counter */) => {
   fetch("/public/json/productos.json")
-    .then((products) => products.json())
+    .then((response) => response.json())
     .then((products) => {
-      const productsToShow = products.filter(
-        (product) => product.category === category
+      // Filtrar productos por marcas y categorías seleccionadas
+      const productsToShow = products.filter( product =>
+        selectedBrands.includes(product.marca) || selectedCategories.includes(product.category)
       );
+
+      // Sección de tarjetas con productos filtrados
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
-      counter.textContent = productsToShow.length;
+      // Actualizar el contador con el número de productos filtrados
+      //counter.textContent = productsToShow.length;
+      counterProductsToShow.textContent = productsToShow.length;
     });
 };
+
 const catsButton = document.getElementsByClassName("Gatos");
 const dogsButton = document.getElementsByClassName("Perros");
 const birdsButton = document.getElementsByClassName("Aves");
@@ -193,37 +202,25 @@ otherButton[1].addEventListener("click", () => {
   filterProductsByPetType("Otros");
 });
 
-const accesoriesButton = document.getElementsByClassName("accesories");
-const clothesButton = document.getElementsByClassName("clothes");
-const foodButton = document.getElementsByClassName("food");
-const toysButton = document.getElementsByClassName("toys");
-const medicinesButton = document.getElementsByClassName("medicines");
+const categoryCheck = document.getElementsByClassName("category");
+const categoryCounter = document.getElementsByClassName("categoryCounter");
+let selectedCategories = [];
 
-const accesoriesCounter = document.getElementsByClassName("accesoriesCounter");
-const clothesCounter = document.getElementsByClassName("clothesCounter");
-const foodCounter = document.getElementsByClassName("foodCounter");
-const toysCounter = document.getElementsByClassName("toysCounter");
-const medicinesCounter = document.getElementsByClassName("medicinesCounter");
+Array.from(categoryCheck).forEach((checkbox, index) => {
+  checkbox.addEventListener("change", () => {
+    const categoryName = checkbox.value;
+    const counter = categoryCounter[index];
 
-accesoriesButton[0].addEventListener("click", () => {
-  if (accesoriesButton[0].checked)
-    filterProductsByCategory("Accesorios", accesoriesCounter[0]);
-});
-clothesButton[0].addEventListener("click", () => {
-  if (clothesButton[0].checked)
-    filterProductsByCategory("Ropa", clothesCounter[0]);
-});
-toysButton[0].addEventListener("click", () => {
-  if (toysButton[0].checked)
-    filterProductsByCategory("Juguetes", toysCounter[0]);
-});
-foodButton[0].addEventListener("click", () => {
-  if (foodButton[0].checked)
-    filterProductsByCategory("Alimento", foodCounter[0]);
-});
-medicinesButton[0].addEventListener("click", () => {
-  if (medicinesButton[0].checked)
-    filterProductsByCategory("Medicamentos", medicinesCounter[0]);
+    if (checkbox.checked) {
+      // Si está seleccionado
+      selectedCategories.push(categoryName);
+    } else {
+      // Si está desmarcado
+      selectedCategories = selectedCategories.filter((brand) => brand !== categoryName);
+    }
+    // Productos según las marcas
+    filterProductsByBrandAndCategory( selectedBrands, selectedCategories );
+  });
 });
 
 //Seccion de filtrado por precio
@@ -369,4 +366,4 @@ Array.from(brandCheck).forEach((checkbox, index) => {
 });
 
 // Llamar a la función para cargar las marcas seleccionadas al inicio
-filterProductsByMarca(selectedBrands, brandCounter[0]);
+//filterProductsByMarca(selectedBrands, brandCounter[0]);
