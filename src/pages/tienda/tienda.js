@@ -233,54 +233,63 @@ medicinesButton[0].addEventListener("click", () => {
 
 /* FILTRADO POR MARCAS */
 // Función para filtrar productos por marca
-const filterProductsByMarca = (selectedBrands, counter) => {
+const filterProductsByMarca = () => {
   fetch("/public/json/productos.json")
     .then((response) => response.json())
     .then((products) => {
-      // Filtrar productos por marcas seleccionadas
+      // Filtrar productos de todas las marcas seleccionadas
       const productsToShow = products.filter((product) =>
         selectedBrands.includes(product.marca)
       );
 
-      // Sección de tarjetas con productos filtrados
+      // Mostrar productos de las marcas seleccionadas
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
-      // Actualizar el contador con el número de productos filtrados
-      counter.textContent = productsToShow.length;
+
+      // Actualizar los contadores de cada checkbox
+      Array.from(brandCheck).forEach((checkbox, index) => {
+        const brandName = checkbox.value;
+        const counter = brandCounter[index];
+
+        // Contar productos de cada marca individualmente
+        const count = products.filter(
+          (product) => product.marca === brandName
+        ).length;
+
+        // Si la marca está seleccionada, mostrar la cantidad; si no, dejar en 0
+        counter.textContent = selectedBrands.includes(brandName) ? count : 0;
+      });
     });
 };
 
-// Funcion filtrado de precios
-
-filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
-
-// Para checkbox
+// Obtener checkboxes y contadores
 const brandCheck = document.getElementsByClassName("brand");
-// Para contadores
 const brandCounter = document.getElementsByClassName("brandCounter");
 
-// Para aplicar funcion
+// Estado de marcas seleccionadas
 let selectedBrands = [];
 
-// Cambio para cada checkbox de marca
-Array.from(brandCheck).forEach((checkbox, index) => {
+// Evento para cada checkbox
+Array.from(brandCheck).forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
     const brandName = checkbox.value;
-    const counter = brandCounter[index];
 
     if (checkbox.checked) {
-      // Si está seleccionado
       selectedBrands.push(brandName);
     } else {
-      // Si está desmarcado
       selectedBrands = selectedBrands.filter((brand) => brand !== brandName);
     }
 
-    // Productos según las marcas
-    filterProductsByMarca(selectedBrands, counter);
+    // Actualizar productos y contadores de todas las marcas seleccionadas
+    filterProductsByMarca();
   });
 });
 
-// Llamar a la función para cargar las marcas seleccionadas al inicio
-filterProductsByMarca(selectedBrands, brandCounter[0]);
+// Inicializar contadores en 0
+Array.from(brandCounter).forEach((counter) => {
+  counter.textContent = 0;
+});
+
+// Cargar productos al inicio
+filterProductsByMarca();
