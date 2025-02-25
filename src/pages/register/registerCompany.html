@@ -38,8 +38,8 @@
 
                     <div class=" container mx-auto shadow-lg border rounded-3 mb-4 form-container">
 
-                        <form class="container p-4 needs-validation" novalidate>
-
+                        <form id="localRegister" class="container p-4 needs-validation" novalidate>
+                            <a href="/src/pages/login/login_admi.html">Volver</a>
                             <div class="mt-2 text-center secciones-registro">Datos de la tienda</div>
 
                             <!-- Nombre de la tienda -->
@@ -55,10 +55,10 @@
                             <div class="mb-3">
                                 <label for="descripcionTienda">Descripción</label>
                                 <textarea class="form-control" id="descripcionTienda" rows="3" minlength="50"
-                                    maxlength="250" placeholder="Mínimo 50 caracteres y máximo 250 caracteres"
+                                    maxlength="250" placeholder="Mínimo 20 caracteres y máximo 250 caracteres"
                                     required></textarea>
                                 <div class="valid-feedback"></div>
-                                <div class="invalid-feedback">Por favor, ingresa una descripción válida entre 50 y 250
+                                <div class="invalid-feedback">Por favor, ingresa una descripción válida entre 20 y 250
                                     caracteres</div>
                             </div>
 
@@ -129,7 +129,7 @@
                                     <input type="text" class="form-control" id="City" minlength="7" maxlength="17"
                                         placeholder="Ciudad de México" required>
                                     <div class="valid-feedback"></div>
-                                    <div class="invalid-feedback">Mínimo 50 caracteres y máximo 250 caracteres.</div>
+                                    <div class="invalid-feedback">Mínimo 7 caracteres y máximo 250 caracteres.</div>
                                 </div>
 
                                 <!-- Estado -->
@@ -183,16 +183,34 @@
                                 <label for="nombreCompleto" class="form-label">Nombre completo </label>
                                 <div class="row row-cols-1 row-cols-md-3">
                                     <div class="col mb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre(s)" minlength="2"
+                                        <input id="name" type="text" class="form-control" placeholder="Nombre(s)" minlength="2"
                                             maxlength="35" required>
                                     </div>
                                     <div class="col mb-3">
-                                        <input type="text" class="form-control" placeholder="Apellido paterno"
+                                        <input id="last-name" type="text" class="form-control" placeholder="Apellido paterno"
                                             minlength="2" maxlength="35" required>
                                     </div>
                                     <div class="col mb-3">
                                         <input type="text" class="form-control" placeholder="Apellido materno"
                                             minlength="2" maxlength="35" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <div class="d-flex">
+                                    <input type="password" class="form-control w-75" id="password" name="password"
+                                        pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}"
+                                        placeholder="Mín 8 dígitos, 1 mayúscula, 1 número, 1 especial (!@#$%^&*)"
+                                        required>
+                                    <button type="button" class="btn btn-light button-password" id="togglePassword">
+                                        Mostrar
+                                    </button>
+                                    <div class="invalid-feedback">
+                                        Por favor, introduce una contraseña de mínimo 8 dígitos que contenga minúsculas,
+                                        1
+                                        mayúscula, 1 número y 1 caracter especial (!@#$%^&*)
                                     </div>
                                 </div>
                             </div>
@@ -230,7 +248,7 @@
                                 <label for="URL">URL del sitio web o tienda en línea (si
                                     aplica)</label>
                                 <input type="url" class="form-control" id="URL" name="URL"
-                                    placeholder="https://www.ejemplo.com" required>
+                                    placeholder="https://www.ejemplo.com">
                             </div>
 
                             <!-- Políticas de envío y devoluciones -->
@@ -296,6 +314,8 @@
     <script type="module" src="/src/modules/nav/nav.js"></script>
     <script type="module" src="/src/pages/formulario/Form.js"></script>
     <script src="/src/modules/user/userLogin.js"></script>
+    <script src="/src/pages/register/localStorageSeller.js" ></script>
+    <script src="/src/pages/login/login.js" ></script>
 
 </body>
 

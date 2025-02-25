@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttonUser = document.getElementById("btn-user");
   const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
+  const sessionActive = sessionStorage.getItem("sessionActive");
 
   if (usuarioGuardado.name) {
     buttonUser.innerHTML = `
