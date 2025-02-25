@@ -1,6 +1,6 @@
 const $seccionCards = document.getElementById("seccion-cards2");
 const createCards = (producto) => {
-    console.log(`menos${producto.id}`);
+    //console.log(`menos${producto.id}`);
     return `
 
 
@@ -27,7 +27,7 @@ const createCards = (producto) => {
     <!-- Botones -->
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-primary modal-btn menos${producto.id}" id="menos1"><strong>-</strong></button>
+                        <button type="button" class="btn btn-primary modal-btn menos${producto.id}" id="menos${producto.id}"><strong>-</strong></button>
                         <button type="button" class="btn btn-primary modal-btn mas" id="mas${producto.id}"><strong>+</strong></button>
                     </div>
                     <div class="btn-group me-2" role="group" aria-label="Fourth group">
