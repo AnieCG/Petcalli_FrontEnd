@@ -1,5 +1,9 @@
+import { addProduct, getJson, getProducts } from "../tienda/funcionesAdmin.js";
+
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("formProduct");
+  
+ 
 
   form.addEventListener("submit", (event) => {
     let isValid = true;
@@ -166,3 +170,20 @@ function habilitarInputs() {
 
 
 /* Funcion para enviar la informacion del Json */
+const titleValue = document.getElementById("title").value.trim();
+const marcaValue = document.getElementById("marca").value.trim();
+const petTypeValue = document.querySelectorAll('input[name="Tipo_de_mascota"]:checked').value;
+const imageValue = document.getElementById("image").value.trim();
+const priceValue = document.getElementById("price").value.trim();
+const descriptionValue = document.getElementById("description").value.trim();
+const categoryValue = document.getElementById("category").value.trim();
+const sizeValue = document.getElementById("size").value.trim();
+const colorValue = document.getElementById("color").value.trim();
+// Generar un ID único para el nuevo producto
+const newId = Arrayproducts.length > 0 ? Math.max(...Arrayproducts.map(p => p.id)) + 1 : 1;
+
+const newProduct = addProduct (
+  newId, titleValue, marcaValue, petTypeValue, imageValue, priceValue, descriptionValue,
+  categoryValue, categoryValue, colorValue, sizeValue
+);
+localStorage.setItem('productos', JSON.stringify(getProducts()));

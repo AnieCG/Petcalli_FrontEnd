@@ -139,3 +139,6 @@ getJson("/public/json/productos.json").then(() => {
   );
   console.log(getProducts());
 });
+export{
+  addProduct, getJson, getProducts, deleteProdut, modifyProduct
+}
