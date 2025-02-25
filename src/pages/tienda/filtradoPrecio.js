@@ -34,7 +34,14 @@ export default function filtradoPorPrecio(seccionCards, inputs, priceValue) {
             let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
             return productPrice <= maxPrice;
           });
-          return (seccionCards.innerHTML = productsToShow
+
+          const productsMayorMenor = productsToShow.sort(
+            (a, b) =>
+              parseFloat(b.price.replace(/[$,]/g, "")) -
+              parseFloat(a.price.replace(/[$,]/g, ""))
+          );
+
+          return (seccionCards.innerHTML = productsMayorMenor
             .map((card) => createCards(card))
             .join(""));
         });
