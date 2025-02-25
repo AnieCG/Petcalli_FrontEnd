@@ -33,13 +33,17 @@
                 <div class="col">
 
                     <h2 class="ps-3 text-center text-lg-start pt-3">Petcalli</h2>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a href="/src/pages/login/LoginUser.html"><img src="/public/images/flecha-regresar.png"
+                                alt="icono de flecha para regresar" class="button-getback me-3"></a>
+                        <h3 class="display-6 mt-4 mb-4 text-center rounded-pill w-50 mx-auto shadow-lg col">Registro
+                        </h3>
+                    </div>
 
-                    <h3 class="display-6 mt-4 mb-4 text-center rounded-pill w-50 mx-auto shadow-lg">Registro</h3>
 
                     <div class=" container form-container mx-auto shadow-lg rounded-3 mb-4">
 
-                        <form class="container p-4 needs-validation" action="https://formsubmit.co/kalocesa95@gmail.com"
-                            method="POST" target="_blank" novalidate>
+                        <form id="localRegister" class="container p-4 needs-validation" novalidate>
 
                             <!-- Nombre -->
                             <div class="mb-3">
@@ -52,8 +56,8 @@
 
                             <!--  Apellido-->
                             <div class="mb-3">
-                                <label for="last name" class="form-label">Apellido</label>
-                                <input type="text" class="form-control" id=apellido name="last name" minlength="2"
+                                <label for="last-name" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id=last-name name="last-name" minlength="2"
                                     maxlength="25" placeholder="Pérez" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback">Por favor, ingresa un apellido</div>
@@ -71,8 +75,8 @@
 
                             <!--teléfono  -->
                             <div class="mb-3 container__input">
-                                <label for="telefono" class="form-label">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" name="telefono"
+                                <label for="telephone" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telephone" name="telephone"
                                     pattern="[0-9]{5,10}" inputmode="numeric" placeholder="5555555555" required>
                                 <div class="valid-feedback"></div>
                                 <div class="invalid-feedback"> Introduce un número válido de 10 dígitos</div>
@@ -152,6 +156,8 @@
     <script src="/src/modules/footer/footer.js"></script>
     <script type="module" src="/src/modules/nav/nav.js"></script>
     <script src="/src/pages/formulario/Form.js"></script>
+    <script src="/src/pages/register/localStorage.js"></script>
+    <script src="/src/modules/user/userLogin.js"></script>
 
 </body>
 

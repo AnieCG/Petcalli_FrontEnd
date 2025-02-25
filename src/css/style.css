@@ -23,13 +23,17 @@ Recuerden que para llamarlas en el valor de la propiedad es: var(nombre de la pr
 }
 
 .navegacion {
-  max-width: 1290px;
+  max-width: 1390px;
   background-color: white;
   border-radius: 40px;
   margin: auto;
-  padding: 10px 10px;
-}
 
+  #icon-user {
+    max-width: 25px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+}
 /* Header general con todos sus selectores */
 header {
   background-size: 1920px;
@@ -55,6 +59,11 @@ header {
 
   .li-item {
     min-width: 120px;
+  }
+
+  .button-user {
+    background-color: none;
+    border: none;
   }
 }
 
