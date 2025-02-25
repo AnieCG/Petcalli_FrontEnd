@@ -1,6 +1,10 @@
+import filtradoPorPrecio from "./filtradoPrecio.js";
+
 const $seccionCards = document.getElementById("seccion-cards");
 const $resultadosProductos = document.getElementById("resultados-productos");
 const counterProductsToShow = document.getElementById("counterProductsToShow");
+const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
+const $priceValue = document.getElementsByClassName("price-value");
 
 const insertCarruselMasPopulares = () => {
   const seccionCarrusel = document.getElementById("seccionCarrusel");
@@ -113,6 +117,7 @@ const createCards = (producto) => {
 
 `;
 };
+//export{createCards};
 
 fetch("/public/json/productos.json")
   .then((productos) => productos.json())
@@ -138,7 +143,7 @@ const filterProductsByPetType = (petType) => {
     });
 };
 
-const filterProductsByBrandAndCategory = (selectedBrands, selectedCategories /* counter */) => {
+const filterProductsByBrandAndCategory = (selectedBrands, selectedCategories, brandCheck, categoryCheck) => {
   fetch("/public/json/productos.json")
     .then((response) => response.json())
     .then((products) => {
@@ -151,11 +156,37 @@ const filterProductsByBrandAndCategory = (selectedBrands, selectedCategories /* 
       $seccionCards.innerHTML = productsToShow
         .map((card) => createCards(card))
         .join("");
-      // Actualizar el contador con el número de productos filtrados
-      //counter.textContent = productsToShow.length;
+      // Actualizar los contadores de cada checkbox
+      //marca
+      Array.from(brandCheck).forEach((checkbox, index) => {
+        const brandName = checkbox.value;
+        const counter = brandCounter[index];
+
+        // Contar productos de cada marca individualmente
+        const count = products.filter(
+          (product) => product.marca === brandName
+        ).length;
+
+        // Si la marca está seleccionada, mostrar la cantidad; si no, dejar en 0
+        counter.textContent = selectedBrands.includes(brandName) ? count : 0;
+      });
+      //category
+      Array.from(categoryCheck).forEach((checkbox, index) => {
+        const categoryName = checkbox.value;
+        const counter = categoryCounter[index];
+
+        // Contar productos de cada marca individualmente
+        const count = products.filter(
+          (product) => product.category === categoryName
+        ).length;
+
+        // Si la categoria está seleccionada, mostrar la cantidad; si no, dejar en 0
+        counter.textContent = selectedCategories.includes(categoryName) ? count : 0;
+      });
+      //Muestra el numero de productos seleccionados de categoria y marca
       counterProductsToShow.textContent = productsToShow.length;
     });
-};
+}; 
 
 const catsButton = document.getElementsByClassName("Gatos");
 const dogsButton = document.getElementsByClassName("Perros");
@@ -206,11 +237,9 @@ const categoryCheck = document.getElementsByClassName("category");
 const categoryCounter = document.getElementsByClassName("categoryCounter");
 let selectedCategories = [];
 
-Array.from(categoryCheck).forEach((checkbox, index) => {
+Array.from(categoryCheck).forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
     const categoryName = checkbox.value;
-    const counter = categoryCounter[index];
-
     if (checkbox.checked) {
       // Si está seleccionado
       selectedCategories.push(categoryName);
@@ -219,151 +248,42 @@ Array.from(categoryCheck).forEach((checkbox, index) => {
       selectedCategories = selectedCategories.filter((brand) => brand !== categoryName);
     }
     // Productos según las marcas
-    filterProductsByBrandAndCategory( selectedBrands, selectedCategories );
+    filterProductsByBrandAndCategory( selectedBrands, selectedCategories, brandCheck, categoryCheck );
   });
 });
+Array.from(categoryCounter).forEach((counter) => {
+  counter.textContent = 0;
+});
 
-//Seccion de filtrado por precio
-const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
-const $priceValue = document.getElementsByClassName("price-value");
-
-Array.from($inputFiltradoPrecios).forEach((input, index) => {
-  input.addEventListener("input", function () {
-    let maxPrice = parseInt(this.value);
-    Array.from($priceValue)[index].textContent = `$ ${maxPrice}`;
-    console.log(Array.from($priceValue)[index]);
-
-    fetch("/public/json/productos.json")
-      .then((products) => products.json())
-      .then((products) => {
-        const productsToShow = products.filter((product) => {
-          let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
-          return productPrice <= maxPrice;
-        });
-        $seccionCards.innerHTML = productsToShow
-          .map((card) => createCards(card))
-          .join("");
-      });
-  });
-});
-// Seccion de filtrado por tags
-
-//      Botones de los tags
-const tagJuguetes = document.getElementById("tagjuguetes");
-const tagAlimento = document.getElementById("tagAlimento");
-const tagNatural = document.getElementById("tagNatural");
-const tagSalmón = document.getElementById("tagSalmón");
-const tagCatnip = document.getElementById("tagCatnip");
-const tagArnés = document.getElementById("tagArnés");
-const tagCachorro = document.getElementById("tagCachorro");
-const tagRueda = document.getElementById("tagRueda");
-
-//     Funcion que me selecciona crea una lista
-function lista(url) {
-  ///"public/json/productos.json"
-  let listaDeTodo = [];
-  fetch(url)
-    .then((productos) => productos.json())
-    .then((productos) => {
-      listaDeTodo.unshift(productos);
-    });
-  return listaDeTodo;
-}
-
-const listaProductos = lista("/public/json/productos.json");
-//console.log(listaProductos);
-
-// funcion que filtrado
-const filtroTag = (tag, lista = []) => {
-  let listaFiltrada = lista.filter(
-    (product) =>
-      product.description.includes(tag) ||
-      product.title.includes(tag) ||
-      product.category.includes(tag)
-  );
-  return listaFiltrada;
-};
-
-//   Acciones de los tags
-tagJuguetes.addEventListener("click", () => {
-  let juguetes = filtroTag("Juguetes", listaProductos[0]);
-  $seccionCards.innerHTML = juguetes.map((card) => createCards(card)).join("");
-});
-tagAlimento.addEventListener("click", () => {
-  let tag = filtroTag("Alimento", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagNatural.addEventListener("click", () => {
-  let tag = filtroTag("Natural", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagSalmón.addEventListener("click", () => {
-  let tag = filtroTag("Salm", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagCatnip.addEventListener("click", () => {
-  let tag = filtroTag("Catnip", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagArnés.addEventListener("click", () => {
-  let tag = filtroTag("Arn", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagCachorro.addEventListener("click", () => {
-  let tag = filtroTag("Cachorro", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
-tagRueda.addEventListener("click", () => {
-  let tag = filtroTag("Rueda", listaProductos[0]);
-  $seccionCards.innerHTML = tag.map((card) => createCards(card)).join("");
-});
+/*FILTRADO POR PRECIO */
+filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
 
 /* FILTRADO POR MARCAS */
-// Función para filtrar productos por marca
-const filterProductsByMarca = (selectedBrands, counter) => {
-  fetch("/public/json/productos.json")
-    .then((response) => response.json())
-    .then((products) => {
-      // Filtrar productos por marcas seleccionadas
-      const productsToShow = products.filter((product) =>
-        selectedBrands.includes(product.marca)
-      );
-
-      // Sección de tarjetas con productos filtrados
-      $seccionCards.innerHTML = productsToShow
-        .map((card) => createCards(card))
-        .join("");
-      // Actualizar el contador con el número de productos filtrados
-      counter.textContent = productsToShow.length;
-    });
-};
-
-// Para checkbox
+// Obtener checkboxes y contadores
 const brandCheck = document.getElementsByClassName("brand");
-// Para contadores
 const brandCounter = document.getElementsByClassName("brandCounter");
 
-// Para aplicar funcion
+// Estado de marcas seleccionadas
 let selectedBrands = [];
 
-// Cambio para cada checkbox de marca
-Array.from(brandCheck).forEach((checkbox, index) => {
+// Evento para cada checkbox
+Array.from(brandCheck).forEach((checkbox) => {
   checkbox.addEventListener("change", () => {
     const brandName = checkbox.value;
-    const counter = brandCounter[index];
 
     if (checkbox.checked) {
-      // Si está seleccionado
       selectedBrands.push(brandName);
     } else {
-      // Si está desmarcado
       selectedBrands = selectedBrands.filter((brand) => brand !== brandName);
     }
 
-    // Productos según las marcas
-    filterProductsByMarca(selectedBrands, counter);
+    // Actualizar productos y contadores de todas las marcas seleccionadas
+    filterProductsByBrandAndCategory( selectedBrands, selectedCategories, brandCheck, categoryCheck );
   });
 });
 
-// Llamar a la función para cargar las marcas seleccionadas al inicio
-//filterProductsByMarca(selectedBrands, brandCounter[0]);
+// Inicializar contadores en 0
+Array.from(brandCounter).forEach((counter) => {
+  counter.textContent = 0;
+});
+

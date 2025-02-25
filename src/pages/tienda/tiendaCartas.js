@@ -1,5 +1,6 @@
 const $seccionCards = document.getElementById("seccion-cards2");
 const createCards = (producto) => {
+    console.log(`menos${producto.id}`);
     return `
 
 
@@ -26,8 +27,8 @@ const createCards = (producto) => {
     <!-- Botones -->
                 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-primary modal-btn mas-menos"><strong>-</strong></button>
-                        <button type="button" class="btn btn-primary modal-btn mas-menos"><strong>+</strong></button>
+                        <button type="button" class="btn btn-primary modal-btn menos${producto.id}" id="menos1"><strong>-</strong></button>
+                        <button type="button" class="btn btn-primary modal-btn mas" id="mas${producto.id}"><strong>+</strong></button>
                     </div>
                     <div class="btn-group me-2" role="group" aria-label="Fourth group">
                         <span class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" id="contador${producto.image}">
@@ -39,8 +40,8 @@ const createCards = (producto) => {
                             Versión disponible
                             </button>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">${producto.category}</a></li>
-                            <li><a class="dropdown-item" href="#">N/A</a></li>
+                            <li><a class="dropdown-item" href="#">Color: ${producto.color}</a></li>
+                            <li><a class="dropdown-item" href="#">Tamaño: ${producto.size}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -73,13 +74,9 @@ fetch("/public/json/productos.json")
         $seccionCards.innerHTML = productos
             .map((card) => createCards(card))
             .join("");
+        
     });
 
 
-/* const contadorPiezas = document.getElementById(`contador${producto.image}`);
-let contadorIndividual = 0;
 
-const controlarContador = ( ) =>{
-    contadorIndividual ++;
-    contadorPiezas.textContent = contadorIndividual;
-}; */
+    
