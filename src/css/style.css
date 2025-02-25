@@ -178,6 +178,14 @@ footer {
   max-width: 300px;
 }
 
+.product {
+  transition: transform 0.5s;
+}
+
+.product:hover {
+  transform: scale(1.2);
+}
+
 .title-product {
   font-family: var(--font_subtitle);
   overflow: hidden;
@@ -197,6 +205,14 @@ footer {
 
 .title-pet {
   font-family: var(--font_subtitle);
+}
+
+.new {
+  transition: transform 0.5s;
+}
+
+.new:hover {
+  transform: scale(1.2);
 }
 
 .link-news {
