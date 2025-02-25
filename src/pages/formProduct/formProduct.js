@@ -172,18 +172,32 @@ function habilitarInputs() {
 /* Funcion para enviar la informacion del Json */
 const titleValue = document.getElementById("title").value.trim();
 const marcaValue = document.getElementById("marca").value.trim();
-const petTypeValue = document.querySelectorAll('input[name="Tipo_de_mascota"]:checked').value;
+const petTypeValue = document.querySelector('input[name="Tipo_de_mascota"]:checked')?.value;
 const imageValue = document.getElementById("image").value.trim();
 const priceValue = document.getElementById("price").value.trim();
 const descriptionValue = document.getElementById("description").value.trim();
 const categoryValue = document.getElementById("category").value.trim();
 const sizeValue = document.getElementById("size").value.trim();
 const colorValue = document.getElementById("color").value.trim();
+
+// Validación de campos
+if (!titleValue || !marcaValue || !petTypeValue || !imageValue || !priceValue || !descriptionValue || !categoryValue || !sizeValue || !colorValue) {
+  alert("Por favor, completa todos los campos.");
+  return;
+}
+
 // Generar un ID único para el nuevo producto
 const newId = Arrayproducts.length > 0 ? Math.max(...Arrayproducts.map(p => p.id)) + 1 : 1;
 
-const newProduct = addProduct (
+// Crear el nuevo producto
+const newProduct = addProduct(
   newId, titleValue, marcaValue, petTypeValue, imageValue, priceValue, descriptionValue,
-  categoryValue, categoryValue, colorValue, sizeValue
+  categoryValue, colorValue, sizeValue
 );
-localStorage.setItem('productos', JSON.stringify(getProducts()));
+
+// Obtener los productos actuales desde localStorage y agregar el nuevo producto
+const products = JSON.parse(localStorage.getItem('productos')) || [];
+products.push(newProduct);  // Agregar el nuevo producto al array
+
+// Guardar el array actualizado en localStorage
+localStorage.setItem('productos', JSON.stringify(products));
