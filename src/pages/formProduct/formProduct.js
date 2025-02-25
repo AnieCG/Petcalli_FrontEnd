@@ -108,43 +108,7 @@ function habilitarInputs() {
   const size = document.getElementById("size");
   const color = document.getElementById("color");
 
- /*  if (seleccion === "Accesorios") {
-    color.disabled = false;
-    size.disabled = false;
-  } else {
-    color.disabled =true;
-    size.disabled = true;
-  }
-  if (seleccion === "Ropa") {
-    color.disabled = false;
-    size.disabled = false;
-  } else {
-    color.disabled = true;
-    size.disabled = true;
-  }
-  if (seleccion === "Alimento") {
-    color.disabled = false;
-    size.disabled = false;
-  } else {
-    color.disabled = true;
-    size.disabled = true;
-  }
 
-  if (seleccion === "Juguetes") {
-    color.disabled = false;
-    size.disabled = false;
-  } else {
-    color.disabled = true;
-    size.disabled = true;
-  }
-  if (seleccion === "Medicamento") {
-    color.disabled = false ;
-    size.disabled = false;
-  } else {
-    color.disabled = true; 
-    size.disabled = true;
-  } */
-  
     /* El codigo se puede refactorizar de la forma */
 
     if (seleccion === "Alimento" || seleccion === "Medicamento") {
