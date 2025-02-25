@@ -14,6 +14,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="stylesheet" href="./src/pages/about/about.css" />
+  <link rel="stylesheet" href="./src/pages/about/tienda.css" />
+  
 </head>
 
 <body>
@@ -22,7 +24,107 @@
 
   </header>
 
-  <main class="pt-5"></main>
+
+  </section>
+  <section class="categories mt-2">
+    <div id="carousel-categories" class="carousel slide-fade" data-bs-ride="carousel">
+      <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
+        <br />
+        <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
+
+        <button class="rounded-circle carousel-control-next " type="button" data-bs-target="#carousel-categories"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
+          <span class="visually-hidden ">Siguiente</span>
+        </button>
+        <button class="rounded-circle carousel-control-prev " type="button" data-bs-target="#carousel-categories"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
+          <span class="visually-hidden ">Anterior</span>
+        </button>
+
+        <div class="carousel-inner">
+          <!-- Primer Seccion -->
+
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto"> <!-- style="background-color: red;" -->
+                  <button class="border border-0 mx-auto carrusel-btn" id="accesories">
+                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets "
+                      alt="iguana con lentes">
+                    <div class="card-body"> <!-- style="background-color: yellowgreen;" -->
+                      <h5 class="card-title text-center">Accesorios</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="clothes">
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets " alt="Conejo con vestido">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Ropa</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0 ">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="food">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets "
+                      alt="cobayas comiendo">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Alimento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Fin de la primer seccion -->
+
+          <div class="carousel-item ">
+
+            <div class="row">
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="toys">
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets "
+                      alt="Perro con juguete">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Juguetes</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="medicine">
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets "
+                      alt="Foto de perrito">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Medicamento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+ 
+
+
   <footer id="footer">
     <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
   </footer>
@@ -34,5 +136,8 @@
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/pages/servicios/servicios.html"></script>
 </body>
+
+
+
 
 </html>
