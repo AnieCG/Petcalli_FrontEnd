@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
   const sessionActive = sessionStorage.getItem("sessionActive");
 
-  if (usuarioGuardado.name) {
+  if (usuarioGuardado && usuarioGuardado.name) {
     buttonUser.innerHTML = `
     <div class="btn-group">
       <a href="/src/pages/login/loginUser.html">
@@ -17,12 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </ul>
     </div>`;
 
-
-
     document.getElementById("logout").addEventListener("click", function () {
-      localStorage.removeItem("user"); 
-      window.location.href = "/Index.html"; 
-  });
-}
+      localStorage.removeItem("user");
+      window.location.href = "/Index.html";
+    });
+  }
 });
-
