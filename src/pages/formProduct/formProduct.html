@@ -22,7 +22,16 @@ rel="stylesheet" />
     <h3 class="display-5 text-center fw-bold mb-5 pt-5">Nuevo Producto</h3>
     <form id="formProduct" class="contact_form container p-4 border rounded-5 needs-validation" action="" method="POST" target="_blank"
       novalidate>
-    
+      <div class="mb-3 container__input">
+
+        <label for="productId" class="form-label">ID del producto</label>
+
+        <input type="number" class="form-control" id="productId" placeholder="Ingresa el ID del producto que deseas eliminar o modificar" min="0" required>
+
+        <div class="invalid-feedback">Debes indicar el ID del producto</div>
+
+      </div>
+
       <div class="mb-3 container__input">
         <label for="title" class="form-label">Nombre del producto</label>
         <input type="text hidden" class="form-control" id="title" name="producto" aria-describedby="titleHelp" placeholder="Ingresa un nombre Ej: PetGuard" required>
@@ -115,7 +124,16 @@ rel="stylesheet" />
             <div class="invalid-feedback">Debes indicar el color</div>
           </div>
 
-        <button type="submit" class="btn btn-primary">Guardar</button>
+          <div class="d-flex flex-column flex-md-row justify-content-center mt-3">
+
+            <button type="submit" class="btn btn-primary mb-2 mb-md-0 me-md-2">Guardar Producto</button>
+        
+            <button type="button" id="modifyButton" class="btn btn-warning mb-2 mb-md-0 me-md-2">Modificar Producto</button>
+        
+            <button type="button" id="deleteButton" class="btn btn-danger">Eliminar Producto</button>
+        
+        </div>
+
       </form>
 </section>
 </main>

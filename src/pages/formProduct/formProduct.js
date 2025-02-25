@@ -1,4 +1,4 @@
-import { addProduct, getJson, getProducts } from "../tienda/funcionesAdmin.js";
+import { addProduct, deleteProdut, getJson, getProducts, modifyProduct } from "../tienda/funcionesAdmin.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   const form = document.getElementById("formProduct");
@@ -139,6 +139,58 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     form.classList.add('was-validated');
   });
+});
+// Ejemplo de botón para modificar un producto
+
+document.getElementById("modifyButton").addEventListener("click", () => {
+
+  const idToModify = parseInt(document.getElementById("productId").value);
+
+  const updatedProduct = {
+
+    title: document.getElementById("title").value.trim(),
+
+    marca: document.getElementById("marca").value.trim(),
+
+    petType: document.querySelector('input[name="Tipo_de_mascota"]:checked')?.value || "",
+
+    image: document.getElementById("image").value.trim(),
+
+    price: parseFloat(document.getElementById("price").value.trim()),
+
+    description: document.getElementById("description").value.trim(),
+
+    category: document.getElementById("category").value.trim(),
+
+    color: document.getElementById("color").value.trim(),
+
+    size: document.getElementById("size").value.trim(),
+
+  };
+
+  const modifiedProduct = modifyProduct(idToModify, ...Object.values(updatedProduct));
+
+  console.log("Producto modificado:", modifiedProduct);
+
+  console.log("Productos actualizados:", getProducts());
+  alert ("El producto fue modificado correctamente")
+
+});
+
+// Eliminar producto
+
+document.getElementById("deleteButton").addEventListener("click", () => {
+
+  const idToDelete = parseInt(document.getElementById("productId").value);
+
+  const deletedProduct = deleteProdut(idToDelete);
+
+  console.log("Producto eliminado:", deletedProduct);
+
+  console.log("Productos restantes:", getProducts());
+
+  alert ("El producto fue eliminado correctamente")
+
 });
 
 /* Funcion para habilitar o desabilitar las categorias */
