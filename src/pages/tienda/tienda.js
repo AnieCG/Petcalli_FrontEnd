@@ -1,5 +1,9 @@
+import filtradoPorPrecio from "./filtradoPrecio.js";
+
 const $seccionCards = document.getElementById("seccion-cards");
 const $resultadosProductos = document.getElementById("resultados-productos");
+const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
+const $priceValue = document.getElementsByClassName("price-value");
 const insertCarruselMasPopulares = () => {
   const seccionCarrusel = document.getElementById("seccionCarrusel");
   seccionCarrusel.innerHTML = `
@@ -227,31 +231,6 @@ medicinesButton[0].addEventListener("click", () => {
     filterProductsByCategory("Medicamentos", medicinesCounter[0]);
 });
 
-//Seccion de filtrado por precio
-const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
-const $priceValue = document.getElementsByClassName("price-value");
-
-Array.from($inputFiltradoPrecios).forEach((input, index) => {
-  input.addEventListener("input", function () {
-    let maxPrice = parseInt(this.value);
-    Array.from($priceValue)[index].textContent = `$ ${maxPrice}`;
-    console.log(Array.from($priceValue)[index]);
-
-    fetch("/public/json/productos.json")
-      .then((products) => products.json())
-      .then((products) => {
-        const productsToShow = products.filter((product) => {
-          let productPrice = parseFloat(product.price.replace(/[$,]/g, ""));
-          return productPrice <= maxPrice;
-        });
-        $seccionCards.innerHTML = productsToShow
-          .map((card) => createCards(card))
-          .join("");
-      });
-  });
-});
-
-
 /* FILTRADO POR MARCAS */
 // Función para filtrar productos por marca
 const filterProductsByMarca = (selectedBrands, counter) => {
@@ -271,6 +250,10 @@ const filterProductsByMarca = (selectedBrands, counter) => {
       counter.textContent = productsToShow.length;
     });
 };
+
+// Funcion filtrado de precios
+
+filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
 
 // Para checkbox
 const brandCheck = document.getElementsByClassName("brand");
