@@ -1,0 +1,12 @@
+.hidden {
+    display: none;
+}
+.form-product {
+    font-family: var(--font_text);
+}
+
+h3 {
+    font-family: var(--font_subtitle);
+    color: var(--subtitle);
+}
+
