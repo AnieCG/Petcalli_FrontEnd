@@ -1,3 +1,4 @@
+const $seccionCards = document.getElementById("seccion-cards");
 const createCards = (producto) => {
     return `
       

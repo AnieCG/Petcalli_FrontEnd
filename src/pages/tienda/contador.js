@@ -1,8 +1,8 @@
-const contadorPiezasMenos = document.getElementsByClassName("menos1");
+let contadorPiezasMenos = document.getElementsByClassName("menos1");
 console.log((contadorPiezasMenos));
 let contadorIndividual = 0; //getElementsByClassName
 
-contadorPiezasMenos.addEventListener("click", ()=>{ 
+contadorPiezasMenos[0].addEventListener("click", ()=>{ 
     contadorIndividual --;
     console.log(contadorIndividual);
     console.log("Ese era mi contador");
