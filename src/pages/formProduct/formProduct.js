@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     /* Obtener y validar el precio */
     const price = document.getElementById("price");
-    if (price.value.trim() === '' || isNaN(price.value)) {
+    if (price.value.trim() === '' || isNaN(price.value) || parseFloat(price.value)<0) {
       isValid = false;
       price.classList.add("is-invalid");
     } else {
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     /* Obtener y validar el tamaño */
     const size = document.getElementById("size");
-    if (size.value.trim() === '') {
+    if (!size.disabled && size.value.trim() === '') {
       isValid = false;
       size.classList.add("is-invalid");
     } else {
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     /* Obtener y Validar el color */
     const color = document.getElementById("color");
-    if (color.value.trim() === '') {
+    if (!color.disabled && color.value.trim() === '') {
       isValid = false;
       color.classList.add("is-invalid");
     } else {
@@ -164,12 +164,5 @@ function habilitarInputs() {
     }
   }
 
-  document.getElementById("price").addEventListener("input", function() {
-    if (this.value < 0) {
-        this.setCustomValidity("El precio debe ser un número positivo.");
-    } else {
-        this.setCustomValidity("");
-    }
-});
 
 /* Funcion para enviar la informacion del Json */

@@ -11,16 +11,16 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
 rel="stylesheet" />
-<link rel="stylesheet" href="/src/css/style.css"/>
-<link rel="stylesheet" href="./formProduct.css"/>
+<link rel="stylesheet" href="/src/css/style.css" />
+<link rel="stylesheet" href="./formProduct.css">
 </head>
 
 <body>
 <header id="header" class="container-fluid"></header>
 <main>
-<section class="form-product">
+<section>
     <h3 class="display-5 text-center fw-bold mb-5 pt-5">Nuevo Producto</h3>
-    <form id="product_form" class="product_form container p-4 border rounded-5 needs-validation" action="" method="POST" target="_blank"
+    <form id="formProduct" class="contact_form container p-4 border rounded-5 needs-validation" action="" method="POST" target="_blank"
       novalidate>
     
       <div class="mb-3 container__input">
@@ -81,7 +81,7 @@ rel="stylesheet" />
     
         <div class="mb-3 container__input">
           <label for="price" class="form-label">Precio</label>
-          <input type="number" class="form-control" id="price" name="precio" placeholder="Ingresa una precio Ej: 346" required min="0" >
+          <input type="number" class="form-control" id="price" name="precio" placeholder="Ingresa una precio Ej: 346" min="0" step="any" required>
           <div class="invalid-feedback">Debes indicar el precio</div>
         </div>
     
@@ -105,7 +105,7 @@ rel="stylesheet" />
             
             <div class="mb-3 container__input">
             <label id="size-label" for="size" class="form-label">Tamaño</label>
-            <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamaño del producto" disabled required>
+            <input type="text hidden" class="form-control" id="size" name="tamaño" placeholder="Indica el tamamño del producto" disabled required>
             <div class="invalid-feedback">Debes indicar el tamaño</div>
           </div>
 
@@ -115,7 +115,7 @@ rel="stylesheet" />
             <div class="invalid-feedback">Debes indicar el color</div>
           </div>
 
-        <button type="submit" class="boton">Guardar</button>
+        <button type="submit" class="btn btn-primary">Guardar</button>
       </form>
 </section>
 </main>
