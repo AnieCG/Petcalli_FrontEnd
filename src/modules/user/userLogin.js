@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const buttonUser = document.getElementById("btn-user");
   const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
-  const sessionActive = sessionStorage.getItem("sessionActive");
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-  if (usuarioGuardado && usuarioGuardado.name) {
+
+  if (usuarioGuardado && isLoggedIn === "true" ) {
     buttonUser.innerHTML = `
     <div class="btn-group">
       <a href="/src/pages/login/loginUser.html">
@@ -19,7 +20,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("logout").addEventListener("click", function () {
       localStorage.removeItem("user");
+      localStorage.removeItem("isLoggedIn");
       window.location.href = "/Index.html";
     });
-  }
+  } 
 });

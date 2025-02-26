@@ -14,9 +14,6 @@ document
     const city = document.getElementById("City").value.trim();
     const state = document.getElementById("State").value.trim();
 
-
-
-
     const password = document.getElementById("password").value.trim();
     const user = {
       name,

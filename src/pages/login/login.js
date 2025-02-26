@@ -3,8 +3,6 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     const emailLogin = document.getElementById("email").value.trim();
     const passwordLogin = document.getElementById("password").value.trim();
-
-    // Recuperar el usuario almacenado en localStorage
     const usuarioGuardado = JSON.parse(localStorage.getItem("user"));
 
     if (!usuarioGuardado) {
@@ -17,6 +15,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
       usuarioGuardado.password === passwordLogin
     ) {
       alert("Inicio de sesión exitoso!");
+      localStorage.setItem("isLoggedIn", "true");
       window.location.href = "/Index.html";
     } else {
       alert("Email o contraseña incorrectos.");
