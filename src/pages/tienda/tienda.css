@@ -295,3 +295,22 @@ a {
     font-weight: 700;
   }
 }
+
+
+
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-item.disabled .page-link {
+  pointer-events: none;
+  color: #ccc;
+}
+

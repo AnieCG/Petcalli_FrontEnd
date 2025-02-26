@@ -722,6 +722,52 @@
 
           <div class="col-lg-8 col-md-8 col-8">
             <!-- productos -->
+
+         
+            
+
+
+            
+            
+            <!-- Contadores de productos -->
+<p class="resultados">
+  <span id="counterProductsToShow">0</span> de <span id="resultados-productos"></span> resultados mostrados
+</p>
+
+<!-- Sección donde se mostrarán los productos -->
+<div class="row row-cols-3 row-seccion-cards p-2" id="seccion-cards"></div>
+
+<!-- Paginación -->
+<nav aria-label="Page navigation example">
+  <ul class="pagination" id="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous" id="prevPage">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    
+    <!-- Los números de página se añadirán dinámicamente aquí -->
+    <li class="page-item">
+      <a class="page-link" href="#" id="pageNumber">1</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next" id="nextPage">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+            
+            
+
+          
+
+
+
+ <!--            
             <p class="resultados">
               <span id="counterProductsToShow" >0</span> de <span id="resultados-productos"></span> resultados mostrados
             </p>
@@ -730,10 +776,35 @@
               id="seccion-cards"
             ></div>
             <div id="seccion-cards2"></div>
-            <!-- modales -->
+             modales -->
+
+
+            <!-- Controles de paginación
+            <nav aria-label="Page navigation example">
+              <ul class="pagination" id="pagination">
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous" id="prevPage">
+                   <span aria-hidden="true">&laquo;</span>
+                </a>
+                </li>
+             Los números de página se añadirán dinámicamente
+                <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next" id="nextPage">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+              </ul>
+            </nav>
+
+          --> 
+
+
+
+
           </div>
         </div>
       </section>
+
       <section
         id="seccionCarrusel"
         class="d-none d-sm-block carruselMasPopulares"
@@ -763,6 +834,7 @@
       src="/src/pages/tienda/seccionCarruselMobile.js"
     ></script>
     <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+    <script src="/src/pages/tienda/paginado.js"></script>
     <script type="module" src="/src/pages/tienda/filtradoMarcaCategoria.js" ></script>
   </body>
 </html>

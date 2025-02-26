@@ -96,6 +96,8 @@ const insertCarruselMasPopulares = () => {
 };
 insertCarruselMasPopulares();
 
+// Sacarlo para acomodarlo en el js de paginado
+/*
 const createCards = (producto) => {
   return `
     
@@ -129,6 +131,7 @@ fetch("/public/json/productos.json")
     counterProductsToShow.textContent = productos.length;
     console.log($resultadosProductos);
   });
+*/
 
 const filterProductsByPetType = (petType) => {
   fetch("/public/json/productos.json")
@@ -257,6 +260,7 @@ Array.from(categoryCounter).forEach((counter) => {
 
 /*FILTRADO POR PRECIO */
 filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
+
 
 /* FILTRADO POR MARCAS */
 // Obtener checkboxes y contadores
