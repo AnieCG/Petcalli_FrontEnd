@@ -14,6 +14,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="stylesheet" href="./src/pages/about/about.css" />
+  <link rel="stylesheet" href="./src/pages/about/tienda.css" />
+  
 </head>
 
 <body>
@@ -21,6 +23,209 @@
   <header id="header" class="container-fluid">
     <nav id="navbar"></nav>
   </header>
+  <section class="categories mt-2 container-fluid">
+    <div id="carousel-categories" class="carousel slide-fade">
+      <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
+        <h2 class="subtitulo h2"><strong>Buscar por categoría</strong></h2>
+        <div class="carousel-controls d-flex justify-content-end">
+          <button class="rounded-circle carousel-control-next" type="button" data-bs-target="#carousel-categories" data-bs-slide="next">
+            <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+  
+          <button class="rounded-circle carousel-control-prev" type="button" data-bs-target="#carousel-categories" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+  </div>
+        <div class="carousel-inner">
+          <!-- Primer Seccion -->
+
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col">
+                <div class="card animal border border-0 mx-auto "> 
+                  <button class="border border-0 mx-auto carrusel-btn" id="accesories">
+                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets " 
+                      alt="iguana con lentes">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Accesorios</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="clothes">
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets " alt="Conejo con vestido">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Ropa</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0 ">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="food">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets "
+                      alt="cobayas comiendo">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Alimento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Fin de la primer seccion -->
+
+          <div class="carousel-item ">
+
+            <div class="row">
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="toys">
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets "
+                      alt="Perro con juguete">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Juguetes</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="medicine">
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets "
+                      alt="perro con medicamentos">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Medicamento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </div>
+  </section>
+
+<!--  Productos Premium -->
+<div class="col mt-2 text-center">
+  <h2 class=" h2 p-5 "><strong>Productos Premium</strong></h2>
+</div>
+
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8"> 
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="/public/images/Royal Canin.png" alt="Royal Canin">
+          <div class="card-body">
+            <h5 class="card-title">Royal Canin Gastrointestinal</h5>
+            <p class="card-text">$1,799</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/public/images/Hills.png" alt="Hills">
+          <div class="card-body">
+            <h5 class="card-title">Hill´s Science Perfect Weight</h5>
+            <p class="card-text">$2,405</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="/public/images/Diamond.png" alt="Diamond">
+          <div class="card-body">
+            <h5 class="card-title">Diamond Puppy</h5>
+            <p class="card-text">$445</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Encuentra un amigo  
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-6">
+      <img class="img-fluid" src="/public/images/banner.png" alt="cats">
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <p>Servicios</p>
+      </div>
+      <div class="mb-3">
+        <p>¡Encuentra a tu mejor amigo!</p>
+      </div>
+      <div class="mb-3">
+        <p>Cada animalito tiene una historia única, y está buscando una segunda oportunidad para ser feliz. 
+          Descubre a tu nuevo amigo y empieza una nueva aventura juntos.</p>
+      </div>
+      <div>
+        <button class="btn btn-primary" id="botonAdopta">Adopta</button>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+ <div class="container-fluid banner">
+  <div class="container">
+      <div class="row align-items-center">
+          
+          <!-- Contenedor de imágenes -->
+          <div class="col-md-6 d-flex justify-content-center">
+              <div class="image-container d-flex gap-3">
+                  <img src="/public/images/banner.png" class="img-fluid gato">
+              </div>
+          </div>
+
+          <!-- Contenedor de texto -->
+          <div class="col-md-6 text-md-start text-center">
+              <h6 class="servicios-text">Servicios</h6>
+              <h2>"¡Encuentra a tu Mejor Amigo!"</h2>
+              <p>Cada animalito tiene una historia única y está buscando una segunda oportunidad para ser feliz. Descubre a tu nuevo amigo y empieza una nueva aventura juntos.</p>
+              <button class="btn-adopt">Adopta</button>
+          </div>
+
+      </div>
+  </div>
+</div>
+
+<!-- Banner -->
+
+<div class="container-fluid bg-banner py-3">
+  <div class="row row-cols-1 row-cols-md-3 text-center align-items-center g-0">
+    <!-- Garantía -->
+    <div class="col d-flex justify-content-center align-items-center">
+      <img src="/public/images/garantia.png" class="icono me-2" alt="Garantía">
+      <p class="texto mb-0"><strong>GARANTÍA DE SATISFACCIÓN</strong><br>en todas tus compras</p>
+    </div>
+
+    <!-- Envíos Gratis -->
+    <div class="col d-flex justify-content-center align-items-center position-relative">
+      <div class="vr d-none d-md-block position-absolute start-0 top-50 translate-middle-y"></div>
+      <img src="/public/images/envío.png" class="icono me-2" alt="Envíos Gratis">
+      <p class="texto mb-0"><strong>ENVÍOS GRATIS</strong><br>a partir de $599</p>
+    </div>
+
+    <!-- Tu Compra Ayuda -->
+    <div class="col d-flex justify-content-center align-items-center position-relative">
+      <div class="vr d-none d-md-block position-absolute start-0 top-50 translate-middle-y"></div>
+      <img src="/public/images/corazon-huella.png" class="icono me-2" alt="Tu compra ayuda">
+      <p class="texto mb-0"><strong>TU COMPRA</strong> hace posible un hogar para muchos animales.</p>
+    </div>
+  </div>
+</div>
 
   <main class="pt-5">
     <section class="container mb-5">
@@ -224,6 +429,9 @@
     </section>
 
   </main>
+
+  
+
   <footer id="footer">
     <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
   </footer>
@@ -239,5 +447,8 @@
   <script src="src/modules/user/userLogin.js"></script>
 
 </body>
+
+
+
 
 </html>
