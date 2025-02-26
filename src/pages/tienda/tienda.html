@@ -419,24 +419,23 @@
               <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
               <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input d-flex accesories"
+                  class="form-check-input d-flex category"
                   type="checkbox"
                   value="Accesorios"
                   id="accesories"
                   value=""
-                  checked
                 />
                 <label class="form-check-label mx-2" for="accesories">
                   Accesorios
                 </label>
                 <span
-                  class="badge rounded-pill border ms-auto accesoriesCounter"
+                  class="badge rounded-pill border ms-auto categoryCounter"
                 >
                 </span>
               </div>
               <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input d-flex clothes"
+                  class="form-check-input d-flex category"
                   type="checkbox"
                   value="Ropa"
                   id="clothes"
@@ -444,12 +443,12 @@
                 <label class="form-check-label mx-2" for="clothes">
                   Ropa
                 </label>
-                <span class="badge rounded-pill border ms-auto clothesCounter">
+                <span class="badge rounded-pill border ms-auto categoryCounter">
                 </span>
               </div>
               <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input d-flex food"
+                  class="form-check-input d-flex category"
                   type="checkbox"
                   value="Alimento"
                   id="food"
@@ -457,12 +456,12 @@
                 <label class="form-check-label mx-2" for="food">
                   Alimento
                 </label>
-                <span class="badge rounded-pill border ms-auto foodCounter">
+                <span class="badge rounded-pill border ms-auto categoryCounter">
                 </span>
               </div>
               <div class="form-check d-flex mt-1">
                 <input
-                  class="form-check-input d-flex toys"
+                  class="form-check-input d-flex category"
                   type="checkbox"
                   value="Juguetes"
                   id="toys"
@@ -470,12 +469,12 @@
                 <label class="form-check-label mx-2" for="toys">
                   Juguetes
                 </label>
-                <span class="badge rounded-pill border ms-auto toysCounter">
+                <span class="badge rounded-pill border ms-auto categoryCounter">
                 </span>
               </div>
               <div class="form-check d-flex">
                 <input
-                  class="form-check-input d-flex mt-1 medicines"
+                  class="form-check-input d-flex mt-1 category"
                   type="checkbox"
                   value="Medicamentos"
                   id="medicines"
@@ -484,7 +483,7 @@
                   Medicamentos
                 </label>
                 <span
-                  class="badge rounded-pill border ms-auto medicinesCounter"
+                  class="badge rounded-pill border ms-auto categoryCounter"
                 >
                 </span>
               </div>
@@ -724,7 +723,7 @@
           <div class="col-lg-8 col-md-8 col-8">
             <!-- productos -->
             <p class="resultados">
-              0 de <span id="resultados-productos"></span> resultados mostrados
+              <span id="counterProductsToShow" >0</span> de <span id="resultados-productos"></span> resultados mostrados
             </p>
             <div
               class="row row-cols-3 row-seccion-cards p-2"
@@ -764,5 +763,6 @@
       src="/src/pages/tienda/seccionCarruselMobile.js"
     ></script>
     <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+    <script type="module" src="/src/pages/tienda/filtradoMarcaCategoria.js" ></script>
   </body>
 </html>
