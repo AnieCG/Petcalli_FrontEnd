@@ -6,6 +6,8 @@
 
 body {
   background-color: var(--background_page);
+  margin: 0;
+  padding: 0;
 }
 
 /*Se utiliza la pseudo-clase :root para añadir propiedades a utilizar en todo el css
@@ -67,6 +69,108 @@ header {
   }
 }
 
+main {
+  max-width: 1920px;
+  overflow: hidden;
+  section {
+    /* .pet-carousel {
+      background-color: var(--block-images1);
+    } */
+
+    .shadow-pet {
+      background-image: url(/public/images/shape-pet.svg);
+      background-repeat: no-repeat;
+      background-size: 150px;
+      background-position: center;
+      max-width: 200px;
+      max-height: 180px;
+      min-height: 160px;
+      object-fit: contain;
+      transition: transform 0.5s;
+    }
+
+    .shadow-pet:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+
+    .shadow-pet-rabbit {
+      min-height: 180px;
+    }
+
+    .pet-turtle {
+      min-height: 180px;
+    }
+
+    .title-products {
+      font-family: var(--font_subtitle);
+      font-size: 45px;
+      color: var(--subtitle);
+    }
+
+    .container-body-product {
+      max-width: 300px;
+    }
+
+    .product {
+      transition: transform 0.5s;
+      min-height: 400px;
+      padding-top: 20px;
+    }
+
+    .product:hover {
+      transform: scale(1.2);
+    }
+
+    .title-product {
+      font-family: var(--font_subtitle);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .cards-products {
+      max-width: 250px;
+      min-height: 300px;
+      object-fit: contain;
+    }
+
+    .like-product {
+      max-width: 25px;
+      max-height: 25px;
+      transition: transform 0.5s;
+    }
+
+    .like-product:hover {
+      transform: scale(1.2);
+    }
+
+    .title-pet {
+      font-family: var(--font_subtitle);
+      font-size: 30px;
+    }
+
+    .new {
+      transition: transform 0.5s;
+    }
+
+    .new:hover {
+      transform: scale(1.2);
+    }
+
+    .link-news {
+      color: var(--subtitle);
+      text-decoration: none;
+    }
+
+    .new-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 16px;
+    }
+  }
+}
+
 #botonCompra {
   font-family: var(--title);
   font-size: 20px;
@@ -76,10 +180,6 @@ header {
   border-radius: 12px;
   height: 60px;
   width: 153px;
-}
-
-.bg {
-  background-color: var(--background_page);
 }
 
 #terms {
@@ -123,6 +223,8 @@ header {
 }
 
 footer {
+  max-width: 1920px;
+  overflow: hidden;
   background-color: #e07a5f;
   padding-block: 30px;
 
@@ -148,4 +250,110 @@ footer {
   font-family: var(--font_title);
   font-weight: 700;
   font-size: 85px;
+}
+
+.subtitulo {
+  background-color: #f2cc8f;
+  font-size: 1.5rem;
+  border: none;
+  margin: 2%;
+  padding: 10px;
+}
+
+.title-card {
+  background-color: #f2cc8f;
+}
+
+#botonAdopta {
+  font-family: var(--title);
+  font-size: 20px;
+  color: white;
+  background-color: var(--block-images1);
+  border: var(--block-images1);
+  border-radius: 12px;
+  height: 60px;
+  width: 153px;
+}
+
+.bg-banner {
+  background-color: var(--block-images1);
+}
+
+.icono {
+  width: 40px;
+  height: auto;
+}
+
+.vr {
+  width: 2px;
+  height: 40px;
+  background-color: black;
+}
+
+.texto {
+  font-size: 16px;
+  max-width: 220px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 30px; /* Ajusta el tamaño del botón */
+  height: 30px; /* Ajusta el tamaño del botón */
+  padding: 0; /* Quita el padding para que el botón no sea más grande */
+  background-color: #e07a5f;
+}
+
+/* Ajustar el tamaño del icono dentro del botón */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 20px; /* Tamaño del icono */
+  height: 30px; /* Tamaño del icono */
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  background-color: var(--block-images2);
+  padding: 50px 0;
+}
+
+/* Texto */
+.banner h2 {
+  color: #3b2e58;
+  font-weight: bold;
+}
+
+.banner p {
+  color: #4a4a4a;
+}
+
+/* Botón */
+.btn-adopt {
+  background-color: var(--block-images1);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-adopt:hover {
+  background-color: brown;
+}
+
+/* Contenedor de imágenes */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imágenes de gatos */
+.gato {
+  width: 300px;
+}
+
+.servicios-text {
+  color: var(--block-images1);
 }
