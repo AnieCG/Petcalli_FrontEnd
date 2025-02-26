@@ -163,19 +163,36 @@ a {
 }
 
 /* Seccion de cards */
-.card {
+
+#image {
+  border-radius: 4px;
+  background-color:rgb(255, 255, 255);
+  height: 15rem;
+}
+#product-card{
+  width: 16rem;
+  height: 30rem;
   color: black;
   background-color: #f2cc8f;
 }
-#image {
-  border-radius: 2px;
+.card #body{
+  background-color:rgb(242, 143, 219);
 }
+
 #image:hover {
   transform: scale(1.03);
   cursor: pointer;
 }
+.card #description{
+  min-height: 10rem;
+
+  background-color:rgb(242, 235, 143);
+}
 .card #precio {
+  border: 0;
   color: black;
+  background-color:rgb(242, 143, 174);
+  height: 2rem;
 }
 
 a {

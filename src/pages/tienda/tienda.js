@@ -99,17 +99,17 @@ insertCarruselMasPopulares();
 const createCards = (producto) => {
   return `
     
-    <div class="card h-150 m-2" style="width:16rem;">
+    <div class="card h-150 m-2" id="product-card">
       <img
         src="${producto.image}"
-        class="card-img-top"
+        class="card-img-top img-fluid"
         alt="Imagen de producto"
-        id="image"
+        id="image" 
         />
-        <div class="card-body">
+        <div class="card-body" id="body">
         <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
-        <p>${producto.description}</p>
-        <p id="precio">${producto.price}</p>
+        <p id="description" >${producto.description}</p>
+        <p id="precio" >${producto.price}</p>
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#${producto.id}"
         >Ver producto</button>
         </div>
