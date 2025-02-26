@@ -163,19 +163,49 @@ a {
 }
 
 /* Seccion de cards */
-.card {
-  color: black;
-  background-color: #f2cc8f;
-}
+
 #image {
-  border-radius: 2px;
+  border-radius: 4px;
+  background-color:rgb(255, 255, 255);
+  height: 210px; 
+  
+  /* height: 10rem; */
 }
+#product-card{
+  width: 15rem;
+  /* height: 45rem; */
+  /* height: 232px; */
+  color: black;
+ background-color: #f2cc8f;
+}
+
+.card #body{
+ /*  background-color: #8ff0f2; */
+  border-radius: 4px;
+  
+  
+  
+}
+
 #image:hover {
   transform: scale(1.03);
   cursor: pointer;
+  
+}
+.card #description{
+  min-height: 10rem;
+  /* height: 1rem; */
+margin: 0;
+  /* background-color: #f2cc8f; */
+  border-radius: 20%;
 }
 .card #precio {
+  border: 0;
+  margin-top: 5px;
+  margin-bottom: 5 px;
   color: black;
+  /* background-color: #f2cc8f; */
+  height: 1rem;
 }
 
 a {
@@ -209,9 +239,9 @@ a {
     height: 80px;
   }
 
-  .card-body {
-    background-color: #f2cc8f;
-  }
+/*   .card-body {
+    background-color: #8ff2a6;
+  } */
 
   .resultados {
     margin-left: 50px;
