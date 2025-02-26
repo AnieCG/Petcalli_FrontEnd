@@ -97,7 +97,7 @@ const insertCarruselMasPopulares = () => {
       </section>`;
 };
 
-const createCards = (producto) => {
+/* const createCards = (producto) => {
   return `
     
     <div class="card h-150 m-3" id="product-card">
@@ -125,7 +125,7 @@ fetch("/public/json/productos.json")
             .join("");
         
     });
-
+ */
 
 document.addEventListener("DOMContentLoaded", async () => {
   const productos = await getJson("/public/json/productos.json");
