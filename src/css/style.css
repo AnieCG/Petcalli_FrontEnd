@@ -70,10 +70,12 @@ header {
 }
 
 main {
+  max-width: 1920px;
+  overflow: hidden;
   section {
-    .pet-carousel {
+    /* .pet-carousel {
       background-color: var(--block-images1);
-    }
+    } */
 
     .shadow-pet {
       background-image: url(/public/images/shape-pet.svg);
@@ -92,6 +94,10 @@ main {
       transform: scale(1.2);
     }
 
+    .shadow-pet-rabbit {
+      min-height: 180px;
+    }
+
     .pet-turtle {
       min-height: 180px;
     }
@@ -108,6 +114,8 @@ main {
 
     .product {
       transition: transform 0.5s;
+      min-height: 400px;
+      padding-top: 20px;
     }
 
     .product:hover {
@@ -119,6 +127,12 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+    }
+
+    .cards-products {
+      max-width: 250px;
+      min-height: 300px;
+      object-fit: contain;
     }
 
     .like-product {
@@ -133,6 +147,7 @@ main {
 
     .title-pet {
       font-family: var(--font_subtitle);
+      font-size: 30px;
     }
 
     .new {
@@ -151,6 +166,7 @@ main {
     .new-text {
       overflow: hidden;
       text-overflow: ellipsis;
+      font-size: 16px;
     }
   }
 }
@@ -164,10 +180,6 @@ main {
   border-radius: 12px;
   height: 60px;
   width: 153px;
-}
-
-.bg {
-  background-color: var(--background_page);
 }
 
 #terms {
@@ -211,6 +223,8 @@ main {
 }
 
 footer {
+  max-width: 1920px;
+  overflow: hidden;
   background-color: #e07a5f;
   padding-block: 30px;
 
