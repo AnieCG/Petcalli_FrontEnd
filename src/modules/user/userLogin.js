@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
       </button>
       <ul class="dropdown-menu">
         <li><a id="logout" class="dropdown-item" href="#">Cerrar sesión</a></li>
+        <li><a class="dropdown-item" href="/src/pages/formProduct/formProduct.html">Tus Productos</a></li>
       </ul>
     </div>`;
 
