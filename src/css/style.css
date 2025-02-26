@@ -287,7 +287,7 @@ footer {
 .vr {
   width: 2px;
   height: 40px;
-  background-color: black;
+  background-color: black; 
 }
 
 .texto {
@@ -297,27 +297,27 @@ footer {
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 30px; /* Ajusta el tamaño del botón */
-  height: 30px; /* Ajusta el tamaño del botón */
-  padding: 0; /* Quita el padding para que el botón no sea más grande */
+  width: 30px; 
+  height: 30px; 
+  padding: 0; 
   background-color: #e07a5f;
 }
 
-/* Ajustar el tamaño del icono dentro del botón */
+
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
-  width: 20px; /* Tamaño del icono */
-  height: 30px; /* Tamaño del icono */
+  width: 20px; 
+  height: 30px; 
 }
 
-/* Banner */
+
 .banner {
   width: 100%;
   background-color: var(--block-images2);
   padding: 50px 0;
 }
 
-/* Texto */
+
 .banner h2 {
   color: #3b2e58;
   font-weight: bold;
@@ -327,7 +327,7 @@ footer {
   color: #4a4a4a;
 }
 
-/* Botón */
+
 .btn-adopt {
   background-color: var(--block-images1);
   border: none;
@@ -342,14 +342,13 @@ footer {
   background-color: brown;
 }
 
-/* Contenedor de imágenes */
 .image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Imágenes de gatos */
+
 .gato {
   width: 300px;
 }
