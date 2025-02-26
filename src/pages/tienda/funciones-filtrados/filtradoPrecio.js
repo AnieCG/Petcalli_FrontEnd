@@ -1,4 +1,4 @@
-import createCards from "../createCards.js";
+import createCards from "../components/createCards.js";
 const $seccionCards = document.getElementById("seccion-cards");
 const $inputFiltradoPrecios = document.getElementsByClassName("form-range");
 const $priceValue = document.getElementsByClassName("price-value");

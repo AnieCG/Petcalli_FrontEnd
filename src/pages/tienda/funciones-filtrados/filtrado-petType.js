@@ -1,4 +1,4 @@
-import createCards from "../createCards.js";
+import createCards from "../components/createCards.js";
 const carruselElements = document.getElementsByClassName("carrusel-btn");
 const $seccionCards = document.getElementById("seccion-cards");
 
