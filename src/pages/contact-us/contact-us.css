@@ -1,22 +1,28 @@
-.contact-us {
-  background-color: var(--background_page);
-  font-family: var(--font_text);
+main {
   background-image: url(./images/background-contact.png);
   max-width: 1920px;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  h3 {
-    font-family: var(--font_subtitle);
-    color: var(--subtitle);
+section {
+  max-width: 1920px;
+  overflow: hidden;
+
+  .contact-us {
+    background-color: var(--background_page);
+    font-family: var(--font_text);
   }
 
-  .contact_form {
-    background-color: var(--block-images2);
+  h3 {
+    font-family: var(--font_title);
+    color: white;
+    background-color: var(--block-images1);
   }
 
   .button {
     background-color: var(--block-images1);
+    border: none;
   }
 
   .input_height {
@@ -26,5 +32,9 @@
   .container__input {
     max-width: 920px;
     margin: auto;
+  }
+
+  .contact_form {
+    background-color: transparent;
   }
 }

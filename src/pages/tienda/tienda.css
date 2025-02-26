@@ -252,6 +252,10 @@ a {
     background-color: var(--block-images1);
     color: white;
   }
+  .collapseContainer{
+    background-color: var(--block-images2);
+  }
+
 }
 
 .modal-header {

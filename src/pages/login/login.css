@@ -1,0 +1,67 @@
+
+
+#letter {
+  font-family: var(--font_text);
+}
+
+h1 {
+  font-family: var(--font_title);
+  color: #81b29a;
+}
+
+.input {
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  border-color: transparent;
+}
+
+.count {
+  border-radius: 20%;
+  background-color: #e07a5f;
+}
+
+.logbutton {
+  align-items: center;
+  font-family: var(--font_subtitle);
+}
+
+.logbutton :active {
+  color: #e07a5f;
+
+}
+.h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #3d405b;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+#yet {
+  border-radius: 17px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e07a5f;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+}
+
+#logbutton {
+  border-radius: 17px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #e07a5f;
+  color: white;
+  cursor: pointer;
+  align-items: center;
+}
+#frase {
+  color: #3d405b;
+}
+
+
