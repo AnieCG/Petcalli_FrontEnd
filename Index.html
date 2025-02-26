@@ -14,6 +14,8 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="stylesheet" href="./src/pages/about/about.css" />
+  <link rel="stylesheet" href="./src/pages/about/tienda.css" />
+
 </head>
 
 <body>
@@ -21,9 +23,435 @@
   <header id="header" class="container-fluid">
     <nav id="navbar"></nav>
   </header>
+  <section class="categories mt-2 container-fluid">
+    <div id="carousel-categories" class="carousel slide-fade">
+      <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
+        <h2 class="subtitulo h2"><strong>Buscar por categoría</strong></h2>
+        <div class="carousel-controls d-flex justify-content-end">
+          <button class="rounded-circle carousel-control-next" type="button" data-bs-target="#carousel-categories"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+
+          <button class="rounded-circle carousel-control-prev" type="button" data-bs-target="#carousel-categories"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+        </div>
+        <div class="carousel-inner">
+          <!-- Primer Seccion -->
+
+          <div class="carousel-item active">
+            <div class="row">
+
+              <div class="col">
+                <div class="card animal border border-0 mx-auto ">
+                  <button class="border border-0 mx-auto carrusel-btn" id="accesories">
+                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets " alt="iguana con lentes">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Accesorios</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="clothes">
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets "
+                      alt="Conejo con vestido">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Ropa</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0 ">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="food">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets " alt="cobayas comiendo">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Alimento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Fin de la primer seccion -->
+
+          <div class="carousel-item ">
+
+            <div class="row">
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="toys">
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets "
+                      alt="Perro con juguete">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Juguetes</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col mt-0">
+                <div class="card animal border border-0 mx-auto">
+                  <button class="border border-0 mx-auto carrusel-btn" id="medicine">
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets "
+                      alt="perro con medicamentos">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Medicamento</h5>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Productos Premium -->
+  <div class="col mt-2 text-center">
+    <h2 class=" h2 p-5 "><strong>Productos Premium</strong></h2>
+  </div>
+
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="/public/images/Royal Canin.png" alt="Royal Canin">
+            <div class="card-body">
+              <h5 class="card-title title-card">Royal Canin Gastrointestinal</h5>
+              <p class="card-text">$1,799</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="/public/images/Hills.png" alt="Hills">
+            <div class="card-body">
+              <h5 class="card-title title-card">Hill´s Science Perfect Weight</h5>
+              <p class="card-text">$2,405</p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="/public/images/Diamond.png" alt="Diamond">
+            <div class="card-body">
+              <h5 class="card-title title-card">Diamond Puppy</h5>
+              <p class="card-text">$445</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Encuentra un amigo  
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-6">
+      <img class="img-fluid" src="/public/images/banner.png" alt="cats">
+    </div>
+    <div class="col-md-6">
+      <div class="mb-3">
+        <p>Servicios</p>
+      </div>
+      <div class="mb-3">
+        <p>¡Encuentra a tu mejor amigo!</p>
+      </div>
+      <div class="mb-3">
+        <p>Cada animalito tiene una historia única, y está buscando una segunda oportunidad para ser feliz. 
+          Descubre a tu nuevo amigo y empieza una nueva aventura juntos.</p>
+      </div>
+      <div>
+        <button class="btn btn-primary" id="botonAdopta">Adopta</button>
+      </div>
+    </div>
+  </div>
+</div>
+ -->
+
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Contenedor de imágenes -->
+        <div class="col-md-6 d-flex justify-content-center">
+          <div class="image-container d-flex gap-3">
+            <img src="/public/images/banner.png" class="img-fluid gato">
+          </div>
+        </div>
+
+        <!-- Contenedor de texto -->
+        <div class="col-md-6 text-md-start text-center">
+          <h6 class="servicios-text">Servicios</h6>
+          <h2>"¡Encuentra a tu Mejor Amigo!"</h2>
+          <p>Cada animalito tiene una historia única y está buscando una segunda oportunidad para ser feliz. Descubre a
+            tu nuevo amigo y empieza una nueva aventura juntos.</p>
+          <button class="btn-adopt">Adopta</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner -->
+
+  <div class="container-fluid bg-banner py-3">
+    <div class="row row-cols-1 row-cols-md-3 text-center align-items-center g-0">
+      <!-- Garantía -->
+      <div class="col d-flex justify-content-center align-items-center">
+        <img src="/public/images/garantia.png" class="icono me-2" alt="Garantía">
+        <p class="texto mb-0"><strong>GARANTÍA DE SATISFACCIÓN</strong><br>en todas tus compras</p>
+      </div>
+
+      <!-- Envíos Gratis -->
+      <div class="col d-flex justify-content-center align-items-center position-relative">
+        <div class="vr d-none d-md-block position-absolute start-0 top-50 translate-middle-y"></div>
+        <img src="/public/images/envío.png" class="icono me-2" alt="Envíos Gratis">
+        <p class="texto mb-0"><strong>ENVÍOS GRATIS</strong><br>a partir de $599</p>
+      </div>
+
+      <!-- Tu Compra Ayuda -->
+      <div class="col d-flex justify-content-center align-items-center position-relative">
+        <div class="vr d-none d-md-block position-absolute start-0 top-50 translate-middle-y"></div>
+        <img src="/public/images/corazon-huella.png" class="icono me-2" alt="Tu compra ayuda">
+        <p class="texto mb-0"><strong>TU COMPRA</strong> hace posible un hogar para muchos animales.</p>
+      </div>
+    </div>
+  </div>
 
   <main class="pt-5">
+    <section class="container-grid mb-5">
+      <h2 class="text-center title-products mb-5">Productos más vendidos</h2>
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://cdn.royalcanin-weshare-online.io/rz_NTIcBRYZmsWpcJPUx/v56/00030111450036-cf-gs1?w=640&fm=jpg&auto=format,compress"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Mother & Babycat Comida Seca</h5>
+                <p class="card-text text-start fs-5">$610.00</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w5MTAyMnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDQ3Lzk0MDAxMTYzMTQxNDIuanBnfDQ0MmM1NDlhNGE4MWU5ZjY0Mzg0MjIzOGJlNDg0ZGQ3NzFlMDMwYmQ4NzBjNjcxNWUwYzRkNDJlZTEyMDAwNGM"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Gourmet Reptisticks Alimento para Tortuga en Pellet</h5>
+                <p class="card-text text-start fs-5">$217.55</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/300ftw-127168.jpg?context=bWFzdGVyfHJvb3R8NzQ0NjB8aW1hZ2UvanBlZ3xoYTMvaDEzLzEwNzQxNDQ5NDI0OTI2LzMwMGZ0d18xMjcxNjguanBnfGRkNTgyYzYxNTViY2ZmZmRkOWViNWViMjg5Mzk4MDEwM2JiMGNkYmJlZTE3YmE3NWI2YWEwNTViMDE3ZmQ2NGE"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Food Topper para Tortugas</h5>
+                <p class="card-text text-start fs-5">$160.55</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Condo con Cojín Extraíble</h5>
+                <p class="card-text text-start fs-5">$779.40</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Bolas Rodadoras para Pequeñas Mascotas</h5>
+                <p class="card-text text-start fs-5">$161.50</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1MjI5MHxpbWFnZS9naWZ8aW1hZ2VzL2gwMy9oNGQvODg0ODEwMzU3MTQ4Ni5naWZ8MjYyMjhiMjJkY2U4ODY3ZTA0NjI1ZGY0YzU4N2MzMGQ2ZWE5YjVjMGZkNWQ3YzY4NzMzNzMyNzc0ODE2NzI1Nw"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Túnel para conejo</h5>
+                <p class="card-text text-start fs-5">$289.75</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/300ftw-143668.jpg?context=bWFzdGVyfHJvb3R8MzY4NTd8aW1hZ2UvanBlZ3xoMTIvaDBjLzEwODIyMDcxMzIwNjA2LzMwMGZ0d18xNDM2NjguanBnfDcxZGRkMDRiZGVhZGQ5NDY4ZTQyZThjMTg5OTk0ZTM4ZTNlYTkzMmVhMzU5ODdmNjliNGZmNjExNzJlMDI2Njk"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Alimento Seco de Pollo Libre de Granos para Gato
+                  Esterilizado</h5>
+                <p class="card-text text-start fs-5">$450.00</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pb-5">
+          <div class="card mx-auto product" style="width: 17rem;">
+            <img
+              src="https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2NDEyM3xpbWFnZS9qcGVnfGltYWdlcy9oNDQvaGE5Lzk0MDAwNjkxOTM3NTguanBnfDU5NzEzZTNlNTQwMjlhMjc3ODFmNDA3ODQ0NjhlNDkzZmY2Y2VhYjg1MGI3ZGZlYmMyMTBjMTUzN2JjODBmNWE"
+              class="card-img-top bg-white cards-products" alt="...">
+            <div class="card-body row container-body-product">
+              <div class="col-9">
+                <h5 class="card-title text-dark title-product">Alimento para Tortuga Acuática</h5>
+                <p class="card-text text-start fs-5">$451.25</p>
+              </div>
+              <div class="col-3 align-self-end">
+                <button class="btn"><img src="/public/images/like-orange.png" alt="" class="like-product"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pet-carousel py-3 bg-info">
+      <h2 class="text-start title-products p-3">Productos por mascota</h2>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-cat.png" class="card-img-top shadow-pet" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Gatos</h5>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-birds.png" class="card-img-top shadow-pet" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Aves</h5>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-dog.png" class="card-img-top shadow-pet" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Perros</h5>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-fishes.png" class="card-img-top shadow-pet pt-4" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Peces</h5>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-conejo.png" class="card-img-top shadow-pet shadow-pet-rabbit" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Conejos</h5>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center p-3">
+          <img src="/public/images/pet-others.png" class="card-img-top shadow-pet pet-turtle" alt="...">
+          <div class="card-body ">
+            <h5 class="card-title text-dark mt-2 text-center title-pet">Otros</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2 class="text-center title-products py-5">Noticias</h2>
+      <div class="row d-flex flex-row align-items-center justify-content-around">
+        <div class="col d-flex flex-column align-items-center justify-content-center">
+          <div class="card mx-auto mb-5 new" style="width: 21rem;">
+            <img src="/public/images/new-1.png" class="card-img-top" alt="...">
+            <div class="card-body row container-body-product">
+              <h5 class="card-title text-dark title-product"><a
+                  href="https://www.petlife.mx/tendencias/2023/8/25/sin-agua-ni-comida-asi-fue-el-rescate-de-31-perritos-en-un-criadero-de-ecatepec-1611.html"
+                  class="link-news" target="_blank">RESCATE de 31 perritos en un criadero</a></h5>
+              <p class="card-text text-start new-text">Tras recibir una denuncia, las autoridades fueron a rescatar
+                a
+                una treintena de perros que se encontraban en condiciones miserables en Ecatepec.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center">
+          <div class="card mx-auto mb-5 new" style="width: 21rem;">
+            <img src="/public/images/new-2.png" class="card-img-top" alt="...">
+            <div class="card-body row container-body-product">
+              <h5 class="card-title text-dark title-product"><a
+                  href="https://www.informador.mx/mexico/Ajolote-De-deidad-a-animal-en-peligro-de-extincion-20250220-0073.html"
+                  class="link-news" target="_blank">Ajolote: De deidad a animal en peligro de extinción</a></h5>
+              <p class="card-text text-start new-text">El ajolote está catalogado como "en peligro crítico" por la Lista
+                Roja de Especies Amenazadas de la Unión Internacional para la Conservación de la Naturaleza.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center justify-content-center">
+          <div class="card mx-auto mb-5 new" style="width: 21rem;">
+            <img src="/public/images/new-3.png" class="card-img-top" alt="...">
+            <div class="card-body row container-body-product">
+              <h5 class="card-title text-dark title-product"><a
+                  href="https://www.adn40.mx/ciudad/2025-01-22/capibara-fest-2025-cuando-es-sede-y-todos-los-detalles"
+                  class="link-news" target="_blank">Capibara Fest 2025</a></h5>
+              <p class="card-text text-start new-text">La CDMX recibirá por primera vez al Capibara Fest 2025, un evento
+                inspirado en estos simpáticos animales; con lo recaudado se busca apoyar a una noble causa.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+
+
   <footer id="footer">
     <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
   </footer>
@@ -37,7 +465,10 @@
   <script src="/src/pages/login/login.js"></script>
   <script src="/src/pages/register/localStorage.js"></script>
   <script src="src/modules/user/userLogin.js"></script>
-  
+
 </body>
+
+
+
 
 </html>
