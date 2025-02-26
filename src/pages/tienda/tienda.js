@@ -107,8 +107,8 @@ const createCards = (producto) => {
         id="image" 
         />
         <div class="card-body" id="body">
-        <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
-        <p id="description" >${producto.description}</p>
+        <h6 class="card-title" id="nombre-producto">${producto.title}</h6>
+        <p id="description" ><small>${producto.description}</small></p>
         <p id="precio" >${producto.price}</p>
         <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#${producto.id}"
         >Ver producto</button>
