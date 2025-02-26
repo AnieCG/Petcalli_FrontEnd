@@ -1,4 +1,6 @@
 import filtradoPorPrecio from "./filtradoPrecio.js";
+import createCards from "./createCards.js";
+import getJson from "./getProducts.js";
 
 const $seccionCards = document.getElementById("seccion-cards");
 const $resultadosProductos = document.getElementById("resultados-productos");
@@ -94,7 +96,6 @@ const insertCarruselMasPopulares = () => {
 
       </section>`;
 };
-insertCarruselMasPopulares();
 
 const createCards = (producto) => {
   return `
@@ -107,183 +108,203 @@ const createCards = (producto) => {
         id="image" 
         />
         <div class="card-body" id="body">
-        <h6 class="card-title" id="nombre-producto">${producto.title}</h6>
-        <p id="description" ><small>${producto.description}</small></p>
-        <p id="precio" >${producto.price}</p>
-        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#${producto.id}"
-        >Ver producto</button>
+          <h6 class="card-title" id="nombre-producto">${producto.title}</h6>
+          <p id="description" ><small>${producto.description}</small></p>
+          <p id="precio" >${producto.price}</p>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#${producto.id}"
+          >Ver producto</button>
         </div>
-    </div>
-
-`;
+    </div>`;
 };
-//export{createCards};
 
 fetch("/public/json/productos.json")
-  .then((productos) => productos.json())
-  .then((productos) => {
-    $seccionCards.innerHTML = productos
+    .then((productos) => productos.json())
+    .then((productos) => {
+        $seccionCards.innerHTML = productos
+            .map((card) => createCards(card))
+            .join("");
+        
+    });
+
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const productos = await getJson("/public/json/productos.json");
+  const allProducts = productos;
+
+  const filterProductsByPetType = (petType) => {
+    const productsToShow = productos.filter(
+      (product) => product.petType === petType
+    );
+    $seccionCards.innerHTML = productsToShow
       .map((card) => createCards(card))
       .join("");
-    $resultadosProductos.textContent = productos.length;
-    counterProductsToShow.textContent = productos.length;
-    console.log($resultadosProductos);
-  });
+  };
 
-const filterProductsByPetType = (petType) => {
-  fetch("/public/json/productos.json")
-    .then((products) => products.json())
-    .then((products) => {
-      const productsToShow = products.filter(
-        (product) => product.petType === petType
-      );
-      $seccionCards.innerHTML = productsToShow
-        .map((card) => createCards(card))
-        .join("");
-    });
-};
+  const filterProductsByBrandAndCategory = (
+    selectedBrands,
+    selectedCategories,
+    brandCheck,
+    categoryCheck
+  ) => {
+    fetch("/public/json/productos.json")
+      .then((response) => response.json())
+      .then((products) => {
+        // Filtrar productos por marcas y categorías seleccionadas
+        const productsToShow = products.filter(
+          (product) =>
+            selectedBrands.includes(product.marca) ||
+            selectedCategories.includes(product.category)
+        );
 
-const filterProductsByBrandAndCategory = (selectedBrands, selectedCategories, brandCheck, categoryCheck) => {
-  fetch("/public/json/productos.json")
-    .then((response) => response.json())
-    .then((products) => {
-      // Filtrar productos por marcas y categorías seleccionadas
-      const productsToShow = products.filter( product =>
-        selectedBrands.includes(product.marca) || selectedCategories.includes(product.category)
-      );
+        // Sección de tarjetas con productos filtrados
+        $seccionCards.innerHTML = productsToShow
+          .map((card) => createCards(card))
+          .join("");
+        // Actualizar los contadores de cada checkbox
+        //marca
+        Array.from(brandCheck).forEach((checkbox, index) => {
+          const brandName = checkbox.value;
+          const counter = brandCounter[index];
 
-      // Sección de tarjetas con productos filtrados
-      $seccionCards.innerHTML = productsToShow
-        .map((card) => createCards(card))
-        .join("");
-      // Actualizar los contadores de cada checkbox
-      //marca
-      Array.from(brandCheck).forEach((checkbox, index) => {
-        const brandName = checkbox.value;
-        const counter = brandCounter[index];
+          // Contar productos de cada marca individualmente
+          const count = products.filter(
+            (product) => product.marca === brandName
+          ).length;
 
-        // Contar productos de cada marca individualmente
-        const count = products.filter(
-          (product) => product.marca === brandName
-        ).length;
+          // Si la marca está seleccionada, mostrar la cantidad; si no, dejar en 0
+          counter.textContent = selectedBrands.includes(brandName) ? count : 0;
+        });
+        //category
+        Array.from(categoryCheck).forEach((checkbox, index) => {
+          const categoryName = checkbox.value;
+          const counter = categoryCounter[index];
 
-        // Si la marca está seleccionada, mostrar la cantidad; si no, dejar en 0
-        counter.textContent = selectedBrands.includes(brandName) ? count : 0;
+          // Contar productos de cada marca individualmente
+          const count = products.filter(
+            (product) => product.category === categoryName
+          ).length;
+
+          // Si la categoria está seleccionada, mostrar la cantidad; si no, dejar en 0
+          counter.textContent = selectedCategories.includes(categoryName)
+            ? count
+            : 0;
+        });
+        //Muestra el numero de productos seleccionados de categoria y marca
+        counterProductsToShow.textContent = productsToShow.length;
       });
-      //category
-      Array.from(categoryCheck).forEach((checkbox, index) => {
-        const categoryName = checkbox.value;
-        const counter = categoryCounter[index];
+  };
 
-        // Contar productos de cada marca individualmente
-        const count = products.filter(
-          (product) => product.category === categoryName
-        ).length;
+  const catsButton = document.getElementsByClassName("Gatos");
+  const dogsButton = document.getElementsByClassName("Perros");
+  const birdsButton = document.getElementsByClassName("Aves");
+  const rabbitsButton = document.getElementsByClassName("Conejos");
+  const fishesButton = document.getElementsByClassName("Peces");
+  const otherButton = document.getElementsByClassName("Otros");
 
-        // Si la categoria está seleccionada, mostrar la cantidad; si no, dejar en 0
-        counter.textContent = selectedCategories.includes(categoryName) ? count : 0;
-      });
-      //Muestra el numero de productos seleccionados de categoria y marca
-      counterProductsToShow.textContent = productsToShow.length;
+  catsButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Gato");
+  });
+  dogsButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Perro");
+  });
+  rabbitsButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Conejo");
+  });
+  fishesButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Peces");
+  });
+  birdsButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Aves");
+  });
+  otherButton[0].addEventListener("click", () => {
+    filterProductsByPetType("Otros");
+  });
+
+  catsButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Gato");
+  });
+  dogsButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Perro");
+  });
+  rabbitsButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Conejo");
+  });
+  fishesButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Peces");
+  });
+  birdsButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Aves");
+  });
+  otherButton[1].addEventListener("click", () => {
+    filterProductsByPetType("Otros");
+  });
+
+  const categoryCheck = document.getElementsByClassName("category");
+  const categoryCounter = document.getElementsByClassName("categoryCounter");
+  let selectedCategories = [];
+
+  Array.from(categoryCheck).forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const categoryName = checkbox.value;
+      if (checkbox.checked) {
+        // Si está seleccionado
+        selectedCategories.push(categoryName);
+      } else {
+        // Si está desmarcado
+        selectedCategories = selectedCategories.filter(
+          (brand) => brand !== categoryName
+        );
+      }
+      // Productos según las marcas
+      filterProductsByBrandAndCategory(
+        selectedBrands,
+        selectedCategories,
+        brandCheck,
+        categoryCheck
+      );
     });
-}; 
-
-const catsButton = document.getElementsByClassName("Gatos");
-const dogsButton = document.getElementsByClassName("Perros");
-const birdsButton = document.getElementsByClassName("Aves");
-const rabbitsButton = document.getElementsByClassName("Conejos");
-const fishesButton = document.getElementsByClassName("Peces");
-const otherButton = document.getElementsByClassName("Otros");
-
-catsButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Gato");
-});
-dogsButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Perro");
-});
-rabbitsButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Conejo");
-});
-fishesButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Peces");
-});
-birdsButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Aves");
-});
-otherButton[0].addEventListener("click", () => {
-  filterProductsByPetType("Otros");
-});
-
-catsButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Gato");
-});
-dogsButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Perro");
-});
-rabbitsButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Conejo");
-});
-fishesButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Peces");
-});
-birdsButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Aves");
-});
-otherButton[1].addEventListener("click", () => {
-  filterProductsByPetType("Otros");
-});
-
-const categoryCheck = document.getElementsByClassName("category");
-const categoryCounter = document.getElementsByClassName("categoryCounter");
-let selectedCategories = [];
-
-Array.from(categoryCheck).forEach((checkbox) => {
-  checkbox.addEventListener("change", () => {
-    const categoryName = checkbox.value;
-    if (checkbox.checked) {
-      // Si está seleccionado
-      selectedCategories.push(categoryName);
-    } else {
-      // Si está desmarcado
-      selectedCategories = selectedCategories.filter((brand) => brand !== categoryName);
-    }
-    // Productos según las marcas
-    filterProductsByBrandAndCategory( selectedBrands, selectedCategories, brandCheck, categoryCheck );
   });
-});
-Array.from(categoryCounter).forEach((counter) => {
-  counter.textContent = 0;
-});
-
-/*FILTRADO POR PRECIO */
-filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
-
-/* FILTRADO POR MARCAS */
-// Obtener checkboxes y contadores
-const brandCheck = document.getElementsByClassName("brand");
-const brandCounter = document.getElementsByClassName("brandCounter");
-
-// Estado de marcas seleccionadas
-let selectedBrands = [];
-
-// Evento para cada checkbox
-Array.from(brandCheck).forEach((checkbox) => {
-  checkbox.addEventListener("change", () => {
-    const brandName = checkbox.value;
-
-    if (checkbox.checked) {
-      selectedBrands.push(brandName);
-    } else {
-      selectedBrands = selectedBrands.filter((brand) => brand !== brandName);
-    }
-
-    // Actualizar productos y contadores de todas las marcas seleccionadas
-    filterProductsByBrandAndCategory( selectedBrands, selectedCategories, brandCheck, categoryCheck );
+  Array.from(categoryCounter).forEach((counter) => {
+    counter.textContent = 0;
   });
-});
 
-// Inicializar contadores en 0
-Array.from(brandCounter).forEach((counter) => {
-  counter.textContent = 0;
-});
+  /*FILTRADO POR PRECIO */
+  filtradoPorPrecio($seccionCards, $inputFiltradoPrecios, $priceValue);
 
+  /* FILTRADO POR MARCAS */
+  // Obtener checkboxes y contadores
+  const brandCheck = document.getElementsByClassName("brand");
+  const brandCounter = document.getElementsByClassName("brandCounter");
+
+  // Estado de marcas seleccionadas
+  let selectedBrands = [];
+
+  // Evento para cada checkbox
+  Array.from(brandCheck).forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const brandName = checkbox.value;
+
+      if (checkbox.checked) {
+        selectedBrands.push(brandName);
+      } else {
+        selectedBrands = selectedBrands.filter((brand) => brand !== brandName);
+      }
+
+      // Actualizar productos y contadores de todas las marcas seleccionadas
+      filterProductsByBrandAndCategory(
+        selectedBrands,
+        selectedCategories,
+        brandCheck,
+        categoryCheck
+      );
+    });
+  });
+
+  // Inicializar contadores en 0
+  Array.from(brandCounter).forEach((counter) => {
+    counter.textContent = 0;
+  });
+
+  //Insertar carrusel
+  insertCarruselMasPopulares();
+});
