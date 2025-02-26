@@ -103,7 +103,7 @@ const modifyProduct = (
   });
   return Arrayproducts.find((product) => product.id == id);
 };
-/* 
+ 
 getJson("/public/json/productos.json").then(() => {
   console.log(getProducts());
   console.log(
@@ -139,4 +139,6 @@ getJson("/public/json/productos.json").then(() => {
   );
   console.log(getProducts());
 });
- */
+export{
+  addProduct, getJson, getProducts, deleteProdut, modifyProduct
+}
