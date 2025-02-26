@@ -72,7 +72,7 @@
         </div>
         <div class="d-flex justify-content-center align-items-center">
           <div class="collapse" id="collapseExample">
-            <section class="card p-4 w-100 shadow-lg mb-4">
+            <section class="container collapseContainer p-4 w-100 shadow-lg mb-4">
               <div class="container">
                 <div class="row wrapperButtonMobilePet">
                   <div class="col-6">
@@ -130,60 +130,167 @@
                 </div>
               </div>
               <div class="card-body text-center">
-                <div class="d-flex justify-content-between mb-3">
+                <div class="d-flex justify-content-around mb-3">
                   <article class="mb-2">
-                    <h4 class="mb-4">Categorias</h4>
-                    <div class="form-check">
+                    <h5 class="mb-4">Categorias</h5>
+                    <div class="form-check d-flex mt-1">
                       <input
-                        class="form-check-input"
+                        class="form-check-input d-flex category"
                         type="checkbox"
+                        value="Accesorios"
+                        id="accesories"
                         value=""
-                        id="flexCheckChecked"
                       />
-                      <label class="form-check-label" for="flexCheckChecked">
+                      <label class="form-check-label mx-2" for="accesories">
                         Accesorios
                       </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
                     </div>
-                    <div class="form-check">
+                    <div class="form-check d-flex mt-1">
                       <input
-                        class="form-check-input"
+                        class="form-check-input d-flex category"
                         type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
+                        value="Ropa"
+                        id="clothes"
                       />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Royal Canin
+                      <label class="form-check-label mx-2" for="clothes">
+                        Ropa
                       </label>
+                      <span class="badge rounded-pill border ms-auto categoryCounter">
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Alimento"
+                        id="food"
+                      />
+                      <label class="form-check-label mx-2" for="food">
+                        Alimento
+                      </label>
+                      <span class="badge rounded-pill border ms-auto categoryCounter">
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Juguetes"
+                        id="toys"
+                      />
+                      <label class="form-check-label mx-2" for="toys">
+                        Juguetes
+                      </label>
+                      <span class="badge rounded-pill border ms-auto categoryCounter">
+                      </span>
+                    </div>
+                    <div class="form-check d-flex">
+                      <input
+                        class="form-check-input d-flex mt-1 category"
+                        type="checkbox"
+                        value="Medicamentos"
+                        id="medicines"
+                      />
+                      <label class="form-check-label mx-2" for="medicines">
+                        Medicamentos
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
                     </div>
                   </article>
                   <article>
-                    <h4 class="mb-4">Marca</h4>
-                    <div class="form-check">
+                    <h5 class="mb-4">Marca</h5>
+                    <div class="form-check d-flex mt-1">
                       <input
-                        class="form-check-input"
+                        class="form-check-input d-flex brand"
                         type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
+                        id="Instinct"
+                        value="Instinct Original"
                       />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Accesorios
-                      </label>
+                      <label class="form-check-label mx-2" for="Instinct">
+                        Instinct </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
                     </div>
-                    <div class="form-check">
+      
+                    <div class="form-check d-flex mt-1">
                       <input
-                        class="form-check-input"
+                        class="form-check-input d-flex brand"
                         type="checkbox"
-                        value=""
-                        id="flexCheckChecked"
+                        value="Royal Canin"
+                        id="RoyalCanin"
                       />
-                      <label class="form-check-label" for="flexCheckChecked">
-                        Royal Canin
-                      </label>
+                      <label class="form-check-label mx-2" for="RoyalCanin">
+                        Royal Canin </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+      
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="WholeHearted"
+                        id="WhileHearted"
+                      />
+                      <label class="form-check-label mx-2" for="WhileHearted">
+                        WholeHearted </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+      
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Bravery"
+                        id="Bravery"
+                      />
+                      <label class="form-check-label mx-2" for="Bravery">
+                        Bravery </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+      
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Hill's"
+                        id="Hill's"
+                      />
+                      <label class="form-check-label mx-2" for="Hill's"> Hill's </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+      
+                    <div class="form-check d-flex mt-1">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Azoo"
+                        id="Azoo"
+                      />
+                      <label class="form-check-label mx-2" for="Azoo"> Azoo </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
                     </div>
                   </article>
                 </div>
-                <div class="p-2">
-                  <h2>Filtrar por precio</h2>
+                <div class="container">
+                  <h3>Filtrar por precio</h3>
                   <input
                     type="range"
                     class="form-range"
