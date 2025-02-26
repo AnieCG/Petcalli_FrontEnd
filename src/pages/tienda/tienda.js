@@ -99,7 +99,7 @@ insertCarruselMasPopulares();
 const createCards = (producto) => {
   return `
     
-    <div class="card h-150 m-2" id="product-card">
+    <div class="card h-150 m-3" id="product-card">
       <img
         src="${producto.image}"
         class="card-img-top img-fluid"

@@ -167,16 +167,18 @@ a {
 #image {
   border-radius: 4px;
   background-color:rgb(255, 255, 255);
-  height: 15rem;
+  /* height: 10rem; */
 }
 #product-card{
   width: 16rem;
-  height: 30rem;
+ /*  height: 40rem; */
   color: black;
   background-color: #f2cc8f;
+  margin: #81b29a;
+  border: 5rem;
 }
 .card #body{
-  background-color:rgb(242, 143, 219);
+  background-color: #f2cc8f;
 }
 
 #image:hover {
@@ -184,15 +186,16 @@ a {
   cursor: pointer;
 }
 .card #description{
-  min-height: 10rem;
-
-  background-color:rgb(242, 235, 143);
+  min-height: 9rem;
+margin: 0;
+  background-color: #f2cc8f;
 }
 .card #precio {
   border: 0;
+  margin-top: 0;
   color: black;
-  background-color:rgb(242, 143, 174);
-  height: 2rem;
+  background-color: #f2cc8f;
+  height: 1rem;
 }
 
 a {
