@@ -31,9 +31,9 @@ const insertNav = () => {
 
         <form class="d-flex" role="search">
           <div class="input-group me-2">
-            <input class="form-control input" type="search" placeholder="buscar productos"
+            <input id="searchInput" class="form-control input" type="search" placeholder="buscar productos"
               aria-label="buscar productos" />
-            <button class="btn boton-buscar" type="submit">
+            <button id="searchButton" class="btn boton-buscar" type="submit">
               <img src="/public/images/share.svg" alt="buscar" />
             </button>
           </div>

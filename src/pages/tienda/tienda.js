@@ -1,6 +1,7 @@
 import filtradoPorPrecio from "./filtradoPrecio.js";
 import createCards from "./createCards.js";
 import getJson from "./getProducts.js";
+import insertQueryProducts from "./insertQueryProducts.js";
 
 const $seccionCards = document.getElementById("seccion-cards");
 const $resultadosProductos = document.getElementById("resultados-productos");
@@ -307,4 +308,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   //Insertar carrusel
   insertCarruselMasPopulares();
+
+  //Inserta los productos desde la busqueda de la barra de navegacion
+  insertQueryProducts(productos, $seccionCards);
 });
+
+
+/* document.addEventListener("DOMContentLoaded", function () {
+  let queryString = localStorage.getItem("searchQuery");
+  if (queryString) {
+    fetch("/public/json/productos.json")
+      .then((response) => response.json())
+      .then((productos) => {
+        const productsToShow = productos.filter((product) =>
+          product.petType.toLowerCase().includes(queryString)  ||
+          product.description.toLowerCase().includes(queryString) ||
+          product.title.toLowerCase().includes(queryString) ||
+          product.category.toLowerCase().includes(queryString) 
+        );
+        $seccionCards.innerHTML = productsToShow
+          .map((card) => createCards(card))
+          .join("");
+      });
+  }
+}); */
