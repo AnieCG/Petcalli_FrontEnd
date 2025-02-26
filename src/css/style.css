@@ -356,3 +356,22 @@ footer {
 .servicios-text {
   color: var(--block-images1);
 }
+.carouselAnimals {
+  border: none !important; 
+  box-shadow: none;
+}
+
+.card.animal {
+  border: none; 
+  box-shadow: none ; 
+  background-color: transparent;
+}
+
+.card.product {
+  border: none ; 
+  box-shadow: none ;
+  background-color: transparent;
+}
+
+
+
