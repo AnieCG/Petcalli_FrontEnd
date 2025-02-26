@@ -1,16 +1,14 @@
-
-.franja{
+.franja {
   background-color: var(--block-images1);
   width: auto;
   height: 88px;
 }
 
-body{
+body {
   max-width: 1920px;
 }
 
 main {
-
   #filtro {
     background-color: var(--block-images1);
     border-radius: 20px;
@@ -47,24 +45,16 @@ main {
     p.card-text {
       margin: 0;
     }
-    
-    img.card-img-top{
+
+    img.card-img-top {
       height: 350px;
     }
   }
 
   .conteiner {
     padding-left: 5rem;
-    }
-
-
-
+  }
 }
-  
- 
-
-
-
 
 .petSelection {
   .animal {
@@ -76,13 +66,13 @@ main {
     margin-bottom: 0px;
   }
 
-  .carrusel-btn{
+  .carrusel-btn {
     background-color: #f2cc8f;
-    border:0;
+    border: 0;
   }
 
-  h5{
-    margin:0;
+  h5 {
+    margin: 0;
   }
 
   .img-pets {
@@ -90,11 +80,10 @@ main {
     height: 255px;
     border-radius: 45%;
     margin-bottom: 0;
-    
   }
 
-  .card-body{
-margin-top: 0%;
+  .card-body {
+    margin-top: 0%;
     max-width: 250px;
     height: 30px;
     margin-bottom: 0px;
@@ -104,7 +93,7 @@ margin-top: 0%;
     /* Contenedor del carrusel de categoria de mascotas */
     background-color: #f2cc8f;
     height: 380px;
-  max-width: 1000px;
+    max-width: 1000px;
     /*     min-width: 700px; */
     border-radius: 5cap;
   }
@@ -113,8 +102,8 @@ margin-top: 0%;
     color: #81b29a;
   }
 
-  .button-next-before{
-    background-color: #E07A5F;
+  .button-next-before {
+    background-color: #e07a5f;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -173,11 +162,18 @@ a {
   margin-top: 20px;
 }
 
+/* Seccion de cards */
 .card {
   color: black;
   background-color: #f2cc8f;
 }
-
+#image {
+  border-radius: 2px;
+}
+#image:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
 .card #precio {
   color: black;
 }
@@ -223,68 +219,79 @@ a {
 }
 
 /* Seccion de mobile header */
-.mobileHeader{
+.mobileHeader {
   background-image: url(/public-images/Vector_Header_Mobile.png);
-  .postalCode{
+  .postalCode {
     background-color: var(--block-images2);
     font-size: 10px;
   }
-  p{
-    color: #6C757D;
+  p {
+    color: #6c757d;
   }
-  .title{
+  .title {
     background-color: var(--block-images2);
   }
-  h2{
+  h2 {
     font-family: var(--font_title);
     color: var(--title);
     font-size: 35px;
-    font-weight:bolder ;
+    font-weight: bolder;
   }
-  .ads{
+  .ads {
     background-color: var(--block-images2);
   }
-  #shape2{
-    width: 20px;  
+  #shape2 {
+    width: 20px;
     height: 20px;
   }
-  #mapPin{
+  #mapPin {
     width: 15px;
     height: 15px;
   }
-  button{
+  button {
     background-color: var(--block-images1);
     color: white;
   }
 }
 
-.modal-header{
+.modal-header {
   background-color: #f4f1de;
 }
 
-.modal-btn{
-  background-color:#E07A5F ;
+.modal-btn {
+  background-color: #e07a5f;
   border: 0;
 }
 
-.mas-menos{
+.mas-menos {
   border-radius: 50%;
 }
 
-.modal-body{
+.modal-body {
   background-color: #f2cc8f;
 }
 
-.modal-img{
+.modal-img {
   border-radius: 30%;
   height: 30%;
 }
 
-.modal-footer{
+.modal-footer {
   background-color: #f4f1de;
-  
-  .btn{
-    background-color:#f2cc8f;
 
+  .btn {
+    background-color: #f2cc8f;
+  }
+}
+
+.wrapperButtonMobilePet {
+  button {
+    background-color: var(--block-images2);
+    color: var(--subtitle);
+    border: 2px solid var(--block-images1);
+    border-radius: 20px;
+  }
+  h5 {
+    font-weight: 700;
   }
 }

@@ -39,6 +39,7 @@
             class="position-absolute top-50 start-0 translate-middle-y" id="shape2" />
           <h2 class="m-1">Tienda</h2>
         </div>
+
         <p class="d-inline-flex-end gap-1 m-3 w-25">
           <button class="btn fs-3 text fw-semibold rounded-4 px-4" type="button" data-bs-toggle="collapse"
             data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
@@ -49,50 +50,55 @@
       <div class="d-flex justify-content-center align-items-center">
         <div class="collapse" id="collapseExample">
           <section class="card p-4 w-100 shadow-lg mb-4">
+            <div class="container">
+              <div class="row wrapperButtonMobilePet">
+                <div class="col-6">
+                  <button class="Gatos mb-4">
+                    <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets"
+                      alt="Foto de perrito" />
+                    <h5 class="card-title text-center">Gatos</h5>
+                  </button>
+                  <button class="Perros mb-4">
+                    <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets" alt="Foto de perrito" />
+                    <h5 class="card-title text-center">Perros</h5>
+                  </button>
+                  <button class="Aves mb-4">
+                    <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets"
+                      alt="Foto de perrito" />
+                    <h5 class="card-title text-center">Aves</h5>
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button class="Conejos mb-4">
+                    <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets"
+                      alt="Foto de perrito" />
+                    <h5 class="card-title text-center">Conejos</h5>
+                  </button>
+                  <button class="Peces mb-4">
+                    <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets"
+                      alt="Foto de perrito" />
+                    <h5 class="card-title text-center">Peces</h5>
+                  </button>
+                  <button class="Otros mb-4">
+                    <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets"
+                      alt=" Foto de perrito" />
+                    <h5 class="card-title text-center">Otros</h5>
+                  </button>
+                </div>
+              </div>
+            </div>
             <div class="card-body text-center">
               <div class="d-flex justify-content-between mb-3">
                 <article class="mb-2">
                   <h4 class="mb-4">Categorias</h4>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                     <label class="form-check-label" for="flexCheckChecked">
                       Accesorios
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-                <article class="mb-2">
-                  <h4 class="mb-4">Marca</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Royal Canin
-                    </label>
-                  </div>
-                </article>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <article class="mb-2">
-                  <h4 class="mb-4">Categorias</h4>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                     <label class="form-check-label" for="flexCheckChecked">
                       Royal Canin
                     </label>
@@ -101,22 +107,24 @@
                 <article>
                   <h4 class="mb-4">Marca</h4>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                     <label class="form-check-label" for="flexCheckChecked">
                       Accesorios
                     </label>
                   </div>
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked />
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" />
                     <label class="form-check-label" for="flexCheckChecked">
                       Royal Canin
                     </label>
                   </div>
                 </article>
               </div>
-              <h2>Filtrar por precio</h2>
-              <input type="range" class="form-range my-3" id="customRange1" />
-              <label for="customRange1" class="form-label">Precio $10.00 - $1,000.00</label>
+              <div class="p-2">
+                <h2>Filtrar por precio</h2>
+                <input type="range" class="form-range" id="customRange" min="0" max="2000" value="0" step="100" /><label
+                  for="customRange1" class="form-label">Precio: $0 - <span class="price-value">$2000</span></label>
+              </div>
               <div class="d-flex justify-content-around mt-3">
                 <button class="btn">Limpiar campos</button>
                 <button class="btn">Aplicar</button>
@@ -144,30 +152,31 @@
         <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
           <br />
           <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
-                    
-            <button class="rounded-circle carousel-control-next " type="button"
+
+          <button class="rounded-circle carousel-control-next" type="button"
             data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
             <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
-            <span class="visually-hidden ">Next</span>
+            <span class="visually-hidden">Next</span>
           </button>
-            <button class="rounded-circle carousel-control-prev " type="button"
-              data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
-              <span class="visually-hidden ">Previous</span>
-            </button>
+          <button class="rounded-circle carousel-control-prev" type="button"
+            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon button-next-before" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
 
           <div class="carousel-inner">
             <!-- Primer Seccion -->
 
             <div class="carousel-item active">
               <div class="row">
-
                 <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto"> <!-- style="background-color: red;" -->
-                    <button class="border border-0 mx-auto carrusel-btn" id="Gatos">
-                      <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
-                      <div class="card-body"> <!-- style="background-color: yellowgreen;" -->
+                  <div class="card animal border border-0 mx-auto">
+                    <!-- style="background-color: red;" -->
+                    <button class="Gatos border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
+                      <div class="card-body">
+                        <!-- style="background-color: yellowgreen;" -->
                         <h5 class="card-title text-center">Gatos</h5>
                       </div>
                     </button>
@@ -176,9 +185,9 @@
 
                 <div class="col mt-0">
                   <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Perros">
-                      <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
+                    <button class="Perros border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
                       <div class="card-body">
                         <h5 class="card-title text-center">Perros</h5>
                       </div>
@@ -186,34 +195,29 @@
                   </div>
                 </div>
 
-                <div class="col mt-0 ">
+                <div class="col mt-0">
                   <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Aves">
-                      <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
+                    <button class="Aves border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
                       <div class="card-body">
                         <h5 class="card-title text-center">Aves</h5>
                       </div>
                     </button>
                   </div>
                 </div>
-
               </div>
-              <!-- Final del row de la primer seccion -->
             </div>
-            <!-- Fin de la primer seccion -->
 
-            <!-- Tercer seccion -->
+            <!-- Segunda seccion-->
 
-            <div class="carousel-item ">
-
+            <div class="carousel-item">
               <div class="row">
-
                 <div class="col mt-0">
                   <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Conejos">
-                      <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
+                    <button class="Conejos border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
                       <div class="card-body">
                         <h5 class="card-title text-center">Conejos</h5>
                       </div>
@@ -223,9 +227,9 @@
 
                 <div class="col mt-0">
                   <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Peces">
-                      <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
+                    <button class="Peces border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
                       <div class="card-body">
                         <h5 class="card-title text-center">Peces</h5>
                       </div>
@@ -235,290 +239,252 @@
 
                 <div class="col mt-0">
                   <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="Otros">
-                      <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets "
-                        alt="Foto de perrito">
+                    <button class="Otros border border-0 mx-auto carrusel-btn">
+                      <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets"
+                        alt="Foto de perrito" />
                       <div class="card-body">
                         <h5 class="card-title text-center">Otros</h5>
                       </div>
                     </button>
                   </div>
                 </div>
-
-
-
-              </div><!-- Fin del tercer row -->
-            </div><!-- Fin de la tercer seccion -->
-
+              </div>
+              <!-- Fin del tercer row -->
+            </div>
+            <!-- Fin de la tercer seccion -->
 
             <!-- Cuarta seccion -->
 
             <div class="carousel-item">
-
               <div class="row">
                 <div class="col"></div>
-                <div class="col mt-0 ">
+                <div class="col mt-0">
                   <div class="s">
-                    <img width="400px" src="/public-images/petcalli2-Photoroom.png" alt="">
+                    <img width="400px" src="/public-images/petcalli2-Photoroom.png" alt="" />
                   </div>
                 </div>
                 <div class="col"></div>
-
-
-              </div><!-- Fin del 4 row -->
-            </div><!-- Fin de la 4 seccion -->
-
-          </div> <!-- Fin del contenido  -->
-
-
-
-        </div><!-- Fin del div contenedor courusel animal -->
-
-      </div><!-- Fin del carrusel y sus botones-->
+              </div>
+              <!-- Fin del 4 row -->
+            </div>
+            <!-- Fin de la 4 seccion -->
+          </div>
+          <!-- Fin del contenido  -->
+        </div>
+        <!-- Fin del div contenedor courusel animal -->
+      </div>
+      <!-- Fin del carrusel y sus botones-->
     </section>
 
     <br />
 
-      <section class="container">
-        <!-- de productos y filtros -->
-        <div class="row gx-5">
-          <!-- Columna filtro -->
-          <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
-
-            <!-- Filtrar por categoria -->
-            <div class="p-2">
-              <h2>Filtrar por categorias</h2>
-              <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-              <div class="form-check">
-                <input class="form-check-input d-flex" type="checkbox" value="Accesorios" id="accesories" checked>
-                <label class="form-check-label" for="accesories" style="padding-right: 60%;">
-                  Accesorios
-                </label><span class="badge text-bg-primary rounded-pill" style="white-space: nowrap">14</span>
-              </div>
-
-              <!-- FORMA SIN CONTADOR DE RESULTADOS -->
-              <div class="form-check">
-                <input class="form-check-input" 
-                  type="checkbox"
-                  value=""
-                  id="clothes" 
-                  checked
-                />
-                <label class="form-check-label"
-                  for="clothes">
-                  Ropa
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="food"
-                  checked
-                />
-                <label class="form-check-label" for="food">
-                  Alimento
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="toys"
-                  checked
-                />
-                <label class="form-check-label" for="toys">
-                  Jugetes
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="medicines"
-                  checked
-                />
-                <label class="form-check-label" for="medicines">
-                  Medicamentos
-                </label>
-              </div>
+    <section class="container">
+      <!-- de productos y filtros -->
+      <div class="row gx-5">
+        <!-- Columna filtro -->
+        <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
+          <!-- Filtrar por categoria -->
+          <div class="container row-gap-3 p-2">
+            <h2>Filtrar por categorias</h2>
+            <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex category" type="checkbox" value="Accesorios" id="accesories"
+                value="" />
+              <label class="form-check-label mx-2" for="accesories">
+                Accesorios
+              </label>
+              <span class="badge rounded-pill border ms-auto categoryCounter">
+              </span>
             </div>
-
-            <!-- FILTRAR POR PRECIO -->
-            <div class="p-2">
-              <h2>Filtrar por precio</h2>
-              <input type="range" class="form-range" id="customRange1" /><label
-                for="customRange1"
-                class="form-label"
-                >Precio $10.00 - $1,000.00</label
-              >
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex category" type="checkbox" value="Ropa" id="clothes" />
+              <label class="form-check-label mx-2" for="clothes">
+                Ropa
+              </label>
+              <span class="badge rounded-pill border ms-auto categoryCounter">
+              </span>
             </div>
-
-            <!-- FILTRAR POR MARCAS -->
-            <div class="p-2">
-              <h2>Filtrar por marca</h2>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Instinct
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Royal Canin
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Hills Science Diet
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Cunipic
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  JW Pet Company
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  Tetra
-                </label>
-              </div>
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex category" type="checkbox" value="Alimento" id="food" />
+              <label class="form-check-label mx-2" for="food">
+                Alimento
+              </label>
+              <span class="badge rounded-pill border ms-auto categoryCounter">
+              </span>
             </div>
-
-            <!-- Filtrar por Tag -->
-            <div class="p-2">
-              <h2>Filtrado por Tags</h2>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">Juguetes</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento"> Alimento</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Natural</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">Salmón</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip"> Catnip</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">Arnés</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">Cachorro</button>
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagRueda"> Rueda</button>                  
-                  <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">Jaula</button>           
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex category" type="checkbox" value="Juguetes" id="toys" />
+              <label class="form-check-label mx-2" for="toys">
+                Juguetes
+              </label>
+              <span class="badge rounded-pill border ms-auto categoryCounter">
+              </span>
             </div>
-
-            <!-- PRODUCTOS PREMIUM -->
-            <div class="p-2">
-              <h2>Productos Premium</h2>
-
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="" class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Royal Canin</h5>
-                    <p>$1000.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Instinct</h5>
-                    <p>$2,700.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">WholeHearted</h5>
-                    <p>$850.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Bravery</h5>
-                    <p>$450.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-              <div class="d-flex position-relative">
-                <a href="#" class="stretched-link d-flex align-items-start">
-                  <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                  <div>
-                    <h5 class="mt-0">Tetra ReptoMin</h5>
-                    <p>$711.00 mnx.</p>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-             <!-- ANUNCIOS -->
-            <div class="card">
-              <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1" class="card-img-top" alt="">
-                <div class="card-body">
-                  <p class="card-text">USC Hotel</p>
-                  <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&" class="btn">Booking.com</a>
-                </div>
+            <div class="form-check d-flex">
+              <input class="form-check-input d-flex mt-1 category" type="checkbox" value="Medicamentos"
+                id="medicines" />
+              <label class="form-check-label mx-2" for="medicines">
+                Medicamentos
+              </label>
+              <span class="badge rounded-pill border ms-auto categoryCounter">
+              </span>
             </div>
           </div>
 
-          <div class="col-lg-8 col-md-8 col-8">
-            <!-- productos -->
-            <p class="resultados">12 de 36 resultados mostrados</p>
-            <div
-              class="row row-cols-3 row-seccion-cards p-2"
-              id="seccion-cards"
-            ></div>
-            <div id="seccion-cards2"></div>
-            <!-- modales -->
+          <!-- FILTRAR POR PRECIO -->
+          <div class="p-2">
+            <h2>Filtrar por precio</h2>
+            <input type="range" class="form-range" id="customRange" min="0" max="2000" value="0" step="100" /><label
+              for="customRange1" class="form-label">Precio: $0 - <span class="price-value">$2000</span></label>
+          </div>
+
+          <!-- FILTRAR POR MARCAS -->
+          <div class="p-2">
+            <h2>Filtrar por marca</h2>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" id="brand" value="Instinct Original" />
+              <label class="form-check-label mx-2" for="brand">
+                Instinct </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" value="Royal Canin" id="brand" />
+              <label class="form-check-label mx-2" for="brand">
+                Royal Canin </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" value="WholeHearted" id="brand" />
+              <label class="form-check-label mx-2" for="brand">
+                WholeHearted </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" value="Bravery" id="brand" />
+              <label class="form-check-label mx-2" for="brand">
+                Bravery </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" value="Hill's" id="brand" />
+              <label class="form-check-label mx-2" for="brand"> Hill's </label><span
+                class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+
+            <div class="form-check d-flex mt-1">
+              <input class="form-check-input d-flex brand" type="checkbox" value="Azoo" id="brand" />
+              <label class="form-check-label mx-2" for="brand"> Azoo </label><span
+                class="badge rounded-pill border ms-auto brandCounter"></span>
+            </div>
+          </div>
+
+          <!-- Filtrar por Tag -->
+          <div class="p-2">
+            <h2>Filtrado por Tags</h2>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">
+              Juguetes
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento">
+              Alimento
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">
+              Natural
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">
+              Salmón
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip">
+              Catnip
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">
+              Arnés
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">
+              Cachorro
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagRueda">
+              Rueda
+            </button>
+            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">
+              Jaula
+            </button>
+          </div>
+
+          <!-- PRODUCTOS PREMIUM -->
+          <div class="p-2">
+            <h2>Productos Premium</h2>
+
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="" class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Royal Canin</h5>
+                  <p>$1000.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Instinct</h5>
+                  <p>$2,700.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">WholeHearted</h5>
+                  <p>$850.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Bravery</h5>
+                  <p>$450.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+            <div class="d-flex position-relative">
+              <a href="#" class="stretched-link d-flex align-items-start">
+                <img src="..." class="flex-shrink-0 me-3" alt="..." />
+                <div>
+                  <h5 class="mt-0">Tetra ReptoMin</h5>
+                  <p>$711.00 mnx.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- ANUNCIOS -->
+          <div class="card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1"
+              class="card-img-top" alt="" />
+            <div class="card-body">
+              <p class="card-text">USC Hotel</p>
+              <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&"
+                class="btn">Booking.com</a>
+            </div>
           </div>
         </div>
+
+        <div class="col-lg-8 col-md-8 col-8">
+          <!-- productos -->
+          <p class="resultados">
+            <span id="counterProductsToShow">0</span> de <span id="resultados-productos"></span> resultados mostrados
+          </p>
+          <div class="row row-cols-3 row-seccion-cards p-2" id="seccion-cards"></div>
+          <div id="seccion-cards2"></div>
+          <!-- modales -->
+        </div>
+      </div>
     </section>
     <section id="seccionCarrusel" class="d-none d-sm-block carruselMasPopulares">
       <!-- carru. mas populares -->
@@ -534,11 +500,14 @@
     crossorigin="anonymous"></script>
   <script src="/src/modules/footer/footer.js"></script>
   <script src="/src/modules/header/header.js"></script>
-  <script src="/src/pages/tienda/tienda.js"></script>
+  <script type="module" src="/src/pages/tienda/tienda.js"></script>
   <script type="module" src="/src/pages/tienda/tiendaCartas.js"></script>
+  <script type="module" src="/src/pages/tienda/contador.js"></script>
+  <script type="module" src="/src/pages/tienda/filtroTag.js"></script>
   <script type="module" src="/src/modules/nav/nav.js"></script>
   <script type="module" src="/src/pages/tienda/seccionCarruselMobile.js"></script>
   <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+  <script type="module" src="/src/pages/tienda/filtradoMarcaCategoria.js"></script>
 </body>
 
 </html>
