@@ -169,18 +169,19 @@
                             <!-- Contraseña de la tienda -->
                             <div class="mb-3">
                                 <label for="password" class="form-label">Contraseña</label>
+                                <p class="text-password">La contraseña debe tener al menos 8 caracteres, incluyendo una
+                                    mayúscula, un
+                                    número y un carácter especial.</p>
                                 <div class="d-flex">
                                     <input type="password" class="form-control w-75" id="password" name="password"
-                                        pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}"
-                                        placeholder="Mín 8 dígitos, 1 mayúscula, 1 número, 1 especial (!@#$%^&*)"
+                                        pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}" placeholder="Contraseña"
                                         required>
                                     <button type="button" class="btn btn-light button-password" id="togglePassword">
                                         Mostrar
                                     </button>
                                     <div class="invalid-feedback">
-                                        Por favor, introduce una contraseña de mínimo 8 dígitos que contenga minúsculas,
-                                        1
-                                        mayúscula, 1 número y 1 caracter especial (!@#$%^&*)
+                                        "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un
+                                        número y un carácter especial
                                     </div>
                                 </div>
                             </div>
@@ -240,7 +241,7 @@
                             </div>
 
                             <!-- Aceptar los términos y condiciones de Petcalli -->
-                            <div class="mt-2 d-flex align-items-center">
+                            <div class="mt-2 d-flex align-items-start">
                                 <input class="form-check-input checkbox" type="checkbox" value="" id="invalidCheck"
                                     required>
                                 <label class="form-check-label ms-2" for="invalidCheck">

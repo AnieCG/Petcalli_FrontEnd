@@ -34,7 +34,7 @@
                 </div> <br />
                 <div id="letter" class="text-center my-3"> o inicia sesión</div>
 
-                <div class="container provisional mx-auto shadow-lg rounded-3 mb-4 mt-5 p-3">
+                <div class="container provisional mx-auto text-start shadow-lg rounded-3 mb-4 mt-5 p-3">
 
 
                   <!--          FORMULARIO    -->
@@ -47,22 +47,23 @@
                       <div class="invalid-feedback">Por favor, introduce un correo válido.</div>
                     </div>
                     <div class="mb-3">
-                      <label for="password" class="form-label letter">Contraseña</label>
+                      <label for="password" class="form-label">Contraseña</label>
+                      <p class="text-password">La contraseña debe tener al menos 8 caracteres, incluyendo una
+                        mayúscula, un
+                        número y un carácter especial.</p>
                       <div class="d-flex">
                         <input type="password" class="form-control w-75" id="password" name="password"
-                          pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}"
-                          placeholder="Mín 8 dígitos, 1 mayúscula, 1 número, 1 especial (!@#$%^&*)" required>
+                          pattern="(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.*[0-9]).{8,}" placeholder="Contraseña" required>
                         <button type="button" class="btn btn-light button-password" id="togglePassword">
                           Mostrar
                         </button>
                         <div class="invalid-feedback">
-                          Por favor, introduce una contraseña de mínimo 8 dígitos que contenga minúsculas,
-                          1
-                          mayúscula, 1 número y 1 caracter especial (!@#$%^&*)
+                          "La contraseña debe tener al menos 8 caracteres, incluyendo una mayúscula, un
+                          número y un carácter especial
                         </div>
                       </div>
                     </div>
-                    <div class="mt-2 d-flex align-items-center">
+                    <div class="mt-2 d-flex align-items-start">
                       <input class="form-check-input checkbox" type="checkbox" value="" id="invalidCheck" required>
                       <label class="form-check-label ms-2" for="invalidCheck">
                         <span>Acepto los </span><a href="/src/pages/terminosyaviso/terminos.html" target="_blank">
@@ -71,7 +72,9 @@
                           privacidad</a>
                       </label>
                     </div>
-                    <button id="logbutton" type="submit" class="btn btn-primary w-150 my-3"> Iniciar Sesión </button>
+                    <div class="d-flex justify-content-center mt-3">
+                      <button id="logbutton" type="submit" class="btn btn-primary w-150"> Iniciar Sesión </button>
+                    </div>
                     <br>
 
                     <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
@@ -110,13 +113,10 @@
                         </div>
                       </div>
                     </div>
-                    <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste tu
+                    <button class="btn " data-bs-target="#exampleModalToggle" data-bs-toggle="modal"> <u> ¿Olvidaste
+                        tu
                         contraseña?
                       </u></button>
-
-
-
-
                   </form>
 
                 </div>
