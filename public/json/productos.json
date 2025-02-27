@@ -37,15 +37,15 @@
   },
   {
     "id": 4,
-    "title": "Cachorro Persa Comida Seca",
+    "title": "Cuidado De Peso Comida Seca",
     "marca": "Royal Canin",
     "petType": "Gato",
-    "image": "https://cdn.royalcanin-weshare-online.io/WyLhBmwBaxEApS7LaSIO/v14/persian-kitten-1?w=640&fm=jpg&auto=format,compress",
-    "price": "$650.00",
-    "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
+    "image": "https://cdn.royalcanin-weshare-online.io/fOd3TYcBaPOZra8qUPya/v64/00030111442703f-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$1,625.00",
+    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
     "category": "Alimento",
     "color":"NA",
-    "size":"1.3 kg"
+    "size":"6.3 kg"
   },
   {
     "id": 5,
@@ -109,15 +109,15 @@
   },
   {
     "id": 10,
-    "title": "Cuidado De Peso Comida Seca",
+    "title": "Cachorro Persa Comida Seca",
     "marca": "Royal Canin",
     "petType": "Gato",
-    "image": "https://cdn.royalcanin-weshare-online.io/fOd3TYcBaPOZra8qUPya/v64/00030111442703f-cf-gs1?w=640&fm=jpg&auto=format,compress",
-    "price": "$1,625.00",
-    "description": "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    "image": "https://cdn.royalcanin-weshare-online.io/rz_NTIcBRYZmsWpcJPUx/v56/00030111450036-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    "price": "$650.00",
+    "description": "Formulado para satisfacer las necesidades nutricionales del período de crecimiento de los cachorros raza Maine Coon de hasta 15 meses de edad",
     "category": "Alimento",
     "color":"NA",
-    "size":"6.3 kg"
+    "size":"1.3 kg"
   },
   {
     "id": 11,
