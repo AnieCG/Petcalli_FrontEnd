@@ -372,6 +372,30 @@ footer {
   box-shadow: none ;
   background-color: transparent;
 }
+.pet-carousel  {
+  background-color: var(--block-images2);
+}
 
+@media (max-width: 768px) {
+
+  .icono {
+    width: 40px; 
+  }
+
+  .texto {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .icono {
+    width: 30px; 
+  }
+
+  .texto {
+    font-size: 12px; 
+  }
+}
 
 
