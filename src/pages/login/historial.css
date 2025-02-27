@@ -1,0 +1,50 @@
+body {
+  max-width: 1920px;
+
+  h2 {
+    color: var(--subtitle);
+    font-family: var(--font_subtitle);
+    font-weight: 700;
+    font-size: 45px;
+  }
+
+  .text_accordion {
+    font-family: var(--font_subtitle);
+    font-size: 20px;
+  }
+
+  .text_goStore {
+    font-size: 16px;
+  }
+
+  .user_welcome {
+    font-family: var(--font--subtitle);
+    color: var(--subtitle);
+    font-size: 30px;
+  }
+
+  .user_info {
+    font-size: 20px;
+    font-family: var(--font--text);
+  }
+
+  .user_text {
+    font-size: 20px;
+    font-family: var(--font--text);
+    color: var(--block-images1);
+    font-weight: 600;
+    margin-right: 10px;
+  }
+
+  .button_shop {
+    color: var(--block-images1);
+    margin-left: 10px;
+    background-color: var(--block-images1);
+    border: none;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
