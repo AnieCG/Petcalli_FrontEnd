@@ -1,6 +1,5 @@
 body {
   max-width: 1920px;
-  overflow: hidden;
 
   h2 {
     color: var(--subtitle);
