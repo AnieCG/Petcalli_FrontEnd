@@ -15,7 +15,7 @@ document
     const state = document.getElementById("State").value.trim();
 
     const password = document.getElementById("password").value.trim();
-    const user = {
+    const seller = {
       name,
       lastName,
       email,
@@ -29,6 +29,6 @@ document
       city,
     };
 
-    localStorage.setItem("user", JSON.stringify(user));
+    localStorage.setItem("seller", JSON.stringify(seller));
     alert("registro realizado");
   });

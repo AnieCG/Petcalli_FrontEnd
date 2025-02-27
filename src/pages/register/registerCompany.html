@@ -73,7 +73,7 @@
                                 <!-- Dirección de la tienda -->
                                 <div class="form-group mb-3 col-12 col-sm-9 col-md-8">
                                     <label for="address">Dirección</label>
-                                    <input type="text" class="form-control" id="address" minlength="50" maxlength="250"
+                                    <input type="text" class="form-control" id="address" minlength="10" maxlength="250"
                                         placeholder="123 Calle Principal" required></textarea>
                                     <div class="valid-feedback"></div>
                                     <div class="invalid-feedback">Por favor, ingresa una dirección.</div>
@@ -240,22 +240,20 @@
                             </div>
 
                             <!-- Aceptar los términos y condiciones de Petcalli -->
-                            <div class="form-check py-3">
-                                <input class="form-check-input" type="checkbox" name="check-true" id="invalidCheck"
+                            <div class="mt-2 d-flex align-items-center">
+                                <input class="form-check-input checkbox" type="checkbox" value="" id="invalidCheck"
                                     required>
-                                <label class="form-check-label" for="invalidCheck">
-                                    <a href="/src/pages/terminosyaviso/terminos.html" target="_blank">Acepto los
-                                        términos y condiciones</a>
-                                    <a href="/src/pages/terminosyaviso/aviso.html" target="_blank">Aviso de
+                                <label class="form-check-label ms-2" for="invalidCheck">
+                                    <span>Acepto los </span><a href="/src/pages/terminosyaviso/terminos.html"
+                                        target="_blank">
+                                        términos y condiciones</a> <span>y el</span>
+                                    <a href="/src/pages/terminosyaviso/aviso.html" target="_blank"> aviso de
                                         privacidad</a>
                                 </label>
-                                <div class="invalid-feedback">
-                                    Debes aceptar los Términos y condiciones antes de enviar.
-                                </div>
                             </div>
 
                             <!-- Botón de crear tienda -->
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center mt-3">
                                 <button class="fs-5 rounded-pill shadow-lg button text-white w-50 p-2"
                                     type="submit">Crear Tienda</button>
                                 <input type="hidden" name="_captcha" value="false">
