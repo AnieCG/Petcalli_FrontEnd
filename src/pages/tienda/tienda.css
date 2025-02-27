@@ -180,11 +180,11 @@ a {
   /* height: 10rem; */
 }
 #product-card{
-  width: 15rem;
+  width: 16rem;
   margin-left: 1px;
   margin-top: 3;
   margin-bottom: 3;
-  max-height: 31rem;
+  max-height: 32rem;
 
   /* height: 232px; */
   color: black;
@@ -215,14 +215,14 @@ a {
   min-height: 7rem;
   /* height: 1rem; */
 margin: 0;
-margin-bottom: 30px;
+margin-bottom: 5px;
   /* background-color: #f2cc8f; */
   border-radius: 20%;
 }
 .card #precio {
   border: 0;
   margin-top: 5px;
-  margin-bottom: 5 px;
+  margin-bottom: 3px;
   color: black;
   /* background-color: #f2cc8f; */
   height: 1rem;
