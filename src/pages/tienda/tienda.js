@@ -25,9 +25,3 @@ filtradoPorPrecio(products);
 filterProductsByPetType(products);
 
 filtradoTag(products);
-
-document.addEventListener("DOMContentLoaded", async () => {
-  // const productos = await getJson("/public/json/productos.json");
-  // const allProducts = await getJson("/public/json/productos.json");
-  //Insertar carrusel
-});
