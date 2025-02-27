@@ -5,8 +5,6 @@ const $priceValue = document.getElementsByClassName("price-value");
 
 export default function filtradoPorPrecio(productos) {
   Array.from($inputFiltradoPrecios).forEach((input, index) => {
-    console.log($inputFiltradoPrecios);
-
     input.addEventListener("input", function () {
       let maxPrice = parseInt(this.value);
       Array.from($priceValue)[index].textContent = `$ ${maxPrice}`;
