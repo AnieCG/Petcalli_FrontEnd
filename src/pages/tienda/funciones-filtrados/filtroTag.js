@@ -6,6 +6,8 @@ export default function filtradoTag(products) {
   Array.from($buttons).forEach((button) => {
     const buttonTag = button.id.slice(3);
     button.addEventListener("click", () => {
+      console.log(buttonTag);
+
       const productsToShow = products.filter(
         (product) =>
           product.description.includes(buttonTag) ||
