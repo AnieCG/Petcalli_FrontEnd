@@ -173,7 +173,7 @@ a {
 }
 #image2 {
   border-radius: 15%;
-  background-color:rgb(112, 45, 45);
+  background-color:rgb(255, 255, 255);
   height: 160px; 
   margin: 0;
   
@@ -200,6 +200,7 @@ a {
   width: 15rem;
   padding: 6px;
   border-color: #e07a5f;
+  padding-bottom: 0;
   
   
   
@@ -212,7 +213,7 @@ a {
   
 }
 .card #description{
-  min-height: 7rem;
+  min-height: 9rem;
   /* height: 1rem; */
 margin: 0;
 margin-bottom: 5px;
