@@ -132,6 +132,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const productos = await getJson("/public/json/productos.json");
   const allProducts = productos;
 
+  $seccionCards.innerHTML = productos
+            .map((card) => createCards(card))
+            .join("");
+
   const filterProductsByPetType = (petType) => {
     const productsToShow = productos.filter(
       (product) => product.petType === petType
