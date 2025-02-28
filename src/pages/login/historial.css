@@ -38,6 +38,9 @@ body {
 
   .button_shop {
     color: var(--block-images1);
+    margin-left: 10px;
+    background-color: var(--block-images1);
+    border: none;
   }
 
   a {
