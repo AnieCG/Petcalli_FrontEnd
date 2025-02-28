@@ -68,3 +68,8 @@ h1 {
 .checkbox {
   min-width: 15px;
 }
+
+.text-password {
+  font-size: 10px;
+  color: gray;
+}
