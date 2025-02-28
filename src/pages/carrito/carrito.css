@@ -1,0 +1,29 @@
+
+#coupon-section {
+    margin: 15px 0;
+}
+
+#coupon-section input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#coupon-section button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#coupon-message {
+    font-size: 0.9rem;
+    color: orange;
+    margin-top: 10px;
+}
+
+#payment-method-section {
+    margin: 20px 0;
+}
+
+#payment-method-section input {
+    margin-right: 10px;
+}

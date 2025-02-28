@@ -33,8 +33,48 @@
         <!-- Seccion de tarjetas de producto -->
 
         <!-- Seccion de resuemen de compra -->
+        <div class="cart-container">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                
+            </table>
+    
+            <div class="cart-summary">
+                <div id="purchase-summary">
+                    <h3>Resumen de la Compra</h3>
+                    <p><strong>Subtotal:</strong> $<span id="subtotal-price">0.00</span></p>
+                    <p><strong>Descuento:</strong> $<span id="discount-price">0.00</span></p>
+                    <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+                </div>
+                
+                <div id="coupon-section">
+                    <label for="coupon-code">Código de cupón:</label>
+                    <input type="text" id="coupon-code" placeholder="Ingresa tu código">
+                    <button id="apply-coupon">Aplicar cupón</button>
+                    <p id="coupon-message"></p>
+                </div>
 
         <!-- Popup para el pago -->
+        <div id="payment-method-section">
+            <h3>Selecciona tu forma de pago</h3>
+            <input type="radio" name="payment-method" value="credit-card" id="credit-card" checked>
+            <label for="credit-card">Tarjeta de Crédito</label><br>
+            <input type="radio" name="payment-method" value="paypal" id="paypal">
+            <label for="paypal">PayPal</label><br>
+        </div>
+        
+        <button id="checkout-button">Finalizar Compra</button>
+    </div>
+</div>
+
+<script src="carrito.js"></script>
 
 
         <!-- Popup para la direccion de envio-->
