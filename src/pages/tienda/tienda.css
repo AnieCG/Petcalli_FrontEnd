@@ -102,11 +102,11 @@ main {
     color: #81b29a;
   }
 
-  .button-next-before {
+  #button-pets-before, #button-pets-next {
     background-color: #e07a5f;
     height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    width: 60px; 
+    border-radius: 50%; 
   }
 }
 
