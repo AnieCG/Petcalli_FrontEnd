@@ -1,7 +1,7 @@
 const $seccionCards = document.getElementById("seccion-cards2");
 const createCards = (producto) => {
-    //console.log(`menos${producto.id}`);
-    return `
+  //console.log(`menos${producto.id}`);
+  return `
 
 
 
@@ -67,16 +67,11 @@ const createCards = (producto) => {
 };
 
 fetch("/public/json/productos.json")
-    .then((productos) => productos.json())
-    .then((productos) => {
-   /*      console.log(typeof(productos));
+  .then((productos) => productos.json())
+  .then((productos) => {
+    /*      console.log(typeof(productos));
         console.log((productos)); */
-        $seccionCards.innerHTML = productos
-            .map((card) => createCards(card))
-            .join("");
-        
-    });
-
-
-
-    
+    $seccionCards.innerHTML = productos
+      .map((card) => createCards(card))
+      .join("");
+  });
