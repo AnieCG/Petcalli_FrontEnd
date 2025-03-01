@@ -5,6 +5,7 @@ import insertCarruselMasPopulares from "./components/carruselMasPopulares.js";
 import filtradoTag from "./funciones-filtrados/filtroTag.js";
 import mostrarProductos from "./funciones-filtrados/mostrarProductos.js";
 import filterProductsByMarca from "./funciones-filtrados/filtrado-marca.js";
+
 insertCarruselMasPopulares();
 
 let products = [];
@@ -24,6 +25,7 @@ document.querySelectorAll(".form-range").forEach((input) => {
   input.addEventListener("input", () => {
     filterProducts = filtradoPorPrecio(filterProducts, input);
     mostrarProductos(filterProducts);
+    filterProducts = [...products];
   });
 });
 
@@ -31,6 +33,7 @@ document.querySelectorAll(".carrusel-btn").forEach((button) => {
   button.addEventListener("click", () => {
     filterProducts = filterProductsByPetType(filterProducts, button);
     mostrarProductos(filterProducts);
+    filterProducts = [...products];
   });
 });
 
@@ -38,6 +41,7 @@ document.querySelectorAll(".tags").forEach((input) => {
   input.addEventListener("click", () => {
     filterProducts = filtradoTag(filterProducts, input);
     mostrarProductos(filterProducts);
+    filterProducts = [...products];
   });
 });
 
@@ -45,5 +49,6 @@ document.querySelectorAll(".brand").forEach((input, index) => {
   input.addEventListener("change", () => {
     filterProducts = filterProductsByMarca(filterProducts, input, index);
     mostrarProductos(filterProducts);
+    filterProducts = [...products];
   });
 });

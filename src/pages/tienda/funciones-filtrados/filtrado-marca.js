@@ -1,23 +1,32 @@
 // Para checkbox
 // Para contadores
 const brandCounter = document.getElementsByClassName("brandCounter");
+
 let selectedBrands = [];
 
 export default function filterProductsByMarca(products, input, index) {
-  const counter = brandCounter[index];
-
   if (input.checked) {
     selectedBrands.push(input.value);
   } else {
     selectedBrands = selectedBrands.filter((brand) => brand !== input.value);
   }
 
-  return (products = products.filter((product) => {
-    console.log(selectedBrands);
+  const count = products.filter(
+    (product) => product.marca === input.value
+  ).length;
 
+  brandCounter[index].textContent = selectedBrands.includes(input.value)
+    ? count
+    : 0;
+  return (products = products.filter((product) => {
     return selectedBrands.includes(product.marca);
   }));
 }
+
+//Inicializar contadores en 0
+Array.from(brandCounter).forEach((counter) => {
+  counter.textContent = 0;
+});
 /* FILTRADO POR MARCAS */
 // Función para filtrar productos por marca
 // export default function filterProductsByMarca(products, input) {
