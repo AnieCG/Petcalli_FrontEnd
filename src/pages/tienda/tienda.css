@@ -7,7 +7,9 @@
 body {
   max-width: 1920px;
 }
-
+a {
+  text-decoration: none;
+}
 main {
   #filtro {
     background-color: var(--block-images1);
@@ -252,10 +254,9 @@ a {
     background-color: var(--block-images1);
     color: white;
   }
-  .collapseContainer{
+  .collapseContainer {
     background-color: var(--block-images2);
   }
-
 }
 
 .modal-header {
@@ -300,9 +301,6 @@ a {
   }
 }
 
-
-
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -317,4 +315,3 @@ a {
   pointer-events: none;
   color: #ccc;
 }
-

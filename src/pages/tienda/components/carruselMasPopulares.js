@@ -50,7 +50,7 @@ export default function insertCarruselMasPopulares() {
                         <a href="/src/pages/servicios/servicios.html">
                           <div class="card">
                             <img
-                              src="https://laboticaanimal.com/wp-content/uploads/2024/01/Imagen-de-WhatsApp-2024-01-15-a-las-00.56.52_35b57605.jpg"
+                              src="https://www.consalud.es/animalcare/uploads/s1/25/04/50/3/mascotas.jpeg"
                               class="img-fluid"
                               alt="Banner de servicio especializado para mascotas exoticas una piton amarilla como fondo" />
                           </div>
