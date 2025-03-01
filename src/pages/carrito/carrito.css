@@ -1,10 +1,9 @@
 #h2 {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
     font-size: 24px;
     color: #333;
-}
+    cursor: url('/public-images/huellas-cursor.png'), auto; 
+} 
 
 #imagencarrito {
     width: auto;
@@ -12,7 +11,19 @@
     margin: 0 auto;
     margin-bottom: 40px;
 width: 100%;
-height: auto;
+height: 100%;
+cursor: url('/public-images/huellas-cursor.png'), auto; 
     
+}
+
+.btn {
+    color: var(#f8f9fa);
+padding: 20px;;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    opacity: 1.0;
+    cursor: url('/public-images/huellas-cursor.png'), auto; 
 }
 
