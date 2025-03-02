@@ -153,70 +153,39 @@ a {
     height: 80px;
   }
 }
-
-.row-seccion-cards {
-  background-color: #f6f1dd;
-  justify-content: space-between;
-}
-
-.resultados {
-  text-align: start;
-  margin-top: 20px;
-}
-
-/* Seccion de cards */
-.card {
-  color: black;
-  background-color: #f2cc8f;
-}
-#image {
-  border-radius: 2px;
-}
-#image:hover {
-  transform: scale(1.03);
-  cursor: pointer;
-}
-.card #precio {
-  color: black;
-}
-
-a {
-  cursor: pointer;
-}
-
-@media (max-width: 575px) {
-  .row-seccion-cards {
-    background-color: #f6f1dd;
-    justify-content: center;
+#seccion-cards{
+  background-color: var(--block-images2);
+  button {
+    background-color: var(--block-images1);
+    color: white;
   }
-
+  .resultados {
+    text-align: start;
+    margin-top: 20px;
+  }
+  .card-body{
+    min-width: 50%;
+  } 
+  figure{
+    min-width: 50%;
+  }
   .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    height: 350px;
-    background-color: #f6f1dd;
-    border: none;
-  }
-
-  #image {
-    height: 280px;
-    width: 14rem;
-    border-radius: 15px;
-  }
-
-  .card p {
-    width: 200px;
-    height: 80px;
-  }
-
-  .card-body {
+    color: black;
     background-color: #f2cc8f;
   }
-
-  .resultados {
-    margin-left: 50px;
+  #image {
+    border-radius: 2px;
+  }
+  #image:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  .card #precio {
+    color: black;
+  }
+  
+  a {
+    cursor: pointer;
   }
 }
 
