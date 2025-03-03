@@ -102,12 +102,14 @@ main {
     color: #81b29a;
   }
 
-  #button-pets-before, #button-pets-next {
+  button{
+   #button-pets-before,  #button-pets-next {
     background-color: #e07a5f;
     height: 60px;
     width: 60px; 
     border-radius: 50%; 
   }
+}
 }
 
 a {

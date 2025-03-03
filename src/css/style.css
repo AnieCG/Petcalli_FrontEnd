@@ -295,13 +295,14 @@ footer {
   max-width: 220px;
 }
 
-
+.Carrusel-index{
 .carousel-control-next,
 .carousel-control-prev {
   width: 30px; 
   height: 30px; 
   padding: 0; 
   background-color: #e07a5f;
+}
 }
 
 
