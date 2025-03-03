@@ -1,11 +1,8 @@
-//import filtradoPorPrecio from "./funciones-filtrados/filtradoPrecio.js";
 import getJson from "./funciones-filtrados/getProducts.js";
-//import filterProductsByPetType from "./funciones-filtrados/filtrado-petType.js";
 import insertCarruselMasPopulares from "./components/carruselMasPopulares.js";
 import filtradoTag from "./funciones-filtrados/filtroTag.js";
 import mostrarProductos from "./funciones-filtrados/mostrarProductos.js";
-//import filterProductsByMarca from "./funciones-filtrados/filtrado-marca.js";
-//import filterProductsByCategory from "./funciones-filtrados/categoryFilter.js";
+import insertQueryProducts from "./funciones-filtrados/insertQueryProducts.js";
 
 insertCarruselMasPopulares();
 
@@ -20,7 +17,6 @@ async function getProducts() {
   const objectProducts = await getJson("/public/json/productos.json");
   products = objectProducts;
   filterProducts = [...products]; // Inicializar con todos los productos
-  mostrarProductos(filterProducts);
 }
 
 await getProducts();
@@ -35,7 +31,7 @@ let selectedFilters = {
   price: null
 };
 
-
+console.log(window.location.href);
 function updateFilters() {
   let filteredProducts = products.filter(product => {
     return (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
@@ -47,7 +43,6 @@ function updateFilters() {
   mostrarProductos(filteredProducts);
   counterProductsToShow.innerHTML = filteredProducts.length;
 };
-console.log(document.querySelectorAll(".petCategory"));
 
 // Eventos que activan los filtros en tiempo real
 
@@ -66,13 +61,11 @@ document.querySelectorAll(".form-range")[0].addEventListener("input", (event) =>
   updateFilters();
 });
 
-
 document.querySelectorAll(".petCategory").forEach((button) => {
   button.addEventListener("click", (event) => {
     document.querySelectorAll(".petCategory").forEach(btn => btn.classList.remove("selected"));
     selectedFilters.petType = event.currentTarget.value || null;
     event.currentTarget.classList.add("selected");
-    console.log("Updated Filters (Pet Type):", selectedFilters);
     updateFilters();
   });
 });
@@ -84,7 +77,6 @@ document.querySelectorAll(".brand").forEach((checkbox) => {
     } else {
       selectedFilters.brand = selectedFilters.brand.filter(brand => brand !== event.target.value);
     }
-    console.log(selectedFilters);
     updateFilters();
   });
 });
@@ -96,7 +88,6 @@ document.querySelectorAll(".category").forEach((checkbox) => {
     } else {
       selectedFilters.category = selectedFilters.category.filter(category => category !== event.target.value);
     }
-    console.log(selectedFilters);
     updateFilters();
   });
 });
@@ -109,3 +100,5 @@ document.querySelectorAll(".tags").forEach((input) => {
     filterProducts = [...products];
   });
 });
+document.addEventListener("DOMContentLoaded", insertQueryProducts(filterProducts));
+
