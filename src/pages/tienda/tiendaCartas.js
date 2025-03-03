@@ -7,7 +7,7 @@ const createCards = (producto) => {
 
       <!-- Modal -->
 <div >
-    <div class="modal fade" id="${producto.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade ventanasModales" id="${producto.id}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true ">
         <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -27,8 +27,9 @@ const createCards = (producto) => {
     <!-- Botones -->
                         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                             <div class="btn-group me-2" role="group" aria-label="First group">
-                                <button type="button" class="btn btn-primary modal-btn mas-menos menos1"
-                                    id="menos${producto.id}">
+                                <button type="button" class="btn btn-primary modal-btn mas-menos 
+                                menos"
+                                    id="menos">
                                     <h3 class="mt-2"><strong>-</strong></h3>
                                 </button>
 
@@ -36,16 +37,17 @@ const createCards = (producto) => {
 
                             <div class="btn-group me-2 text-center " role="group" aria-label="Third group">
                                 <span
-                                    class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2 text-center numero"
-                                    id="contador${producto.image}">
+                                    class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2 text-center 
+                                    numero contador">
                                     <h2 class="mt-2 m-1"><strong> 1 </strong></h2>
                                 </span>
                             </div>
 
                             <div class="btn-group me-2" role="group" aria-label="Second group">
 
-                                <button type="button" class="btn btn-primary modal-btn mas-menos"
-                                    id="mas${producto.id} ">
+                                <button type="button" class="btn btn-primary modal-btn mas-menos 
+                                mas"
+                                    id="mas ">
                                     <h3 class="mt-2"><strong>+</strong></h3>
                                 </button>
                             </div>
@@ -60,7 +62,7 @@ const createCards = (producto) => {
 
             </div>
             <div class="modal-footer" >
-            <button type="button" class="btn btn-secondary modal-btn" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary modal-btn cerrar" data-bs-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary modal-btn" ><a href="#">Ver carrito</a></button>
             </div>
         </div>
