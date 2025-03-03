@@ -1,13 +1,17 @@
-import filtradoPorPrecio from "./funciones-filtrados/filtradoPrecio.js";
+//import filtradoPorPrecio from "./funciones-filtrados/filtradoPrecio.js";
 import getJson from "./funciones-filtrados/getProducts.js";
-import filterProductsByPetType from "./funciones-filtrados/filtrado-petType.js";
+//import filterProductsByPetType from "./funciones-filtrados/filtrado-petType.js";
 import insertCarruselMasPopulares from "./components/carruselMasPopulares.js";
 import filtradoTag from "./funciones-filtrados/filtroTag.js";
 import mostrarProductos from "./funciones-filtrados/mostrarProductos.js";
-import filterProductsByMarca from "./funciones-filtrados/filtrado-marca.js";
-import filterProductsByCategory from "./funciones-filtrados/categoryFilter.js";
+//import filterProductsByMarca from "./funciones-filtrados/filtrado-marca.js";
+//import filterProductsByCategory from "./funciones-filtrados/categoryFilter.js";
 
 insertCarruselMasPopulares();
+
+const $span = document.getElementsByClassName("price-value");
+const counterProductsToShow = document.getElementById("counterProductsToShow");
+const productsTotal = document.getElementById("poductsTotal");
 
 let products = [];
 let filterProducts = [];
@@ -21,6 +25,9 @@ async function getProducts() {
 
 await getProducts();
 
+counterProductsToShow.innerHTML = filterProducts.length;
+productsTotal.innerHTML = filterProducts.length;
+
 let selectedFilters = {
   petType: null,
   category: [],
@@ -28,26 +35,33 @@ let selectedFilters = {
   price: null
 };
 
+
 function updateFilters() {
   let filteredProducts = products.filter(product => {
     return (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
-           (!selectedFilters.category.length || selectedFilters.category.includes(product.category)) &&
-           (!selectedFilters.brand.length || selectedFilters.brand.includes(product.marca)) &&
-           (!selectedFilters.price || parseFloat(product.price.replace(/[$,]/g, "")) <= parseFloat(selectedFilters.price));
+    (!selectedFilters.category.length || selectedFilters.category.includes(product.category)) &&
+    (!selectedFilters.brand.length || selectedFilters.brand.includes(product.marca)) &&
+    (!selectedFilters.price || parseFloat(product.price.replace(/[$,]/g, "")) <= parseFloat(selectedFilters.price));
   });
-
+  
   mostrarProductos(filteredProducts);
+  counterProductsToShow.innerHTML = filteredProducts.length;
 };
 console.log(document.querySelectorAll(".petCategory"));
 
 // Eventos que activan los filtros en tiempo real
+
 document.querySelectorAll(".form-range")[1].addEventListener("input", (event) => {
   selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
+  let maxPrice = parseInt(event.target.value);
+  $span[1].innerHTML = `$ ${maxPrice}`;
   console.log(selectedFilters);
   updateFilters();
 });
 document.querySelectorAll(".form-range")[0].addEventListener("input", (event) => {
   selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
+  let maxPrice = parseInt(event.target.value);
+  $span[0].innerHTML = `$ ${maxPrice}`;
   console.log(selectedFilters);
   updateFilters();
 });
@@ -55,7 +69,7 @@ document.querySelectorAll(".form-range")[0].addEventListener("input", (event) =>
 
 document.querySelectorAll(".petCategory").forEach((button) => {
   button.addEventListener("click", (event) => {
-    //document.querySelectorAll(".petCategory").forEach(btn => btn.classList.remove("selected"));
+    document.querySelectorAll(".petCategory").forEach(btn => btn.classList.remove("selected"));
     selectedFilters.petType = event.currentTarget.value || null;
     event.currentTarget.classList.add("selected");
     console.log("Updated Filters (Pet Type):", selectedFilters);
@@ -84,5 +98,14 @@ document.querySelectorAll(".category").forEach((checkbox) => {
     }
     console.log(selectedFilters);
     updateFilters();
+  });
+});
+
+document.querySelectorAll(".tags").forEach((input) => {
+  input.addEventListener("click", () => {
+    filterProducts = filtradoTag(filterProducts, input);
+    mostrarProductos(filterProducts);
+    counterProductsToShow.innerHTML = filterProducts.length;    
+    filterProducts = [...products];
   });
 });
