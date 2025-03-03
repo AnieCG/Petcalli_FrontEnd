@@ -21,43 +21,68 @@ async function getProducts() {
 
 await getProducts();
 
-// 🔹 Eventos que activan los filtros en tiempo real
-document.querySelectorAll(".form-range").forEach((input) => {
-  input.addEventListener("input", () => {
-    filterProducts = filtradoPorPrecio(filterProducts, input);
-    mostrarProductos(filterProducts);
-    filterProducts = [...products];
+let selectedFilters = {
+  petType: null,
+  category: [],
+  brand: [],
+  price: null
+};
+
+function updateFilters() {
+  let filteredProducts = products.filter(product => {
+    return (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
+           (!selectedFilters.category.length || selectedFilters.category.includes(product.category)) &&
+           (!selectedFilters.brand.length || selectedFilters.brand.includes(product.marca)) &&
+           (!selectedFilters.price || parseFloat(product.price.replace(/[$,]/g, "")) <= parseFloat(selectedFilters.price));
   });
+
+  mostrarProductos(filteredProducts);
+};
+console.log(document.querySelectorAll(".petCategory"));
+
+// Eventos que activan los filtros en tiempo real
+document.querySelectorAll(".form-range")[1].addEventListener("input", (event) => {
+  selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
+  console.log(selectedFilters);
+  updateFilters();
 });
+document.querySelectorAll(".form-range")[0].addEventListener("input", (event) => {
+  selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
+  console.log(selectedFilters);
+  updateFilters();
+});
+
 
 document.querySelectorAll(".petCategory").forEach((button) => {
-  button.addEventListener("click", () => {
-    filterProducts = filterProductsByPetType(filterProducts, button);
-    mostrarProductos(filterProducts);
-    filterProducts = [...products];
+  button.addEventListener("click", (event) => {
+    //document.querySelectorAll(".petCategory").forEach(btn => btn.classList.remove("selected"));
+    selectedFilters.petType = event.currentTarget.value || null;
+    event.currentTarget.classList.add("selected");
+    console.log("Updated Filters (Pet Type):", selectedFilters);
+    updateFilters();
   });
 });
 
-document.querySelectorAll(".tags").forEach((input) => {
-  input.addEventListener("click", () => {
-    filterProducts = filtradoTag(filterProducts, input);
-    mostrarProductos(filterProducts);
-    filterProducts = [...products];
+document.querySelectorAll(".brand").forEach((checkbox) => {
+  checkbox.addEventListener("change", (event) => {
+    if (event.target.checked) {
+      selectedFilters.brand.push(event.target.value);
+    } else {
+      selectedFilters.brand = selectedFilters.brand.filter(brand => brand !== event.target.value);
+    }
+    console.log(selectedFilters);
+    updateFilters();
   });
 });
 
-document.querySelectorAll(".brand").forEach((input, index) => {
-  input.addEventListener("change", () => {
-    filterProducts = filterProductsByMarca(filterProducts, input, index);
-    mostrarProductos(filterProducts);
-    filterProducts = [...products];
-  });
-});
-
-document.querySelectorAll(".category").forEach((input, index) => {
-  input.addEventListener("change", () => {
-    filterProducts = filterProductsByCategory(filterProducts, input, index);
-    mostrarProductos(filterProducts);
-    filterProducts = [...products];
+document.querySelectorAll(".category").forEach((checkbox) => {
+  checkbox.addEventListener("change", (event) => {
+    if (event.target.checked) {
+      selectedFilters.category.push(event.target.value);
+    } else {
+      selectedFilters.category = selectedFilters.category.filter(category => category !== event.target.value);
+    }
+    console.log(selectedFilters);
+    updateFilters();
   });
 });
