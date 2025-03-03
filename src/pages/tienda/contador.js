@@ -16,29 +16,33 @@ setTimeout(() => {
     
     for(let i = 0; i<contador.length; i++){
         contadorPiezasMenos[i].addEventListener("click", ()=>{ 
-            contadorIndividual --;
-            console.log(contadorIndividual);
-            console.log("Ese era mi contador" + i );
-            contador[i].innerHTML = `<h2 class="mt-2 m-1"><strong> ${contadorIndividual} </strong></h2>`;
+            if (contadorIndividual>=1){
+                contadorIndividual --;
+                //console.log(contadorIndividual);
+                //console.log("Ese era mi contador" + i );
+                contador[i].innerHTML = `<h2 class="mt-2 m-1"><strong> ${contadorIndividual} </strong></h2>`;
+            }
+
         }
         );
     
         contadorPiezasMas[i].addEventListener("click", ()=>{ 
             contadorIndividual ++;
-            console.log(contadorIndividual);
-            console.log("Ese era mi contador" + i);
+            //console.log(contadorIndividual);
+            //console.log("Ese era mi contador" + i);
             contador[i].innerHTML = `<h2 class="mt-2 m-1"><strong> ${contadorIndividual} </strong></h2>`;
         }
         );
 
         cerrar[i].addEventListener("click", ()=>{ 
             contadorIndividual = 1;
-            console.log(contadorIndividual);
+            //console.log(contadorIndividual);
+            contador[i].innerHTML = `<h2 class="mt-2 m-1"><strong> ${contadorIndividual} </strong></h2>`;
         }
         );
         cerrar2[i].addEventListener("click", ()=>{ 
             contadorIndividual = 1;
-            console.log(contadorIndividual);
+            //console.log(contadorIndividual);
             contador[i].innerHTML = `<h2 class="mt-2 m-1"><strong> ${contadorIndividual} </strong></h2>`;
         }
         );
