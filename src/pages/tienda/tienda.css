@@ -173,18 +173,18 @@ a {
 }
 #image2 {
   border-radius: 15%;
-  background-color:rgb(112, 45, 45);
+  background-color:rgb(255, 255, 255);
   height: 160px; 
   margin: 0;
   
   /* height: 10rem; */
 }
 #product-card{
-  width: 15rem;
+  width: 16rem;
   margin-left: 1px;
   margin-top: 3;
   margin-bottom: 3;
-  max-height: 31rem;
+  max-height: 32rem;
 
   /* height: 232px; */
   color: black;
@@ -200,6 +200,7 @@ a {
   width: 15rem;
   padding: 6px;
   border-color: #e07a5f;
+  padding-bottom: 0;
   
   
   
@@ -212,17 +213,17 @@ a {
   
 }
 .card #description{
-  min-height: 7rem;
+  min-height: 9rem;
   /* height: 1rem; */
 margin: 0;
-margin-bottom: 30px;
+margin-bottom: 5px;
   /* background-color: #f2cc8f; */
   border-radius: 20%;
 }
 .card #precio {
   border: 0;
   margin-top: 5px;
-  margin-bottom: 5 px;
+  margin-bottom: 3px;
   color: black;
   /* background-color: #f2cc8f; */
   height: 1rem;

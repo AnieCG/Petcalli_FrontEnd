@@ -64,3 +64,12 @@ h1 {
 .button-password {
   margin-left: 20px;
 }
+
+.checkbox {
+  min-width: 15px;
+}
+
+.text-password {
+  font-size: 10px;
+  color: gray;
+}
