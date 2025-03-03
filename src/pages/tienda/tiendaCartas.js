@@ -25,32 +25,38 @@ const createCards = (producto) => {
                 </div>
 
     <!-- Botones -->
-                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-                    <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-primary modal-btn menos${producto.id}" id="menos${producto.id}"><strong>-</strong></button>
-                        <button type="button" class="btn btn-primary modal-btn mas" id="mas${producto.id}"><strong>+</strong></button>
-                    </div>
-                    <div class="btn-group me-2" role="group" aria-label="Fourth group">
-                        <span class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" id="contador${producto.image}">
-                        <strong> 0 </strong> </span>
-                    </div>
-                    <div class="btn-group me-2" role="group" aria-label="Second group">
-                        <div class="btn-group dropend" role="group">
-                            <button type="button" class="btn btn-primary dropdown-toggle modal-btn" data-bs-toggle="dropdown" aria-expanded="false">
-                            Versión disponible
-                            </button>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Color: ${producto.color}</a></li>
-                            <li><a class="dropdown-item" href="#">Tamaño: ${producto.size}</a></li>
-                            </ul>
+                        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-primary modal-btn mas-menos"
+                                    id="menos${producto.id}">
+                                    <h3 class="mt-2"><strong>-</strong></h3>
+                                </button>
+
+                            </div>
+
+                            <div class="btn-group me-2 text-center " role="group" aria-label="Third group">
+                                <span
+                                    class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2 text-center numero"
+                                    id="contador${producto.image}">
+                                    <h2 class="mt-2 m-1"><strong> 1 </strong></h2>
+                                </span>
+                            </div>
+
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+
+                                <button type="button" class="btn btn-primary modal-btn mas-menos"
+                                    id="mas${producto.id} ">
+                                    <h3 class="mt-2"><strong>+</strong></h3>
+                                </button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Third group">
+                                <button type="button " class="btn btn-primary modal-btn carrito"><strong>Agregar al
+                                        carrito</strong></button>
+                            </div>
+
+
                         </div>
-                    </div>
-                    <div class="btn-group me-2" role="group" aria-label="Third group">
-                        <button type="button " class="btn btn-primary modal-btn"><strong>Agregar al carrito</strong></button>
-                    </div>
 
-
-                </div>
 
             </div>
             <div class="modal-footer" >
