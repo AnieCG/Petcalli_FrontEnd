@@ -7,7 +7,9 @@
 body {
   max-width: 1920px;
 }
-
+a {
+  text-decoration: none;
+}
 main {
   #filtro {
     background-color: var(--block-images1);
@@ -102,12 +104,14 @@ main {
     color: #81b29a;
   }
 
-  .button-next-before {
+  button{
+   #button-pets-before,  #button-pets-next {
     background-color: #e07a5f;
     height: 60px;
-    width: 60px;
-    border-radius: 50%;
+    width: 60px; 
+    border-radius: 50%; 
   }
+}
 }
 
 a {
@@ -151,123 +155,44 @@ a {
     height: 80px;
   }
 }
-
-.row-seccion-cards {
-  background-color: #f6f1dd;
-  justify-content: space-between;
-}
-
-.resultados {
-  text-align: start;
-  margin-top: 20px;
-}
-
-/* Seccion de cards */
-
-#image {
-  border-radius: 4px;
-  background-color:rgb(255, 255, 255);
-  height: 210px; 
-  
-  /* height: 10rem; */
-}
-#image2 {
-  border-radius: 15%;
-  background-color:rgb(255, 255, 255);
-  height: 160px; 
-  margin: 0;
-  
-  /* height: 10rem; */
-}
-#product-card{
-  width: 16rem;
-  margin-left: 1px;
-  margin-top: 3;
-  margin-bottom: 3;
-  max-height: 32rem;
-
-  /* height: 232px; */
-  color: black;
- background-color: #f2cc8f;
- padding: 2px;
-}
-
-.card #body2{
-  background-color: #f2cc8f;
-  border-radius: 4px;
-  margin-left: 0;
-  height: 350px;
-  width: 15rem;
-  padding: 6px;
-  border-color: #e07a5f;
-  padding-bottom: 0;
-  
-  
-  
-  
-}
-
-#image:hover {
-  transform: scale(1.03);
-  cursor: pointer;
-  
-}
-.card #description{
-  min-height: 9rem;
-  /* height: 1rem; */
-margin: 0;
-margin-bottom: 5px;
-  /* background-color: #f2cc8f; */
-  border-radius: 20%;
-}
-.card #precio {
-  border: 0;
-  margin-top: 5px;
-  margin-bottom: 3px;
-  color: black;
-  /* background-color: #f2cc8f; */
-  height: 1rem;
-}
-
-a {
-  cursor: pointer;
-}
-
-@media (max-width: 575px) {
-  .row-seccion-cards {
-    background-color: #f6f1dd;
-    justify-content: center;
+#seccion-cards{
+  background-color: var(--block-images2);
+  button {
+    background-color: var(--block-images1);
+    color: white;
   }
-
-  .card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    height: 350px;
-    background-color: #f6f1dd;
-    border: none;
-  }
-
-  #image {
-    height: 280px;
-    width: 14rem;
-    border-radius: 15px;
-  }
-
-  .card p {
-    width: 200px;
-    height: 80px;
-  }
-
-/*   .card-body {
-    background-color: #8ff2a6;
-  } */
-
   .resultados {
-    margin-left: 50px;
+    text-align: start;
+    margin-top: 20px;
+  }
+  .card-body{
+    min-width: 50%;
+  } 
+  figure{
+    min-width: 50%;
+  }
+  .card {
+    color: black;
+    background-color: #f2cc8f;
+  }
+  #image {
+    border-radius: 2px;
+  }
+  #image:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+  .card #precio {
+    color: black;
+  }
+  
+  a {
+    cursor: pointer;
   }
 }
+
+
+
 
 /* Seccion de mobile header */
 .mobileHeader {
@@ -303,10 +228,9 @@ a {
     background-color: var(--block-images1);
     color: white;
   }
-  .collapseContainer{
+  .collapseContainer {
     background-color: var(--block-images2);
   }
-
 }
 
 .modal-header {
@@ -339,6 +263,84 @@ a {
   }
 }
 
+/* Seccion de cards */
+
+#image {
+  border-radius: 10px;
+  background-color:rgb(255, 255, 255);
+  height: 210px; 
+  
+  /* height: 10rem; */
+}
+#image2 {
+  border-radius: 15%;
+  background-color:rgb(255, 255, 255);
+  height: 160px; 
+  margin: 0;
+  
+  /* height: 10rem; */
+}
+#product-card{
+  width: 16rem;
+  margin-left: 1px;
+  margin-top: 3;
+  margin-bottom: 3;
+  max-height: 32rem;
+
+  /* height: 232px; */
+ color: black;
+ background-color: #f2cc8f;
+ padding: 2px;
+}
+
+.card #body2{
+  background-color: #f2cc8f;
+  border-radius: 4px;
+  margin-left: 0;
+  height: 350px;
+  width: 15rem;
+  padding: 6px;
+  border-color: #e07a5f;
+  padding-bottom: 0;
+
+  
+}
+
+.card #body{
+  margin: 0;
+  padding:5px ;
+}
+
+#image:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  
+}
+.card #description{
+  min-height: 9rem;
+  width: 230px;
+  margin: 0;
+  margin-bottom: 5px;
+  margin-left: 0;
+  background-color: #f2cc8f;
+  border-radius: 20%;
+}
+.card #precio {
+  border: 0;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  color: black;
+  /* background-color: #f2cc8f; */
+  height: 1rem;
+}
+
+#body .btn{
+  max-width: 110px;
+  padding: 5px;
+}
+
+
+/* ************************************************* */
 .wrapperButtonMobilePet {
   button {
     background-color: var(--block-images2);
@@ -350,9 +352,6 @@ a {
     font-weight: 700;
   }
 }
-
-
-
 
 .pagination {
   display: flex;
@@ -368,4 +367,3 @@ a {
   pointer-events: none;
   color: #ccc;
 }
-
