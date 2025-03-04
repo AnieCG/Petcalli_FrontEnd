@@ -1,6 +1,5 @@
 body {
   max-width: 1920px;
-  overflow: hidden;
 
   h2 {
     color: var(--subtitle);
@@ -39,6 +38,9 @@ body {
 
   .button_shop {
     color: var(--block-images1);
+    margin-left: 10px;
+    background-color: var(--block-images1);
+    border: none;
   }
 
   a {

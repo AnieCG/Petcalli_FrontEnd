@@ -295,6 +295,7 @@ footer {
   max-width: 220px;
 }
 
+.Carrusel-index{
 .carousel-control-next,
 .carousel-control-prev {
   width: 30px; 
@@ -302,6 +303,8 @@ footer {
   padding: 0; 
   background-color: #e07a5f;
 }
+}
+
 
 
 .carousel-control-next-icon,
@@ -372,6 +375,30 @@ footer {
   box-shadow: none ;
   background-color: transparent;
 }
+.pet-carousel  {
+  background-color: var(--block-images2);
+}
 
+@media (max-width: 768px) {
+
+  .icono {
+    width: 40px; 
+  }
+
+  .texto {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .icono {
+    width: 30px; 
+  }
+
+  .texto {
+    font-size: 12px; 
+  }
+}
 
 
