@@ -45,7 +45,10 @@ const insertNav = () => {
           </button>
 
           <button class="btn" type="button" href="#">
+          <a href="/src/pages/carrito/carrito.html">
             <img src="/public/images/shopping-cart.svg" alt="icono de carrito"/>
+            <span id="cart-counter" class="cart-counter">0</span>
+          </a>
           </button>
 
           <button class="btn" type="button" href="#" id="btn-user">
