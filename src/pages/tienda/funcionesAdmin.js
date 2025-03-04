@@ -141,4 +141,4 @@ getJson("/public/json/productos.json").then(() => {
 });
 export{
   addProduct, getJson, getProducts, deleteProdut, modifyProduct
-}
+};
