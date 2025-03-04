@@ -12,7 +12,7 @@ const insertHeader = () => {
               cuidar a tu mascota tanto como tú lo haces”
             </p>
             <div class="pt-3 text-center text-md-center text-lg-start">
-              <a href="#">
+              <a href="/src/pages/tienda/tienda.html">
                 <button type="button" id="botonCompra" class="btn btn-primary btn-lg fs-5 text mb-4">
                   Comprar
                 </button>
