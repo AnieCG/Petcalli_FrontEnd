@@ -168,7 +168,7 @@ a {
   }
   .card-body {
     min-width: 50%;
-  }
+  } 
   figure {
     min-width: 50%;
   }
@@ -189,6 +189,10 @@ a {
 
   a {
     cursor: pointer;
+  }
+  .description{
+    height: 50px;
+    overflow: hidden; 
   }
 }
 
