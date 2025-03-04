@@ -104,14 +104,15 @@ main {
     color: #81b29a;
   }
 
-  button{
-   #button-pets-before,  #button-pets-next {
-    background-color: #e07a5f;
-    height: 60px;
-    width: 60px; 
-    border-radius: 50%; 
+  button {
+    #button-pets-before,
+    #button-pets-next {
+      background-color: #e07a5f;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+    }
   }
-}
 }
 
 a {
@@ -155,7 +156,7 @@ a {
     height: 80px;
   }
 }
-#seccion-cards{
+#seccion-cards {
   background-color: var(--block-images2);
   button {
     background-color: var(--block-images1);
@@ -165,10 +166,10 @@ a {
     text-align: start;
     margin-top: 20px;
   }
-  .card-body{
+  .card-body {
     min-width: 50%;
   } 
-  figure{
+  figure {
     min-width: 50%;
   }
   .card {
@@ -185,14 +186,15 @@ a {
   .card #precio {
     color: black;
   }
-  
+
   a {
     cursor: pointer;
   }
+  .description{
+    height: 50px;
+    overflow: hidden; 
+  }
 }
-
-
-
 
 /* Seccion de mobile header */
 .mobileHeader {
@@ -267,20 +269,20 @@ a {
 
 #image {
   border-radius: 10px;
-  background-color:rgb(255, 255, 255);
-  height: 210px; 
-  
+  background-color: rgb(255, 255, 255);
+  height: 210px;
+
   /* height: 10rem; */
 }
 #image2 {
   border-radius: 15%;
-  background-color:rgb(255, 255, 255);
-  height: 160px; 
+  background-color: rgb(255, 255, 255);
+  height: 160px;
   margin: 0;
-  
+
   /* height: 10rem; */
 }
-#product-card{
+#product-card {
   width: 16rem;
   margin-left: 1px;
   margin-top: 3;
@@ -288,12 +290,12 @@ a {
   max-height: 32rem;
 
   /* height: 232px; */
- color: black;
- background-color: #f2cc8f;
- padding: 2px;
+  color: black;
+  background-color: #f2cc8f;
+  padding: 2px;
 }
 
-.card #body2{
+.card #body2 {
   background-color: #f2cc8f;
   border-radius: 4px;
   margin-left: 0;
@@ -302,21 +304,18 @@ a {
   padding: 6px;
   border-color: #e07a5f;
   padding-bottom: 0;
-
-  
 }
 
-.card #body{
+.card #body {
   margin: 0;
-  padding:5px ;
+  padding: 5px;
 }
 
 #image:hover {
   transform: scale(1.03);
   cursor: pointer;
-  
 }
-.card #description{
+.card #description {
   min-height: 9rem;
   width: 230px;
   margin: 0;
@@ -334,11 +333,10 @@ a {
   height: 1rem;
 }
 
-#body .btn{
+#body .btn {
   max-width: 110px;
   padding: 5px;
 }
-
 
 /* ************************************************* */
 .wrapperButtonMobilePet {
@@ -366,4 +364,26 @@ a {
 .pagination .page-item.disabled .page-link {
   pointer-events: none;
   color: #ccc;
+}
+/*alerta flotante estilos*/
+.alerta-flotante {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 9999;
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #e07a5f;
+  border-color: #d66b4d;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease-in-out;
+}
+
+.alerta-flotante svg {
+  fill: white !important; /* Hace que el ícono también sea blanco */
 }
