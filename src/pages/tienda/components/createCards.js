@@ -9,7 +9,7 @@ export default function createCards(producto) {
           <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
           <p>${producto.description}</p>
           <p id="precio">${producto.price}</p>
-          <button type="button" class="btn mt-2" data-bs-target="#${producto.id}">
+          <button type="button" class="btn mt-2 comprar-button" producto-id="#${producto.id}" >
           Comprar ahora
           </button>
           <button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#${producto.id}">
