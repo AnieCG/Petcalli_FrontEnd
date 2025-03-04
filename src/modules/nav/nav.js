@@ -44,7 +44,7 @@ const insertNav = () => {
             <img src="/public/images/like-products.svg" alt="icono de favoritos"/>
           </button>
 
-          <button class="btn" type="button" href="#">
+          <button class="btn" type="button" >
           <a href="/src/pages/carrito/carrito.html">
             <img src="/public/images/shopping-cart.svg" alt="icono de carrito"/>
             <span id="cart-counter" class="cart-counter">0</span>
