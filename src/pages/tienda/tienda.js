@@ -5,7 +5,7 @@ import mostrarProductos from "./funciones-filtrados/mostrarProductos.js";
 import insertQueryProducts from "./funciones-filtrados/insertQueryProducts.js";
 import setItemLocalStorage from "./funciones-filtrados/setItemLocalStorage.js";
 import alertaAgregado from "./components/alertaAgregado.js";
-insertCarruselMasPopulares();
+import counters from "./funciones-filtrados/countersBrandCategory.js";
 
 const $span = document.getElementsByClassName("price-value");
 const counterProductsToShow = document.getElementById("counterProductsToShow");
@@ -22,6 +22,7 @@ async function getProducts() {
 
 await getProducts();
 
+insertCarruselMasPopulares(filterProducts);
 counterProductsToShow.innerHTML = filterProducts.length;
 productsTotal.innerHTML = filterProducts.length;
 
@@ -53,6 +54,7 @@ function updateFilters() {
 
   mostrarProductos(filteredProducts);
   counterProductsToShow.innerHTML = filteredProducts.length;
+  counters(filteredProducts);
 }
 
 // Eventos que activan los filtros en tiempo real
