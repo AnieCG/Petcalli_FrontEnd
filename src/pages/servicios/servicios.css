@@ -64,4 +64,16 @@
     background-color: #f2cc8f;
     padding-top: 25px;
     font-size: x-large;
+    
 }
+
+a {    text-decoration: none;
+    color: black;
+
+}
+ul{
+    list-style-image: url(/public/images/perro.png); 
+  padding-left: 20px; 
+}
+
+

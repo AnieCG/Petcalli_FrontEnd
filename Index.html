@@ -23,11 +23,12 @@
   <header id="header" class="container-fluid">
     <nav id="navbar"></nav>
   </header>
+
   <section class="categories mt-2 container-fluid">
     <div id="carousel-categories" class="carousel slide-fade">
-      <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
+      <div class="container-fluid d-block d-md-block border col-11 carouselAnimals">
         <h2 class="subtitulo h2"><strong>Buscar por categoría</strong></h2>
-        <div class="carousel-controls d-flex justify-content-end">
+        <div class="carousel-controls d-flex justify-content-end Carrusel-index">
           <button class="rounded-circle carousel-control-next" type="button" data-bs-target="#carousel-categories"
             data-bs-slide="next">
             <span class="carousel-control-next-icon button-next-before" aria-hidden="true"></span>
@@ -41,15 +42,13 @@
           </button>
         </div>
         <div class="carousel-inner">
-          <!-- Primer Seccion -->
-
+          <!-- Primer Sección -->
           <div class="carousel-item active">
             <div class="row">
-
               <div class="col">
-                <div class="card animal border border-0 mx-auto ">
+                <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="accesories">
-                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets " alt="iguana con lentes">
+                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets" alt="iguana con lentes">
                     <div class="card-body">
                       <h5 class="card-title text-center">Accesorios</h5>
                     </div>
@@ -60,7 +59,7 @@
               <div class="col mt-0">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="clothes">
-                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets "
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets"
                       alt="Conejo con vestido">
                     <div class="card-body">
                       <h5 class="card-title text-center">Ropa</h5>
@@ -69,29 +68,26 @@
                 </div>
               </div>
 
-              <div class="col mt-0 ">
+              <div class="col mt-0">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="food">
-                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets " alt="cobayas comiendo">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets" alt="cobayas comiendo">
                     <div class="card-body">
                       <h5 class="card-title text-center">Alimento</h5>
                     </div>
                   </button>
                 </div>
               </div>
-
             </div>
           </div>
-          <!-- Fin de la primer seccion -->
+          <!-- Fin de la primer sección -->
 
-          <div class="carousel-item ">
-
+          <div class="carousel-item">
             <div class="row">
-
               <div class="col mt-0">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="toys">
-                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets "
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets"
                       alt="Perro con juguete">
                     <div class="card-body">
                       <h5 class="card-title text-center">Juguetes</h5>
@@ -103,7 +99,7 @@
               <div class="col mt-0">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="medicine">
-                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets "
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets"
                       alt="perro con medicamentos">
                     <div class="card-body">
                       <h5 class="card-title text-center">Medicamento</h5>
@@ -113,6 +109,7 @@
               </div>
             </div>
           </div>
+          <!-- Fin de la segunda sección -->
         </div>
       </div>
     </div>
@@ -125,9 +122,7 @@
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col pb-5">
           <div class="card mx-auto product" style="width: 17rem;">
-            <img
-              src="/public/images/Royal Canin.png"
-              class="card-img-top bg-white cards-products" alt="...">
+            <img src="/public/images/Royal Canin.png" class="card-img-top bg-white cards-products" alt="...">
             <div class="card-body row container-body-product">
               <div class="col-9">
                 <h5 class="card-title text-dark title-product">Royal Canin Gastrointestinal</h5>
@@ -141,9 +136,7 @@
         </div>
         <div class="col pb-5">
           <div class="card mx-auto product" style="width: 17rem;">
-            <img
-              src="/public/images/Hills.png"
-              class="card-img-top bg-white cards-products" alt="...">
+            <img src="/public/images/Hills.png" class="card-img-top bg-white cards-products" alt="...">
             <div class="card-body row container-body-product">
               <div class="col-9">
                 <h5 class="card-title text-dark title-product">Hill´s Science Diet Perfect Weight</h5>
@@ -157,9 +150,7 @@
         </div>
         <div class="col pb-5">
           <div class="card mx-auto product" style="width: 17rem;">
-            <img
-              src="/public/images/Diamond.png"
-              class="card-img-top bg-white cards-products" alt="...">
+            <img src="/public/images/Diamond.png" class="card-img-top bg-white cards-products" alt="...">
             <div class="card-body row container-body-product">
               <div class="col-9">
                 <h5 class="card-title text-dark title-product">Diamond Puppy</h5>
@@ -193,7 +184,9 @@
           <h2>"¡Encuentra a tu Mejor Amigo!"</h2>
           <p>Cada animalito tiene una historia única y está buscando una segunda oportunidad para ser feliz. Descubre a
             tu nuevo amigo y empieza una nueva aventura juntos.</p>
+            <a href="https://proyecto-salvavidas.com/">
           <button class="btn-adopt">Adopta</button>
+        </a>
         </div>
 
       </div>
@@ -464,9 +457,7 @@
   <script src="src/modules/user/userLogin.js"></script>
   <script src="/src/pages/tienda/searchNavbar.js" ></script>
   <script src="/src/modules/seller/sellerLogin.js" ></script>
+  <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js" ></script>
 </body>
-
-
-
 
 </html>
