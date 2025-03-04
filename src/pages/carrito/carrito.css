@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #coupon-section {
     margin: 15px 0;
@@ -27,3 +28,34 @@
 #payment-method-section input {
     margin-right: 10px;
 }
+=======
+#h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    cursor: url('/public-images/huellas-cursor.png'), auto; 
+} 
+
+#imagencarrito {
+    width: auto;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 40px;
+width: 100%;
+height: 100%;
+cursor: url('/public-images/huellas-cursor.png'), auto; 
+    
+}
+
+.btn {
+    color: var(#f8f9fa);
+padding: 20px;;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    opacity: 1.0;
+    cursor: url('/public-images/huellas-cursor.png'), auto; 
+}
+
+>>>>>>> carrito-general-alan
