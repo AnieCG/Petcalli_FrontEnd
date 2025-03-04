@@ -30,7 +30,7 @@ const insertNav = () => {
         </ul>
 
         <form class="d-flex" role="search">
-          <div class="input-group me-2">
+          <div class="input-group">
             <input id="searchInput" class="form-control input" type="search" placeholder="buscar productos"
               aria-label="buscar productos" />
             <button id="searchButton" class="btn boton-buscar" type="submit">

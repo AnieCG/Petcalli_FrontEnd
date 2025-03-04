@@ -1,4 +1,4 @@
-import createCards from "./createCards.js";
+import createCards from "../components/createCards.js";
 // Variables globales
 const itemsPerPage = 6;
 let currentPage = 1;

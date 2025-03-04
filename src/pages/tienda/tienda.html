@@ -1,589 +1,937 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-  <!-- rutas absolutas en archivos js
+  <head>
+    <!-- rutas absolutas en archivos js
          rutas relativas imagenes -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Petcalli</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="/src/css/style.css" />
-  <link rel="stylesheet" href="./tienda.css" />
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petcalli</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="./tienda.css" />
+  </head>
 
-<body>
-  <nav id="navbar"></nav>
-  <header id="header" class="container-fluid d-none d-md-block"></header>
+  <body>
+    <nav id="navbar"></nav>
+    <header id="header" class="container-fluid d-none d-md-block"></header>
 
-  <div class="franja mt-1 d-none d-md-block"></div>
-  <main>
-    <section class="d-block d-md-none mobileHeader">
-      <!-- Seccion header mobile desde dispositivo mediano hacia abajo se despliega -->
-      <div class="container postalCode rounded-3">
-        <a class="text-decoration-none d-flex" href="#hacia pagina de registro">
-          <img id="mapPin" class="m-1" src="/public/images/map-pin-svgrepo-com.svg"
-            alt="icono de posición en un mapa" />
-          <p class="m-1">Ingresa tu código postal</p>
-        </a>
-      </div>
-      <div class="container d-flex">
-        <div class="d-flex title justify-content-center px-5 fw-bold rounded-4 position-relative my-3 w-75">
-          <img src="/public-images/Shape2.png" alt="Mancha de fondo"
-            class="position-absolute top-50 start-0 translate-middle-y" id="shape2" />
-          <h2 class="m-1">Tienda</h2>
-        </div>
-
-        <p class="d-inline-flex-end gap-1 m-3 w-25">
-          <button class="btn fs-3 text fw-semibold rounded-4 px-4" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-            Filtrar
-          </button>
-        </p>
-      </div>
-      <div class="d-flex justify-content-center align-items-center">
-        <div class="collapse" id="collapseExample">
-          <section class="container collapseContainer p-4 w-100 shadow-lg mb-4">
-            <div class="container">
-              <div class="row wrapperButtonMobilePet">
-                <div class="col-6">
-                  <button class="Gatos mb-4">
-                    <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets"
-                      alt="Foto de perrito" />
-                    <h5 class="card-title text-center">Gatos</h5>
-                  </button>
-                  <button class="Perros mb-4">
-                    <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets" alt="Foto de perrito" />
-                    <h5 class="card-title text-center">Perros</h5>
-                  </button>
-                  <button class="Aves mb-4">
-                    <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets"
-                      alt="Foto de perrito" />
-                    <h5 class="card-title text-center">Aves</h5>
-                  </button>
-                </div>
-                <div class="col-6">
-                  <button class="Conejos mb-4">
-                    <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets"
-                      alt="Foto de perrito" />
-                    <h5 class="card-title text-center">Conejos</h5>
-                  </button>
-                  <button class="Peces mb-4">
-                    <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets"
-                      alt="Foto de perrito" />
-                    <h5 class="card-title text-center">Peces</h5>
-                  </button>
-                  <button class="Otros mb-4">
-                    <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets"
-                      alt=" Foto de perrito" />
-                    <h5 class="card-title text-center">Otros</h5>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card-body text-center">
-              <div class="d-flex justify-content-around mb-3">
-                <article class="mb-2">
-                  <h5 class="mb-4">Categorias</h5>
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex category" type="checkbox" value="Accesorios" id="accesories"
-                      value="" />
-                    <label class="form-check-label mx-2" for="accesories">
-                      Accesorios
-                    </label>
-                  </div>
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex category" type="checkbox" value="Ropa" id="clothes" />
-                    <label class="form-check-label mx-2" for="clothes">
-                      Ropa
-                    </label>
-                  </div>
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex category" type="checkbox" value="Alimento" id="food" />
-                    <label class="form-check-label mx-2" for="food">
-                      Alimento
-                    </label>
-                  </div>
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex category" type="checkbox" value="Juguetes" id="toys" />
-                    <label class="form-check-label mx-2" for="toys">
-                      Juguetes
-                    </label>
-                  </div>
-                  <div class="form-check d-flex">
-                    <input class="form-check-input d-flex mt-3 category" type="checkbox" value="Medicamentos"
-                      id="medicines" />
-                    <label class="form-check-label mx-2" for="medicines">
-                      Medicamentos
-                    </label>
-                  </div>
-                </article>
-                <article>
-                  <h5 class="mb-4">Marca</h5>
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" id="Instinct"
-                      value="Instinct Original" />
-                    <label class="form-check-label mx-2" for="Instinct">
-                      Instinct </label>
-                  </div>
-
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" value="Royal Canin" id="RoyalCanin" />
-                    <label class="form-check-label mx-2" for="RoyalCanin">
-                      Royal Canin </label>
-                  </div>
-
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" value="WholeHearted"
-                      id="WhileHearted" />
-                    <label class="form-check-label mx-2" for="WhileHearted">
-                      WholeHearted </label>
-                  </div>
-
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" value="Bravery" id="Bravery" />
-                    <label class="form-check-label mx-2" for="Bravery">
-                      Bravery </label>
-                  </div>
-
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" value="Hill's" id="Hill's" />
-                    <label class="form-check-label mx-2" for="Hill's"> Hill's </label>
-                  </div>
-
-                  <div class="form-check d-flex mt-3">
-                    <input class="form-check-input d-flex brand" type="checkbox" value="Azoo" id="Azoo" />
-                    <label class="form-check-label mx-2" for="Azoo"> Azoo </label>
-                  </div>
-                </article>
-              </div>
-              <div class="container">
-                <h3>Filtrar por precio</h3>
-                <input type="range" class="form-range" id="customRange" min="0" max="2000" value="0" step="100" /><label
-                  for="customRange1" class="form-label">Precio: $0 - <span class="price-value">$2000</span></label>
-              </div>
-              <div class="d-flex justify-content-around mt-3">
-
-                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
-                  aria-expanded="false" aria-controls="collapseExample">Contraer</button>
-                <!-- <button class="btn">Aplicar</button> -->
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div class="container d-flex ads p-4">
-        <a class="w-50" href="https://mexico.generation.org/encuentra-una-carrera/">
-          <img class="img-fluid rounded-4"
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnHjijo6x53Rn5z9Gas8IzoLTNDZfgxn66Q&s"
-            alt="Publicidad Generation mexico" />
-        </a>
-        <a class="w-50" href="https://www.harvard.edu/">
-          <img class="img-fluid rounded-4"
-            src="https://images.squarespace-cdn.com/content/v1/5409fd72e4b08734f6c05b4c/a20f0852-cb71-4a59-b4e6-298204c0c894/HGSE.png"
-            alt="Publicidad Harvard" />
-        </a>
-      </div>
-    </section>
-    <section class="petSelection mt-2">
-      <div id="carouselExampleAutoplaying" class="carousel slide-fade" data-bs-ride="carousel">
-        <div class="container-fluid d-none d-md-block border col-11 carouselAnimals">
-          <br />
-          <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
-
-          <button class="rounded-circle carousel-control-next" type="button"
-            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next" >
-            <span class="carousel-control-next-icon " id="button-pets-next" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-          <button class="rounded-circle carousel-control-prev" type="button"
-            data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev" >
-            <span class="carousel-control-prev-icon " id="button-pets-before" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button> 
-
-
-          <div class="carousel-inner">
-            <!-- Primer Seccion -->
-
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <!-- style="background-color: red;" -->
-                    <button class="Gatos border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/Carrusel2-Gato-Photoroom.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <!-- style="background-color: yellowgreen;" -->
-                        <h5 class="card-title text-center">Gatos</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="Perros border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/carrusel1-perro.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Perros</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="Aves border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/Carrusel4-perico-Photoroom.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Aves</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Segunda seccion-->
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="Conejos border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/Carrusel4-conejos-Photoroom.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Conejos</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="Peces border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/Carrusel10-peces-Photoroom.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Peces</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-
-                <div class="col mt-0">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="Otros border border-0 mx-auto carrusel-btn">
-                      <img src="/public-images/otros-Photoroom.jpg" class="card-img-top img-pets"
-                        alt="Foto de perrito" />
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Otros</h5>
-                      </div>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <!-- Fin del tercer row -->
-            </div>
-            <!-- Fin de la tercer seccion -->
-
-            <!-- Cuarta seccion -->
-
-            <div class="carousel-item">
-              <div class="row">
-                <div class="col"></div>
-                <div class="col mt-0">
-                  <div class="s">
-                    <img width="400px" src="/public-images/petcalli2-Photoroom.png" alt="" />
-                  </div>
-                </div>
-                <div class="col"></div>
-              </div>
-              <!-- Fin del 4 row -->
-            </div>
-            <!-- Fin de la 4 seccion -->
-          </div>
-          <!-- Fin del contenido  -->
-        </div>
-        
-
-        <!-- Fin del div contenedor courusel animal -->
-      </div>
-      <!-- Fin del carrusel y sus botones-->
-    </section>
-
-    <br />
-
-    <section class="container">
-      <!-- de productos y filtros -->
-      <div class="row gx-5">
-        <!-- Columna filtro -->
-        <div id="filtro" class="d-none d-md-block col-10 col-md-3 m-3">
-          <!-- Filtrar por categoria -->
-          <div class="container row-gap-3 p-2">
-            <h2>Filtrar por categorias</h2>
-            <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex category" type="checkbox" value="Accesorios" id="accesories"
-                value="" />
-              <label class="form-check-label mx-2" for="accesories">
-                Accesorios
-              </label>
-              <span class="badge rounded-pill border ms-auto categoryCounter">
-              </span>
-            </div>
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex category" type="checkbox" value="Ropa" id="clothes" />
-              <label class="form-check-label mx-2" for="clothes">
-                Ropa
-              </label>
-              <span class="badge rounded-pill border ms-auto categoryCounter">
-              </span>
-            </div>
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex category" type="checkbox" value="Alimento" id="food" />
-              <label class="form-check-label mx-2" for="food">
-                Alimento
-              </label>
-              <span class="badge rounded-pill border ms-auto categoryCounter">
-              </span>
-            </div>
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex category" type="checkbox" value="Juguetes" id="toys" />
-              <label class="form-check-label mx-2" for="toys">
-                Juguetes
-              </label>
-              <span class="badge rounded-pill border ms-auto categoryCounter">
-              </span>
-            </div>
-            <div class="form-check d-flex">
-              <input class="form-check-input d-flex mt-1 category" type="checkbox" value="Medicamentos"
-                id="medicines" />
-              <label class="form-check-label mx-2" for="medicines">
-                Medicamentos
-              </label>
-              <span class="badge rounded-pill border ms-auto categoryCounter">
-              </span>
-            </div>
-          </div>
-
-          <!-- FILTRAR POR PRECIO -->
-          <div class="p-2">
-            <h2>Filtrar por precio</h2>
-            <input type="range" class="form-range" id="customRange" min="0" max="2000" value="0" step="100" /><label
-              for="customRange1" class="form-label">Precio: $0 - <span class="price-value">$2000</span></label>
-          </div>
-
-          <!-- FILTRAR POR MARCAS -->
-          <div class="p-2">
-            <h2>Filtrar por marca</h2>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" id="brand" value="Instinct Original" />
-              <label class="form-check-label mx-2" for="brand">
-                Instinct </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" value="Royal Canin" id="brand" />
-              <label class="form-check-label mx-2" for="brand">
-                Royal Canin </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" value="WholeHearted" id="brand" />
-              <label class="form-check-label mx-2" for="brand">
-                WholeHearted </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" value="Bravery" id="brand" />
-              <label class="form-check-label mx-2" for="brand">
-                Bravery </label><span class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" value="Hill's" id="brand" />
-              <label class="form-check-label mx-2" for="brand"> Hill's </label><span
-                class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-
-            <div class="form-check d-flex mt-1">
-              <input class="form-check-input d-flex brand" type="checkbox" value="Azoo" id="brand" />
-              <label class="form-check-label mx-2" for="brand"> Azoo </label><span
-                class="badge rounded-pill border ms-auto brandCounter"></span>
-            </div>
-          </div>
-
-          <!-- Filtrar por Tag -->
-          <div class="p-2">
-            <h2>Filtrado por Tags</h2>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagjuguetes">
-              Juguetes
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagAlimento">
-              Alimento
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">
-              Natural
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagSalmón">
-              Salmón
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagCatnip">
-              Catnip
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagArnés">
-              Arnés
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagCachorro">
-              Cachorro
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagRueda">
-              Rueda
-            </button>
-            <button class="badge rounded-pill text-bg-light border-0" id="tagNatural">
-              Jaula
-            </button>
-          </div>
-
-          <!-- PRODUCTOS PREMIUM -->
-          <div class="p-2">
-            <h2>Productos Premium</h2>
-
-            <div class="d-flex position-relative">
-              <a href="#" class="stretched-link d-flex align-items-start">
-                <img src="" class="flex-shrink-0 me-3" alt="..." />
-                <div>
-                  <h5 class="mt-0">Royal Canin</h5>
-                  <p>$1000.00 mnx.</p>
-                </div>
-              </a>
-            </div>
-            <div class="d-flex position-relative">
-              <a href="#" class="stretched-link d-flex align-items-start">
-                <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                <div>
-                  <h5 class="mt-0">Instinct</h5>
-                  <p>$2,700.00 mnx.</p>
-                </div>
-              </a>
-            </div>
-            <div class="d-flex position-relative">
-              <a href="#" class="stretched-link d-flex align-items-start">
-                <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                <div>
-                  <h5 class="mt-0">WholeHearted</h5>
-                  <p>$850.00 mnx.</p>
-                </div>
-              </a>
-            </div>
-            <div class="d-flex position-relative">
-              <a href="#" class="stretched-link d-flex align-items-start">
-                <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                <div>
-                  <h5 class="mt-0">Bravery</h5>
-                  <p>$450.00 mnx.</p>
-                </div>
-              </a>
-            </div>
-            <div class="d-flex position-relative">
-              <a href="#" class="stretched-link d-flex align-items-start">
-                <img src="..." class="flex-shrink-0 me-3" alt="..." />
-                <div>
-                  <h5 class="mt-0">Tetra ReptoMin</h5>
-                  <p>$711.00 mnx.</p>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <!-- ANUNCIOS -->
-          <div class="card">
+    <div class="franja mt-1 d-none d-md-block"></div>
+    <main>
+      <section class="d-block d-md-none mobileHeader">
+        <!-- Seccion header mobile desde dispositivo mediano hacia abajo se despliega -->
+        <div class="container postalCode rounded-3">
+          <a
+            class="text-decoration-none d-flex"
+            href="#hacia pagina de registro"
+          >
             <img
-              src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1"
-              class="card-img-top" alt="" />
-            <div class="card-body">
-              <p class="card-text">USC Hotel</p>
-              <a href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&"
-                class="btn">Booking.com</a>
-            </div>
+              id="mapPin"
+              class="m-1"
+              src="/public/images/map-pin-svgrepo-com.svg"
+              alt="icono de posición en un mapa"
+            />
+            <p class="m-1">Ingresa tu código postal</p>
+          </a>
+        </div>
+        <div class="container d-flex">
+          <div
+            class="d-flex title justify-content-center px-5 fw-bold rounded-4 position-relative my-3 w-75"
+          >
+            <img
+              src="/public-images/Shape2.png"
+              alt="Mancha de fondo"
+              class="position-absolute top-50 start-0 translate-middle-y"
+              id="shape2"
+            />
+            <h2 class="m-1">Tienda</h2>
+          </div>
+
+          <p class="d-inline-flex-end gap-1 m-3 w-25">
+            <button
+              class="btn fs-3 text fw-semibold rounded-4 px-4"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Filtrar
+            </button>
+          </p>
+        </div>
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="collapse" id="collapseExample">
+            <section
+              class="container collapseContainer p-4 w-100 shadow-lg mb-4"
+            >
+              <div class="container">
+                <div class="row wrapperButtonMobilePet">
+                  <div class="col-6">
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Gato">
+                      <img
+                        src="/public-images/Carrusel2-Gato-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de gato"
+                      />
+                      <h5 class="card-title text-center">Gatos</h5>
+                    </button>
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Perro">
+                      <img
+                        src="/public-images/carrusel1-perro.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perro"
+                      />
+                      <h5 class="card-title text-center">Perros</h5>
+                    </button>
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Aves">
+                      <img
+                        src="/public-images/Carrusel4-perico-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de perico verde"
+                      />
+                      <h5 class="card-title text-center">Aves</h5>
+                    </button>
+                  </div>
+                  <div class="col-6">
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Conejo">
+                      <img
+                        src="/public-images/Carrusel4-conejos-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de tres conejos"
+                      />
+                      <h5 class="card-title text-center">Conejos</h5>
+                    </button>
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Peces">
+                      <img
+                        src="/public-images/Carrusel10-peces-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt="Foto de seis peces anaranjados"
+                      />
+                      <h5 class="card-title text-center">Peces</h5>
+                    </button>
+                    <button class="petCategory mb-4" type="radio" name="petCategory" value="Otros">
+                      <img
+                        src="/public-images/otros-Photoroom.jpg"
+                        class="card-img-top img-pets"
+                        alt=" Foto del logo de petcalli con un perico verde y un gato negro"
+                      />
+                      <h5 class="card-title text-center">Otros</h5>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body text-center">
+                <div class="d-flex justify-content-around mb-3">
+                  <article class="mb-2">
+                    <h5 class="mb-4">Categorias</h5>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Accesorios"
+                        id="mobileAccesories"
+                        value=""
+                      />
+                      <label class="form-check-label mx-2" for="mobileAccesories">
+                        Accesorios
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Ropa"
+                        id="mobileClothes"
+                      />
+                      <label class="form-check-label mx-2" for="clothes">
+                        Ropa
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Alimento"
+                        id="mobileFood"
+                      />
+                      <label class="form-check-label mx-2" for="food">
+                        Alimento
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Juguetes"
+                        id="mobileToys"
+                      />
+                      <label class="form-check-label mx-2" for="mobileToys">
+                        Juguetes
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
+                    </div>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex category"
+                        type="checkbox"
+                        value="Medicamentos"
+                        id="mobileMedicines"
+                      />
+                      <label class="form-check-label mx-2" for="mobileMedicines">
+                        Medicamentos
+                      </label>
+                      <span
+                        class="badge rounded-pill border ms-auto categoryCounter"
+                      >
+                      </span>
+                    </div>
+                  </article>
+                  <article>
+                    <h5 class="mb-4">Marca</h5>
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        id="Instinct"
+                        value="Instinct Original"
+                      />
+                      <label class="form-check-label mx-2" for="Instinct">
+                        Instinct </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Royal Canin"
+                        id="RoyalCanin"
+                      />
+                      <label class="form-check-label mx-2" for="RoyalCanin">
+                        Royal Canin </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="WholeHearted"
+                        id="WhileHearted"
+                      />
+                      <label class="form-check-label mx-2" for="WhileHearted">
+                        WholeHearted </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Bravery"
+                        id="Bravery"
+                      />
+                      <label class="form-check-label mx-2" for="Bravery">
+                        Bravery </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Hill's"
+                        id="Hill's"
+                      />
+                      <label class="form-check-label mx-2" for="Hill's">
+                        Hill's </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+
+                    <div class="form-check d-flex mt-3">
+                      <input
+                        class="form-check-input d-flex brand"
+                        type="checkbox"
+                        value="Azoo"
+                        id="Azoo"
+                      />
+                      <label class="form-check-label mx-2" for="Azoo">
+                        Azoo </label
+                      ><span
+                        class="badge rounded-pill border ms-auto brandCounter"
+                      ></span>
+                    </div>
+                  </article>
+                </div>
+                <div class="container">
+                  <h3>Filtrar por precio</h3>
+                  <input
+                    type="range"
+                    class="form-range"
+                    id="customRange"
+                    min="0"
+                    max="2000"
+                    value="0"
+                    step="100"
+                  /><label for="customRange1" class="form-label"
+                    >Precio: $0 - <span class="price-value">$2000</span></label
+                  >
+                </div>
+                <div class="d-flex justify-content-center mt-3">
+                  <button class="btn"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample">
+                  Contraer
+                </button>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
 
-        <div class="col-lg-8 col-md-8 col-8">
-          <!-- productos -->
+        <div class="container d-flex ads p-4">
+          <a
+            class="w-50"
+            href="https://mexico.generation.org/encuentra-una-carrera/"
+          >
+            <img
+              class="img-fluid rounded-4"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsnHjijo6x53Rn5z9Gas8IzoLTNDZfgxn66Q&s"
+              alt="Publicidad Generation mexico"
+            />
+          </a>
+          <a class="w-50" href="https://www.harvard.edu/">
+            <img
+              class="img-fluid rounded-4"
+              src="https://images.squarespace-cdn.com/content/v1/5409fd72e4b08734f6c05b4c/a20f0852-cb71-4a59-b4e6-298204c0c894/HGSE.png"
+              alt="Publicidad Harvard"
+            />
+          </a>
+        </div>
+      </section>
+      <section class="petSelection mt-2">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide-fade"
+          data-bs-ride="carousel"
+        >
+          <div
+            class="container-fluid d-none d-md-block border col-11 carouselAnimals"
+          >
+            <br />
+            <h2 class="titulo mb-0"><strong>Categoría por mascota</strong></h2>
 
+            <button
+              class="rounded-circle carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon button-next-before"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            <button
+              class="rounded-circle carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon button-next-before"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
 
+            <div class="carousel-inner">
+              <!-- Primer Seccion -->
 
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <!-- style="background-color: red;" -->
+                      <button 
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Gato"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/Carrusel2-Gato-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de gato pardo"
+                        />
+                        <div class="card-body">
+                          <!-- style="background-color: yellowgreen;" -->
+                          <h5 class="card-title text-center">Gatos</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
 
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <button
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Perro"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/carrusel1-perro.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perrito pomerania"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Perros</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
 
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <button 
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Aves"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/Carrusel4-perico-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de perico verde"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Aves</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
+              <!-- Segunda seccion-->
 
-          <!-- Contadores de productos -->
-          <p class="resultados">
-            <span id="counterProductsToShow">0</span> de <span id="resultados-productos"></span> resultados mostrados
-          </p>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <button
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Conejo"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/Carrusel4-conejos-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Foto de tres conejos"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Conejos</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
 
-          <!-- Sección donde se mostrarán los productos -->
-          <div class="row row-cols-3 row-seccion-cards p-2" id="seccion-cards"></div>
-          <div id="seccion-cards2"></div><!-- Modales -->
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <button
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Peces"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/Carrusel10-peces-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="Imagen de seis peces anaranjados"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Peces</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
 
-          <!-- Paginación -->
-          <nav aria-label="Page navigation example">
-            <ul class="pagination" id="pagination">
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Previous" id="prevPage">
-                  <span aria-hidden="true">&laquo;</span>
+                  <div class="col mt-0">
+                    <div class="card animal border-0 mx-auto">
+                      <button
+                        class="border-0 mx-auto carrusel-btn petCategory"
+                        value="Otros"
+                        type="radio" 
+                        name="petCategory"
+                      >
+                        <img
+                          src="/public-images/otros-Photoroom.jpg"
+                          class="card-img-top img-pets"
+                          alt="foto de collage de araña, hurón, iguana, hamster, cuyo y tortuga"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title text-center">Otros</h5>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fin del tercer row -->
+              </div>
+              <!-- Fin de la tercer seccion -->
+
+              <!-- Cuarta seccion -->
+
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col mt-0">
+                    <div class="s">
+                      <img
+                        width="400px"
+                        src="/public-images/petcalli2-Photoroom.png"
+                        alt="Imagen del logo de petcalli con un conejo un perico y un gato negro"
+                      />
+                    </div>
+                  </div>
+                  <div class="col"></div>
+                </div>
+                <!-- Fin del 4 row -->
+              </div>
+              <!-- Fin de la 4 seccion -->
+            </div>
+            <!-- Fin del contenido  -->
+          </div>
+          <!-- Fin del div contenedor courusel animal -->
+        </div>
+        <!-- Fin del carrusel y sus botones-->
+      </section>
+
+      <br />
+
+      <section class="container">
+        <!-- de productos y filtros -->
+        <div class="row">
+          <!-- Columna filtro -->
+          <div id="filtro" class="d-none d-md-block col-md-3 m-3">
+            <!-- Filtrar por categoria -->
+            <div class="container row-gap-3 p-2">
+              <h2>Filtrar por categorias</h2>
+              <!-- REVISAR ESTA FORMA DE SEPARAR EL TEXTO DE AMBOS CONTENEDORES -->
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex category"
+                  type="checkbox"
+                  value="Accesorios"
+                  id="accesories"
+                  value=""
+                />
+                <label class="form-check-label mx-2" for="accesories">
+                  Accesorios
+                </label>
+                <span class="badge rounded-pill border ms-auto categoryCounter">0
+                </span>
+              </div>
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex category"
+                  type="checkbox"
+                  value="Ropa"
+                  id="clothes"
+                />
+                <label class="form-check-label mx-2" for="clothes">
+                  Ropa
+                </label>
+                <span class="badge rounded-pill border ms-auto categoryCounter">0
+                </span>
+              </div>
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex category"
+                  type="checkbox"
+                  value="Alimento"
+                  id="food"
+                />
+                <label class="form-check-label mx-2" for="food">
+                  Alimento
+                </label>
+                <span class="badge rounded-pill border ms-auto categoryCounter">0
+                </span>
+              </div>
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex category"
+                  type="checkbox"
+                  value="Juguetes"
+                  id="toys"
+                />
+                <label class="form-check-label mx-2" for="toys">
+                  Juguetes
+                </label>
+                <span class="badge rounded-pill border ms-auto categoryCounter">0
+                </span>
+              </div>
+              <div class="form-check d-flex">
+                <input
+                  class="form-check-input d-flex mt-1 category"
+                  type="checkbox"
+                  value="Medicamentos"
+                  id="medicines"
+                />
+                <label class="form-check-label mx-2" for="medicines">
+                  Medicamentos
+                </label>
+                <span class="badge rounded-pill border ms-auto categoryCounter">0
+                </span>
+              </div>
+            </div>
+
+            <!-- FILTRAR POR PRECIO -->
+            <div class="p-2">
+              <h2>Filtrar por precio</h2>
+              <input
+                type="range"
+                class="form-range"
+                id="customRange"
+                min="0"
+                max="2000"
+                value="0"
+                step="100"
+              /><label for="customRange1" class="form-label"
+                >Precio: $0 - <span class="price-value">$2000</span></label
+              >
+            </div>
+
+            <!-- FILTRAR POR MARCAS -->
+            <div class="p-2">
+              <h2>Filtrar por marca</h2>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  id="brand"
+                  value="Instinct Original"
+                />
+                <label class="form-check-label mx-2" for="brand">
+                  Instinct </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  value="Royal Canin"
+                  id="brand"
+                />
+                <label class="form-check-label mx-2" for="brand">
+                  Royal Canin </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  value="WholeHearted"
+                  id="brand"
+                />
+                <label class="form-check-label mx-2" for="brand">
+                  WholeHearted </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  value="Bravery"
+                  id="brand"
+                />
+                <label class="form-check-label mx-2" for="brand">
+                  Bravery </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  value="Hill's"
+                  id="brand"
+                />
+                <label class="form-check-label mx-2" for="brand"> Hill's </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+
+              <div class="form-check d-flex mt-1">
+                <input
+                  class="form-check-input d-flex brand"
+                  type="checkbox"
+                  value="Azoo"
+                  id="brand"
+                />
+                <label class="form-check-label mx-2" for="brand"> Azoo </label
+                ><span
+                  class="badge rounded-pill border ms-auto brandCounter"
+                >0</span>
+              </div>
+            </div>
+
+            <!-- Filtrar por Tag -->
+            <div class="p-2">
+              <h2>Filtrado por Tags</h2>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagJuguetes"
+              >
+                Juguetes
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagAlimento"
+              >
+                Alimento
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagNatural"
+              >
+                Natural
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagSalmón"
+              >
+                Salmón
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagCatnip"
+              >
+                Catnip
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagArnés"
+              >
+                Arnés
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagCachorro"
+              >
+                Cachorro
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagRueda"
+              >
+                Rueda
+              </button>
+              <button
+                class="badge rounded-pill text-bg-light border-0 tags"
+                id="tagJaula"
+              >
+                Jaula
+              </button>
+            </div>
+
+            <!-- PRODUCTOS PREMIUM -->
+            <div class="p-2">
+              <h2>Productos Premium</h2>
+
+              <div class="d-flex position-relative mt-2">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img
+                    src="https://www.petco.com.mx/medias/104853.jpg-300ftw?context=bWFzdGVyfHJvb3R8NDgxNzh8aW1hZ2UvanBlZ3xoNTcvaGY1Lzk5MTQ0NTM3NTM4ODYvMTA0ODUzLmpwZ18zMDBmdHd8NTljOTZhYTNiM2JmMDVkYzE4MWZmMDlhNWNlZWVlOGE4YTQzNWNiZjdiNTdkMWNmMzBjN2ZhYThlMzQ5YzRmNQß"
+                    class="flex-shrink-0 me-3 w-25"
+                    alt="..."
+                  />
+                  <div>
+                    <h5 class="mt-0">Royal Canin</h5>
+                    <p>$1000.00 mnx.</p>
+                  </div>
                 </a>
-              </li>
-
-              <!-- Los números de página se añadirán dinámicamente aquí -->
-              <li class="page-item">
-                <a class="page-link" href="#" id="pageNumber">1</a>
-              </li>
-
-              <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next" id="nextPage">
-                  <span aria-hidden="true">&raquo;</span>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img
+                    src="https://www.petco.com.mx/medias/114124.jpg-300ftw?context=bWFzdGVyfHJvb3R8ODI2NTN8aW1hZ2UvanBlZ3xoM2YvaDY2Lzk4MzcwOTg1MDAxMjYvMTE0MTI0LmpwZ18zMDBmdHd8MTM5NWU1YjY1ZDdjZmE4OTQ1OTE4ZDg0NTVhMDdiZjMyNjg5ODc3MDI1YThjMDgxY2ViYWE3ODg1ZDQ1OWFiZQ"
+                    class="flex-shrink-0 me-3 w-25"
+                    alt="..."
+                  />
+                  <div>
+                    <h5 class="mt-0">Instinct</h5>
+                    <p>$2,700.00 mnx.</p>
+                  </div>
                 </a>
-              </li>
-            </ul>
-          </nav>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img
+                    src="https://www.petco.com.mx/medias/122518.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTg4NDl8aW1hZ2UvanBlZ3xoMDAvaDE1LzEwMjEwODc2Njg2MzY2LzEyMjUxOC5qcGdfMzAwZnR3fDc5Y2E4YWFhMDZiNGM2YWU4YTZjYzNkMDY4NGVhOGMzOGVkODBhZWI0MzAwM2Y0MjljNTg3N2VhM2Y2ZmJjYmQ"
+                    class="flex-shrink-0 me-3 w-25"
+                    alt="..."
+                  />
+                  <div>
+                    <h5 class="mt-0">WholeHearted</h5>
+                    <p>$850.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img
+                    src="https://www.petco.com.mx/medias/300ftw-143658.jpg?context=bWFzdGVyfHJvb3R8NjM0ODF8aW1hZ2UvanBlZ3xoZjEvaGJiLzEwODAxNjk4MjQyNTkwLzMwMGZ0d18xNDM2NTguanBnfDI2MmUyOTc2ZThhYTdiNWEwMDdmZmYyZWRmNjMzNGRkMzc5Mzk0ZTYyYTRmMDk3MzJkYWI1YzEyNmI2NWYwOTE"
+                    class="flex-shrink-0 me-3 w-25"
+                    alt="..."
+                  />
+                  <div>
+                    <h5 class="mt-0">Bravery</h5>
+                    <p>$450.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+              <div class="d-flex position-relative">
+                <a href="#" class="stretched-link d-flex align-items-start">
+                  <img
+                    src="https://www.petco.com.mx/medias/106783.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTk5NTB8aW1hZ2UvanBlZ3xoMTYvaDZiLzEwNTA3NDAwMDE5OTk4LzEwNjc4My5qcGdfMzAwZnR3fDEzNWEzMTI0NWRlNjcwYjY0YzI1ZWI1ZjhiYTE1YTFhNmFlY2ZjZWM0OGU3ZjU1NjY3NTdiYTJjNWVjMjk0ZjI"
+                    class="flex-shrink-0 me-3 w-25"
+                    alt="..."
+                  />
+                  <div>
+                    <h5 class="mt-0">Tetra ReptoMin</h5>
+                    <p>$711.00 mnx.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
 
+            <!-- ANUNCIOS -->
+            <div class="card">
+              <img
+                src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/175793032.jpg?k=bf431917e800a519811452a9955740752336a2e17b06df7d9cb548c5f4ba0cf3&o=&hp=1"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <p class="card-text">USC Hotel</p>
+                <a
+                  href="https://www.booking.com/hotel/us/radisson-los-angeles-midtown-at-usc.es.html?aid=356980&label=gog235jc-1FCAMYrwIo7AE4mgNIClgDaJUCiAEBmAEKuAEYyAEM2AEB6AEB-AECiAIBqAIEuALQ0tC9BsACAdICJDU5OThjMmI5LTA5ZGItNDMyMC04NzVjLTYzOTQ0NzRhY2EwZNgCBeACAQ&sid=ddf13dd0344a367437398c9a3a6406ce&all_sr_blocks=50033202_95432232_4_0_0&checkin=2025-02-17&checkout=2025-02-18&dest_id=20014181&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=9&highlighted_blocks=50033202_95432232_4_0_0&hpos=9&matching_block_id=50033202_95432232_4_0_0&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&sr_pri_blocks=50033202_95432232_4_0_0__17910&srepoch=1739860358&srpvid=6a7f2df5cdce022c&type=total&ucfs=1&"
+                  class="btn"
+                  >Booking.com</a
+                >
+              </div>
+            </div>
+          </div>
 
+          <div class="col-md-8">
+            <!-- productos -->
 
-
-
-
-
-
-
-          <!--            
+            <!-- Contadores de productos -->
             <p class="resultados">
-              <span id="counterProductsToShow" >0</span> de <span id="resultados-productos"></span> resultados mostrados
+              <span id="counterProductsToShow">0</span> de
+              <span id="poductsTotal"></span> productos
+            </p>
+
+            <!-- Sección donde se mostrarán los productos -->
+            <div
+              class="row p-2 justify-content-around rounded"
+              id="seccion-cards"
+            ></div>
+
+            <!-- Paginación -->
+            <nav aria-label="Page navigation example">
+              <ul class="pagination" id="pagination">
+                <li class="page-item">
+                  <a
+                    class="page-link"
+                    href="#"
+                    aria-label="Previous"
+                    id="prevPage"
+                  >
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+
+                <!-- Los números de página se añadirán dinámicamente aquí -->
+                <li class="page-item">
+                  <a class="page-link" href="#" id="pageNumber">1</a>
+                </li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next" id="nextPage">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <!-- 
+            <p class="resultados">
+              <span id="counterProductsToShow">0</span> de
+              <span id="resultados-productos"></span> resultados mostrados
             </p>
             <div
               class="row row-cols-3 row-seccion-cards p-2"
               id="seccion-cards"
-            ></div>
-            
-             modales -->
+            ></div> -->
+            <div id="seccion-cards2"></div>
 
-
-          <!-- Controles de paginación
+            <!-- Controles de paginación
             <nav aria-label="Page navigation example">
               <ul class="pagination" id="pagination">
                 <li class="page-item">
@@ -600,40 +948,38 @@
               </ul>
             </nav>
 
-          -->
-
-
-
-
+          --></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="seccionCarrusel" class="d-none d-sm-block carruselMasPopulares">
-      <!-- carru. mas populares -->
-    </section>
-  </main>
+      <section
+        id="seccionCarrusel"
+        class="d-none d-sm-block carruselMasPopulares"
+      >
+        <!-- carru. mas populares -->
+      </section>
+    </main>
 
-  <footer id="footer">
-    <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
-  </footer>
+    <footer id="footer">
+      <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
+    </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="/src/modules/footer/footer.js"></script>
-  <script src="/src/modules/header/header.js"></script>
-  <script type="module" src="/src/pages/tienda/tienda.js"></script>
-  <script type="module" src="/src/pages/tienda/tiendaCartas.js"></script>
-  <script type="module" src="/src/pages/tienda/contador.js"></script>
-  <script type="module" src="/src/pages/tienda/filtroTag.js"></script>
-  <script type="module" src="/src/modules/nav/nav.js"></script>
-  <script type="module" src="/src/pages/tienda/seccionCarruselMobile.js"></script>
-  <script src="/src/pages/tienda/funcionesAdmin.js"></script>
-  <script src="/src/pages/tienda/paginado.js"></script>
-  <script src="/src/pages/tienda/searchNavbar.js"></script>
-  <script src="/src/modules/seller/sellerLogin.js"></script>
-  <script src="/src/modules/user/userLogin.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/modules/footer/footer.js"></script>
+    <script src="/src/modules/header/header.js"></script>
+    <script type="module" src="/src/pages/tienda/tienda.js"></script>
+    <script
+      type="module"
+      src="/src/pages/tienda/components/tiendaCartas.js"
+    ></script>
+    <script type="module" src="/src/modules/nav/nav.js"></script>
+    <script src="/src/pages/tienda/funcionesAdmin.js"></script>
+    <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js" ></script>
+    <script type="module" src="/src/pages/tienda/funciones-filtrados/mostrarProductos.js" ></script>
 
+  </body>
 </html>
