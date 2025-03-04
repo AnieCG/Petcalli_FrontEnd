@@ -4,6 +4,7 @@ import filtradoTag from "./funciones-filtrados/filtroTag.js";
 import mostrarProductos from "./funciones-filtrados/mostrarProductos.js";
 import insertQueryProducts from "./funciones-filtrados/insertQueryProducts.js";
 import setItemLocalStorage from "./funciones-filtrados/setItemLocalStorage.js";
+import alertaAgregado from "./components/alertaAgregado.js";
 insertCarruselMasPopulares();
 
 const $span = document.getElementsByClassName("price-value");
@@ -30,10 +31,6 @@ let selectedFilters = {
   brand: [],
   price: null,
 };
-//cargar elementos al local storage
-document.addEventListener("click", (event) => {
-  setItemLocalStorage(event, products);
-});
 
 const usuarioGuardado = JSON.parse(localStorage.getItem("producto"));
 console.log(usuarioGuardado);
@@ -127,6 +124,13 @@ document.querySelectorAll(".tags").forEach((input) => {
     counterProductsToShow.innerHTML = filterProducts.length;
     filterProducts = [...products];
   });
+});
+//cargar elementos al local storage
+document.addEventListener("click", (event) => {
+  if (event.target.classList.contains("comprar-button")) {
+    setItemLocalStorage(event, products);
+    alertaAgregado();
+  }
 });
 document.addEventListener(
   "DOMContentLoaded",
