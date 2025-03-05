@@ -14,7 +14,8 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <link rel="stylesheet" href="/src/pages/carrito/carrito.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 </head>
 
 <body>
@@ -38,26 +39,36 @@
 
 
         <!-- Seccion de tarjetas de producto -->
-        <section>
-            <div class="card mb-3" style="max-width: 540px;">
+        
+            <div class="card mb-3;">
                 <div class="row g-0">
                   <div class="col-md-4">
                     <img src="..." class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Descripcion de producto.</p>
-                      <p class="card-text"><small class="text-body-secondary">Marca y tamaño</small></p>
+                     </div>
+                     <div class="col-md-8">
+                      <div class="card-body">
+                      <h5 class="card-title">Alimento para perro</h5>
+                        <div class="counter-container">
+                       <button id="decrease-btn"><i class="fas fa-arrow-down"></i></button>
+                        <span id="counter-value">1</span>
+                        <button id="increase-btn"><i class="fas fa-arrow-up"></i></button>
+                         </div>  
+                        <div class="price-btn-container">
+                        <p class="card-price">$1.00</p></div>
+                       <button class="btn-delete" onclick="handleDelete()"><!--se agrega como boton-->
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
                         <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
                       </svg>
+                    </button> 
                     </div>
+                    <p class="card-text"><small class="text-body-secondary">Marca y tamaño</small>
+                    </p>
                   </div>
-                </div>
-              </div>           
-            </section>
+            </div>
+         </div>
+                      
+       
 
         <!-- Seccion de resuemen de compra -->
         <div class="cart-container">
@@ -107,7 +118,7 @@
         <!-- Popup para la direccion de envio-->
 
     </main>
-
+s
 
 
     <footer id="footer">
