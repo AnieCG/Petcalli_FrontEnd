@@ -59,6 +59,23 @@ const insertNav = () => {
   </div>
 </nav>
     `;
-};
 
-insertNav();
+    highlightActiveLink();
+  };
+  
+  const highlightActiveLink = () => {
+    const currentPath = window.location.pathname; 
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link'); 
+  
+    navLinks.forEach(link => {
+      const linkPath = new URL(link.href).pathname; 
+      
+      if (linkPath === currentPath) {
+        link.style.color = "#e07a5f";    
+      } else {
+        link.style.color = ''; 
+      }
+    });
+  };
+
+  insertNav();

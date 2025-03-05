@@ -1,6 +1,6 @@
 const $seccionCarrusel = document.getElementById("seccionCarrusel");
 
-export default function insertCarruselMasPopulares() {
+export default function insertCarruselMasPopulares(producto) {
   $seccionCarrusel.innerHTML = `
     <section class="row">
           <h2 id="tituloCarrusel" class="text-center mb-4">Más Populares</h2>
@@ -20,7 +20,7 @@ export default function insertCarruselMasPopulares() {
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <a href="/src/pages/tienda/tienda.html">
-                          <div class="card">
+                          <div class="card data-bs-toggle="modal" data-bs-target="#${producto.id=48}"">
                             <img src="https://m.media-amazon.com/images/I/61PNxgt963L._AC_SL1500_.jpg" class="img-fluid"
                               alt="Dos jeringas de uso especial para instalación de microchip de localización con mascotas o animales de fondo" />
                           </div>
