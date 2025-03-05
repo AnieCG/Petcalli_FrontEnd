@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petcalli</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400..800&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Hind+Guntur:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/pages/carrito/carrito.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+</head>
+
+<body>
+    <main>
+        <header id="header" class="container-fluid">
+            <nav id="navbar"></nav>
+        </header>
+
+
+        <!-- Seccion de titulo  y mini resumen-->
+
+        <div class="container-fluid mt-4">
+            <div class="d-flex align-items-center mb-4">
+            <a class="btn btn-outline-light" href="/src/pages/tienda/tienda.html" role="button"><img src="/public/images/la-tienda-de-animales.png" alt="imagen de la tienda de animales" id="imgcarrito"></a>
+            <span class="ml-2 text-lg" id="h2">Olvidaste algo?</span>
+            </div>
+            <br>
+            <h1 class="text-3xl font-bold mb-2">Tu carrito</h1>
+            <p  class="text-gray-600 mb-6">Tienes......</p>
+        </div>
+
+
+        <!-- Seccion de tarjetas de producto -->
+        
+            <div class="card mb-3;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="..." class="img-fluid rounded-start" alt="...">
+                     </div>
+                     <div class="col-md-8">
+                      <div class="card-body">
+                      <h5 class="card-title">Alimento para perro</h5>
+                        <div class="counter-container">
+                       <button id="decrease-btn"><i class="fas fa-arrow-down"></i></button>
+                        <span id="counter-value">1</span>
+                        <button id="increase-btn"><i class="fas fa-arrow-up"></i></button>
+                         </div>  
+                        <div class="price-btn-container">
+                        <p class="card-price">$1.00</p></div>
+                       <button class="btn-delete" onclick="handleDelete()"><!--se agrega como boton-->
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                        <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5m3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0z"/>
+                        <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4zM2.5 3h11V2h-11z"/>
+                      </svg>
+                    </button> 
+                    </div>
+                    <p class="card-text"><small class="text-body-secondary">Marca y tamaño</small>
+                    </p>
+                  </div>
+            </div>
+         </div>
+                      
+       
+
+        <!-- Seccion de resuemen de compra -->
+        <div class="cart-container">
+            <table id="cart-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                
+            </table>
+    
+            <div class="cart-summary">
+                <div id="purchase-summary">
+                    <h3>Resumen de la Compra</h3>
+                    <p><strong>Subtotal:</strong> $<span id="subtotal-price">0.00</span></p>
+                    <p><strong>Descuento:</strong> $<span id="discount-price">0.00</span></p>
+                    <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
+                </div>
+                
+                <div id="coupon-section">
+                    <label for="coupon-code">Código de cupón:</label>
+                    <input type="text" id="coupon-code" placeholder="Ingresa tu código">
+                    <button id="apply-coupon">Aplicar cupón</button>
+                    <p id="coupon-message"></p>
+                </div>
+
+        <!-- Popup para el pago -->
+        <div id="payment-method-section">
+            <h3>Selecciona tu forma de pago</h3>
+            <input type="radio" name="payment-method" value="credit-card" id="credit-card" checked>
+            <label for="credit-card">Tarjeta de Crédito</label><br>
+            <input type="radio" name="payment-method" value="paypal" id="paypal">
+            <label for="paypal">PayPal</label><br>
+        </div>
+        
+        <button id="checkout-button">Finalizar Compra</button>
+    </div>
+</div>
+
+
+
+
+        <!-- Popup para la direccion de envio-->
+
+    </main>
+s
+
+
+    <footer id="footer">
+        <p>&copy; 2025 Plataforma. Todos los derechos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/src/modules/footer/footer.js"></script>
+    <script src="/src/modules/header/header.js"></script>
+    <script type="module" src="/src/modules/nav/nav.js"></script>
+    <script  src="/src/pages/login/login.js"></script>
+    <script src="/src/pages/register/localStorage.js"></script>
+    <script src="src/modules/user/userLogin.js"></script>
+    <script src="/src/pages/tienda/searchNavbar.js"></script>
+    <script src="/src/modules/seller/sellerLogin.js"></script>
+    <script type="module" src="/src/pages/carrito/carrito.js"></script>
+</body>
+
+
+
+
+</html>
