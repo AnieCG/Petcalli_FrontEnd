@@ -6,6 +6,7 @@ import insertQueryProducts from "./funciones-filtrados/insertQueryProducts.js";
 import setItemLocalStorage from "./funciones-filtrados/setItemLocalStorage.js";
 import alertaAgregado from "./components/alertaAgregado.js";
 import counters from "./funciones-filtrados/countersBrandCategory.js";
+import filtrosActivos from "./components/filtrosActivos.js";
 
 const $span = document.getElementsByClassName("price-value");
 const counterProductsToShow = document.getElementById("counterProductsToShow");
@@ -56,9 +57,7 @@ function updateFilters() {
   counterProductsToShow.innerHTML = filteredProducts.length;
   counters(filteredProducts);
 }
-
 // Eventos que activan los filtros en tiempo real
-
 document
   .querySelectorAll(".form-range")[1]
   .addEventListener("input", (event) => {
@@ -69,6 +68,7 @@ document
     $span[1].innerHTML = `$ ${maxPrice}`;
     console.log(selectedFilters);
     updateFilters();
+    filtrosActivos(selectedFilters);
   });
 document
   .querySelectorAll(".form-range")[0]
@@ -80,6 +80,7 @@ document
     $span[0].innerHTML = `$ ${maxPrice}`;
     console.log(selectedFilters);
     updateFilters();
+    filtrosActivos(selectedFilters);
   });
 
 document.querySelectorAll(".petCategory").forEach((button) => {
@@ -90,6 +91,7 @@ document.querySelectorAll(".petCategory").forEach((button) => {
     selectedFilters.petType = event.currentTarget.value || null;
     event.currentTarget.classList.add("selected");
     updateFilters();
+    filtrosActivos(selectedFilters);
   });
 });
 
@@ -103,6 +105,7 @@ document.querySelectorAll(".brand").forEach((checkbox) => {
       );
     }
     updateFilters();
+    filtrosActivos(selectedFilters);
   });
 });
 
@@ -116,6 +119,7 @@ document.querySelectorAll(".category").forEach((checkbox) => {
       );
     }
     updateFilters();
+    filtrosActivos(selectedFilters);
   });
 });
 
@@ -125,6 +129,7 @@ document.querySelectorAll(".tags").forEach((input) => {
     mostrarProductos(filterProducts);
     counterProductsToShow.innerHTML = filterProducts.length;
     filterProducts = [...products];
+    filtrosActivos(selectedFilters);
   });
 });
 //cargar elementos al local storage
