@@ -109,7 +109,14 @@ main {
     }
 
     .container-body-product {
-      max-width: 300px;
+      max-width: 250px;
+      background-color: var(--block-images2);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .container-body-new {
+      max-width: 330px;
     }
 
     .product {
