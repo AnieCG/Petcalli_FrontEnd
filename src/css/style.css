@@ -401,6 +401,7 @@ footer {
   }
 }
 
+/* ------Estilos para visualizar el contador dinámico del carrito en todas las páginas.-------- */
 #cart-counter {
   background-color: var(--block-images1);
   color: white;
@@ -415,7 +416,7 @@ footer {
   list-style: 1;
   transform: translate(30%, -30%);
 }
-.btn {
+#btncart {
   position: relative; /* Asegura que el contador se posicione respecto a este contenedor */
   padding: 10px; /* Añade espacio alrededor del icono */
   display: inline-block; /* Asegura que el contenedor tenga un tamaño definido */
