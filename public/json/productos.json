@@ -564,5 +564,17 @@
     "category": "Juguetes",
     "color":"NA",
     "size": "NA"
+  },
+  {
+    "id": 48,
+    "title": "Microchip Para Mascotas Perros y Gatos",
+    "marca": "Chip Mascotas",
+    "petType": "Perro",    
+    "image": "https://m.media-amazon.com/images/I/61RcC5iGZML._AC_SL1200_.jpg",
+    "price": "$850.75",
+    "description": "1x Microchip de 7mm con aplicador, 1 Pasaporte para mascotas, 1 Placa inteligente NFC & QR, 1 Certificado QR/Nfc, 4 Tarjetas de Identificación de microchip, 6 Etiquetas con el número del microchip, 1 Registro de microchip en plataforma de por vida.",
+    "category": "Medicamentos",
+    "color":"NA",
+    "size": "NA"
   }
 ]

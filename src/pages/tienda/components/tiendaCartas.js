@@ -16,7 +16,7 @@ const createCards = (producto) => {
             </div>
             <div class="modal-body">
 
-            <h4>${producto.description}</h4>
+            <h4>${producto.title}</h4>
                 <img src="${producto.image}" class="card-img-top modal-img" alt="Imagen de producto" />
                 <div class="card-body">
                     <h5 class="card-title" id="nombre-producto">${producto.title}</h5>

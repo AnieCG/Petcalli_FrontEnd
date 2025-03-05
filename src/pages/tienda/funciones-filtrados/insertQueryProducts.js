@@ -1,6 +1,7 @@
 import mostrarProductos from "/src/pages/tienda/funciones-filtrados/mostrarProductos.js";
 
 const $seccionCards = document.getElementById("seccion-cards");
+const counterProductsToShow = document.getElementById("counterProductsToShow");
 
 export default function insertQueryProducts( productos ) {
         
@@ -14,6 +15,7 @@ export default function insertQueryProducts( productos ) {
                     );
                     if(productsToShow){
                         mostrarProductos(productsToShow);
+                        counterProductsToShow.innerHTML = productsToShow.length;
                     }else{
                         $seccionCards.innerText=`No hay resultados para: ${queryString}`;
                     }
