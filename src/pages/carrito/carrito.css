@@ -1,0 +1,75 @@
+
+#coupon-section {
+    margin: 15px 0;
+}
+
+#coupon-section input {
+    padding: 8px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+#coupon-section button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+#coupon-message {
+    font-size: 0.9rem;
+    color: orange;
+    margin-top: 10px;
+}
+
+#payment-method-section {
+    margin: 20px 0;
+}
+
+#payment-method-section input {
+    margin-right: 10px;
+}
+.card{
+    background-color: #f0f0f0;
+    display: flex;
+    margin: 20px;
+    max-width: 740px;
+}
+.card-body{
+    width: 5autom;
+    max-width: none;
+    display: flex;
+    
+}/*borrar*/
+.btn-delete { 
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    padding: 70px 5px 10px 30px;
+
+
+}
+
+.card-text{
+    margin: 10px;
+    padding: 10px 5px 10px 10px;
+
+}
+/*flechas*/
+.counter-container {
+    padding: 70px 5px 10px 70px;
+writing-mode: horizontal-tb;
+direction: rtl;
+
+}
+
+/*precio*/
+.price-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 70px 5px 10px 30px; 
+}
+
+.card-title{
+    padding: 70px 5px 10px; 
+}
