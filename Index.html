@@ -47,19 +47,20 @@
             <div class="row">
               <div class="col">
                 <a href="/src/pages/tienda/tienda.html?category=Accesorios">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="accesories">
-                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets" alt="iguana con lentes">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Accesorios</h5>
-                    </div>
-                  </button>
+                  <div class="card animal border border-0 mx-auto">
+                    <button class="border border-0 mx-auto carrusel-btn" id="accesories">
+                      <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets"
+                        alt="iguana con lentes">
+                      <div class="card-body">
+                        <h5 class="card-title text-center">Accesorios</h5>
+                      </div>
+                    </button>
                 </a>
-                </div>
               </div>
+            </div>
 
-              <div class="col mt-0">
-                <a href="/src/pages/tienda/tienda.html?category=Ropa">
+            <div class="col mt-0">
+              <a href="/src/pages/tienda/tienda.html?category=Ropa">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="clothes">
                     <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets"
@@ -70,10 +71,10 @@
                   </button>
                 </div>
               </a>
-              </div>
+            </div>
 
-              <div class="col mt-0">
-                <a href="/src/pages/tienda/tienda.html?category=Alimento">
+            <div class="col mt-0">
+              <a href="/src/pages/tienda/tienda.html?category=Alimento">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="food">
                     <img src="/public/images/cobayas.jpg" class="card-img-top img-pets" alt="cobayas comiendo">
@@ -83,15 +84,15 @@
                   </button>
                 </div>
               </a>
-              </div>
             </div>
           </div>
-          <!-- Fin de la primer sección -->
+        </div>
+        <!-- Fin de la primer sección -->
 
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col mt-0">
-                <a href="/src/pages/tienda/tienda.html?category=Juguetes">
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col mt-0">
+              <a href="/src/pages/tienda/tienda.html?category=Juguetes">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="toys">
                     <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets"
@@ -102,10 +103,10 @@
                   </button>
                 </div>
               </a>
-              </div>
+            </div>
 
-              <div class="col mt-0">
-                <a href="/src/pages/tienda/tienda.html?category=Medicamentos">
+            <div class="col mt-0">
+              <a href="/src/pages/tienda/tienda.html?category=Medicamentos">
                 <div class="card animal border border-0 mx-auto">
                   <button class="border border-0 mx-auto carrusel-btn" id="medicine">
                     <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets"
@@ -116,12 +117,12 @@
                   </button>
                 </div>
               </a>
-              </div>
             </div>
           </div>
-          <!-- Fin de la segunda sección -->
         </div>
+        <!-- Fin de la segunda sección -->
       </div>
+    </div>
     </div>
   </section>
 
@@ -194,9 +195,9 @@
           <h2>"¡Encuentra a tu Mejor Amigo!"</h2>
           <p>Cada animalito tiene una historia única y está buscando una segunda oportunidad para ser feliz. Descubre a
             tu nuevo amigo y empieza una nueva aventura juntos.</p>
-            <a href="https://proyecto-salvavidas.com/">
-          <button class="btn-adopt">Adopta</button>
-        </a>
+          <a href="https://proyecto-salvavidas.com/">
+            <button class="btn-adopt">Adopta</button>
+          </a>
         </div>
 
       </div>
@@ -368,43 +369,63 @@
       <h2 class="text-start title-products p-3">Productos por mascota</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-cat.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Gato')" class="btn-pet">
+            <img src="/public/images/pet-cat.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Gatos</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-birds.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Aves')" class="btn-pet">
+            <img src="/public/images/pet-birds.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Aves</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-dog.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Perro')" class="btn-pet">
+            <img src="/public/images/pet-dog.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Perros</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-fishes.png" class="card-img-top shadow-pet pt-4" alt="...">
+          <button onclick="applyFilter('Pez')" class="btn-pet">
+            <img src="/public/images/pet-fishes.png" class="card-img-top shadow-pet pt-4" alt="...">
+          </button>
           <div class="card-body">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Peces</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-conejo.png" class="card-img-top shadow-pet shadow-pet-rabbit" alt="...">
+          <button onclick="applyFilter('Conejo')" class="btn-pet">
+            <img src="/public/images/pet-conejo.png" class="card-img-top shadow-pet shadow-pet-rabbit" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Conejos</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-others.png" class="card-img-top shadow-pet pet-turtle" alt="...">
+          <button onclick="applyFilter('Otros')" class="btn-pet">
+            <img src="/public/images/pet-others.png" class="card-img-top shadow-pet pet-turtle" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Otros</h5>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      function applyFilter(petType) {
+        const url = `/src/pages/tienda/tienda.html?petType=${encodeURIComponent(petType)}`;
+        window.location.href = url;
+      }
+    </script>
+
     <section>
       <h2 class="text-center title-products py-5">Noticias</h2>
       <div class="row d-flex flex-row align-items-center justify-content-around">
@@ -465,10 +486,16 @@
   <script src="/src/pages/login/login.js"></script>
   <script src="/src/pages/register/localStorage.js"></script>
   <script src="src/modules/user/userLogin.js"></script>
-  <script src="/src/pages/tienda/searchNavbar.js" ></script>
-  <script src="/src/modules/seller/sellerLogin.js" ></script>
-  <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js" ></script>
- 
+  <script src="/src/pages/tienda/searchNavbar.js"></script>
+  <script src="/src/modules/seller/sellerLogin.js"></script>
+  <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js"></script>
+  <script>
+    function applyFilter(petType) {
+      const url = `/src/pages/tienda/tienda.html?petType=${encodeURIComponent(petType)}`;
+      window.location.href = url;
+    }
+  </script>
+
 </body>
 
 </html>

@@ -33,8 +33,8 @@ async function getProducts() {
   productsTotal.innerHTML = filterProducts.length;
 
   // Llamamos a la función para leer los filtros de la URL y aplicar el filtro
-  getFiltersFromURL();  // Lee los filtros de la URL
-  updateFilters();      // Aplica los filtros a los productos cargados
+  getFiltersFromURL(); // Lee los filtros de la URL
+  updateFilters(); // Aplica los filtros a los productos cargados
 }
 
 // Llamada a la función que obtiene los productos
@@ -45,10 +45,15 @@ function updateFilters() {
   // Filtra los productos según los filtros seleccionados
   let filteredProducts = products.filter((product) => {
     return (
-      (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
-      (!selectedFilters.category.length || selectedFilters.category.includes(product.category)) &&
-      (!selectedFilters.brand.length || selectedFilters.brand.includes(product.marca)) &&
-      (!selectedFilters.price || parseFloat(product.price.replace(/[$,]/g, "")) <= parseFloat(selectedFilters.price))
+      (!selectedFilters.petType ||
+        product.petType === selectedFilters.petType) &&
+      (!selectedFilters.category.length ||
+        selectedFilters.category.includes(product.category)) &&
+      (!selectedFilters.brand.length ||
+        selectedFilters.brand.includes(product.marca)) &&
+      (!selectedFilters.price ||
+        parseFloat(product.price.replace(/[$,]/g, "")) <=
+          parseFloat(selectedFilters.price))
     );
   });
 
@@ -67,11 +72,18 @@ function updateFilters() {
 function getFiltersFromURL() {
   const urlParams = new URLSearchParams(window.location.search);
 
-  const categoryFilter = urlParams.get('category');
-  console.log('Filtro de categoría en la URL:', categoryFilter); // Depuración
+  const categoryFilter = urlParams.get("category");
+  console.log("Filtro de categoría en la URL:", categoryFilter); // Depuración
 
   if (categoryFilter) {
     selectedFilters.category = [categoryFilter]; // Asumiendo que solo se filtra por una categoría
+  }
+
+  const petFilter = urlParams.get("petType");
+  console.log("Filtro de petType en la URL:", petFilter);
+
+  if (petFilter) {
+    selectedFilters.petType = petFilter;
   }
 
   // Llama a la función que aplica los filtros después de obtener los parámetros de la URL
@@ -81,32 +93,42 @@ function getFiltersFromURL() {
 // Función que actualiza la UI con los filtros de la URL
 function updateUIWithFilters() {
   // Actualiza los checkboxes de la categoría según los filtros seleccionados
-  document.querySelectorAll('.category').forEach((checkbox) => {
+  document.querySelectorAll(".category").forEach((checkbox) => {
     checkbox.checked = selectedFilters.category.includes(checkbox.value);
   });
 }
 
 // Eventos que activan los filtros en tiempo real (rango de precios, categorías, marcas)
-document.querySelectorAll(".form-range")[1].addEventListener("input", (event) => {
-  selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
-  let maxPrice = parseInt(event.target.value);
-  $span[1].innerHTML = `$ ${maxPrice}`;
-  console.log(selectedFilters);
-  updateFilters();
-});
+document
+  .querySelectorAll(".form-range")[1]
+  .addEventListener("input", (event) => {
+    selectedFilters.price = event.target.value
+      ? parseFloat(event.target.value)
+      : null;
+    let maxPrice = parseInt(event.target.value);
+    $span[1].innerHTML = `$ ${maxPrice}`;
+    console.log(selectedFilters);
+    updateFilters();
+  });
 
-document.querySelectorAll(".form-range")[0].addEventListener("input", (event) => {
-  selectedFilters.price = event.target.value ? parseFloat(event.target.value) : null;
-  let maxPrice = parseInt(event.target.value);
-  $span[0].innerHTML = `$ ${maxPrice}`;
-  console.log(selectedFilters);
-  updateFilters();
-});
+document
+  .querySelectorAll(".form-range")[0]
+  .addEventListener("input", (event) => {
+    selectedFilters.price = event.target.value
+      ? parseFloat(event.target.value)
+      : null;
+    let maxPrice = parseInt(event.target.value);
+    $span[0].innerHTML = `$ ${maxPrice}`;
+    console.log(selectedFilters);
+    updateFilters();
+  });
 
 // Evento para filtrar por tipo de mascota
 document.querySelectorAll(".petCategory").forEach((button) => {
   button.addEventListener("click", (event) => {
-    document.querySelectorAll(".petCategory").forEach((btn) => btn.classList.remove("selected"));
+    document
+      .querySelectorAll(".petCategory")
+      .forEach((btn) => btn.classList.remove("selected"));
     selectedFilters.petType = event.currentTarget.value || null;
     event.currentTarget.classList.add("selected");
     updateFilters();
@@ -119,7 +141,9 @@ document.querySelectorAll(".brand").forEach((checkbox) => {
     if (event.target.checked) {
       selectedFilters.brand.push(event.target.value);
     } else {
-      selectedFilters.brand = selectedFilters.brand.filter((brand) => brand !== event.target.value);
+      selectedFilters.brand = selectedFilters.brand.filter(
+        (brand) => brand !== event.target.value
+      );
     }
     updateFilters();
   });
@@ -131,7 +155,9 @@ document.querySelectorAll(".category").forEach((checkbox) => {
     if (event.target.checked) {
       selectedFilters.category.push(event.target.value);
     } else {
-      selectedFilters.category = selectedFilters.category.filter((category) => category !== event.target.value);
+      selectedFilters.category = selectedFilters.category.filter(
+        (category) => category !== event.target.value
+      );
     }
     updateFilters();
   });
@@ -156,4 +182,6 @@ document.addEventListener("click", (event) => {
 });
 
 // Insertar productos filtrados cuando se carga la página
-document.addEventListener("DOMContentLoaded", () => insertQueryProducts(filterProducts));
+document.addEventListener("DOMContentLoaded", () =>
+  insertQueryProducts(filterProducts)
+);
