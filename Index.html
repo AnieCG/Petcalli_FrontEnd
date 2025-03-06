@@ -25,9 +25,10 @@
   </header>
 
   <section class="categories mt-2 container-fluid">
-    <div id="carousel-categories" class="carousel slide-fade">
-      <div class="container-fluid d-block d-md-block border col-11 carouselAnimals">
-        <h2 class="subtitulo h2"><strong>Buscar por categoría</strong></h2>
+    <div id="carousel-categories" class="carousel slide">
+      <div class="container-fluid col-11">
+        <h2 class="subtitulo h2 "><strong>Buscar por categoría</strong></h2>
+  
         <div class="carousel-controls d-flex justify-content-end Carrusel-index">
           <button class="rounded-circle carousel-control-next" type="button" data-bs-target="#carousel-categories"
             data-bs-slide="next">
@@ -41,90 +42,83 @@
             <span class="visually-hidden">Anterior</span>
           </button>
         </div>
+  
         <div class="carousel-inner">
           <!-- Primer Sección -->
           <div class="carousel-item active">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
               <div class="col">
                 <a href="/src/pages/tienda/tienda.html?category=Accesorios">
-                  <div class="card animal border border-0 mx-auto">
-                    <button class="border border-0 mx-auto carrusel-btn" id="accesories">
-                      <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets"
-                        alt="iguana con lentes">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Accesorios</h5>
-                      </div>
-                    </button>
+                  <div class="card animal mx-auto">
+                    <img src="/public/images/iguana-lentes.jpg" class="card-img-top img-fluid" alt="iguana con lentes">
+                    <div class="card-body rounded">
+                      <h5 class="card-title ">Accesorios </h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block;" alt="flecha-inicio">
+                    </div>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Ropa">
+                  <div class="card animal  mx-auto">
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-fluid" alt="Conejo con vestido">
+                    <div class="card-body rounded">
+                      <h5 class="card-title">Ropa</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px;margin-left: auto; display: block;" alt="flecha-inicio">
+                    </div>
+                  </div>
+                </a>
+              </div>
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Alimento">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-fluid" alt="cobayas comiendo">
+                    <div class="card-body">
+                      <h5 class="card-title ">Alimento</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block; " alt="flecha-inicio">
+                    </div>
+                  </div>
                 </a>
               </div>
             </div>
-
-            <div class="col mt-0">
-              <a href="/src/pages/tienda/tienda.html?category=Ropa">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="clothes">
-                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets"
-                      alt="Conejo con vestido">
+          </div>
+          <!-- Fin de la primer sección -->
+  
+          <div class="carousel-item">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Juguetes">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-fluid", alt="Perro con juguete">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Ropa</h5>
+                      <h5 class="card-title">Juguetes</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px;margin-left: auto; display: block; " alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
-              </a>
-            </div>
-
-            <div class="col mt-0">
-              <a href="/src/pages/tienda/tienda.html?category=Alimento">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="food">
-                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets" alt="cobayas comiendo">
+                  </div>
+                </a>
+              </div>
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Medicamentos">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-fluid" alt="perro con medicamentos">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Alimento</h5>
+                      <h5 class="card-title">Medicamento</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block;" alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
-              </a>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
+          <!-- Fin de la segunda sección -->
         </div>
-        <!-- Fin de la primer sección -->
-
-        <div class="carousel-item">
-          <div class="row">
-            <div class="col mt-0">
-              <a href="/src/pages/tienda/tienda.html?category=Juguetes">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="toys">
-                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets"
-                      alt="Perro con juguete">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Juguetes</h5>
-                    </div>
-                  </button>
-                </div>
-              </a>
-            </div>
-
-            <div class="col mt-0">
-              <a href="/src/pages/tienda/tienda.html?category=Medicamentos">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="medicine">
-                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets"
-                      alt="perro con medicamentos">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Medicamento</h5>
-                    </div>
-                  </button>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- Fin de la segunda sección -->
       </div>
     </div>
-    </div>
   </section>
+  
 
   <!--  Productos Premium -->
   <main class="pt-5">
