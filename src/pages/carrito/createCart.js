@@ -13,7 +13,8 @@
         //funcion para recibir el array de productos/objetos
         function crearTarjetasProductos(){
             //leer en el local storach
-            const productos = JSON.parse(localStorage.getItem("producto"));//talvez no es producto?
+            const productos = JSON.parse(localStorage.getItem("cart"));//talvez no es producto?
+            /* Efectivamente no era prodcuto es "cart" */
             console.log(productos);
             //condicion para que no carge todas las tarjetas
             if(productos && productos.length > 0){
@@ -24,11 +25,12 @@
             nuevoProducto.classList = "tarjeta-producto"; //para asignar la clase al div
             //para insertar un bloque dentro del div, imagen,titulo, descripcion y el precio 
             //no aparece la seccion en el html, 
+            /* Como decias llamas mal a los atributos, ponias producto, y es con el metodo element */
             nuevoProducto.innerHTML = `
-            <img src=${producto.image}/>
-            <h5>/${producto.title}</h5>
-            <p>${producto.description}</p>
-            <p>$${producto.price}</p> 
+            <img src=${element.image}/>
+            <h5>${element.title}</h5>
+            <p>${element.description}</p>
+            <p>${element.price}</p> 
             <button id="decrease-btn"><i class="fas fa-arrow-down"></i></button>
                         <span id="counter-value">1</span>
             <button id="increase-btn"><i class="fas fa-arrow-up"></i></button>
@@ -47,6 +49,7 @@
         });
   }
 }
+/* Solo debes llamar la funcion sin darle parametros */
         //se ejecuta el crear productos
-        crearTarjetasProductos(producto);
+        crearTarjetasProductos();
         
