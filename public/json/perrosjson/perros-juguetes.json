@@ -1,57 +1,104 @@
 [
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MTU0NXxpbWFnZS9qcGVnfGltYWdlcy9oMjQvaDA0LzkzMjMwMjk1OTQxNDIuanBnfGU2ZmQ5ZTYxMjM5MjZjOGJhMDcxYzEwMDlhYWYyMmMxMzQ0MDIyODc3OGM3NzEzNDVhNDA5NmNkZGYyMDExZTA",
-      "price": "$109.00",
-      "descripcion": "Kong Pelota de Goma Squeezz para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3NjA2M3xpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk2LzkzMjI3OTQ1NDkyNzguanBnfGI2ZGE5OWExZGVkYTEyNGYyM2ViMDc3M2M2YTgwYmQxNTExNzRmNmQ5NTQ3ZGJkYTVmZGMzZTIzM2I4NWEwMmQ",
-      "price": "$299.00",
-      "descripcion": "Kong Panal de Caucho Clásico Rojo para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2ODY0MHxpbWFnZS9qcGVnfGltYWdlcy9oNWQvaGQxLzkzMjMwMzYzNzcxMTguanBnfDJiZTMyNjA3NTRiNmQxY2E4ODA2ZGNhZDRkMzQwY2VmYTUzNzM4MWY3OTI0NjJiMjI2YTg0MjU5ZmZiZWM1N2I",
-      "price": "$349.00",
-      "descripcion": "Kong Panal de Caucho Extreme Negro para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1NzUyNXxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaGU1LzkzMjMxMDEwMjgzODIuanBnfDQ3ZDJlMDM4NGQ2OTY5MTNlMjE1ZjRmZTZjNDNhMmIxOGUxOWNlOTA4M2QyOTJhZGIyM2MxNWQ5MWVjMWFjNzY",
-      "price": "$289.00",
-      "descripcion": "Kong Peluche Oso Wild Knots con Estructura de Cuerda para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNzIxMnxpbWFnZS9qcGVnfGltYWdlcy9oNGQvaDM0LzkzMjMxMTM4MDc5MDIuanBnfDgwOWY1NWMwNjQ2OTY5NzI0NDUxNjFjMTc5M2I0YTQ1NjdiMDg2ZjIyZjJmMmYwMzU5YmE4ZGRmYjA0YWQyNDA",
-      "price": "$299.00",
-      "descripcion": "Kong Hueso de Caucho Extreme Negro para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1ODIyMXxpbWFnZS9qcGVnfGltYWdlcy9oMjcvaDM2LzkzMjMxMDM2NDk4MjIuanBnfDMwNzk5NTAwZGQ0YjliYWY0ZmQ2MGUxMGQ5NzA0ZjMxMGViOTk3NWEzY2MyYjczZTA5YzhiODU5MTk1NzdhZWM",
-      "price": "$199.00",
-      "descripcion": "Kong Peluche Oso Wild Knots con Estructura de Cuerda para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/110172.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzQ2Nzd8aW1hZ2UvanBlZ3xoNWMvaGU2LzEwNTE1MzM3MDg0OTU4LzExMDE3Mi5qcGdfMzAwZnR3fGJhZGM3Zjg1NzZhZDc5MWUwN2I1ODk2MGEzZWQxMDljNzllNTc2NTI0ZDZkOTU4YjQ0NTk4MzY0MzMwOWU0OWY",
-      "price": "$349.00",
-      "descripcion": "Kong Pelota de Caucho Extreme Ball Negra para Perro"
-    },
-    {
-      "title": "Kong",
-      "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w4MTA1N3xpbWFnZS9qcGVnfGltYWdlcy9oOTgvaDQwLzkzMjMwOTY5OTc5MTguanBnfDY2MGJlZTU0ZTYwMGQwZmExZDlmNzg5Mzk0OTUzNTdmMjBlMWY5ZGFkMzM3YzgzYzExODY1NGQ2MmMzMjBhNTQ",
-      "price": "$369.00",
-      "descripcion": "Kong Llanta de Caucho Extreme Tires Negra para Perro"
-    },
-    {
-      "title": "Chuckit!",
-      "image": "https://www.petco.com.mx/medias/104312.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTE4MzM1fGltYWdlL2pwZWd8aGYwL2hjZi8xMDAxNzA2MTczMjM4Mi8xMDQzMTIuanBnXzMwMGZ0d3xmM2NlMTMxZDdjMTY2YjRhODVhZmE1OWJhZDdhZmYxMTFmOGIzYzI4N2EzMTM0ZjlmMmIyZWZlODA4OTk0MzAy",
-      "price": "$179.00",
-      "descripcion": "Chuckit! Pelota Ultra de Goma para Perro, Grande"
-    }
-  ]
-  
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2MTU0NXxpbWFnZS9qcGVnfGltYWdlcy9oMjQvaDA0LzkzMjMwMjk1OTQxNDIuanBnfGU2ZmQ5ZTYxMjM5MjZjOGJhMDcxYzEwMDlhYWYyMmMxMzQ0MDIyODc3OGM3NzEzNDVhNDA5NmNkZGYyMDExZTA",
+    "price": "$109.00",
+    "descripcion": "Kong Pelota de Goma Squeezz para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3NjA2M3xpbWFnZS9qcGVnfGltYWdlcy9oZTQvaDk2LzkzMjI3OTQ1NDkyNzguanBnfGI2ZGE5OWExZGVkYTEyNGYyM2ViMDc3M2M2YTgwYmQxNTExNzRmNmQ5NTQ3ZGJkYTVmZGMzZTIzM2I4NWEwMmQ",
+    "price": "$299.00",
+    "descripcion": "Kong Panal de Caucho Clásico Rojo para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2ODY0MHxpbWFnZS9qcGVnfGltYWdlcy9oNWQvaGQxLzkzMjMwMzYzNzcxMTguanBnfDJiZTMyNjA3NTRiNmQxY2E4ODA2ZGNhZDRkMzQwY2VmYTUzNzM4MWY3OTI0NjJiMjI2YTg0MjU5ZmZiZWM1N2I",
+    "price": "$349.00",
+    "descripcion": "Kong Panal de Caucho Extreme Negro para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1NzUyNXxpbWFnZS9qcGVnfGltYWdlcy9oN2MvaGU1LzkzMjMxMDEwMjgzODIuanBnfDQ3ZDJlMDM4NGQ2OTY5MTNlMjE1ZjRmZTZjNDNhMmIxOGUxOWNlOTA4M2QyOTJhZGIyM2MxNWQ5MWVjMWFjNzY",
+    "price": "$289.00",
+    "descripcion": "Kong Peluche Oso Wild Knots con Estructura de Cuerda para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3wyNzIxMnxpbWFnZS9qcGVnfGltYWdlcy9oNGQvaDM0LzkzMjMxMTM4MDc5MDIuanBnfDgwOWY1NWMwNjQ2OTY5NzI0NDUxNjFjMTc5M2I0YTQ1NjdiMDg2ZjIyZjJmMmYwMzU5YmE4ZGRmYjA0YWQyNDA",
+    "price": "$299.00",
+    "descripcion": "Kong Hueso de Caucho Extreme Negro para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1ODIyMXxpbWFnZS9qcGVnfGltYWdlcy9oMjcvaDM2LzkzMjMxMDM2NDk4MjIuanBnfDMwNzk5NTAwZGQ0YjliYWY0ZmQ2MGUxMGQ5NzA0ZjMxMGViOTk3NWEzY2MyYjczZTA5YzhiODU5MTk1NzdhZWM",
+    "price": "$199.00",
+    "descripcion": "Kong Peluche Oso Wild Knots con Estructura de Cuerda para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/110172.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzQ2Nzd8aW1hZ2UvanBlZ3xoNWMvaGU2LzEwNTE1MzM3MDg0OTU4LzExMDE3Mi5qcGdfMzAwZnR3fGJhZGM3Zjg1NzZhZDc5MWUwN2I1ODk2MGEzZWQxMDljNzllNTc2NTI0ZDZkOTU4YjQ0NTk4MzY0MzMwOWU0OWY",
+    "price": "$349.00",
+    "descripcion": "Kong Pelota de Caucho Extreme Ball Negra para Perro"
+  },
+  {
+    "title": "Kong",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w4MTA1N3xpbWFnZS9qcGVnfGltYWdlcy9oOTgvaDQwLzkzMjMwOTY5OTc5MTguanBnfDY2MGJlZTU0ZTYwMGQwZmExZDlmNzg5Mzk0OTUzNTdmMjBlMWY5ZGFkMzM3YzgzYzExODY1NGQ2MmMzMjBhNTQ",
+    "price": "$369.00",
+    "descripcion": "Kong Llanta de Caucho Extreme Tires Negra para Perro"
+  },
+  {
+    "title": "Chuckit!",
+    "image": "https://www.petco.com.mx/medias/104312.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTE4MzM1fGltYWdlL2pwZWd8aGYwL2hjZi8xMDAxNzA2MTczMjM4Mi8xMDQzMTIuanBnXzMwMGZ0d3xmM2NlMTMxZDdjMTY2YjRhODVhZmE1OWJhZDdhZmYxMTFmOGIzYzI4N2EzMTM0ZjlmMmIyZWZlODA4OTk0MzAy",
+    "price": "$179.00",
+    "descripcion": "Chuckit! Pelota Ultra de Goma para Perro, Grande"
+  },
+  {
+    "id": 220,
+    "title": "Kong Peluche Oso Wild Knots con Estructura de Cuerda para Perro",
+    "marca": "Kong",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1ODIyMXxpbWFnZS9qcGVnfGltYWdlcy9oMjcvaDM2LzkzMjMxMDM2NDk4MjIuanBnfDMwNzk5NTAwZGQ0YjliYWY0ZmQ2MGUxMGQ5NzA0ZjMxMGViOTk3NWEzY2MyYjczZTA5YzhiODU5MTk1NzdhZWM",
+    "price": "$199.00",
+    "description": "Oso de peluche Wild Knots de Kong con estructura interna de cuerda, ideal para juegos interactivos y mayor durabilidad.",
+    "category": "Juguetes",
+    "color": "NA",
+    "size": "NA"
+  },
+  {
+    "id": 221,
+    "title": "Kong Pelota de Caucho Extreme Ball Negra para Perro",
+    "marca": "Kong",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/110172.jpg-300ftw?context=bWFzdGVyfHJvb3R8MzQ2Nzd8aW1hZ2UvanBlZ3xoNWMvaGU2LzEwNTE1MzM3MDg0OTU4LzExMDE3Mi5qcGdfMzAwZnR3fGJhZGM3Zjg1NzZhZDc5MWUwN2I1ODk2MGEzZWQxMDljNzllNTc2NTI0ZDZkOTU4YjQ0NTk4MzY0MzMwOWU0OWY",
+    "price": "$349.00",
+    "description": "Pelota de caucho Extreme Ball de Kong, diseñada para perros con mordida fuerte, ofreciendo un rebote alto y gran resistencia.",
+    "category": "Juguetes",
+    "color": "NA",
+    "size": "NA"
+  },
+  {
+    "id": 222,
+    "title": "Kong Llanta de Caucho Extreme Tires Negra para Perro",
+    "marca": "Kong",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w4MTA1N3xpbWFnZS9qcGVnfGltYWdlcy9oOTgvaDQwLzkzMjMwOTY5OTc5MTguanBnfDY2MGJlZTU0ZTYwMGQwZmExZDlmNzg5Mzk0OTUzNTdmMjBlMWY5ZGFkMzM3YzgzYzExODY1NGQ2MmMzMjBhNTQ",
+    "price": "$369.00",
+    "description": "Llanta de caucho Extreme Tires de Kong, fabricada con material ultra resistente, perfecta para masticar y jugar.",
+    "category": "Juguetes",
+    "color": "NA",
+    "size": "NA"
+  },
+  {
+    "id": 223,
+    "title": "Chuckit! Pelota Ultra de Goma para Perro, Grande",
+    "marca": "Chuckit!",
+    "petType": "Perro",
+    "image": "https://www.petco.com.mx/medias/104312.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTE4MzM1fGltYWdlL2pwZWd8aGYwL2hjZi8xMDAxNzA2MTczMjM4Mi8xMDQzMTIuanBnXzMwMGZ0d3xmM2NlMTMxZDdjMTY2YjRhODVhZmE1OWJhZDdhZmYxMTFmOGIzYzI4N2EzMTM0ZjlmMmIyZWZlODA4OTk0MzAy",
+    "price": "$179.00",
+    "description": "Pelota Ultra de goma Chuckit!, ideal para juegos de lanzar y recoger, con un rebote alto y material duradero.",
+    "category": "Juguetes",
+    "color": "NA",
+    "size": "Grande"
+  }
+]
