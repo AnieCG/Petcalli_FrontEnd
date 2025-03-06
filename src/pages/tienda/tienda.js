@@ -1,3 +1,4 @@
+import { showPage, updatePagination } from "./funciones-filtrados/paginado.js"; //  Módulo de paginación
 import getJson from "./funciones-filtrados/getProducts.js";
 import insertCarruselMasPopulares from "./components/carruselMasPopulares.js";
 import filtradoTag from "./funciones-filtrados/filtroTag.js";
@@ -8,18 +9,69 @@ import alertaAgregado from "./components/alertaAgregado.js";
 import counters from "./funciones-filtrados/countersBrandCategory.js";
 import filtrosActivos from "./components/filtrosActivos.js";
 
+
 const $span = document.getElementsByClassName("price-value");
 const counterProductsToShow = document.getElementById("counterProductsToShow");
 const productsTotal = document.getElementById("poductsTotal");
 
+// Constantes para paginación
+const $prevPageButton = document.getElementById("prevPage");
+const $nextPageButton = document.getElementById("nextPage");
+const $pageNumberDisplay = document.getElementById("pageNumber");
+
 let products = [];
 let filterProducts = [];
+// Variables para paginación
+let currentPage = 1;  // Página actual
+const itemsPerPage = 9;  // Número de productos por página
 
 async function getProducts() {
   const objectProducts = await getJson("/public/json/productos.json");
   products = objectProducts;
   filterProducts = [...products]; // Inicializar con todos los productos
+  showPageContent(); // Mostrar primera pagina
 }
+
+// Async para mostrar productos de pagina actual
+async function showPageContent() {
+  // Aplicamos los filtros a los productos (asegúrate de tener el módulo de filtrado separado)
+  let filteredProducts = products.filter((product) => {
+    return (
+      (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
+      (!selectedFilters.category.length || selectedFilters.category.includes(product.category)) &&
+      (!selectedFilters.brand.length || selectedFilters.brand.includes(product.marca)) &&
+      (!selectedFilters.price || parseFloat(product.price.replace(/[$,]/g, "")) <= parseFloat(selectedFilters.price))
+    );
+  });
+
+  // Actualizamos los productos a mostrar según la página actual
+  const pageItems = showPage(currentPage, itemsPerPage, filteredProducts);
+
+  // Limpiamos y mostramos los productos
+  mostrarProductos(pageItems);
+  counterProductsToShow.innerHTML = pageItems.length;
+  productsTotal.innerHTML = filteredProducts.length;
+
+  // Actualizamos los botones de paginación
+  updatePagination(currentPage, filteredProducts, itemsPerPage, $prevPageButton, $nextPageButton, $pageNumberDisplay);
+}
+
+// Función para manejar los clics en el botón "Anterior"
+$prevPageButton.onclick = (event) => {
+  event.preventDefault();
+  if (currentPage > 1) {
+    currentPage--;
+    showPageContent(); // Mostrar la página anterior con los productos filtrados
+  }
+};
+
+// Función para manejar los clics en el botón "Siguiente"
+$nextPageButton.onclick = (event) => {
+  event.preventDefault();
+  currentPage++;
+  showPageContent(); // Mostrar la siguiente página con los productos filtrados
+};
+// Hasta aqui paginado
 
 await getProducts();
 
@@ -56,6 +108,7 @@ function updateFilters() {
   mostrarProductos(filteredProducts);
   counterProductsToShow.innerHTML = filteredProducts.length;
   counters(filteredProducts);
+  showPageContent(); // funcion para paginado
 }
 // Eventos que activan los filtros en tiempo real
 document
@@ -139,7 +192,10 @@ document.addEventListener("click", (event) => {
     alertaAgregado();
   }
 });
+
 document.addEventListener(
   "DOMContentLoaded",
   insertQueryProducts(filterProducts)
 );
+
+
