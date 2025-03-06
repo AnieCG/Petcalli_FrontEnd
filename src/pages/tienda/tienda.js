@@ -34,7 +34,7 @@ async function getProducts() {
 
 // Async para mostrar productos de pagina actual
 async function showPageContent() {
-  // Aplicamos los filtros a los productos (asegúrate de tener el módulo de filtrado separado)
+  // Aplicamos los filtros a los productos
   let filteredProducts = products.filter((product) => {
     return (
       (!selectedFilters.petType || product.petType === selectedFilters.petType) &&
