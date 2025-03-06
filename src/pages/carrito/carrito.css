@@ -73,3 +73,25 @@ direction: rtl;
 .card-title{
     padding: 70px 5px 10px; 
 }
+
+#imgcarrito {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border-color: var(-- block-images1);
+    box-shadow: 0 4px 8px;;
+    transition: transform 0.3s ease;
+    cursor: url('/public-images/huellas-cursor.png'), auto;
+}
+
+.d-flex .btn-outline-light {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+
+#h2 {
+    font-size: 30px;
+    color: var(--subtitle);
+}
