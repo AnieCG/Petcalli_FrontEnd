@@ -27,32 +27,34 @@
 #payment-method-section input {
     margin-right: 10px;
 }
-.card{
-    background-color: #f0f0f0;
-    display: flex;
+#productos-container{
+    width: 50%;
     margin: 20px;
-    max-width: 740px;
+    background-color:white;
 }
-.card-body{
-    width: 5autom;
-    max-width: none;
-    display: flex;
+
+.tarjeta-producto{
+    display: flex;/*uno al lado del otro*/
+    gap: 20px;/*para separar los elementos*/
+    align-items: center;
+   padding: 10px;
+    }
+.tarjeta-producto img{
+    height: 100px;
+    aspect-ratio: 1,5;
+}
+.tarjeta-producto h5{
+width: 130px;
+}
+
     
-}/*borrar*/
+/*borrar*/
 .btn-delete { 
     background: none;
     border: none;
     cursor: pointer;
     display: inline-block;
-    padding: 70px 5px 10px 30px;
-
-
-}
-
-.card-text{
-    margin: 10px;
-    padding: 10px 5px 10px 10px;
-
+    padding: 5px;
 }
 /*flechas*/
 .counter-container {

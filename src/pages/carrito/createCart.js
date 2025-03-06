@@ -20,7 +20,7 @@
             if(productos && productos.length > 0){
             //itera sobre el producto, se asigna a la variable Element
         productos.forEach(element => {
-            //para crear un contenedor por cada producto, una tarjeta ndividual
+            //para crear un contenedor por cada producto, una tarjeta individual
             const nuevoProducto = document.createElement("div");
             nuevoProducto.classList = "tarjeta-producto"; //para asignar la clase al div
             //para insertar un bloque dentro del div, imagen,titulo, descripcion y el precio 
