@@ -65,3 +65,5 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error al cargar el archivo JSON:", error);
         });
 });
+
+const productos = JSON.parse(localStorage.getItem("productos")) || [];
