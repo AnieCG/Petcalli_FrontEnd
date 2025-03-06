@@ -422,5 +422,17 @@ footer {
   display: inline-block; /* Asegura que el contenedor tenga un tamaño definido */
 }
 
+.btn-comprar {
+  display: flex;
+  background-color: #f2cc8f;
+  color: black;
+  margin: 0;
+  border-radius: 30px;
+  border: 0;
+font-size: 13px;
+  height: 22px;
+  align-items: end;
+  justify-items: end;
+}
 
 
