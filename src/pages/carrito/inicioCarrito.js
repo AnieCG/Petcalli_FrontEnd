@@ -153,7 +153,7 @@ function agregarAlCarrito(idProducto) {
     }
 }
 
-// Capturar todos los botones de compra
+// evento para que funcionen los botones de añadir al carro
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".btn-comprar").forEach(button => {
         button.addEventListener("click", (e) => {
@@ -163,12 +163,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// se va a reflejar en la pag de carro
+// funcion que recorre los productos guardados en el local para reflejarlos en el carro
 function actualizarCarrito() {
     const carritoContainer = document.getElementById("carrito-container");
     carritoContainer.innerHTML = ""; 
 
-    carrito.forEach(producto => {
+    carrito.forEach(producto => { 
         const item = document.createElement("div");
         item.classList.add("carrito-item");
         item.innerHTML = `
@@ -181,6 +181,7 @@ function actualizarCarrito() {
     });
 
     
+    // el evento del boton eliminar
     document.querySelectorAll(".btn-remove").forEach(btn => {
         btn.addEventListener("click", (e) => {
             const id = parseInt(e.target.getAttribute("data-id"));
@@ -189,20 +190,19 @@ function actualizarCarrito() {
     });
 }
 
-// elimina pero no agrega producto o solo elimina uno*****
+// falta update de carrito para los botones de incremento y decremento 
+// falta el counter
+// elimina los productos agregados 
 function eliminarDelCarrito(idProducto) {
   
     carrito = carrito.filter(p => p.id !== idProducto);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarCarrito();
 }
+
+
+
 document.addEventListener("DOMContentLoaded", actualizarCarrito);
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
 
