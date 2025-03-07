@@ -1,3 +1,5 @@
+
+// en el index se agrega el id a las cards
 // hay que declarar el mini json
 const productos = [
     {
@@ -129,31 +131,44 @@ const productos = [
       },
 
 ];
-
-// que guarde el carro en el local para que se pueda manipular lo que se hace
+// lo que se añade se va al local y si no hay, se queda en array vacio, carrito lo declaro directo en vacio
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+// actualiza el contador del carrito llamando el id que se puso en la navbar.
+// fusilada de carrito.js
+const updateCartCounter = () => {
+  const cartCounter = document.getElementById("cart-counter");
+  if (cartCounter) {
+      cartCounter.textContent = carrito.length; 
+  }
+};
 
+// agrega los productos del json bajo la const producto y las busca por el id de cada producto del json 
+// si hay un producto se agrega otro ahi mismo sin tener que agregar otra tarjeta del mismo producto
+// si no se tiene pues se agrega 
 function agregarAlCarrito(idProducto) {
     const producto = productos.find(p => p.id === idProducto);
     
     if (producto) {
         const productoEnCarrito = carrito.find(p => p.id === idProducto);
         if (productoEnCarrito) {
-            productoEnCarrito.cantidad++;  // si ya se agregó antes, se aumenta la cantidad que hay
+            productoEnCarrito.cantidad++;  
         } else {
-            carrito.push({ ...producto, cantidad: 1 });  // si no hay, lo agrega 
+            carrito.push({ ...producto, cantidad: 1 }); 
         }
 
-        // Guardamos el carrito en localStorage y los productos que se seleccionan
+        
         localStorage.setItem("productos", JSON.stringify(productos));
         localStorage.setItem("carrito", JSON.stringify(carrito));
 
         actualizarCarrito();
+        updateCartCounter(); 
     }
 }
+// se mandan a llamar del json y se mandan a llamar las funciones para que se actualice
 
-// evento para que funcionen los botones de añadir al carro
+
+// evento que activa los botones de las cards de inicio al click y con el data id que tienen 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".btn-comprar").forEach(button => {
         button.addEventListener("click", (e) => {
@@ -161,9 +176,13 @@ document.addEventListener("DOMContentLoaded", () => {
             agregarAlCarrito(id);
         });
     });
+
+    updateCartCounter();
 });
 
-// funcion que recorre los productos guardados en el local para reflejarlos en el carro
+
+// funcion que actualiza el contador del carrito, id que esta en carrito html para colocarlos 
+// faltan estilos 
 function actualizarCarrito() {
     const carritoContainer = document.getElementById("carrito-container");
     carritoContainer.innerHTML = ""; 
@@ -179,9 +198,7 @@ function actualizarCarrito() {
         `;
         carritoContainer.appendChild(item);
     });
-
-    
-    // el evento del boton eliminar
+// evento para borrar los productos del carrito pero es temporal porque se hara con botones de incremento y decremento 
     document.querySelectorAll(".btn-remove").forEach(btn => {
         btn.addEventListener("click", (e) => {
             const id = parseInt(e.target.getAttribute("data-id"));
@@ -189,30 +206,23 @@ function actualizarCarrito() {
         });
     });
 }
-
-// falta update de carrito para los botones de incremento y decremento 
-// falta el counter
-// elimina los productos agregados 
+// funcion que elimina y actualiza el contador 
 function eliminarDelCarrito(idProducto) {
-  
     carrito = carrito.filter(p => p.id !== idProducto);
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarCarrito();
+    updateCartCounter();
 }
 
-
-
+// evento que regula que cambien de color los botones de inicio al momento en que se compra o se agrega a producto pues 
 document.addEventListener("DOMContentLoaded", actualizarCarrito);
 
 document.addEventListener("DOMContentLoaded", function () {
-
-  const botonesComprar = document.querySelectorAll(".btn-comprar");
-
-  botonesComprar.forEach((boton) => {
-      boton.addEventListener("click", function () {
-          boton.textContent = "Añadido";
-          boton.style.backgroundColor = "#e07a5f"; 
-          boton.style.color = "white";
-      });
-  });
+    document.querySelectorAll(".btn-comprar").forEach((boton) => {
+        boton.addEventListener("click", function () {
+            boton.textContent = "Añadido";
+            boton.style.backgroundColor = "#e07a5f"; 
+            boton.style.color = "white";
+        });
+    });
 });
