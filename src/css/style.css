@@ -374,18 +374,15 @@ footer {
   border: none;
   box-shadow: none;
   background-color: var(--block-images2);
-  
 }
-.card-body {
-  background-color: #f2cc8f; 
+
+.card-category {
+  background-color: #f2cc8f;
   width: 100%;
   display: flex;
-  
-  
 }
-.card-title{
+.card-text-category {
   color: black;
-  
 }
 
 .card.product {
