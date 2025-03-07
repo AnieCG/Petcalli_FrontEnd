@@ -1,135 +1,158 @@
-
 // en el index se agrega el id a las cards
 // hay que declarar el mini json
 const productos = [
-    {
-        "id": 35,
-        "title": "Alimento para Tortuga Acuática",
-        "marca": "Zoo Med",
-        "petType":"Otros",
-        "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w3OTI5M3xpbWFnZS9qcGVnfGltYWdlcy9oNDkvaDA2LzkzNTM0NTg2MTQzMDIuanBnfGY0YWQxYjk3ZTkzMDg1MWRjNWYyMWM5ODIxNGY4NmNlMjgwOGJmODc5YzRjOTIyYjM3ZGUwNTY2ZTU5OTQxZjc",
-        "price": "$360.05",
-        "description": "Zoo Med Growth Formula Alimento para Tortuga Acuática, 850 g.",
-        "category":"Alimento",
-        "color":"NA",
-        "size": "850 g"
-      },
-      {
-        "id": 1,
-        "title": "Mother & Babycat Comida Seca",
-        "marca": "Royal Canin",
-        "petType": "Gato",
-        "image": "https://cdn.royalcanin-weshare-online.io/rz_NTIcBRYZmsWpcJPUx/v56/00030111450036-cf-gs1?w=640&fm=jpg&auto=format,compress",
-        "price": "$610.00",
-        "description": "Nutricion completa y balanceada para gatos en gestion y lactancia, así como para sus cachorros (de 1 a 4 meses de edad) durante el destete.",
-        "category": "Alimento",
-        "color": "NA",
-        "size":"1.3 kg"
-      },
-      {
-        "id": 32,
-        "title": "Gourmet Reptisticks Alimento para Tortuga en Pellet",
-        "marca": "Zoo Med",
-        "petType":"Otros",
-        "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w5MTAyMnxpbWFnZS9qcGVnfGltYWdlcy9oMzgvaDQ3Lzk0MDAxMTYzMTQxNDIuanBnfDQ0MmM1NDlhNGE4MWU5ZjY0Mzg0MjIzOGJlNDg0ZGQ3NzFlMDMwYmQ4NzBjNjcxNWUwYzRkNDJlZTEyMDAwNGM",
-        "price": "$217.55",
-        "description": "Zoo Med Gourmet Reptisticks Alimento en Pellet para Tortuga Acuática, 128 g.",
-        "category":"Alimento",
-        "color":"NA",
-        "size": "128 g"
-      },
-      {
-        "id": 36,
-        "title": "Food Topper para Tortugas",
-        "marca": "Zoo Med",
-        "petType":"Otros",
-        "image": "https://www.petco.com.mx/medias/300ftw-127168.jpg?context=bWFzdGVyfHJvb3R8NzQ0NjB8aW1hZ2UvanBlZ3xoYTMvaDEzLzEwNzQxNDQ5NDI0OTI2LzMwMGZ0d18xMjcxNjguanBnfGRkNTgyYzYxNTViY2ZmZmRkOWViNWViMjg5Mzk4MDEwM2JiMGNkYmJlZTE3YmE3NWI2YWEwNTViMDE3ZmQ2NGE",
-        "price": "$160.55",
-        "description": "Zoo Med Flower Food Topper Mezcla de Flores para Tortuga, 40 g.",
-        "category":"Alimento",
-        "color":"NA",
-        "size": "40 g"
-      },
-      {
-        "id": 40,
-        "title": "Condo con Cojín Extraíble",
-        "marca": "EveryYay",
-        "petType":"Gato",
-        "image": "https://www.petco.com.mx/medias/133549.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTI0Mzd8aW1hZ2UvanBlZ3xoM2YvaDQyLzEwMDA4NDU2MTM0Njg2LzEzMzU0OS5qcGdfMzAwZnR3fGI2NDlkZDdmZDRkMThkNjU1ZTA1ZDQ5NWQ3OGMxNDYzZGRjMGZmNDkxM2M2M2E5MzI2ZjFlYjczZDVlMjU0NDQ",
-        "price": "$779.40",
-        "description": "Secret Hideout Condo Century con Cojín Extraíble para Gato.",
-        "category": "Accesorios",
-        "color":"Gris",
-        "size": "NA"
-      },
-      {
-        "id": 45,
-        "title": "Bolas Rodadoras para Pequeñas Mascotas",
-        "marca": "Oxbow",
-        "petType": "Conejo",
-        "image": "https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA",
-        "price": "$161.50",
-        "description": "Oxbow Enriched Life Bolas Rodadoras para Pequeñas Mascotas.",
-        "category": "Juguetes",
-        "color":"NA",
-        "size": "NA"
-      },
-      {
-        "id": 47,
-        "title": "Túnel",
-        "marca": "Ware",
-        "petType": "Conejo",    
-        "image": "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w1MjI5MHxpbWFnZS9naWZ8aW1hZ2VzL2gwMy9oNGQvODg0ODEwMzU3MTQ4Ni5naWZ8MjYyMjhiMjJkY2U4ODY3ZTA0NjI1ZGY0YzU4N2MzMGQ2ZWE5YjVjMGZkNWQ3YzY4NzMzNzMyNzc0ODE2NzI1Nw",
-        "price": "$289.75",
-        "description": "Ware Túnel, XX-Grande.",
-        "category": "Juguetes",
-        "color":"NA",
-        "size": "NA"
-      },
-      {
-        "id": 25,
-        "title": "Alimento Seco Natural Salmón Libre de Granos",
-        "marca": "Bravery",
-        "petType":"Gato",
-        "image": "https://www.petco.com.mx/medias/300ftw-143666.jpg?context=bWFzdGVyfHJvb3R8NTg1Nzd8aW1hZ2UvanBlZ3xoM2EvaGQ1LzEwODAxNzQ1NTU5NTgyLzMwMGZ0d18xNDM2NjYuanBnfDQ2ZWIzMDlkZGM2YjdjMjhkMWI5YTUyNDdhMDkxOTAxYTlhY2I2M2M0YzAyNTNjMTE5NWYzZDZlZTY2NDdhZDY",
-        "price": "$450.00",
-        "description": "Alimento Seco Natural Libre de Granos para Gato Adulto Receta Salmón, 2 kg.",
-        "category":"Alimento",
-        "color":"NA",
-        "size": "2 kg"
-      },
-      {
-        "id": 15,
-        "title": "Medium Puppy",
-        "marca": "Royal Canin",
-        "petType": "Perro",
-        "image": "/public/images/Royal Canin.png",
-        "price": "$1,505.00",
-        "description": "Nutrición completa y equilibrada para cachorros de raza mediana. Hasta 12 meses.",
-        "category": "Alimento",
-        "color":"NA",
-        "size":"7.7 kg"
-      },
-      {
-        "id":22,
-        "title": "Hill's Prescription Diet",
-        "image": "/public/images/Hills.png",
-        "price": "$2,080.50",
-        "descripcion": "Hill's Prescription Diet i/d Alimento Seco Gastrointestinal para Perro Adulto, 8 kg"
-      },
-      {
-        "id": 19,
-        "title": "Maltés Adulto Comida Seca",
-        "marca": "Diamond",
-        "petType": "Perro",
-        "image": "/public/images/Diamond.png",
-        "price": "$510.00",
-        "description": "Está formulado exclusivamente para dálmatas de pura raza mayores de 15 meses.",
-        "category": "Alimento",
-        "color":"NA",
-        "size":"1.1 kg"
-      },
-
+  {
+    id: 20,
+    title: "Alimento Seco Natural Salmón Libre de Granos para Todas las Edades",
+    marca: "Instinct Original",
+    petType: "Perro",
+    image:
+      "https://www.petco.com.mx/medias/114128.jpg-1200ftw?context=bWFzdGVyfHJvb3R8NTI5NjE3fGltYWdlL2pwZWd8aGNhL2gwZi85ODM1NDE4NjE1ODM4LzExNDEyOC5qcGdfMTIwMGZ0d3xlYTQ5N2Y0NWRiZDBmMGYyNjBjNTE0NTM4MWM0Njc4MzcxMmFjZWNjMzIxOTg4Njc1NzIyN2M3NjhkN2JlYTI5",
+    price: "$2,700.00",
+    description:
+      "Receta de Salmón, alimentación Premium 100% natural. 70% de ingredientes animales y 30% de verduras, frutas y otros ingredientes saludables. No contiene granos ni gluten. ",
+    category: "Alimento",
+    color: "NA",
+    size: "9 kg",
+  },
+  {
+    id: 87,
+    title: "Premium Alimento para Conejo Adulto",
+    marca: "Cunipic",
+    petType: "Conejo",
+    image:
+      "https://www.petco.com.mx/medias/300ftw-114755.jpg?context=bWFzdGVyfHJvb3R8NjcwOTF8aW1hZ2UvanBlZ3xoYTIvaGY1LzEwNjQ2MTIxNzA5NTk4LzMwMGZ0d18xMTQ3NTUuanBnfGNmN2EyMjY5YzY1ZGY5NmZkNDNkMTAzNWU5ZGZmODFhOWVlOTIxMjFmZGEyMjFmMTZiZDZhNmY4OTU0Y2E2NjM",
+    price: "$463.25",
+    description:
+      "Formula especial para satisfacer las necesidades nutricionales de los conejos adultos, promoviendo su salud general.",
+    category: "Alimento",
+    color: "NA",
+    size: "5kg",
+  },
+  {
+    id: 190,
+    title:
+      "Ultra Fresh Pellet Premium Alimento Natural Tipo Pellet Flotante para Peces Dorados",
+    marca: "Azoo",
+    petType: "Peces",
+    image:
+      "https://www.petco.com.mx/medias/?context=bWFzdGVyfGltYWdlc3w2Mzc2NnxpbWFnZS9qcGVnfGltYWdlcy9oNmMvaGY4Lzk0MDAwNzIzMDY3MTguanBnfDRlYjVmZDk5NGQ4Mjg0MjAzNzk2MDdhNWQ1ZDgxYzVjY2Y3MzYyZDY3NWU2NzE5MTk5ZmJmYWFmY2E4OTliNTA",
+    price: "$517.75",
+    description: "Proporciona una dieta rica y balanceada.",
+    category: "Alimento",
+    color: "NA",
+    size: "425 g",
+  },
+  {
+    id: 9,
+    title: "Cuidado De Peso Comida Seca",
+    marca: "Royal Canin",
+    petType: "Gato",
+    image:
+      "https://cdn.royalcanin-weshare-online.io/fOd3TYcBaPOZra8qUPya/v64/00030111442703f-cf-gs1?w=640&fm=jpg&auto=format,compress",
+    price: "$590.00",
+    description:
+      "Nutrición completa y balanceada para gatos adultos, formulada para ayudar a mantenerles saludable el tracto urinario.",
+    category: "Alimento",
+    color: "NA",
+    size: "1.5 kg",
+  },
+  {
+    id: 31,
+    title: "Tortoise Diet",
+    marca: "Mazuri",
+    petType: "Otros",
+    image:
+      "https://www.petco.com.mx/medias/127514.jpg-300ftw?context=bWFzdGVyfHJvb3R8NTAyMzl8aW1hZ2UvanBlZ3xoOGYvaDY5LzEwMDg1MDM3OTk4MTEwLzEyNzUxNC5qcGdfMzAwZnR3fGY2ODdiN2EzOWY2YTlhZDY0Y2QyNTFmNzcxMjQwMTk2YmQ2YzY0Yzk3ZWZkMGIxY2IwNzFlZmFjOWIyNTcwNmQ",
+    price: "$232.75",
+    description: "Alimento en Pellet para Tortuga, 500 g.",
+    category: "Alimento",
+    color: "NA",
+    size: "500 g",
+  },
+  {
+    id: 45,
+    title: "Bolas Rodadoras para Pequeñas Mascotas",
+    marca: "Oxbow",
+    petType: "Conejo",
+    image:
+      "https://www.petco.com.mx/medias/133191.jpg-300ftw?context=bWFzdGVyfHJvb3R8NjI5MTV8aW1hZ2UvanBlZ3xoYjcvaDVmLzk1NzU1MzcwNDk2MzAuanBnfDcxYTU3NmQ0Y2U4MzA2NjFiZGJmMGFlYTg5ODY0OTliZDJlNzFjOGU5YzJmMzRkYTVjZThlNTkxODYwZTMyNTA",
+    price: "$161.50",
+    description: "Oxbow Enriched Life Bolas Rodadoras para Pequeñas Mascotas.",
+    category: "Juguetes",
+    color: "NA",
+    size: "NA",
+  },
+  {
+    id: 68,
+    title: "NutriBird G14 Alimento para Loros Medianos",
+    marca: "Versele-Laga",
+    petType: "Aves",
+    image:
+      "https://www.petco.com.mx/medias/118334.jpg-300ftw?context=bWFzdGVyfHJvb3R8Mjc1NjV8aW1hZ2UvanBlZ3xoMGYvaDA3LzEwMzc0MzExNjczODg2LzExODMzNC5qcGdfMzAwZnR3fGZmZGVjMWE0NWRhNjRjZjJhZTlhYmQ5MjBlYzE2NjNmZDJjMmI0MWYyZGM2OTQ3Y2JjN2ViOGM3ODJiMWRmYjU",
+    price: "$441.75",
+    description:
+      "NutriBird G14 es un alimento balanceado especialmente formulado para loros medianos, asegurando una nutrición completa y equilibrada",
+    category: "Alimento",
+    color: "NA",
+    size: "1kg",
+  },
+  {
+    id: 112,
+    title: "Mueble para Gato Tipo Árbol Múltiples Texturas",
+    marca: "EveryYay",
+    petType: "Gato",
+    image:
+      "https://www.petco.com.mx/medias/300ftw-132572.jpg?context=bWFzdGVyfHJvb3R8MzEyMjd8aW1hZ2UvanBlZ3xoYTkvaGJkLzEwNjA2NDM2NzEyNDc4LzMwMGZ0d18xMzI1NzIuanBnfDZhOGRkZjIxOWQ2YTgwNTIwZTI0NmQ1YWJmNzVlY2M2ZDNjNTAxM2U1ZTg3YWRiNGMzMjNiZGQ0OWNkODMxMjA",
+    price: "$2,024.25",
+    description:
+      "Un árbol para gatos con múltiples texturas que mantendrá a tu felino entretenido y feliz.",
+    category: "Accesorios",
+    color: "NA",
+    size: "NA",
+  },
+  {
+    id: 132,
+    title: "Shampoo Terapéutico para Perro y Gato",
+    marca: "Vetriderm",
+    petType: "Perro",
+    image:
+      "https://www.petco.com.mx/medias/300ftw-116477.jpg?context=bWFzdGVyfHJvb3R8MTg5MjJ8aW1hZ2UvanBlZ3xoZjAvaDE0LzEwODk2NTA2OTQ1NTY2LzMwMGZ0d18xMTY0NzcuanBnfDVlNjI5ZDgxN2Y2M2Q2YWJkNzQ3YmIyYzEzMzliZTM1ZjAxNTU2NzI2YmQ4YWU0MWU4NWU1MGExZWUzYTVhZWI",
+    price: "$227.29",
+    description:
+      "Shampoo terapéutico para perros y gatos. Ayuda a tratar problemas de piel y mantiene el pelaje saludable.",
+    category: "Medicamentos",
+    color: "NA",
+    size: "350 ml",
+  },
+  {
+    id: 157,
+    title: "Tronco de Madera Decorativa para Terrarios",
+    marca: "Zoo Med",
+    petType: "Otros",
+    image:
+      "https://www.petco.com.mx/medias/300ftw-115301.jpg?context=bWFzdGVyfHJvb3R8NDU2MzR8aW1hZ2UvanBlZ3xoYzgvaGQ5LzEwNjA2Mzg1MTY4NDE0LzMwMGZ0d18xMTUzMDEuanBnfDA3NzQyZTc4ZDlhNDZmNzI4ZmQwNGMyZDdlYWFiNjAwY2UwZDA0MmNjMWNiY2JmZGMzNzc3NmE5OGRjMGJjOGE",
+    price: "$259.00",
+    description:
+      "Tronco de madera decorativa para terrarios en tamaño mediano. Añade un toque natural al hábitat de tus reptiles.",
+    category: "Accesorios",
+    color: "NA",
+    size: "30.40 cm Largo x 25.40 cm Ancho",
+  },
+  {
+    id: 223,
+    title: "Pelota Ultra de Goma para Perro",
+    marca: "Chuckit!",
+    petType: "Perro",
+    image:
+      "https://www.petco.com.mx/medias/104312.jpg-300ftw?context=bWFzdGVyfHJvb3R8MTE4MzM1fGltYWdlL2pwZWd8aGYwL2hjZi8xMDAxNzA2MTczMjM4Mi8xMDQzMTIuanBnXzMwMGZ0d3xmM2NlMTMxZDdjMTY2YjRhODVhZmE1OWJhZDdhZmYxMTFmOGIzYzI4N2EzMTM0ZjlmMmIyZWZlODA4OTk0MzAy",
+    price: "$179.00",
+    description:
+      "Pelota Ultra de goma Chuckit!, ideal para juegos de lanzar y recoger, con un rebote alto y material duradero.",
+    category: "Juguetes",
+    color: "NA",
+    size: "Grande",
+  },
 ];
 // lo que se añade se va al local y si no hay, se queda en array vacio, carrito lo declaro directo en vacio
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
@@ -139,90 +162,215 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const updateCartCounter = () => {
   const cartCounter = document.getElementById("cart-counter");
   if (cartCounter) {
-      cartCounter.textContent = carrito.length; 
+    cartCounter.textContent = carrito.length;
   }
 };
 
-// agrega los productos del json bajo la const producto y las busca por el id de cada producto del json 
+// agrega los productos del json bajo la const producto y las busca por el id de cada producto del json
 // si hay un producto se agrega otro ahi mismo sin tener que agregar otra tarjeta del mismo producto
-// si no se tiene pues se agrega 
+// si no se tiene pues se agrega
 function agregarAlCarrito(idProducto) {
-    const producto = productos.find(p => p.id === idProducto);
-    
-    if (producto) {
-        const productoEnCarrito = carrito.find(p => p.id === idProducto);
-        if (productoEnCarrito) {
-            productoEnCarrito.cantidad++;  
-        } else {
-            carrito.push({ ...producto, cantidad: 1 }); 
-        }
+  const producto = productos.find((p) => p.id === idProducto);
 
-        
-        localStorage.setItem("productos", JSON.stringify(productos));
-        localStorage.setItem("carrito", JSON.stringify(carrito));
-
-        actualizarCarrito();
-        updateCartCounter(); 
+  if (producto) {
+    const productoEnCarrito = carrito.find((p) => p.id === idProducto);
+    if (productoEnCarrito) {
+      productoEnCarrito.cantidad++;
+    } else {
+      carrito.push({ ...producto, cantidad: 1 });
     }
+
+    localStorage.setItem("productos", JSON.stringify(productos));
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+
+    actualizarCarrito();
+    updateCartCounter();
+  }
 }
 // se mandan a llamar del json y se mandan a llamar las funciones para que se actualice
 
-
-// evento que activa los botones de las cards de inicio al click y con el data id que tienen 
+// evento que activa los botones de las cards de inicio al click y con el data id que tienen
 document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll(".btn-comprar").forEach(button => {
-        button.addEventListener("click", (e) => {
-            const id = parseInt(e.target.getAttribute("data-id"));
-            agregarAlCarrito(id);
-        });
+  document.querySelectorAll(".btn-comprar").forEach((button) => {
+    button.addEventListener("click", (e) => {
+      const id = parseInt(e.target.getAttribute("data-id"));
+      agregarAlCarrito(id);
     });
+  });
 
-    updateCartCounter();
+  updateCartCounter();
 });
 
-
-// funcion que actualiza el contador del carrito, id que esta en carrito html para colocarlos 
-// faltan estilos 
+// funcion que actualiza el contador del carrito, id que esta en carrito html para colocarlos
+// faltan estilos
 function actualizarCarrito() {
-    const carritoContainer = document.getElementById("carrito-container");
-    carritoContainer.innerHTML = ""; 
+  const carritoContainer = document.getElementById("carrito-container");
+  carritoContainer.innerHTML = "";
 
-    carrito.forEach(producto => { 
-        const item = document.createElement("div");
-        item.classList.add("carrito-item");
-        item.innerHTML = `
+  carrito.forEach((producto) => {
+    const item = document.createElement("div");
+    item.classList.add("carrito-item");
+    item.innerHTML = `
             <img src="${producto.image}" width="50">
             <span>${producto.title}</span>
             <span>${producto.cantidad} x $${producto.price}</span>
             <button class="btn-remove" data-id="${producto.id}">Eliminar</button>
         `;
-        carritoContainer.appendChild(item);
+    carritoContainer.appendChild(item);
+  });
+  // evento para borrar los productos del carrito pero es temporal porque se hara con botones de incremento y decremento
+  document.querySelectorAll(".btn-remove").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      const id = parseInt(e.target.getAttribute("data-id"));
+      eliminarDelCarrito(id);
     });
-// evento para borrar los productos del carrito pero es temporal porque se hara con botones de incremento y decremento 
-    document.querySelectorAll(".btn-remove").forEach(btn => {
-        btn.addEventListener("click", (e) => {
-            const id = parseInt(e.target.getAttribute("data-id"));
-            eliminarDelCarrito(id);
-        });
-    });
+  });
 }
-// funcion que elimina y actualiza el contador 
+// funcion que elimina y actualiza el contador
 function eliminarDelCarrito(idProducto) {
-    carrito = carrito.filter(p => p.id !== idProducto);
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    actualizarCarrito();
-    updateCartCounter();
+  carrito = carrito.filter((p) => p.id !== idProducto);
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  actualizarCarrito();
+  updateCartCounter();
 }
 
-// evento que regula que cambien de color los botones de inicio al momento en que se compra o se agrega a producto pues 
+// evento que regula que cambien de color los botones de inicio al momento en que se compra o se agrega a producto pues
 document.addEventListener("DOMContentLoaded", actualizarCarrito);
 
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".btn-comprar").forEach((boton) => {
-        boton.addEventListener("click", function () {
-            boton.textContent = "Añadido";
-            boton.style.backgroundColor = "#e07a5f"; 
-            boton.style.color = "white";
-        });
+  document.querySelectorAll(".btn-comprar").forEach((boton) => {
+    boton.addEventListener("click", function () {
+      boton.textContent = "Añadido";
+      boton.style.backgroundColor = "#3d405b";
+      boton.style.color = "white";
+      boton.style.margin = "0 30px 0 0";
     });
+  });
 });
+
+//Función para insertar los productos premium en index.html
+const insertPremiumCards = () => {
+  // Buscar el contenedor donde estarán los productos
+  const premiumCardsContainer = document.querySelector(".cardsPremium");
+  //Si exiten los productos, entonces...
+  if (premiumCardsContainer) {
+    //Solo me va a mostrar los 3 primeros productos del miniJson
+    const productsPremium = productos.slice(0, 3);
+    // Crear una tarjeta de producto de forma dinámica
+    productsPremium.forEach((producto) => {
+      //Creación de la etiqueta div para insertar las cartas
+      const productCard = document.createElement("div");
+      //Creación de las clases con los atributos de bootstrap
+      productCard.classList.add("col", "pb-5");
+      //Insertar el html en el DOM
+      productCard.innerHTML = `
+        <div class="card mx-auto product">
+          <img src="${producto.image}" class="card-img-top bg-white cards-products openModalImage" alt="${producto.title}">
+          <div class="card-body row container-body-product">
+            <div class="col-12">
+              <h5 class="card-title text-dark title-product">${producto.title}</h5>
+              <div class="d-flex justify-content-between">
+                <p class="card-text text-start price-text">${producto.price}</p>
+                <button data-id="${producto.id}" class="btn-comprar agregar-carrito">Añadir a carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      // En mi contendedor estoy insertando después del último cada una de mis cartas
+      premiumCardsContainer.appendChild(productCard);
+    });
+  }
+  // fuera de mi IF en la función insertPremiumCards, inserto el modal(popup)
+  //Llamando a su respectivo producto como lo hace la función createModal
+  createModal(productos);
+};
+// Se manda a llamar a la función insertPremiumCards pa' que funcione
+insertPremiumCards();
+
+// Crear una función que detecte el click para que abra el modal e inserte el contenido en el DOM
+function createModal(productos) {
+  // Variable de bootstrap para traer al contenedor del modal con una instancia
+  const modal = new bootstrap.Modal(document.getElementById("cardModal"));
+  // Busca todos los elementos del DOM que contengan la clase openModalImage línea 268 de este JS
+  const openModalImages = document.querySelectorAll(".openModalImage");
+
+  // Iterar sobre cada imagen
+  openModalImages.forEach((image, index) => {
+    //La imagen tiene un escuchador de evento que al hacer click...
+    image.addEventListener("click", () => {
+      // Selecciona el producto correspondiente al índice en el JSON que es igual al de la imagen
+      const producto = productos[index];
+
+      // Buscar el contenedor con la clase popup para poder generar el contenido en el DOM
+      const modalBody = document.querySelector(".popup");
+      // Se inserta el html
+      modalBody.innerHTML = `
+        <div class="card mx-auto popup-card">
+          <img src="${producto.image}" class="card-img-top bg-white image-products" alt="${producto.title}">
+          <div class="card-body">
+            <h5 class="card-title title">${producto.title}</h5>                       
+            <p class="card-text text-start text-products"><strong class="text-strong">Descripción:</strong> ${producto.description}</p>  
+            <div class="container"> 
+              <div class="row">               
+                <p class="card-text col text-start text-products"><strong class="text-strong">Precio:</strong> ${producto.price}</p>
+                <p class="card-text col text-start text-products"><strong class="text-strong">Marca:</strong> ${producto.marca}</p> 
+              </div>
+              <div class="row">         
+                <p class="card-text col text-start text-products"><strong class="text-strong">Mascota:</strong> ${producto.petType}</p>
+                <p class="card-text col text-start text-products"><strong class="text-strong">Categoría:</strong> ${producto.category}</p>
+              </div>
+              <div class="row"> 
+                <p class="card-text col text-start text-products"><strong class="text-strong">Color:</strong> ${producto.color}</p>
+                <p class="card-text col text-start text-products"><strong class="text-strong">Tamaño:</strong> ${producto.size}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      // Mostrar el modal de bootstrap, con su método show() de bootstrap para mostrarlos
+      modal.show();
+    });
+  });
+}
+
+//Función para insertar los productos más vendidos en index.html
+const insertBestCardsProducts = () => {
+  // Buscar el contenedor donde estarán los productos
+  const premiumCardsContainer = document.querySelector(".best-card-products");
+  //Si exiten los productos, entonces...
+  if (premiumCardsContainer) {
+    //Solo me va a mostrar a partir del 3ro al último
+    const productsPremium = productos.slice(3, 11);
+    // Crear una tarjeta de producto de forma dinámica
+    productsPremium.forEach((producto) => {
+      //Creación de la etiqueta div para insertar las cartas
+      const productCard = document.createElement("div");
+      //Creación de las clases con los atributos de bootstrap
+      productCard.classList.add("col", "pb-5");
+      //Insertar el html en el DOM
+      productCard.innerHTML = `
+        <div class="card mx-auto product">
+          <img src="${producto.image}" class="card-img-top bg-white cards-products openModalImage" alt="${producto.title}">
+          <div class="card-body row container-body-product">
+            <div class="col-12">
+              <h5 class="card-title text-dark title-product">${producto.title}</h5>
+              <div class="d-flex justify-content-between">
+                <p class="card-text text-start price-text">${producto.price}</p>
+                <button data-id="${producto.id}" class="btn-comprar agregar-carrito">Añadir a carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+      // En mi contendedor estoy insertando después del último cada una de mis cartas
+      premiumCardsContainer.appendChild(productCard);
+    });
+  }
+  // fuera de mi IF en la función insertPremiumCards, inserto el modal(popup)
+  //Llamando a su respectivo producto como lo hace la función createModal
+  createModal(productos);
+};
+// Se manda a llamar a la función insertPremiumCards pa' que funcione
+insertBestCardsProducts();
