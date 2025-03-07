@@ -37,16 +37,26 @@
     display: flex;/*uno al lado del otro*/
     gap: 20px;/*para separar los elementos*/
     align-items: center;
-   padding: 10px;
+    padding: 10px;
+    flex:1 1 calc(33.333% - 16px);
+    box-shadow: 0 4px 6px rgba(0, 0,0, 0.1);
+    border-radius: 8px;
+    text-align: center;
     }
 .tarjeta-producto img{
+    max-width: 100%;
     height: 100px;
-    aspect-ratio: 1,5;
+    border-radius: 8px;
+    max-height:150%;
 }
 .tarjeta-producto h5{
-width: 130px;
+    width: 130px;
+    font-size:1rem;
 }
-
+.tarjeta-producto p{
+    text-align: center;
+    font-size:1rem;
+    }
     
 /*borrar*/
 .btn-delete { 
@@ -54,11 +64,10 @@ width: 130px;
     border: none;
     cursor: pointer;
     display: inline-block;
-    padding: 5px;
 }
 /*flechas*/
 .counter-container {
-    padding: 70px 5px 10px 70px;
+    padding: 10px;
 writing-mode: horizontal-tb;
 direction: rtl;
 
