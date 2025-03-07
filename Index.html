@@ -14,7 +14,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="./src/css/style.css" />
   <link rel="stylesheet" href="./src/pages/about/about.css" />
-  <link rel="stylesheet" href="./src/pages/about/tienda.css" />
+  <link rel="stylesheet" href="./src/pages/tienda/tienda.css" />
 
 </head>
 
@@ -25,9 +25,10 @@
   </header>
 
   <section class="categories mt-2 container-fluid">
-    <div id="carousel-categories" class="carousel slide-fade">
-      <div class="container-fluid d-block d-md-block border col-11 carouselAnimals">
-        <h2 class="subtitulo h2"><strong>Buscar por categoría</strong></h2>
+    <div id="carousel-categories" class="carousel slide">
+      <div class="container-fluid col-11">
+        <h2 class="subtitulo h2 "><strong>Buscar por categoría</strong></h2>
+  
         <div class="carousel-controls d-flex justify-content-end Carrusel-index">
           <button class="rounded-circle carousel-control-next" type="button" data-bs-target="#carousel-categories"
             data-bs-slide="next">
@@ -41,71 +42,74 @@
             <span class="visually-hidden">Anterior</span>
           </button>
         </div>
+  
         <div class="carousel-inner">
           <!-- Primer Sección -->
           <div class="carousel-item active">
-            <div class="row">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
               <div class="col">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="accesories">
-                    <img src="/public/images/iguana-lentes.avif" class="card-img-top img-pets" alt="iguana con lentes">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Accesorios</h5>
+                <a href="/src/pages/tienda/tienda.html?category=Accesorios">
+                  <div class="card animal mx-auto">
+                    <img src="/public/images/iguana-lentes.jpg" class="card-img-top img-fluid" alt="iguana con lentes">
+                    <div class="card-body rounded">
+                      <h5 class="card-title ">Accesorios </h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block;" alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </a>
               </div>
-
-              <div class="col mt-0">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="clothes">
-                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-pets"
-                      alt="Conejo con vestido">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Ropa</h5>
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Ropa">
+                  <div class="card animal  mx-auto">
+                    <img src="/public/images/conejo-vestido.webp" class="card-img-top img-fluid" alt="Conejo con vestido">
+                    <div class="card-body rounded">
+                      <h5 class="card-title">Ropa</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px;margin-left: auto; display: block;" alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </a>
               </div>
-
-              <div class="col mt-0">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="food">
-                    <img src="/public/images/cobayas.jpg" class="card-img-top img-pets" alt="cobayas comiendo">
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Alimento">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/cobayas.jpg" class="card-img-top img-fluid" alt="cobayas comiendo">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Alimento</h5>
+                      <h5 class="card-title ">Alimento</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block; " alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
           <!-- Fin de la primer sección -->
-
+  
           <div class="carousel-item">
-            <div class="row">
-              <div class="col mt-0">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="toys">
-                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-pets"
-                      alt="Perro con juguete">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 justify-content-center">
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Juguetes">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/juguetes-mascota.webp" class="card-img-top img-fluid", alt="Perro con juguete">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Juguetes</h5>
+                      <h5 class="card-title">Juguetes</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px;margin-left: auto; display: block; " alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </a>
               </div>
-
-              <div class="col mt-0">
-                <div class="card animal border border-0 mx-auto">
-                  <button class="border border-0 mx-auto carrusel-btn" id="medicine">
-                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-pets"
-                      alt="perro con medicamentos">
+  
+              <div class="col">
+                <a href="/src/pages/tienda/tienda.html?category=Medicamentos">
+                  <div class="card animal border-0 mx-auto">
+                    <img src="/public/images/medicamentos-mascotas.jpg" class="card-img-top img-fluid" alt="perro con medicamentos">
                     <div class="card-body">
-                      <h5 class="card-title text-center">Medicamento</h5>
+                      <h5 class="card-title">Medicamento</h5>
+                      <img src="public/images/flecha-inicio.png" style="height: 35px; margin-left: auto; display: block;" alt="flecha-inicio">
                     </div>
-                  </button>
-                </div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -114,6 +118,7 @@
       </div>
     </div>
   </section>
+  
 
   <!--  Productos Premium -->
   <main class="pt-5">
@@ -180,9 +185,9 @@
           <h2>"¡Encuentra a tu Mejor Amigo!"</h2>
           <p>Cada animalito tiene una historia única y está buscando una segunda oportunidad para ser feliz. Descubre a
             tu nuevo amigo y empieza una nueva aventura juntos.</p>
-            <a href="https://proyecto-salvavidas.com/">
-          <button class="btn-adopt">Adopta</button>
-        </a>
+          <a href="https://proyecto-salvavidas.com/">
+            <button class="btn-adopt">Adopta</button>
+          </a>
         </div>
 
       </div>
@@ -216,7 +221,7 @@
   </div>
 
   <main class="pt-5">
-    <section class="container-grid mb-5">
+    <section class="container mb-5">
       <h2 class="text-center title-products mb-5">Productos más vendidos</h2>
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4">
         
@@ -356,50 +361,70 @@
       <h2 class="text-start title-products p-3">Productos por mascota</h2>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-6">
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-cat.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Gato')" class="btn-pet">
+            <img src="/public/images/pet-cat.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Gatos</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-birds.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Aves')" class="btn-pet">
+            <img src="/public/images/pet-birds.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Aves</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-dog.png" class="card-img-top shadow-pet" alt="...">
+          <button onclick="applyFilter('Perro')" class="btn-pet">
+            <img src="/public/images/pet-dog.png" class="card-img-top shadow-pet" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Perros</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-fishes.png" class="card-img-top shadow-pet pt-4" alt="...">
+          <button onclick="applyFilter('Pez')" class="btn-pet">
+            <img src="/public/images/pet-fishes.png" class="card-img-top shadow-pet pt-4" alt="...">
+          </button>
           <div class="card-body">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Peces</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-conejo.png" class="card-img-top shadow-pet shadow-pet-rabbit" alt="...">
+          <button onclick="applyFilter('Conejo')" class="btn-pet">
+            <img src="/public/images/pet-conejo.png" class="card-img-top shadow-pet shadow-pet-rabbit" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Conejos</h5>
           </div>
         </div>
         <div class="col d-flex flex-column align-items-center justify-content-center p-3">
-          <img src="/public/images/pet-others.png" class="card-img-top shadow-pet pet-turtle" alt="...">
+          <button onclick="applyFilter('Otros')" class="btn-pet">
+            <img src="/public/images/pet-others.png" class="card-img-top shadow-pet pet-turtle" alt="...">
+          </button>
           <div class="card-body ">
             <h5 class="card-title text-dark mt-2 text-center title-pet">Otros</h5>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      function applyFilter(petType) {
+        const url = `/src/pages/tienda/tienda.html?petType=${encodeURIComponent(petType)}`;
+        window.location.href = url;
+      }
+    </script>
+
     <section>
       <h2 class="text-center title-products py-5">Noticias</h2>
       <div class="row d-flex flex-row align-items-center justify-content-around">
         <div class="col d-flex flex-column align-items-center justify-content-center">
           <div class="card mx-auto mb-5 new" style="width: 21rem;">
             <img src="/public/images/new-1.png" class="card-img-top" alt="...">
-            <div class="card-body row container-body-product">
+            <div class="card-body row container-body-new">
               <h5 class="card-title text-dark title-product"><a
                   href="https://www.petlife.mx/tendencias/2023/8/25/sin-agua-ni-comida-asi-fue-el-rescate-de-31-perritos-en-un-criadero-de-ecatepec-1611.html"
                   class="link-news" target="_blank">RESCATE de 31 perritos en un criadero</a></h5>
@@ -412,7 +437,7 @@
         <div class="col d-flex flex-column align-items-center justify-content-center">
           <div class="card mx-auto mb-5 new" style="width: 21rem;">
             <img src="/public/images/new-2.png" class="card-img-top" alt="...">
-            <div class="card-body row container-body-product">
+            <div class="card-body row container-body-new">
               <h5 class="card-title text-dark title-product"><a
                   href="https://www.informador.mx/mexico/Ajolote-De-deidad-a-animal-en-peligro-de-extincion-20250220-0073.html"
                   class="link-news" target="_blank">Ajolote: De deidad a animal en peligro de extinción</a></h5>
@@ -424,7 +449,7 @@
         <div class="col d-flex flex-column align-items-center justify-content-center">
           <div class="card mx-auto mb-5 new" style="width: 21rem;">
             <img src="/public/images/new-3.png" class="card-img-top" alt="...">
-            <div class="card-body row container-body-product">
+            <div class="card-body row container-body-new">
               <h5 class="card-title text-dark title-product"><a
                   href="https://www.adn40.mx/ciudad/2025-01-22/capibara-fest-2025-cuando-es-sede-y-todos-los-detalles"
                   class="link-news" target="_blank">Capibara Fest 2025</a></h5>

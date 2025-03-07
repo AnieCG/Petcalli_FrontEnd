@@ -14,18 +14,6 @@ const productsTotal = document.getElementById("poductsTotal");
 let products = [];
 let filterProducts = [];
 
-async function getProducts() {
-  const objectProducts = await getJson("/public/json/productos.json");
-  products = objectProducts;
-  filterProducts = [...products]; // Inicializar con todos los productos
-}
-
-await getProducts();
-
-insertCarruselMasPopulares(filterProducts);
-counterProductsToShow.innerHTML = filterProducts.length;
-productsTotal.innerHTML = filterProducts.length;
-
 let selectedFilters = {
   petType: null,
   category: [],
@@ -33,11 +21,28 @@ let selectedFilters = {
   price: null,
 };
 
-const usuarioGuardado = JSON.parse(localStorage.getItem("producto"));
-console.log(usuarioGuardado);
+// Función para obtener los productos desde el archivo JSON
+async function getProducts() {
+  const objectProducts = await getJson("/public/json/productos.json");
+  products = objectProducts;
+  filterProducts = [...products]; // Inicializamos filterProducts con todos los productos
 
-console.log(window.location.href);
+  // Insertamos el carrusel de productos populares (si es necesario)
+  insertCarruselMasPopulares(filterProducts);
+  counterProductsToShow.innerHTML = filterProducts.length;
+  productsTotal.innerHTML = filterProducts.length;
+
+  // Llamamos a la función para leer los filtros de la URL y aplicar el filtro
+  getFiltersFromURL(); // Lee los filtros de la URL
+  updateFilters(); // Aplica los filtros a los productos cargados
+}
+
+// Llamada a la función que obtiene los productos
+await getProducts();
+
+// Función que aplica los filtros a los productos
 function updateFilters() {
+  // Filtra los productos según los filtros seleccionados
   let filteredProducts = products.filter((product) => {
     return (
       (!selectedFilters.petType ||
@@ -52,13 +57,48 @@ function updateFilters() {
     );
   });
 
+  // Muestra los productos filtrados en la interfaz
   mostrarProductos(filteredProducts);
+
+  // Actualiza los contadores
   counterProductsToShow.innerHTML = filteredProducts.length;
+  productsTotal.innerHTML = filteredProducts.length;
+
+  // Si es necesario, actualiza otros elementos (como marcas o categorías)
   counters(filteredProducts);
 }
 
-// Eventos que activan los filtros en tiempo real
+// Función que lee los filtros de la URL
+function getFiltersFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
 
+  const categoryFilter = urlParams.get("category");
+  console.log("Filtro de categoría en la URL:", categoryFilter); // Depuración
+
+  if (categoryFilter) {
+    selectedFilters.category = [categoryFilter]; // Asumiendo que solo se filtra por una categoría
+  }
+
+  const petFilter = urlParams.get("petType");
+  console.log("Filtro de petType en la URL:", petFilter);
+
+  if (petFilter) {
+    selectedFilters.petType = petFilter;
+  }
+
+  // Llama a la función que aplica los filtros después de obtener los parámetros de la URL
+  updateFilters();
+}
+
+// Función que actualiza la UI con los filtros de la URL
+function updateUIWithFilters() {
+  // Actualiza los checkboxes de la categoría según los filtros seleccionados
+  document.querySelectorAll(".category").forEach((checkbox) => {
+    checkbox.checked = selectedFilters.category.includes(checkbox.value);
+  });
+}
+
+// Eventos que activan los filtros en tiempo real (rango de precios, categorías, marcas)
 document
   .querySelectorAll(".form-range")[1]
   .addEventListener("input", (event) => {
@@ -70,6 +110,7 @@ document
     console.log(selectedFilters);
     updateFilters();
   });
+
 document
   .querySelectorAll(".form-range")[0]
   .addEventListener("input", (event) => {
@@ -82,6 +123,7 @@ document
     updateFilters();
   });
 
+// Evento para filtrar por tipo de mascota
 document.querySelectorAll(".petCategory").forEach((button) => {
   button.addEventListener("click", (event) => {
     document
@@ -93,6 +135,7 @@ document.querySelectorAll(".petCategory").forEach((button) => {
   });
 });
 
+// Evento para filtrar por marca
 document.querySelectorAll(".brand").forEach((checkbox) => {
   checkbox.addEventListener("change", (event) => {
     if (event.target.checked) {
@@ -106,6 +149,7 @@ document.querySelectorAll(".brand").forEach((checkbox) => {
   });
 });
 
+// Evento para filtrar por categoría (checkbox)
 document.querySelectorAll(".category").forEach((checkbox) => {
   checkbox.addEventListener("change", (event) => {
     if (event.target.checked) {
@@ -119,22 +163,25 @@ document.querySelectorAll(".category").forEach((checkbox) => {
   });
 });
 
+// Evento para filtrar por etiquetas (tags)
 document.querySelectorAll(".tags").forEach((input) => {
   input.addEventListener("click", () => {
     filterProducts = filtradoTag(filterProducts, input);
     mostrarProductos(filterProducts);
     counterProductsToShow.innerHTML = filterProducts.length;
-    filterProducts = [...products];
+    filterProducts = [...products]; // Restauramos el array original de productos después de aplicar el filtro
   });
 });
-//cargar elementos al local storage
+
+// Cargar productos en el localStorage cuando el usuario haga clic en "comprar"
 document.addEventListener("click", (event) => {
   if (event.target.classList.contains("comprar-button")) {
     setItemLocalStorage(event, products);
     alertaAgregado();
   }
 });
-document.addEventListener(
-  "DOMContentLoaded",
+
+// Insertar productos filtrados cuando se carga la página
+document.addEventListener("DOMContentLoaded", () =>
   insertQueryProducts(filterProducts)
 );
