@@ -27,23 +27,38 @@
 #payment-method-section input {
     margin-right: 10px;
 }
-/**/
+/*Contenedor de productos*/
 #productos-container{
-    width: 50%;
-    margin: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
     background-color:white;
+    padding: 0;
     }
+
 .tarjeta-producto{
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 100%;
         padding: 20px;
-        box-shadow: 0 15px 3px rgba(0, 0,0, 0.1);
+        box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
+        border-radius: 8px;
         }
+
+
+            #productos-container {
+                width: 100%;
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+        
 /**/
 #imgcarrito {
     width: 50%;
     height: auto;
     border-radius: 10px;
     border-color: var(-- block-images1);
-    box-shadow: 0 4px 8px;;
+    box-shadow: 0 4px 8px;
     transition: transform 0.3s ease;
     cursor: url('/public-images/huellas-cursor.png'), auto;
 }
