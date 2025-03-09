@@ -65,3 +65,36 @@ document.addEventListener("DOMContentLoaded", () => {
             console.error("Error al cargar el archivo JSON:", error);
         });
 });
+
+
+/* Funcion para actualizar el texto del parrafo segun la canitidad de productos en el carrito */
+const updateQuantityText = ( ) => {
+    /* Leer el local storage */
+    const carritoGuardado = localStorage.getItem("cart");
+
+    /* Hay que verificar si hay algo en el carrito */
+    if (carritoGuardado) {
+        try {
+            /* Convertir el Json del carrito en un arreglo */
+            cart = JSON.parse(carritoGuardado);
+            /* Obtener la cantidad de productos */
+            const cantidad = cart.length;
+            /* Seleccionar la parte del DOM */
+            const parrafoCantidad = document.querySelector(".text-gray-600.mb-6")
+            /* Actualizar el texto */
+            if (parrafoCantidad) {
+                parrafoCantidad.textContent = `Tienes ${cantidad} productos en tu carrito.`;
+                }
+            }catch (error) {
+                console.log("Error al cargar el carrito")
+}
+    }else {
+        const parrafoCantidad = document.querySelector(".text-gray-600.mb-6");
+        if (parrafoCantidad) {
+            parrafoCantidad.textContent = "No hay productos en tu carrito.";
+    }
+}
+};
+
+/* Ejecutar la función cuando el DOM esté completamente cargado */
+document.addEventListener("DOMContentLoaded", updateQuantityText);
