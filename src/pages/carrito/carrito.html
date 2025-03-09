@@ -71,6 +71,14 @@
                     <p id="coupon-message"></p>
                 </div>
 
+                <!-- Popup para mostrar el mensaje de "Cupón canjeado" -->
+<div id="coupon-popup" class="popup">
+    <div class="popup-content">
+        <span id="close-popup" class="close">&times;</span>
+        <p>¡Cupón canjeado!</p>
+    </div>
+</div>
+
         <!-- Popup para el pago -->
         <div id="payment-method-section">
             <h3>Selecciona tu forma de pago</h3>
@@ -81,16 +89,20 @@
         </div>
         
         <button id="checkout-button">Finalizar Compra</button>
+        
+        <!-- Campo para los detalles de la tarjeta de crédito -->
+        <div id="credit-card-info" style="display:block;">
+            <label for="card-element">Información de la tarjeta</label>
+            <div id="card-element"></div> <!-- Esto será el campo de entrada de la tarjeta -->
+            <div id="card-errors" role="alert"></div> <!-- Mensajes de error para la tarjeta -->
+        </div>
     </div>
+    
 </div>
-
-
-
 
         <!-- Popup para la direccion de envio-->
 
     </main>
-s
 
 
     <footer id="footer">
