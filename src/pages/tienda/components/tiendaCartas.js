@@ -52,7 +52,7 @@ const createCards = (producto) => {
                                 </button>
                             </div>
                             <div class="btn-group me-2" role="group" aria-label="Third group">
-                                <button type="button " class="btn btn-primary modal-btn carrito"><strong>Agregar al
+                                <button type="button " class="btn btn-primary modal-btn agregar-carrito" data-producto='${JSON.stringify(producto)}'><strong>Agregar al
                                         carrito</strong></button>
                             </div>
 
@@ -83,3 +83,5 @@ fetch("/public/json/productos.json")
       .map((card) => createCards(card))
       .join("");
   });
+
+export { createCards };

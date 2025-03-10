@@ -407,6 +407,7 @@
               <span
                 class="carousel-control-next-icon button-next-before"
                 aria-hidden="true"
+                id="button-pets-next"
               ></span>
               <span class="visually-hidden">Next</span>
             </button>
@@ -419,6 +420,7 @@
               <span
                 class="carousel-control-prev-icon button-next-before"
                 aria-hidden="true"
+                id="button-pets-before"
               ></span>
               <span class="visually-hidden">Previous</span>
             </button>
@@ -926,12 +928,15 @@
             <!-- productos -->
 
             <!-- Contadores de productos -->
-            <p class="resultados">
+            <div class="resultados d-inline-flex-end">
               <span id="counterProductsToShow">0</span> de
               <span id="poductsTotal"></span> productos
-            </p>
+              <div id="filtros-pastillas"></div>
+              
+            </div>
 
             <!-- Sección donde se mostrarán los productos -->
+            
             <div
               class="row p-2 justify-content-around rounded"
               id="seccion-cards"
@@ -1021,10 +1026,9 @@
     ></script>
     <script type="module" src="/src/modules/nav/nav.js"></script>
     <script src="/src/pages/tienda/funcionesAdmin.js"></script>
-    <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js"></script>
-    <script
-      type="module"
-      src="/src/pages/tienda/funciones-filtrados/mostrarProductos.js"
-    ></script>
+    <script src="/src/pages/tienda/funciones-filtrados/searchNavbar.js" ></script>
+    <script type="module" src="/src/pages/tienda/funciones-filtrados/mostrarProductos.js" ></script>
+    <script type="module" src="/src/pages/carrito/carrito.js"></script>
+
   </body>
 </html>
