@@ -27,49 +27,79 @@
 #payment-method-section input {
     margin-right: 10px;
 }
-.card{
-    background-color: #f0f0f0;
-    display: flex;
-    margin: 20px;
-    max-width: 740px;
-}
-.card-body{
-    width: 5autom;
-    max-width: none;
-    display: flex;
-    
-}/*borrar*/
-.btn-delete { 
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    padding: 70px 5px 10px 30px;
 
-
-}
-
-.card-text{
-    margin: 10px;
-    padding: 10px 5px 10px 10px;
-
-}
-/*flechas*/
-.counter-container {
-    padding: 70px 5px 10px 70px;
-writing-mode: horizontal-tb;
-direction: rtl;
-
-}
-
-/*precio*/
-.price-btn-container {
-    display: flex;
+/*cupon canjeado*/
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 70px 5px 10px 30px; 
 }
 
-.card-title{
-    padding: 70px 5px 10px; 
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Contenedor de productos*/
+#productos-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color:white;
+    padding: 0;
+    }
+
+.tarjeta-producto{
+    margin: 0 auto 20px;
+    width: 100%;
+    max-width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0,0, 0.1);
+        border-radius: 8px;
+        }
+
+
+            #productos-container {
+                width: 100%;
+                margin: 10px auto;
+                padding: 0 10px;
+            }
+        
+/**/
+#imgcarrito {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    border-color: var(-- block-images1);
+    box-shadow: 0 4px 8px;
+    transition: transform 0.3s ease;
+    cursor: url('/public-images/huellas-cursor.png'), auto;
+}
+
+.d-flex .btn-outline-light {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+
+#h2 {
+    font-size: 30px;
+    color: var(--subtitle);
 }

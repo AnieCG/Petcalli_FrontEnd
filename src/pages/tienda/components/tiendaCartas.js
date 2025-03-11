@@ -63,7 +63,7 @@ const createCards = (producto) => {
             </div>
             <div class="modal-footer" >
             <button type="button" class="btn btn-secondary modal-btn cerrar" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary modal-btn" ><a href="#">Ver carrito</a></button>
+            <button type="button" class="btn btn-primary modal-btn" ><a href="/src/pages/carrito/carrito.html">Ver carrito</a></button>
             </div>
         </div>
         </div>
