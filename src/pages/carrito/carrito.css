@@ -4,6 +4,9 @@
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+.price-summary {
+    margin-top: 20px;
+}
 #checkout-button {
     background-color: var(--background_page);
     color: #000;
@@ -32,6 +35,14 @@
     font-size: 0.9rem;
     color: var(--subtitle);
     margin-top: 10px;
+}
+#apply-coupon{
+    background-color: var(--background_page);
+    color: #000;
+    border: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: auto;
 }
 
 #payment-method-section {
