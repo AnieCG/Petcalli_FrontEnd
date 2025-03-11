@@ -110,16 +110,36 @@ main {
 
     .container-body-product {
       max-width: 300px;
+      background-color: var(--block-images2);
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    .cards-products {
+      width: 300px;
+      min-height: 300px;
+      object-fit: contain;
+    }
+
+    .price-text {
+      font-size: 20px;
+    }
+
+    .btn-comprar {
+      background-color: var(--block-images1);
+      color: WHITE;
+      border-radius: 5px;
+      border: 0;
+      padding: 5px 10px;
+    }
+
+    .container-body-new {
+      max-width: 330px;
     }
 
     .product {
-      transition: transform 0.5s;
       min-height: 400px;
       padding-top: 20px;
-    }
-
-    .product:hover {
-      transform: scale(1.2);
     }
 
     .title-product {
@@ -127,22 +147,6 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-    }
-
-    .cards-products {
-      max-width: 250px;
-      min-height: 300px;
-      object-fit: contain;
-    }
-
-    .like-product {
-      max-width: 25px;
-      max-height: 25px;
-      transition: transform 0.5s;
-    }
-
-    .like-product:hover {
-      transform: scale(1.2);
     }
 
     .title-pet {
@@ -167,6 +171,46 @@ main {
       overflow: hidden;
       text-overflow: ellipsis;
       font-size: 16px;
+    }
+
+    .btn-pet {
+      background-color: transparent;
+      border: none;
+    }
+
+    article {
+      .modal-dialog .popup-card {
+        width: 370px;
+        background-color: #3b2e58;
+      }
+  
+      .image-products {
+        width: 100%;
+        object-fit: contain;
+      }
+  
+      .title {
+        color: var(--title);
+      }
+  
+      .text-strong {
+        color: var(--subtitle);
+      }
+  
+      .text-products {
+        font-size: 14px;
+      }
+    }
+
+    .cards-products {
+      width: 300px;
+      min-height: 300px;
+      object-fit: contain;
+    }
+
+    .title-pet {
+      font-family: var(--font_subtitle);
+      font-size: 30px;
     }
   }
 }
@@ -367,14 +411,25 @@ footer {
 .card.animal {
   border: none; 
   box-shadow: none ; 
-  background-color: transparent;
+  background-color: var(--block-images2);
+}
+
+.card-category {
+  background-color: #f2cc8f;
+  width: 100%;
+  display: flex;
+}
+.card-text-category {
+  color: black;
+  text-decoration: none;
 }
 
 .card.product {
   border: none ; 
   box-shadow: none ;
-  background-color: transparent;
+  background-color: var(--block-images2);
 }
+
 .pet-carousel  {
   background-color: var(--block-images2);
 }

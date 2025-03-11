@@ -10,7 +10,7 @@ export default function createCards(producto) {
           <p class="description">${producto.description}</p>
           <p id="precio">${producto.price}</p>
           <div class="d-flex flex-column">
-            <button type="button" class="btn mt-2 comprar-button agregar-carrito" data-producto='${JSON.stringify(producto)}'producto-id="#${producto.id}" >
+            <button type="button" class="btn mt-2 comprar-button agregar-carrito btn-comprar" data-producto='${JSON.stringify(producto)}'producto-id="#${producto.id}" >
               Comprar ahora
             </button>
             <div class="d-flex justify-content-between">

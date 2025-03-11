@@ -198,4 +198,51 @@ document.addEventListener(
   insertQueryProducts(filterProducts)
 );
 
+// Función para obtener los productos desde el archivo JSON
+async function getProductsIndex() {
+  const objectProducts = await getJson("/public/json/productos.json");
+  products = objectProducts;
+  filterProducts = [...products]; // Inicializamos filterProducts con todos los productos
 
+  // Insertamos el carrusel de productos populares (si es necesario)
+  insertCarruselMasPopulares(filterProducts);
+  counterProductsToShow.innerHTML = filterProducts.length;
+  productsTotal.innerHTML = filterProducts.length;
+
+  // Llamamos a la función para leer los filtros de la URL y aplicar el filtro
+  getFiltersFromURL(); // Lee los filtros de la URL
+  updateFilters(); // Aplica los filtros a los productos cargados
+}
+
+// Llamada a la función que obtiene los productos
+await getProductsIndex();
+
+// Función que lee los filtros de la URL
+function getFiltersFromURL() {
+  const urlParams = new URLSearchParams(window.location.search);
+
+  const categoryFilter = urlParams.get("category");
+  console.log("Filtro de categoría en la URL:", categoryFilter); // Depuración
+
+  if (categoryFilter) {
+    selectedFilters.category = [categoryFilter]; // Asumiendo que solo se filtra por una categoría
+  }
+
+  const petFilter = urlParams.get("petType");
+  console.log("Filtro de petType en la URL:", petFilter);
+
+  if (petFilter) {
+    selectedFilters.petType = petFilter;
+  }
+
+  // Llama a la función que aplica los filtros después de obtener los parámetros de la URL
+  updateFilters();
+}
+
+// Función que actualiza la UI con los filtros de la URL
+// Actualiza los checkboxes de la categoría según los filtros seleccionados
+/* function updateUIWithFilters() {
+  document.querySelectorAll(".category").forEach((checkbox) => {
+    checkbox.checked = selectedFilters.category.includes(checkbox.value);
+  });
+} */
