@@ -26,71 +26,96 @@
 
 
         <!-- Seccion de titulo  y mini resumen-->
+        <div class="container mt-4">
+            <!-- Columna izquierda para los productos -->
+            <div class="row mb-3">
+                <div class="col-12">
+                    <div class="container-fluid mt-4">
+                        <div class="d-flex align-items-center">
+                            <a class="btn btn-outline-light" href="/src/pages/tienda/tienda.html" role="button"><img
+                                    src="/public/images/la-tienda-de-animales.png" alt="imagen de la tienda de animales"
+                                    id="imgcarrito"></a>
+                            <span class="ml-2 text-lg" id="h2"> Olvidaste algo?</span>
+                        </div>
+                        <br>
+                        <h1 class="text-3xl font-bold mb-2">Tu carrito</h1>
+                        <p class="text-gray-600 mb-6"></p>
+                    </div>
+                </div>
 
-        <div class="container-fluid mt-4">
-            <div class="d-flex align-items-center mb-4">
-            <a class="btn btn-outline-light" href="/src/pages/tienda/tienda.html" role="button"><img src="/public/images/la-tienda-de-animales.png" alt="imagen de la tienda de animales" id="imgcarrito"></a>
-            <span class="ml-2 text-lg" id="h2"> Olvidaste algo?</span>
+
+                <!-- Seccion de tarjetas de producto -->
+                <!--para poner las imagenes de las tarjetas-->
+                <div class="row">
+                    <!-- Columna izquierda para los productos -->
+                    <div class="col-md-8">
+                        <section id="productos-container"></section>
+                    </div>
+
+
+
+                    <!-- Seccion de resuemen de compra -->
+
+                    <!-- Columna derecha para el resumen de compra -->
+                    <div class="col-md-4">
+                        <div class="cart-summary p-4 rounded">
+                            <!-- Campo para cupón o tarjeta de regalo -->
+                            <div class="mb-4">
+                                <label for="promo-code" class="form-label">Ingresa código promocional </label>
+                                <input type="text" id="promo-code" class="form-control mb-2"
+                                    placeholder="Ingresa tu código">
+                                <button id="apply-coupon" class="btn btn-outline-secondary w-100">Aplicar</button>
+                                <p id="coupon-message" class="mt-2"></p>
+                            </div>
+
+                            <!-- Resumen de precios -->
+                            <div class="price-summary">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Subtotal:</span>
+                                    <span>$<span id="subtotal-price">1,120.00</span></span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Descuento aplicado:</span>
+                                    <span>$<span id="shipping-cost">0.00</span></span>
+                                </div>
+                                <hr>
+                                <div class="d-flex justify-content-between fw-bold">
+                                    <span>Total:</span>
+                                    <span>$<span id="total-price">1,120.00</span></span>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between fw-bold">
+                                <!-- Popup para el pago -->
+                                <div id="payment-method-section">
+                                    <h3>Selecciona tu forma de pago</h3>
+                                    <input type="radio" name="payment-method" value="credit-card" id="credit-card"
+                                        checked>
+                                    <label for="credit-card">Tarjeta de Crédito</label><br>
+                                    <input type="radio" name="payment-method" value="paypal" id="paypal">
+                                    <label for="paypal">PayPal</label><br>
+                                </div>
+                            </div>
+                        
+
+                        <!-- Botón de checkout -->
+                        <button id="checkout-button" class="btn btn-primary w-100 mt-4 py-3">Finalizar Compra</button>
+                    </div>
+                </div>
             </div>
-            <br>
-            <h1 class="text-3xl font-bold mb-2">Tu carrito</h1>
-            <p  class="text-gray-600 mb-6"></p>
-        </div>
-
-
-        <!-- Seccion de tarjetas de producto -->
-         <!--para poner las imagenes de las tarjetas-->
-        <section id="productos-container"></section>
-
-        <!-- Seccion de resuemen de compra -->
-        <div class="cart-container">
-            <table id="cart-table">
-                <thead>
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                        <th>Total</th>
-                    </tr>
-                </thead>
-                
-            </table>
-    
-            <div class="cart-summary">
-                <div id="purchase-summary">
-                    <h3>Resumen de la Compra</h3>
-                    <p><strong>Subtotal:</strong> $<span id="subtotal-price">0.00</span></p>
-                    <p><strong>Descuento:</strong> $<span id="discount-price">0.00</span></p>
-                    <p><strong>Total:</strong> $<span id="total-price">0.00</span></p>
-                </div>
-                
-                <div id="coupon-section">
-                    <label for="coupon-code">Código de cupón:</label>
-                    <input type="text" id="coupon-code" placeholder="Ingresa tu código">
-                    <button id="apply-coupon">Aplicar cupón</button>
-                    <p id="coupon-message"></p>
-                </div>
-
-        <!-- Popup para el pago -->
-        <div id="payment-method-section">
-            <h3>Selecciona tu forma de pago</h3>
-            <input type="radio" name="payment-method" value="credit-card" id="credit-card" checked>
-            <label for="credit-card">Tarjeta de Crédito</label><br>
-            <input type="radio" name="payment-method" value="paypal" id="paypal">
-            <label for="paypal">PayPal</label><br>
         </div>
         
-        <button id="checkout-button">Finalizar Compra</button>
-    </div>
-</div>
 
-
-
-
+        <!-- Popup para mostrar el mensaje de "Cupón canjeado" -->
+        <div id="coupon-popup" class="popup">
+            <div class="popup-content">
+                <span id="close-popup" class="close">&times;</span>
+                <p>¡Cupón canjeado!</p>
+            </div>
+        </div>
+        <br>
         <!-- Popup para la direccion de envio-->
 
     </main>
-s
 
 
     <footer id="footer">
@@ -102,7 +127,7 @@ s
     <script src="/src/modules/footer/footer.js"></script>
     <script src="/src/modules/header/header.js"></script>
     <script type="module" src="/src/modules/nav/nav.js"></script>
-    <script  src="/src/pages/login/login.js"></script>
+    <script src="/src/pages/login/login.js"></script>
     <script src="/src/pages/register/localStorage.js"></script>
     <script src="src/modules/user/userLogin.js"></script>
     <script src="/src/pages/tienda/searchNavbar.js"></script>
