@@ -184,6 +184,10 @@ main {
       object-fit: contain;
     }
 
+    .cards-products:hover {
+      cursor: pointer;
+    }
+
     .title-pet {
       font-family: var(--font_subtitle);
       font-size: 30px;
