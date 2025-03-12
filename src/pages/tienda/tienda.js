@@ -186,12 +186,12 @@ document.querySelectorAll(".tags").forEach((input) => {
   });
 });
 //cargar elementos al local storage
-document.addEventListener("click", (event) => {
+/* document.addEventListener("click", (event) => {
   if (event.target.classList.contains("comprar-button")) {
     setItemLocalStorage(event, products);
     alertaAgregado();
   }
-});
+}); */
 
 document.addEventListener(
   "DOMContentLoaded",

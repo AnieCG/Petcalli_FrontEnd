@@ -9,15 +9,13 @@ export default function createCards(producto) {
           <h5 class="card-title" id="nombre-producto">${producto.title}</h5>
           <p class="description">${producto.description}</p>
           <p id="precio">${producto.price}</p>
-          <div class="d-flex flex-column">
+          <div class="d-flex flex-column justify-content-center">
             <button type="button" class="btn mt-2 comprar-button agregar-carrito btn-comprar" data-producto='${JSON.stringify(producto)}'producto-id="#${producto.id}" >
               Comprar ahora
             </button>
-            <div class="d-flex justify-content-center">
-              <button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#${producto.id}">
+              <button type="button" class="align-bottom btn mt-2" data-bs-toggle="modal" data-bs-target="#${producto.id}">
                 Ver producto
-              </button>
-            </div>
+              </button>            
           </div>
         </div>
       </div>
