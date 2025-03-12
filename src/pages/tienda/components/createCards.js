@@ -13,12 +13,9 @@ export default function createCards(producto) {
             <button type="button" class="btn mt-2 comprar-button agregar-carrito btn-comprar" data-producto='${JSON.stringify(producto)}'producto-id="#${producto.id}" >
               Comprar ahora
             </button>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-center">
               <button type="button" class="btn mt-2" data-bs-toggle="modal" data-bs-target="#${producto.id}">
                 Ver producto
-              </button>
-              <button class="btn mt-2" type="button" href="#">
-                <img src="/public/images/like-products.svg" alt="icono de favoritos">
               </button>
             </div>
           </div>
