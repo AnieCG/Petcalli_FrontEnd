@@ -33,6 +33,11 @@ function handleDelete(productId) {
         cart = cart.filter( product => product.id !== parseInt( productId ));
         console.log(cart);
         localStorage.setItem("cart", JSON.stringify( cart ));
+        
+        const cartCounter = document.getElementById("cart-counter");
+        if (cartCounter) {
+            cartCounter.textContent = cart.length; // Actualizar el contador con la longitud del carrito
+        }
     }
 }
 
