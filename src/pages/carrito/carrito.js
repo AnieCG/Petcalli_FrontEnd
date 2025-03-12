@@ -20,9 +20,49 @@ const addToCart = (producto) => {
     cart.push(producto); // Agregar el producto al carrito
     updateCartCounter(); // Actualizar el contador
     saveCartInLocalStorage(); // Guardar el carrito en localStorage
+    updateCartTotals();
     console.log("Producto agregado:", producto);
 };
 
+// Función para calcular y mostrar el subtotal y total
+
+const updateCartTotals = () => {
+
+    const subtotalElement = document.getElementById("subtotal-price");
+
+    const totalElement = document.getElementById("total-price");
+
+    
+
+    let subtotal = 0;
+
+    cart.forEach(producto => {
+
+        // Convertir el precio de string a número
+
+        const price = parseFloat(producto.price.replace(/[$,]/g, '')); // Eliminar el símbolo de dólar y las comas
+
+        subtotal += price; // Sumar el precio al subtotal
+
+    });
+
+
+    const total = subtotal; // Aquí va la lógica para aplicar descuentos, spoiler, no funciona
+
+
+    if (subtotalElement) {
+
+        subtotalElement.textContent = subtotal.toFixed(2);
+
+    }
+
+    if (totalElement) {
+
+        totalElement.textContent = total.toFixed(2);
+
+    }
+
+};
 // Cargar el carrito desde localStorage al iniciar la página
 document.addEventListener("DOMContentLoaded", () => {
     const carritoGuardado = localStorage.getItem("cart");
@@ -30,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             cart = JSON.parse(carritoGuardado); // Cargar el carrito desde localStorage
             updateCartCounter(); // Actualizar el contador
+            updateCartTotals();
         } catch (error) {
             console.error("Error al cargar el carrito desde localStorage:", error);
             cart = []; // Reiniciar el carrito en caso de error
@@ -147,3 +188,5 @@ document.getElementById('checkout-button').addEventListener('click', function() 
 
 /* Ejecutar la función cuando el DOM esté completamente cargado */
 document.addEventListener("DOMContentLoaded", updateQuantityText);
+updateQuantityText();
+    updateCartTotals();

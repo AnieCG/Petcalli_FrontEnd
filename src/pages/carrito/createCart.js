@@ -12,12 +12,12 @@
 const contenedorTarjetas = document.getElementById("productos-container");
 /* funcion para actualizar el contador de un prodcuto existente */
 function updateCounter(productId, increment = true) {
-    const counterElement = document.querySelector(`#counter-value-${productId}`
-
-    );
+    const counterElement = document.querySelector(`#counter-value-${productId}`);
 
     if (counterElement) {
         let curretValue = parseInt(counterElement.textContent, 10);
+        //queremos que no decremente a menos de 1 pues tenemos un boton para borrar, se agrega una condicion
+        if( !increment && curretValue <= 1) return;
         curretValue = increment ? curretValue + 1 : curretValue - 1;
         counterElement.textContent = curretValue;
     }
@@ -27,6 +27,50 @@ function handleDelete(productId) {
     const productElement = document.querySelector(`#product-${productId}`);
     if (productElement) {
         productElement.remove(); // Elimina la tarjeta del DOM
+        // se necesita eliminar el producto tambien del local storage para mandarlo a la orden de compra con los productos correctos
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+        console.log(cart);
+        cart = cart.filter( product => product.id !== parseInt( productId ));
+        console.log(cart);
+        localStorage.setItem("cart", JSON.stringify( cart ));
+        
+        const cartCounter = document.getElementById("cart-counter");
+        if (cartCounter) {
+            cartCounter.textContent = cart.length; // Actualizar el contador con la longitud del carrito
+        }
+        const subtotalElement = document.getElementById("subtotal-price");
+
+    const totalElement = document.getElementById("total-price");
+
+    
+
+    let subtotal = 0;
+
+    cart.forEach(producto => {
+
+        // Convertir el precio de string a número
+
+        const price = parseFloat(producto.price.replace(/[$,]/g, '')); // Eliminar el símbolo de dólar y las comas
+
+        subtotal += price; // Sumar el precio al subtotal
+
+    });
+
+
+    const total = subtotal; // Aquí va la lógica para aplicar descuentos, spoiler, no funciona
+
+
+    if (subtotalElement) {
+
+        subtotalElement.textContent = subtotal.toFixed(2);
+
+    }
+
+    if (totalElement) {
+
+        totalElement.textContent = total.toFixed(2);
+
+    }
     }
 }
 
@@ -53,7 +97,7 @@ function crearTarjetasProductos() {
                 //para crear un contenedor por cada producto, una tarjeta individual
                 const nuevoProducto = document.createElement("div");
                 nuevoProducto.id = `product-${productId}`;
-                nuevoProducto.classList = "tarjeta-producto mb-4 w-100 border rounded p-3"; //para asignar la clase al div
+                nuevoProducto.classList = "tarjeta-producto mb-4 w-100 border rounded p-3 product-card"; //para asignar la clase al div
                 //para insertar un bloque dentro del div, imagen,titulo, descripcion y el precio 
                 //no aparece la seccion en el html, 
                 /* Como decias llamas mal a los atributos, ponias producto, y es con el metodo element */
@@ -73,9 +117,9 @@ function crearTarjetasProductos() {
                         </div>
                         <div class="col-12 col-md-2 text-center">
                             <div class="d-flex justify-content-center align-items-center">
-                                <button id="decrease-btn-${productId}" class="btn btn-outline-secondary" onclick="updateCounter('${productId}', false)"><i class="fas fa-arrow-down"></i></button>
+                                <button id="decrease-btn-${productId}" class="btn btn-outline-secondary "><i class="fas fa-arrow-down"></i></button>
                                 <span id="counter-value-${productId}" class="mx-2">1</span>
-                                <button id="increase-btn-${productId}" class="btn btn-outline-secondary" onclick="updateCounter('${productId}', true)"><i class="fas fa-arrow-up"></i></button>
+                                <button id="increase-btn-${productId}" class="btn btn-outline-secondary"><i class="fas fa-arrow-up"></i></button>
                             </div>
                         </div>
                         <div class="col-12 col-md-2 text-center">
@@ -100,3 +144,28 @@ function crearTarjetasProductos() {
 /* Solo debes llamar la funcion sin darle parametros */
 //se ejecuta el crear productos
 crearTarjetasProductos();
+
+// teniamos la funcion de borrar pero no se implemento, se requiere un escuchador de eventos
+// se usa event delegation, delegacion de eventos para esta parte que es mas dinámica y tenemos funciones similares pare los eventos
+// los contadores se actualizan automaticamente al crear las cartas, se requiere utilizar
+// la funcion updateCounter para los eventos de los botones
+
+document.addEventListener("click", function (event) {
+    const productCard = event.target.closest(".product-card");
+    //console.log(productCard);
+    if (!productCard) {
+        console.log(!productCard);  
+        return;
+    }
+    const productId = productCard.id.replace("product-", "");
+    console.log(productId);
+    if (event.target.closest("#increase-btn-" + productId)) {
+        updateCounter(productId, true);
+    }
+    if (event.target.closest("#decrease-btn-" + productId)) {
+        updateCounter(productId, false);
+    }
+    if (event.target.closest(".btn-delete")) {
+        handleDelete(productId);
+    }
+});

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (usuarioGuardado && isLoggedIn === "true" ) {
     buttonUser.innerHTML = `
     <div class="btn-group">
-      <a href="/src/pages/login/loginUser.html">
+      <a href="/src/pages/login/loginUser.html" >
         <img src="/public/images/user-in.png" alt="icono de usuario" id="icon-user"/>
       </a>
       <button class="btn dropdown-toggle button-user" type="button" data-bs-toggle="dropdown" aria-expanded="false">
