@@ -38,11 +38,6 @@ const insertNav = () => {
             </button>
           </div>
         </form>
-        
-        <div class="d-flex justify-content-around pt-2 pt-lg-0">
-          <button class="btn" type="button" href="#">
-            <img src="/public/images/like-products.svg" alt="icono de favoritos"/>
-          </button>
 
           <button id="btncart" class="btn" type="button" >
           <a href="/src/pages/carrito/carrito.html">
