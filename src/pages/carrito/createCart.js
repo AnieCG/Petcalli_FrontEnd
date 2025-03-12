@@ -38,6 +38,39 @@ function handleDelete(productId) {
         if (cartCounter) {
             cartCounter.textContent = cart.length; // Actualizar el contador con la longitud del carrito
         }
+        const subtotalElement = document.getElementById("subtotal-price");
+
+    const totalElement = document.getElementById("total-price");
+
+    
+
+    let subtotal = 0;
+
+    cart.forEach(producto => {
+
+        // Convertir el precio de string a número
+
+        const price = parseFloat(producto.price.replace(/[$,]/g, '')); // Eliminar el símbolo de dólar y las comas
+
+        subtotal += price; // Sumar el precio al subtotal
+
+    });
+
+
+    const total = subtotal; // Aquí va la lógica para aplicar descuentos, spoiler, no funciona
+
+
+    if (subtotalElement) {
+
+        subtotalElement.textContent = subtotal.toFixed(2);
+
+    }
+
+    if (totalElement) {
+
+        totalElement.textContent = total.toFixed(2);
+
+    }
     }
 }
 
